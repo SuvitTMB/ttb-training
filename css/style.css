@@ -1,0 +1,23 @@
+body { font-family: 'Kanit', sans-serif; background-color: #fafaf9; color: #44403c; }
+:root { --primary-color: #0056ff; --accent-orange: #f68b1f; }
+
+.tab-active { background-color: var(--primary-color); color: white !important; box-shadow: 0 4px 12px -2px rgba(0, 86, 255, 0.4); }
+.tab-btn:hover { color: var(--accent-orange) !important; }
+.tab-active:hover { color: white !important; }
+
+.fade-in { animation: fadeIn 0.3s ease-out forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+.modal-bg { background: rgba(28, 25, 23, 0.7); backdrop-filter: blur(4px); }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Table Styles with Round Corners */
+.rounded-table-container { border-radius: 15px; overflow: hidden; border: 1px solid #e2e8f0; background: white; }
+th { font-size: 11px !important; font-weight: 700; color: #475569; background-color: #e2e8f0; padding: 10px 8px !important; text-align: center; text-transform: uppercase; }
+td { border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
+
+/* Level Specific Styles (Normal weight) */
+.lvl-1 { font-size: 13px !important; font-weight: 400 !important; color: #1e293b; }
+.lvl-2 { font-size: 13px !important; font-weight: 400 !important; color: #334155; }
+
+.row-selected { background-color: #eff6ff !important; border-left: 4px solid var(--primary-color); }
