@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK System Admin - Advanced Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- SheetJS for Parsing Excel File Uploads in Frontend -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container" class="fixed top-4 right-4 z-[200] flex flex-col gap-2 pointer-events-none"></div>
+
+    <header class="bg-stone-100 border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 bg-[#0056ff] rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        A</div>
+                    <div>
+                        <h1 class="font-bold text-stone-800 leading-tight text-lg">Admin Manager</h1>
+                        <p id="connection-status"
+                            class="text-[12px] text-stone-400 uppercase tracking-widest font-bold italic">Checking
+                            Connection...</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-1" id="main-nav">
+                    <button onclick="window.navigate('dashboard')" id="nav-dashboard"
+                        class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition-all">แดชบอร์ด</button>
+                    <button onclick="window.navigate('menus')" id="nav-menus"
+                        class="tab-btn px-4 py-2 rounded-lg text-sm font-medium text-stone-500 transition-all">จัดการหลักสูตร</button>
+                    <button onclick="window.navigate('employees')" id="nav-employees"
+                        class="tab-btn px-4 py-2 rounded-lg text-sm font-medium text-stone-500 transition-all">จัดการพนักงาน</button>
+                    <button onclick="window.navigate('attendees')" id="nav-attendees"
+                        class="tab-btn px-4 py-2 rounded-lg text-sm font-medium text-stone-500 transition-all">จัดการผู้อบรม</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-[95%] mx-auto py-8 w-full">
+
+        <!-- SECTION: DASHBOARD -->
+        <section id="section-dashboard" class="content-section hidden fade-in">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Stat Cards -->
+                <div class="bg-white p-6 rounded-[20px] shadow-sm border border-stone-200 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-stone-400 uppercase tracking-wider font-bold">หลักสูตร (MainCourse)</p>
+                        <h3 id="stat-courses" class="text-2xl font-bold text-stone-800 mt-1">-</h3>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-[20px] shadow-sm border border-stone-200 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-stone-400 uppercase tracking-wider font-bold">รุ่นกิจกรรม (Batches)</p>
+                        <h3 id="stat-batches" class="text-2xl font-bold text-stone-800 mt-1">-</h3>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-[20px] shadow-sm border border-stone-200 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-stone-400 uppercase tracking-wider font-bold">พนักงานส่วนกลาง</p>
+                        <h3 id="stat-employees" class="text-2xl font-bold text-stone-800 mt-1">-</h3>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-[20px] shadow-sm border border-stone-200 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
+                        <i data-lucide="user-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-stone-400 uppercase tracking-wider font-bold">ยอดผู้ลงทะเบียนสะสม</p>
+                        <h3 id="stat-registrations" class="text-2xl font-bold text-stone-800 mt-1">-</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Batches Table -->
+            <div class="bg-white rounded-[20px] shadow-sm border border-stone-200 p-6 flex flex-col mt-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div>
+                        <h2 class="text-base font-bold text-stone-800 flex items-center gap-2">
+                            <span class="w-2.5 h-6 bg-blue-600 rounded-full"></span> ตารางข้อมูลรุ่นกิจกรรมการฝึกอบรม
+                        </h2>
+                        <p class="text-stone-400 text-xs mt-1 font-light">แสดงรายละเอียดของรุ่นการฝึกอบรมทั้งหมดและสถานะ
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-end gap-3 w-full md:w-auto">
+                        <!-- View Toggles -->
+                        <div class="flex items-center gap-1 bg-stone-100 p-1 rounded-xl">
+                            <button id="btn-db-view-table" onclick="window.setDashboardView('table')" type="button"
+                                class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 bg-white text-stone-800 shadow-sm">
+                                <i data-lucide="table" class="w-3.5 h-3.5"></i> ตาราง
+                            </button>
+                            <button id="btn-db-view-calendar" onclick="window.setDashboardView('calendar')"
+                                type="button"
+                                class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 text-stone-500 hover:text-stone-800">
+                                <i data-lucide="calendar" class="w-3.5 h-3.5"></i> ปฏิทินอบรม
+                            </button>
+                        </div>
+                        <!-- Dropdown Filter -->
+                        <div class="w-full sm:w-48">
+                            <label class="block text-xs font-bold text-stone-500 mb-1 ml-1">กรองสถานะรุ่น</label>
+                            <select id="db-status-filter" onchange="window.onDbStatusFilterChanged()"
+                                class="w-full p-2 bg-stone-50 border border-stone-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-500/20 font-medium">
+                                <option value="all">ดูทุกสถานะ</option>
+                                <option value="1">1. ยังไม่อบรม</option>
+                                <option value="2">2. เช็ครายชื่อ</option>
+                                <option value="3">3. กำลังจะเริ่ม</option>
+                                <option value="4">4. อยู่ระหว่างอบรม</option>
+                                <option value="5">5. อบรมแล้ว</option>
+                                <option value="9">9. ยกเลิกอบรม</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table Container -->
+                <div id="db-table-container" class="overflow-y-auto max-h-[50vh] no-scrollbar rounded-table-container">
+                    <table class="w-full table-auto">
+                        <thead>
+                            <tr class="bg-stone-100 text-stone-700 select-none">
+                                <th class="text-center p-3 cursor-pointer hover:underline"
+                                    onclick="window.sortDbBatches('Course')">
+                                    <div class="flex items-center justify-center gap-1 mx-auto">
+                                        <span>รุ่นที่</span>
+                                        <span id="db-sort-icon-Course"><i data-lucide="chevrons-up-down"
+                                                class="w-3.5 h-3.5 text-stone-400"></i></span>
+                                    </div>
+                                </th>
+                                <th class="text-left p-3 cursor-pointer hover:underline"
+                                    onclick="window.sortDbBatches('MainCourse')">
+                                    <div class="flex items-center gap-1">
+                                        <span>MainCourse</span>
+                                        <span id="db-sort-icon-MainCourse"><i data-lucide="chevrons-up-down"
+                                                class="w-3.5 h-3.5 text-stone-400"></i></span>
+                                    </div>
+                                </th>
+                                <th class="text-left p-3 cursor-pointer hover:underline"
+                                    onclick="window.sortDbBatches('TrainingRoom')">
+                                    <div class="flex items-center gap-1">
+                                        <span>สถานที่</span>
+                                        <span id="db-sort-icon-TrainingRoom"><i data-lucide="chevrons-up-down"
+                                                class="w-3.5 h-3.5 text-stone-400"></i></span>
+                                    </div>
+                                </th>
+                                <th class="text-center p-3 cursor-pointer hover:underline"
+                                    onclick="window.sortDbBatches('StartDate')">
+                                    <div class="flex items-center justify-center gap-1 mx-auto">
+                                        <span>วันเริ่มต้น</span>
+                                        <span id="db-sort-icon-StartDate"><i data-lucide="chevrons-up-down"
+                                                class="w-3.5 h-3.5 text-stone-400"></i></span>
+                                    </div>
+                                </th>
+                                <th class="text-center p-3 cursor-pointer hover:underline"
+                                    onclick="window.sortDbBatches('EndDate')">
+                                    <div class="flex items-center justify-center gap-1 mx-auto">
+                                        <span>วันสิ้นสุด</span>
+                                        <span id="db-sort-icon-EndDate"><i data-lucide="chevrons-up-down"
+                                                class="w-3.5 h-3.5 text-stone-400"></i></span>
+                                    </div>
+                                </th>
+                                <th class="text-center p-3 cursor-pointer hover:underline"
+                                    onclick="window.sortDbBatches('empCount')">
+                                    <div class="flex items-center justify-center gap-1 mx-auto">
+                                        <span>ผู้อบรม</span>
+                                        <span id="db-sort-icon-empCount"><i data-lucide="chevrons-up-down"
+                                                class="w-3.5 h-3.5 text-stone-400"></i></span>
+                                    </div>
+                                </th>
+                                <th class="text-center p-3 cursor-pointer hover:underline"
+                                    onclick="window.sortDbBatches('passedCount')">
+                                    <div class="flex items-center justify-center gap-1 mx-auto">
+                                        <span>ผ่านอบรม</span>
+                                        <span id="db-sort-icon-passedCount"><i data-lucide="chevrons-up-down"
+                                                class="w-3.5 h-3.5 text-stone-400"></i></span>
+                                    </div>
+                                </th>
+                                <th class="text-center p-3">จัดการ</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-db-batches-body">
+                            <tr>
+                                <td colspan="8" class="text-center py-10 text-stone-400 italic text-xs">
+                                    กำลังโหลดข้อมูลรุ่นการฝึกอบรม...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Calendar Container -->
+                <div id="db-calendar-container" class="hidden flex flex-col gap-4">
+                    <!-- Calendar Header (Month navigation) -->
+                    <div
+                        class="flex flex-col sm:flex-row justify-between items-center bg-stone-50 p-4 rounded-2xl border border-stone-100 gap-3">
+                        <div class="flex items-center gap-2">
+                            <button onclick="window.prevCalendarMonth()"
+                                class="p-2 hover:bg-stone-200/60 rounded-lg transition-colors">
+                                <i data-lucide="chevron-left" class="w-4 h-4 text-stone-700"></i>
+                            </button>
+                            <h3 id="calendar-month-year"
+                                class="font-bold text-stone-800 text-sm min-w-[140px] text-center font-kanit">มกราคม
+                                2569</h3>
+                            <button onclick="window.nextCalendarMonth()"
+                                class="p-2 hover:bg-stone-200/60 rounded-lg transition-colors">
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-stone-700"></i>
+                            </button>
+                        </div>
+                        <div class="text-[11px] text-stone-400 font-light italic">
+                            *คลิกที่ชื่อรุ่นกิจกรรมเพื่อดูรายละเอียดหลักสูตร
+                        </div>
+                    </div>
+                    <!-- Calendar Grid -->
+                    <div class="border border-stone-200 rounded-2xl overflow-hidden bg-stone-50">
+                        <div
+                            class="grid grid-cols-7 bg-stone-100 text-stone-700 text-center font-bold text-xs py-2.5 border-b border-stone-200">
+                            <div class="text-rose-600">อา.</div>
+                            <div>จ.</div>
+                            <div>อ.</div>
+                            <div>พ.</div>
+                            <div>พฤ.</div>
+                            <div>ศ.</div>
+                            <div class="text-indigo-600">ส.</div>
+                        </div>
+                        <div id="calendar-days-grid" class="grid grid-cols-7 gap-px bg-stone-200">
+                            <!-- Dynamic days loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination Footer for Dashboard Batches -->
+                <div id="db-pagination-footer"
+                    class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-stone-200 text-stone-600 text-xs mt-3">
+                    <div class="flex items-center gap-1">
+                        <span>จำนวนข้อมูลทั้งหมด:</span>
+                        <span id="db-pagination-total" class="font-bold text-stone-800">0</span>
+                        <span>รายการ</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <span>แสดงผล:</span>
+                            <select id="db-pagination-limit" onchange="window.changeDbLimit()"
+                                class="bg-stone-50 border border-stone-200 rounded-lg p-1.5 outline-none focus:ring-2 focus:ring-blue-500/20 text-xs font-medium">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50" selected>50</option>
+                                <option value="100">100</option>
+                            </select>
+                            <span>รายการ/หน้า</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button id="db-pagination-prev" onclick="window.prevDbPage()" disabled
+                                class="p-2 bg-stone-100 hover:bg-stone-200 disabled:opacity-50 disabled:hover:bg-stone-100 rounded-lg text-stone-700 transition-colors flex items-center justify-center">
+                                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                            </button>
+                            <span class="font-medium">หน้า <span id="db-pagination-current">1</span> / <span
+                                    id="db-pagination-pages">1</span></span>
+                            <button id="db-pagination-next" onclick="window.nextDbPage()" disabled
+                                class="p-2 bg-stone-100 hover:bg-stone-200 disabled:opacity-50 disabled:hover:bg-stone-100 rounded-lg text-stone-700 transition-colors flex items-center justify-center">
+                                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: EMPLOYEES (Employee Directory) -->
+        <section id="section-employees" class="content-section hidden fade-in">
+            <div
+                class="bg-white rounded-[20px] shadow-sm border border-stone-200 p-6 flex flex-col h-[78vh] overflow-hidden">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div>
+                        <h2 class="text-lg font-bold text-stone-800 flex items-center gap-2">
+                            <span class="w-2.5 h-6 bg-emerald-500 rounded-full"></span> ฐานข้อมูลพนักงานส่วนกลาง
+                        </h2>
+                        <p class="text-stone-400 text-xs mt-1 font-light">จัดการรายชื่อพนักงาน ตำแหน่ง และสาขาปฏิบัติงาน
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2.5 w-full md:w-auto">
+                        <!-- Delete Employee Data button -->
+                        <button onclick="window.openClearEmployeesModal()"
+                            class="flex items-center justify-center gap-2 px-4 py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-medium shadow-md transition-all">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i> ลบข้อมูล
+                        </button>
+                        <!-- Excel Upload Input Button -->
+                        <label
+                            class="flex items-center justify-center gap-2 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-medium cursor-pointer shadow-md transition-all">
+                            <i data-lucide="file-spreadsheet" class="w-4 h-4"></i> นำเข้า Excel/CSV
+                            <input type="file" id="excel-upload-input" accept=".xlsx, .xls, .csv" class="hidden"
+                                onchange="window.importEmployeeExcel(event)">
+                        </label>
+                        <button onclick="window.openEmployeeModal()"
+                            class="flex items-center justify-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-medium shadow-md transition-all">
+                            <i data-lucide="user-plus" class="w-4 h-4"></i> เพิ่มพนักงาน (Manual)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Searching Bar -->
+                <div class="mb-4">
+                    <div class="relative w-full md:w-80">
+                        <i data-lucide="search"
+                            class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-stone-400"></i>
+                        <input type="text" id="employee-search-bar" oninput="searchEmployees()"
+                            placeholder="ค้นหารหัสพนักงาน, ชื่อ, สาขา หรือ RH..."
+                            class="w-full pl-9 pr-4 py-2 bg-stone-50 border border-stone-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-500/20">
+                    </div>
+                </div>
+
+                <!-- Employees Table Container -->
+                <div class="overflow-y-auto flex-1 no-scrollbar rounded-table-container">
+                    <table class="w-full table-auto">
+                        <thead class="sticky top-0 z-10">
+                            <tr>
+                                <th class="text-center">รหัสพนักงาน (empID)</th>
+                                <th class="text-left">ชื่อ-นามสกุล (empName)</th>
+                                <th class="text-left">ตำแหน่ง (empPosition)</th>
+                                <th class="text-left">สาขา (empBranch)</th>
+                                <th class="text-center">โซน (empZone)</th>
+                                <th class="text-center">RH (empRH)</th>
+                                <th class="text-center">จัดการ</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-employees-body">
+                            <tr>
+                                <td colspan="7" class="text-center py-10 text-stone-400 italic text-xs">
+                                    กำลังโหลดฐานข้อมูลพนักงาน...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination Footer for Employees -->
+                <div
+                    class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-stone-200 text-stone-600 text-xs mt-3">
+                    <div class="flex items-center gap-1">
+                        <span>จำนวนข้อมูลทั้งหมด:</span>
+                        <span id="emp-pagination-total" class="font-bold text-stone-800">0</span>
+                        <span>รายการ</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <span>แสดงผล:</span>
+                            <select id="emp-pagination-limit" onchange="window.changeEmpLimit()"
+                                class="bg-stone-50 border border-stone-200 rounded-lg p-1.5 outline-none focus:ring-2 focus:ring-blue-500/20 text-xs font-medium">
+                                <option value="10">10</option>
+                                <option value="20" selected>20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                            <span>รายการ/หน้า</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button id="emp-pagination-prev" onclick="window.prevEmpPage()" disabled
+                                class="p-2 bg-stone-100 hover:bg-stone-200 disabled:opacity-50 disabled:hover:bg-stone-100 rounded-lg text-stone-700 transition-colors flex items-center justify-center">
+                                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                            </button>
+                            <span class="font-medium">หน้า <span id="emp-pagination-current">1</span> / <span
+                                    id="emp-pagination-pages">1</span></span>
+                            <button id="emp-pagination-next" onclick="window.nextEmpPage()" disabled
+                                class="p-2 bg-stone-100 hover:bg-stone-200 disabled:opacity-50 disabled:hover:bg-stone-100 rounded-lg text-stone-700 transition-colors flex items-center justify-center">
+                                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: ATTENDEES (Central Register Panel) -->
+        <section id="section-attendees" class="content-section hidden fade-in">
+            <div
+                class="bg-white rounded-[20px] shadow-sm border border-stone-200 p-6 flex flex-col h-[78vh] overflow-hidden">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div>
+                        <h2 class="text-lg font-bold text-stone-800 flex items-center gap-2">
+                            <span class="w-2.5 h-6 bg-indigo-500 rounded-full"></span> ระบบจัดการข้อมูลและทะเบียนผู้อบรม
+                        </h2>
+                        <p class="text-stone-400 text-xs mt-1 font-light">ลงทะเบียนผู้อบรม ระบุเลขห้องพัก
+                            กำหนดวันเช็คอิน/เช็คเอาท์รายบุคคล</p>
+                    </div>
+                </div>
+
+                <!-- Filters section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <label class="block text-xs font-bold text-stone-500 mb-1.5 ml-1">1. เลือกหลักสูตรหลัก
+                            (MainCourse)</label>
+                        <select id="attendee-course-select" onchange="onAttendeeCourseSelected()"
+                            class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-500/20">
+                            <option value="">-- เลือกหลักสูตรหลัก --</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-stone-500 mb-1.5 ml-1">2. เลือกรุ่นที่เปิดอบรม
+                            (Course Batch)</label>
+                        <select id="attendee-batch-select" onchange="onAttendeeBatchSelected()"
+                            class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-500/20"
+                            disabled>
+                            <option value="">-- เลือกรุ่นการอบรม --</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Attendee List table header actions -->
+                <div id="attendee-list-header"
+                    class="hidden flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4 fade-in">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 w-full md:w-auto">
+                        <h3 class="text-sm font-bold text-stone-700 flex items-center gap-1.5 whitespace-nowrap">
+                            <i data-lucide="users-round" class="w-4.5 h-4.5 text-stone-400"></i> รายชื่อผู้อบรมในรุ่นนี้
+                            (<span id="attendee-count">0</span> คน)
+                        </h3>
+                        <!-- Search input box for Attendees -->
+                        <div class="relative w-full md:w-64">
+                            <i data-lucide="search"
+                                class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-stone-400"></i>
+                            <input type="text" id="attendee-search-bar" oninput="window.searchAttendeesList()"
+                                placeholder="ค้นหารหัส หรือ ชื่อ-นามสกุล..."
+                                class="w-full pl-9 pr-4 py-2 bg-stone-50 border border-stone-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-500/20">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2.5 w-full md:w-auto justify-end">
+                        <!-- Clear Attendees button -->
+                        <button onclick="window.openClearAttendeesModal()" id="btn-clear-attendees"
+                            class="flex items-center justify-center gap-1.5 px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-medium shadow-md transition-all">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i> ลบผู้อบรม
+                        </button>
+                        <!-- CSV Upload button -->
+                        <label
+                            class="flex items-center justify-center gap-1.5 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-medium cursor-pointer shadow-md transition-all">
+                            <i data-lucide="file-spreadsheet" class="w-4 h-4"></i> อัปโหลด CSV
+                            <input type="file" id="attendee-csv-upload" accept=".csv" class="hidden"
+                                onchange="window.importAttendeeCSV(event)">
+                        </label>
+                        <!-- Manual Registration button -->
+                        <button onclick="window.openRegistrationModal()"
+                            class="flex items-center justify-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-medium shadow-md transition-all">
+                            <i data-lucide="plus" class="w-4 h-4"></i> ลงทะเบียนพนักงานเข้ารุ่นนี้
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Registration Attendance Table -->
+                <div class="overflow-y-auto flex-1 no-scrollbar rounded-table-container">
+                    <table class="w-full table-auto">
+                        <thead class="sticky top-0 z-10">
+                            <tr>
+                                <th class="text-left select-none p-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="cursor-pointer hover:underline flex items-center gap-0.5"
+                                            onclick="window.sortAttendees('empID')">
+                                            <span>รหัส</span>
+                                            <span id="sort-icon-empID"><i data-lucide="chevrons-up-down"
+                                                    class="w-3 h-3 text-stone-400"></i></span>
+                                        </span>
+                                        <span class="text-stone-300">/</span>
+                                        <span class="cursor-pointer hover:underline flex items-center gap-0.5"
+                                            onclick="window.sortAttendees('empName')">
+                                            <span>ชื่อ-นามสกุล</span>
+                                            <span id="sort-icon-empName"><i data-lucide="chevrons-up-down"
+                                                    class="w-3 h-3 text-stone-400"></i></span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th class="text-left p-3">ตำแหน่ง/สาขา</th>
+                                <th class="text-left p-3">เขต/ภาค</th>
+                                <th class="text-center cursor-pointer select-none hover:bg-stone-300 transition-colors p-3"
+                                    onclick="window.sortAttendees('room')">
+                                    <div class="flex items-center justify-center gap-1 mx-auto">
+                                        <span>สิทธิ์ห้องพัก</span>
+                                        <span id="sort-icon-room"><i data-lucide="chevrons-up-down"
+                                                class="w-3 h-3 text-stone-400"></i></span>
+                                    </div>
+                                </th>
+                                <th class="text-center p-3">เริ่มต้น/สิ้นสุด</th>
+                                <th class="text-center select-none p-3">
+                                    <div class="flex items-center justify-center gap-2 mx-auto">
+                                        <span class="cursor-pointer hover:underline flex items-center gap-0.5"
+                                            onclick="sortAttendees('totalDays')">
+                                            <span>วันที่พัก</span>
+                                            <span id="sort-icon-totalDays"><i data-lucide="chevrons-up-down"
+                                                    class="w-3 h-3 text-stone-400"></i></span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th class="text-center select-none p-3">
+                                    <div class="flex items-center justify-center gap-2 mx-auto">
+                                        <span class="cursor-pointer hover:underline flex items-center gap-0.5"
+                                            onclick="sortAttendees('RoomNumber')">
+                                            <span>เลขห้อง</span>
+                                            <span id="sort-icon-RoomNumber"><i data-lucide="chevrons-up-down"
+                                                    class="w-3 h-3 text-stone-400"></i></span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th class="text-center p-3">จัดการ</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-attendees-body">
+                            <tr>
+                                <td colspan="8" class="text-center py-10 text-stone-400 italic text-xs">
+                                    กรุณาเลือกวิชาหลักและรุ่นอบรมเพื่อจัดการข้อมูล</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination Footer for Attendees -->
+                <div
+                    class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-stone-200 text-stone-600 text-xs mt-3">
+                    <div class="flex items-center gap-1">
+                        <span>จำนวนข้อมูลทั้งหมด:</span>
+                        <span id="att-pagination-total" class="font-bold text-stone-800">0</span>
+                        <span>รายการ</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <span>แสดงผล:</span>
+                            <select id="att-pagination-limit" onchange="window.changeAttLimit()"
+                                class="bg-stone-50 border border-stone-200 rounded-lg p-1.5 outline-none focus:ring-2 focus:ring-blue-500/20 text-xs font-medium">
+                                <option value="10">10</option>
+                                <option value="20" selected>20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                            <span>รายการ/หน้า</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button id="att-pagination-prev" onclick="window.prevAttPage()" disabled
+                                class="p-2 bg-stone-100 hover:bg-stone-200 disabled:opacity-50 disabled:hover:bg-stone-100 rounded-lg text-stone-700 transition-colors flex items-center justify-center">
+                                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                            </button>
+                            <span class="font-medium">หน้า <span id="att-pagination-current">1</span> / <span
+                                    id="att-pagination-pages">1</span></span>
+                            <button id="att-pagination-next" onclick="window.nextAttPage()" disabled
+                                class="p-2 bg-stone-100 hover:bg-stone-200 disabled:opacity-50 disabled:hover:bg-stone-100 rounded-lg text-stone-700 transition-colors flex items-center justify-center">
+                                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: MENUS (Course & Batch column layout) -->
+        <section id="section-menus" class="content-section hidden fade-in">
+            <div class="flex flex-col lg:flex-row gap-6 h-[78vh] w-full">
+
+                <!-- COLUMN 1: LEVEL 1 (MainCourse) - Width 40% -->
+                <div
+                    class="w-full lg:w-[40%] bg-white rounded-[20px] shadow-sm border border-stone-200 p-5 flex flex-col overflow-hidden">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-base font-bold text-stone-800 flex items-center gap-2">
+                            <span class="w-2 h-6 bg-blue-600 rounded-full"></span> MainCourse
+                        </h2>
+                        <button onclick="window.openModal('add_group', 1)"
+                            class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition-all shadow-md">
+                            <i data-lucide="plus" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                    <div class="overflow-y-auto flex-1 no-scrollbar rounded-table-container">
+                        <table class="w-full table-auto">
+                            <thead class="sticky top-0 z-10">
+                                <tr>
+                                    <th class="text-center">Code</th>
+                                    <th class="text-left">ชื่อหลักสูตร</th>
+                                    <th class="text-center">สถานะ</th>
+                                    <th class="text-center">จัดการ</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-l1-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: Course รุ่นที่อบรม - Width 60% -->
+                <div
+                    class="w-full lg:w-[60%] bg-white rounded-[20px] shadow-sm border border-stone-200 p-5 flex flex-col overflow-hidden">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-base font-bold text-stone-800 flex items-center gap-2">
+                            <span class="w-2 h-6 bg-indigo-500 rounded-full"></span> Course รุ่นที่อบรม
+                        </h2>
+                        <button id="btn-add-l2" onclick="window.openModal('add_group', 2)"
+                            class="w-8 h-8 bg-indigo-500 text-white rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all shadow-md opacity-50 cursor-not-allowed"
+                            disabled>
+                            <i data-lucide="plus" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                    <div class="overflow-y-auto flex-1 no-scrollbar rounded-table-container">
+                        <table class="w-full table-auto">
+                            <thead class="sticky top-0 z-10">
+                                <tr>
+                                    <th class="text-center">รุ่นที่</th>
+                                    <th class="text-left">ห้องอบรม</th>
+                                    <th class="text-center">เริ่ม-สิ้นสุด</th>
+                                    <th class="text-center">รวม</th>
+                                    <th class="text-center">พนักงาน</th>
+                                    <th class="text-center">จัดการ</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-l2-body">
+                                <tr>
+                                    <td colspan="6" class="text-center py-10 text-stone-400 italic text-xs">
+                                        เลือกหลักสูตรหลักก่อน</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- LIGHTBOX: EMPLOYEE ADD/EDIT MODAL -->
+    <div id="employee-modal" class="fixed inset-0 modal-bg hidden z-[120] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-[25px] shadow-2xl w-[95%] lg:w-[45%] max-w-xl overflow-hidden fade-in border border-stone-200">
+            <div class="p-6 border-b border-emerald-700 flex justify-between items-center bg-[#10b981]">
+                <h3 id="employee-modal-title" class="text-lg font-bold text-white">จัดการข้อมูลพนักงาน</h3>
+                <button onclick="window.closeEmployeeModal()"
+                    class="text-white/80 hover:text-white transition-colors text-xl font-bold">✕</button>
+            </div>
+
+            <form id="employee-form" class="p-8 space-y-4 text-[13px] font-normal"
+                onsubmit="window.saveEmployee(event)">
+                <input type="hidden" id="emp-edit-mode">
+                <div>
+                    <label class="block text-stone-500 font-normal mb-1">รหัสพนักงาน (empID)</label>
+                    <input type="text" id="form-empID" name="empID"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500/20"
+                        required placeholder="เช่น 50037...">
+                </div>
+                <div>
+                    <label class="block text-stone-500 font-normal mb-1">ชื่อ-นามสกุล (empName)</label>
+                    <input type="text" id="form-empName" name="empName"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500/20"
+                        required placeholder="ระบุชื่อและนามสกุล...">
+                </div>
+                <div>
+                    <label class="block text-stone-500 font-normal mb-1">ตำแหน่ง (empPosition)</label>
+                    <input type="text" id="form-empPosition" name="empPosition"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500/20"
+                        required placeholder="ระบุตำแหน่งปฏิบัติงาน เช่น ผู้จัดการสาขา...">
+                </div>
+                <div>
+                    <label class="block text-stone-500 font-normal mb-1">สาขา (empBranch)</label>
+                    <input type="text" id="form-empBranch" name="empBranch"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500/20"
+                        required placeholder="ระบุสังกัดสาขา...">
+                </div>
+                <div>
+                    <label class="block text-stone-500 font-normal mb-1">โซน (empZone)</label>
+                    <input type="text" id="form-empZone" name="empZone"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500/20"
+                        required placeholder="เช่น จตุจักร, ธนบุรี, พัทยา...">
+                </div>
+                <div>
+                    <label class="block text-stone-500 font-normal mb-1">RH (empRH)</label>
+                    <input type="text" id="form-empRH" name="empRH"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-emerald-500/20"
+                        placeholder="ระบุรหัส RH...">
+                </div>
+
+                <div class="flex gap-3 pt-4">
+                    <button type="button" onclick="window.closeEmployeeModal()"
+                        class="flex-1 py-3 bg-stone-100 text-stone-600 rounded-xl hover:bg-stone-200">ยกเลิก</button>
+                    <button type="submit"
+                        class="flex-1 py-3 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 shadow-md">บันทึกพนักงาน</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX: CHOOSE EMPLOYEE TO REGISTER -->
+    <div id="register-search-modal" class="fixed inset-0 modal-bg hidden z-[130] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-[25px] shadow-2xl w-[95%] lg:w-[50%] max-w-2xl overflow-hidden fade-in border border-stone-200 flex flex-col h-[70vh]">
+            <div class="p-6 border-b border-blue-700 flex justify-between items-center bg-[#0056ff]">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <i data-lucide="user-search" class="w-5 h-5"></i> เลือกพนักงานเพื่อลงทะเบียน
+                </h3>
+                <button onclick="window.closeRegistrationModal()"
+                    class="text-white/80 hover:text-white transition-colors text-xl font-bold">✕</button>
+            </div>
+
+            <div class="p-6 flex flex-col flex-1 overflow-hidden space-y-4">
+                <div class="relative w-full">
+                    <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-stone-400"></i>
+                    <input type="text" id="reg-search-input" oninput="window.searchRegistrationEmployees()"
+                        placeholder="พิมพ์ชื่อ, รหัสพนักงาน หรือสาขา เพื่อค้นหา..."
+                        class="w-full pl-9 pr-4 py-2.5 bg-stone-50 border border-stone-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-500/20">
+                </div>
+
+                <!-- Scrollable list of matches -->
+                <div class="flex-1 overflow-y-auto rounded-xl border border-stone-100 divide-y divide-stone-100 no-scrollbar"
+                    id="reg-search-results">
+                    <!-- Dynamic Search items loaded here -->
+                </div>
+            </div>
+
+            <div class="p-6 border-t border-stone-100 bg-stone-50 flex justify-end">
+                <button onclick="window.closeRegistrationModal()"
+                    class="px-5 py-2.5 bg-stone-200 text-stone-600 rounded-xl text-[13px]">ยกเลิก</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX: EDIT INDIVIDUAL REGISTRATION ATTENDEE -->
+    <div id="edit-reg-modal" class="fixed inset-0 modal-bg hidden z-[140] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-[25px] shadow-2xl w-[95%] lg:w-[40%] max-w-md overflow-hidden fade-in border border-stone-200">
+            <div class="p-6 border-b border-blue-700 flex justify-between items-center bg-[#0056ff]">
+                <h3 class="text-lg font-bold text-white">แก้ไขประวัติข้อมูลลงทะเบียน</h3>
+                <button onclick="window.closeEditRegModal()"
+                    class="text-white/80 hover:text-white transition-colors text-xl font-bold">✕</button>
+            </div>
+
+            <form id="edit-reg-form" class="p-8 space-y-4 text-[13px] font-normal"
+                onsubmit="window.saveRegistrationDetails(event)">
+                <input type="hidden" id="edit-reg-id">
+
+                <div>
+                    <label class="block text-stone-400 mb-1">พนักงาน</label>
+                    <div id="edit-reg-empname" class="font-bold text-stone-800 text-sm bg-stone-50 p-3 rounded-xl">-
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-stone-500 mb-1">หลักสูตรหลัก (MainCourse)</label>
+                        <select id="edit-reg-maincourse" name="mainCourse" onchange="window.onEditRegCourseSelected()"
+                            class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/20 font-medium">
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-stone-500 mb-1">รุ่นที่อบรม (Course Batch)</label>
+                        <select id="edit-reg-batch" name="courseID"
+                            class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/20 font-medium">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-stone-500 mb-1">สิทธิ์ห้องพัก (room)</label>
+                        <input type="text" id="reg-room" name="room"
+                            class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/20 font-bold"
+                            placeholder="เช่น 1 หรือ 2...">
+                    </div>
+                    <div>
+                        <label class="block text-stone-500 mb-1">เลขห้องพัก (RoomNumber)</label>
+                        <input type="text" id="reg-RoomNumber" name="RoomNumber"
+                            class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/20 font-bold"
+                            placeholder="เช่น 201...">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-stone-500 mb-1">เช็คอิน (checkIN)</label>
+                        <input type="date" id="reg-checkIN" name="checkIN" onchange="window.calculateRegistrationDays()"
+                            class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/20">
+                    </div>
+                    <div>
+                        <label class="block text-stone-500 mb-1">เช็คเอาท์ (checkOUT)</label>
+                        <input type="date" id="reg-checkOUT" name="checkOUT"
+                            onchange="window.calculateRegistrationDays()"
+                            class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/20">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-stone-500 mb-1">รวมวันเข้าพัก (totalDays)</label>
+                    <input type="number" id="reg-totalDays" name="totalDays"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/20 font-bold"
+                        placeholder="ระบบจะคำนวณอัตโนมัติเมื่อเลือกวันที่">
+                </div>
+
+                <div>
+                    <label class="block text-stone-500 mb-1">บันทึก/ประวัติการแก้ไข (memo)</label>
+                    <textarea id="reg-memo" name="memo" rows="3"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/20 text-xs text-stone-600 font-normal"
+                        placeholder="ประวัติการแก้ไขจะถูกบันทึกที่นี่โดยอัตโนมัติ..."></textarea>
+                </div>
+
+                <div class="flex gap-3 pt-4">
+                    <button type="button" onclick="window.closeEditRegModal()"
+                        class="flex-1 py-3 bg-stone-100 text-stone-600 rounded-xl">ยกเลิก</button>
+                    <button type="submit"
+                        class="flex-1 py-3 bg-[#0056ff] text-white rounded-xl shadow-md">บันทึกข้อมูล</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX: ADD/EDIT MODAL (Width adjusted to 60%) -->
+    <div id="unified-modal" class="fixed inset-0 modal-bg hidden z-[100] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-[25px] shadow-2xl w-[95%] lg:w-[60%] max-w-4xl overflow-hidden fade-in border border-stone-200">
+            <div class="p-6 border-b border-blue-700 flex justify-between items-center bg-[#0056ff]">
+                <h3 id="modal-title" class="text-lg font-bold text-white">จัดการข้อมูล</h3>
+                <button onclick="window.closeModal()"
+                    class="text-white/80 hover:text-white transition-colors text-xl font-bold">✕</button>
+            </div>
+
+            <form id="group-form" class="p-8 space-y-6" onsubmit="window.saveGroup(event)">
+                <input type="hidden" id="edit-id">
+                <input type="hidden" id="field-level" name="level">
+                <input type="hidden" id="field-parentId" name="parentId">
+
+                <div id="form-content" class="space-y-4">
+                    <!-- Dynamic fields styled as 13px font-normal -->
+                </div>
+
+                <div id="modal-actions" class="flex gap-3 pt-2"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX: CLEAR ALL BATCH ATTENDEES CONFIRMATION -->
+    <div id="clear-attendees-modal" class="fixed inset-0 modal-bg hidden z-[150] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-[25px] shadow-2xl w-[95%] lg:w-[35%] max-w-md overflow-hidden fade-in border border-stone-200">
+            <div class="p-6 border-b border-red-700 flex justify-between items-center bg-red-600">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <i data-lucide="alert-triangle" class="w-5 h-5"></i> ยืนยันการลบผู้อบรมทั้งหมด
+                </h3>
+                <button onclick="window.closeClearAttendeesModal()"
+                    class="text-white/80 hover:text-white transition-colors text-xl font-bold">✕</button>
+            </div>
+
+            <div class="p-6 space-y-4 text-[13px] font-normal">
+                <p class="text-stone-600">
+                    คุณกำลังจะลบรายชื่อผู้อบรมทั้งหมดในรุ่นการอบรมนี้
+                    การดำเนินการนี้จะลบข้อมูลลงทะเบียนของพนักงานทุกคนในรุ่นนี้ออกจากระบบและไม่สามารถย้อนกลับได้
+                </p>
+                <div class="space-y-2">
+                    <label class="block text-stone-500 font-medium">กรุณาพิมพ์ <span
+                            class="font-bold text-red-600">Confirm</span> เพื่อยืนยันการลบ:</label>
+                    <input type="text" id="clear-confirm-input" oninput="window.checkClearConfirmText()"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-red-500/20 text-center font-bold"
+                        placeholder="Confirm">
+                </div>
+            </div>
+
+            <div class="p-6 border-t border-stone-100 bg-stone-50 flex gap-3">
+                <button onclick="window.closeClearAttendeesModal()"
+                    class="flex-1 py-3 bg-stone-100 text-stone-600 rounded-xl text-[13px] hover:bg-stone-200">ยกเลิก</button>
+                <button id="clear-confirm-btn" onclick="window.executeClearAttendees()" disabled
+                    class="flex-1 py-3 bg-red-600 text-white rounded-xl text-[13px] hover:bg-red-700 shadow-md disabled:opacity-50 disabled:cursor-not-allowed">ยืนยัน</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX: CLEAR ALL EMPLOYEES CONFIRMATION -->
+    <div id="clear-employees-modal" class="fixed inset-0 modal-bg hidden z-[150] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-[25px] shadow-2xl w-[95%] lg:w-[35%] max-w-md overflow-hidden fade-in border border-stone-200">
+            <div class="p-6 border-b border-red-700 flex justify-between items-center bg-red-600">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <i data-lucide="alert-triangle" class="w-5 h-5"></i> ยืนยันการลบข้อมูลพนักงานทั้งหมด
+                </h3>
+                <button onclick="window.closeClearEmployeesModal()"
+                    class="text-white/80 hover:text-white transition-colors text-xl font-bold">✕</button>
+            </div>
+
+            <div class="p-6 space-y-4 text-[13px] font-normal">
+                <p class="text-stone-600">
+                    คุณกำลังจะลบข้อมูลพนักงานทั้งหมดในฐานข้อมูลพนักงานส่วนกลาง
+                    การดำเนินการนี้จะลบรายชื่อพนักงานทุกคนออกจากระบบ รวมถึงข้อมูลการลงทะเบียนทั้งหมด
+                    และไม่สามารถย้อนกลับได้
+                </p>
+                <div class="space-y-2">
+                    <label class="block text-stone-500 font-medium">กรุณาพิมพ์ <span
+                            class="font-bold text-red-600">Confirm</span> เพื่อยืนยันการลบ:</label>
+                    <input type="text" id="clear-emp-confirm-input" oninput="window.checkClearEmpConfirmText()"
+                        class="w-full p-3 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-red-500/20 text-center font-bold"
+                        placeholder="Confirm">
+                </div>
+            </div>
+
+            <div class="p-6 border-t border-stone-100 bg-stone-50 flex gap-3">
+                <button onclick="window.closeClearEmployeesModal()"
+                    class="flex-1 py-3 bg-stone-100 text-stone-600 rounded-xl text-[13px] hover:bg-stone-200">ยกเลิก</button>
+                <button id="clear-emp-confirm-btn" onclick="window.executeClearEmployees()" disabled
+                    class="flex-1 py-3 bg-red-600 text-white rounded-xl text-[13px] hover:bg-red-700 shadow-md disabled:opacity-50 disabled:cursor-not-allowed">ยืนยัน</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX: VIEW COURSE BATCH DETAILS (Width adjusted to 85%) -->
+    <div id="view-modal" class="fixed inset-0 modal-bg hidden z-[110] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-[25px] shadow-2xl w-[95%] lg:w-[85%] max-w-7xl overflow-hidden fade-in border border-stone-200 flex flex-col h-[85vh]">
+            <div class="p-6 border-b border-emerald-700 flex justify-between items-center bg-[#10b981]">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <i data-lucide="eye" class="w-5 h-5"></i> รายละเอียดข้อมูลรุ่นกิจกรรมทั้งหมด
+                </h3>
+                <button onclick="window.closeViewModal()"
+                    class="text-white/80 hover:text-white transition-colors text-xl font-bold">✕</button>
+            </div>
+
+            <div class="p-8 overflow-y-auto flex-1 space-y-6" id="view-modal-content">
+                <!-- Dynamic content loaded via JS -->
+            </div>
+
+            <div class="p-6 border-t border-stone-100 bg-stone-50 flex justify-end">
+                <button onclick="window.closeViewModal()"
+                    class="px-6 py-2.5 bg-stone-200 hover:bg-stone-300 text-stone-700 rounded-xl font-medium text-[13px] transition-all">ปิดหน้าต่าง</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js?v=2.0"></script>
+</body>
+
+</html>
