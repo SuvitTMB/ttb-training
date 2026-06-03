@@ -2375,7 +2375,23 @@ const init = async () => {
             await signInAnonymously(auth);
         }
         navigate('dashboard'); // Default landing page
-    } catch (error) { console.error(error); }
+    } catch (error) {
+        console.error("Firebase Initialization Error:", error);
+        const status = document.getElementById('connection-status');
+        if (status) {
+            status.innerText = "CONNECTION ERROR";
+            status.classList.remove('text-stone-400');
+            status.classList.add('text-rose-500');
+        }
+        
+        let errorMsg = "ไม่สามารถเชื่อมต่อฐานข้อมูลได้: " + error.message;
+        if (error.code === 'auth/unauthorized-domain') {
+            errorMsg += "\n\nสาเหตุ: โดเมนนี้ยังไม่ได้รับอนุญาตใน Firebase Console\n\nวิธีแก้ไข:\n1. ไปที่ Firebase Console\n2. เลือกโปรเจกต์ faifah-ttb\n3. ไปที่ Authentication -> Settings -> Authorized Domains\n4. เพิ่มโดเมน '" + window.location.hostname + "'";
+        } else if (error.code === 'auth/operation-not-allowed') {
+            errorMsg += "\n\nสาเหตุ: ยังไม่ได้เปิดใช้งานการล็อกอินแบบไม่ระบุตัวตน (Anonymous Sign-in)\n\nวิธีแก้ไข:\n1. ไปที่ Firebase Console -> Authentication -> Sign-in method\n2. เปิดใช้งาน Anonymous Sign-in";
+        }
+        alert(errorMsg);
+    }
 };
 
 // Employee Pagination Helpers
