@@ -1,1 +1,2563 @@
-function _0x4fc1(_0x3ce8c7,_0x2ead26){_0x3ce8c7=_0x3ce8c7-0x110;const _0x51f077=_0x51f0();let _0x4fc110=_0x51f077[_0x3ce8c7];return _0x4fc110;}(function(_0x4f6d17,_0x137939){const _0x1aadee=_0x4fc1,_0x4159e2=_0x4f6d17();while(!![]){try{const _0x1ae62b=-parseInt(_0x1aadee(0x16c))/0x1+parseInt(_0x1aadee(0x22f))/0x2*(-parseInt(_0x1aadee(0x200))/0x3)+-parseInt(_0x1aadee(0x235))/0x4+parseInt(_0x1aadee(0x20d))/0x5*(-parseInt(_0x1aadee(0x215))/0x6)+-parseInt(_0x1aadee(0x223))/0x7*(parseInt(_0x1aadee(0x12f))/0x8)+parseInt(_0x1aadee(0x24c))/0x9*(parseInt(_0x1aadee(0x14b))/0xa)+parseInt(_0x1aadee(0x1d0))/0xb;if(_0x1ae62b===_0x137939)break;else _0x4159e2['push'](_0x4159e2['shift']());}catch(_0x20afb9){_0x4159e2['push'](_0x4159e2['shift']());}}}(_0x51f0,0x8055c),(function(){const _0x164cd1=_0x4fc1,_0x35155e={'rounds':'plan_rounds','activityItems':'plan_activity_items','users':'plan_user','products':_0x164cd1(0x24a),'portfolioOverview':_0x164cd1(0x11b),'portfolioSets':_0x164cd1(0x23c),'customerDiagnosis':_0x164cd1(0x22c)},_0x33a1ff={'session':_0x164cd1(0x1e9),'users':_0x164cd1(0x155),'portfolioOverview':_0x164cd1(0x23b),'portfolioSets':_0x164cd1(0x2e0),'customerDiagnosis':_0x164cd1(0x282),'adminRounds':'actionplan2026_rounds','adminActivityItems':'actionplan2026_ports','adminProducts':_0x164cd1(0x2da)},_0x47e87e={'PORTFOLIO_PLANNING':_0x164cd1(0x119),'CUSTOMER_DIAGNOSIS':_0x164cd1(0x2d4)},_0x1ffc6d={'db':null,'ready':![]},_0x19ff2c={'activeRound':null,'activityItems':[],'currentUser':null,'activeTabId':'','unsubscribeActivityItems':null,'portfolioTabState':{},'bootcampTabState':{},'products':[]};function _0x1e535e(){const _0x2d02cd=_0x164cd1;return Boolean(window['firebase']&&window[_0x2d02cd(0x1f6)]&&window['firebaseConfig'][_0x2d02cd(0x1c6)]);}function _0x25a7e3(){const _0x3b4f2b=_0x164cd1;if(!_0x1e535e()){_0x1ffc6d[_0x3b4f2b(0x292)]=![],_0x1ffc6d['db']=null;return;}try{!window[_0x3b4f2b(0x19e)][_0x3b4f2b(0x22d)][_0x3b4f2b(0x2ec)]&&window[_0x3b4f2b(0x19e)]['initializeApp'](window[_0x3b4f2b(0x1f6)]),_0x1ffc6d['db']=window[_0x3b4f2b(0x19e)][_0x3b4f2b(0x216)](),_0x1ffc6d[_0x3b4f2b(0x292)]=!![];}catch(_0x1fea4c){_0x1ffc6d['db']=null,_0x1ffc6d[_0x3b4f2b(0x292)]=![];}}function _0x5b2432(_0x2d853c){const _0x3b8596=_0x164cd1;return String(_0x2d853c)[_0x3b8596(0x232)]('&','&amp;')[_0x3b8596(0x232)]('<','&lt;')[_0x3b8596(0x232)]('>',_0x3b8596(0x1cc))[_0x3b8596(0x232)]('\x22',_0x3b8596(0x176))[_0x3b8596(0x232)]('\x27',_0x3b8596(0x210));}function _0x5ac9ee(_0x3789bc,_0x4b8a1e){const _0x34497e=_0x164cd1,_0x53e7c1=document['getElementById'](_0x3789bc);_0x53e7c1&&(_0x53e7c1[_0x34497e(0x2e5)]=_0x4b8a1e);}function _0x298e20(_0x333d38,_0x49529e){const _0xb5257b=_0x164cd1,_0x2f0c67=document[_0xb5257b(0x2f5)](_0xb5257b(0x15c));if(!_0x2f0c67)return;const _0x42df0c=_0x49529e===_0xb5257b(0x180)?'bg-rose-600':_0x49529e===_0xb5257b(0x116)?_0xb5257b(0x23f):_0xb5257b(0x1e3),_0x1bbcb0=document[_0xb5257b(0x154)](_0xb5257b(0x2e1));_0x1bbcb0[_0xb5257b(0x21c)]=_0xb5257b(0x15a)+_0x42df0c+_0xb5257b(0x18c),_0x1bbcb0['textContent']=_0x333d38,_0x2f0c67[_0xb5257b(0x2ee)](_0x1bbcb0),window[_0xb5257b(0x1aa)](()=>{const _0x1ee992=_0xb5257b;_0x1bbcb0[_0x1ee992(0x20c)]();},0xc80);}function _0x364e28(_0x351007){const _0x1868bc=_0x164cd1;try{const _0xd80c6d=window[_0x1868bc(0x1f9)][_0x1868bc(0x28f)](_0x351007),_0x2df229=_0xd80c6d?JSON[_0x1868bc(0x1cd)](_0xd80c6d):[];return Array['isArray'](_0x2df229)?_0x2df229:[];}catch(_0xb13d59){return[];}}function _0x1d02e6(_0x56b6ce,_0x40ab0b){const _0x1efd08=_0x164cd1;try{window[_0x1efd08(0x1f9)][_0x1efd08(0x253)](_0x56b6ce,JSON[_0x1efd08(0x2ad)](_0x40ab0b));}catch(_0x506a87){}}function _0x280b1b(_0x88cfb2,_0x2868b7){const _0x1a4e80=_0x164cd1,_0x559c4b={..._0x88cfb2};return Object[_0x1a4e80(0x297)](_0x2868b7)[_0x1a4e80(0x1bb)](_0x496ed8=>{const _0x31da4d=_0x1a4e80,_0x16e4ff=_0x2868b7[_0x496ed8],_0x53b7f0=_0x88cfb2?_0x88cfb2[_0x496ed8]:undefined;_0x16e4ff&&typeof _0x16e4ff==='object'&&!Array['isArray'](_0x16e4ff)&&_0x53b7f0&&typeof _0x53b7f0===_0x31da4d(0x148)&&!Array[_0x31da4d(0x13b)](_0x53b7f0)?_0x559c4b[_0x496ed8]=_0x280b1b(_0x53b7f0,_0x16e4ff):_0x559c4b[_0x496ed8]=_0x16e4ff;}),_0x559c4b;}async function _0x37ceb7(_0x41c636){const _0x3239d4=_0x164cd1;if(!_0x1ffc6d[_0x3239d4(0x292)]||!_0x1ffc6d['db'])return[];const _0x4ec01e=await _0x1ffc6d['db'][_0x3239d4(0x1c5)](_0x41c636)[_0x3239d4(0x25c)]();return _0x4ec01e['docs'][_0x3239d4(0x1d2)](_0x3110b2=>({'id':_0x3110b2['id'],..._0x3110b2['data']()}));}function _0x23170e(_0x21d1ae){const _0x591499=_0x164cd1;try{window[_0x591499(0x1f9)][_0x591499(0x253)](_0x33a1ff[_0x591499(0x17c)],JSON[_0x591499(0x2ad)]({'userId':_0x21d1ae['id'],'roundId':_0x21d1ae[_0x591499(0x29b)],'name':_0x21d1ae['name']}));}catch(_0x1307ff){}}function _0x462360(){const _0x3a88eb=_0x164cd1;try{const _0x23dfbd=window[_0x3a88eb(0x1f9)][_0x3a88eb(0x28f)](_0x33a1ff[_0x3a88eb(0x17c)]);return _0x23dfbd?JSON['parse'](_0x23dfbd):null;}catch(_0x138e4c){return null;}}function _0x1c70c3(){const _0x219731=_0x164cd1;try{window[_0x219731(0x1f9)][_0x219731(0x26b)](_0x33a1ff['session']);}catch(_0x4c2385){}}async function _0x4ba961(_0x3d3f9e,_0x55a18f){const _0x30abe2=_0x164cd1;if(_0x1ffc6d[_0x30abe2(0x292)]&&_0x1ffc6d['db']){const _0x4207c1=await _0x1ffc6d['db'][_0x30abe2(0x1c5)](_0x35155e[_0x30abe2(0x2f2)])[_0x30abe2(0x27e)](_0x30abe2(0x29b),'==',_0x3d3f9e)[_0x30abe2(0x27e)]('name','==',_0x55a18f)[_0x30abe2(0x263)](0x1)[_0x30abe2(0x25c)]();if(!_0x4207c1[_0x30abe2(0x2b9)]){const _0x29b5cd=_0x4207c1[_0x30abe2(0x228)][0x0];return{'id':_0x29b5cd['id'],..._0x29b5cd[_0x30abe2(0x1fc)]()};}return null;}const _0x1149c3=_0x364e28(_0x33a1ff['users']);return _0x1149c3[_0x30abe2(0x1fa)](_0x437d90=>_0x437d90['roundId']===_0x3d3f9e&&_0x437d90[_0x30abe2(0x29a)]===_0x55a18f)||null;}async function _0x303b95(_0x1398b7,_0x4004d8,_0x132c9a){const _0x65c749=_0x164cd1,_0x19acbf={'roundId':_0x1398b7,'roundName':_0x4004d8,'name':_0x132c9a,'registeredAt':Date[_0x65c749(0x2d0)]()};if(_0x1ffc6d[_0x65c749(0x292)]&&_0x1ffc6d['db']){const _0x53f15b=await _0x1ffc6d['db'][_0x65c749(0x1c5)](_0x35155e[_0x65c749(0x2f2)])[_0x65c749(0x1f2)](_0x19acbf);return{'id':_0x53f15b['id'],..._0x19acbf};}const _0x415013={'id':_0x65c749(0x1f4)+Date[_0x65c749(0x2d0)](),..._0x19acbf},_0x3777de=_0x364e28(_0x33a1ff[_0x65c749(0x2f2)]);return _0x3777de[_0x65c749(0x13a)](_0x415013),_0x1d02e6(_0x33a1ff[_0x65c749(0x2f2)],_0x3777de),_0x415013;}async function _0x5ce480(_0x4db6c0){const _0x130daa=_0x164cd1;if(_0x1ffc6d[_0x130daa(0x292)]&&_0x1ffc6d['db']){const _0x316713=await _0x1ffc6d['db'][_0x130daa(0x1c5)](_0x35155e['users'])['doc'](_0x4db6c0)[_0x130daa(0x25c)]();return _0x316713['exists']?{'id':_0x316713['id'],..._0x316713['data']()}:null;}const _0x12bbb1=_0x364e28(_0x33a1ff[_0x130daa(0x2f2)]);return _0x12bbb1[_0x130daa(0x1fa)](_0x13e594=>_0x13e594['id']===_0x4db6c0)||null;}function _0x2967d3(){const _0x54d0cf=_0x164cd1;if(_0x1ffc6d[_0x54d0cf(0x292)]&&_0x1ffc6d['db'])_0x1ffc6d['db'][_0x54d0cf(0x1c5)](_0x35155e[_0x54d0cf(0x12a)])[_0x54d0cf(0x23a)](_0xdc2e9=>{const _0x29f4de=_0x54d0cf,_0x2d38f0=[];_0xdc2e9[_0x29f4de(0x1bb)](_0x12b153=>{const _0x564fac=_0x29f4de;_0x2d38f0[_0x564fac(0x13a)]({'id':_0x12b153['id'],..._0x12b153['data']()});}),_0x267902(_0x2d38f0);},_0x1f4005=>{const _0x59a2d2=_0x54d0cf;console[_0x59a2d2(0x180)](_0x59a2d2(0x166),_0x1f4005);});else{const _0x437cc9=_0x364e28(_0x33a1ff[_0x54d0cf(0x177)]);_0x267902(_0x437cc9),window['addEventListener'](_0x54d0cf(0x29f),_0x1c4cf1=>{const _0x2bc8ae=_0x54d0cf;if(_0x1c4cf1['key']===_0x33a1ff['adminRounds']){const _0x484303=_0x364e28(_0x33a1ff[_0x2bc8ae(0x177)]);_0x267902(_0x484303);}});}}function _0x267902(_0x453a65){const _0x3ff4b5=_0x164cd1,_0x2e6c9d=_0x453a65[_0x3ff4b5(0x144)](_0x428c70=>_0x428c70[_0x3ff4b5(0x2c1)]==='on');_0x19ff2c['activeRound']=_0x2e6c9d[0x0]||null;const _0x42b3b4=document[_0x3ff4b5(0x2f5)]('displayActiveRoundName'),_0x42b3ca=document[_0x3ff4b5(0x2f5)]('selectRegRound'),_0x3c087c=document[_0x3ff4b5(0x2f5)]('regNameContainer'),_0x188229=document[_0x3ff4b5(0x2f5)](_0x3ff4b5(0x16d));if(_0x19ff2c[_0x3ff4b5(0x21f)]){if(_0x42b3b4)_0x42b3b4[_0x3ff4b5(0x299)]=_0x19ff2c[_0x3ff4b5(0x21f)][_0x3ff4b5(0x29a)];if(_0x42b3ca)_0x42b3ca['value']=_0x19ff2c[_0x3ff4b5(0x21f)]['id'];if(_0x3c087c)_0x3c087c[_0x3ff4b5(0x214)][_0x3ff4b5(0x20c)](_0x3ff4b5(0x2c4));if(_0x188229)_0x188229['classList']['remove'](_0x3ff4b5(0x2c4));}else{if(_0x42b3b4)_0x42b3b4[_0x3ff4b5(0x299)]=_0x3ff4b5(0x197);if(_0x42b3ca)_0x42b3ca[_0x3ff4b5(0x2e5)]='';if(_0x3c087c)_0x3c087c[_0x3ff4b5(0x214)]['add'](_0x3ff4b5(0x2c4));if(_0x188229)_0x188229[_0x3ff4b5(0x214)][_0x3ff4b5(0x1f2)](_0x3ff4b5(0x2c4));}_0x3547ef();}function _0x3547ef(){const _0x586f96=_0x164cd1,_0x191d3c=document[_0x586f96(0x2f5)]('inputRegName'),_0x5601f8=document[_0x586f96(0x2f5)](_0x586f96(0x16d));if(!_0x191d3c||!_0x5601f8)return;const _0x3d764d=Boolean(_0x19ff2c[_0x586f96(0x21f)])&&_0x191d3c[_0x586f96(0x2e5)][_0x586f96(0x207)]()['length']>0x0;_0x5601f8[_0x586f96(0x1c1)]=!_0x3d764d,_0x5601f8[_0x586f96(0x214)][_0x586f96(0x16e)](_0x586f96(0x1ea),!_0x3d764d),_0x5601f8[_0x586f96(0x214)][_0x586f96(0x16e)](_0x586f96(0x1dc),!_0x3d764d);}async function _0x27d3cf(){const _0x1faf5a=_0x164cd1,_0x42b5c0=document[_0x1faf5a(0x2f5)]('inputRegName'),_0x4c9433=_0x42b5c0?_0x42b5c0[_0x1faf5a(0x2e5)][_0x1faf5a(0x207)]():'';if(!_0x19ff2c[_0x1faf5a(0x21f)]){_0x298e20(_0x1faf5a(0x22a),_0x1faf5a(0x180));return;}if(!_0x4c9433){_0x298e20(_0x1faf5a(0x17d),_0x1faf5a(0x180));return;}const _0x5ac39d=document['getElementById'](_0x1faf5a(0x16d));_0x5ac39d&&(_0x5ac39d[_0x1faf5a(0x1c1)]=!![]);try{const _0x5c8963=await _0x4ba961(_0x19ff2c['activeRound']['id'],_0x4c9433),_0x403cbb=_0x5c8963||await _0x303b95(_0x19ff2c[_0x1faf5a(0x21f)]['id'],_0x19ff2c[_0x1faf5a(0x21f)][_0x1faf5a(0x29a)],_0x4c9433);_0x19ff2c[_0x1faf5a(0x162)]=_0x403cbb,_0x23170e(_0x403cbb),_0x298e20(_0x5c8963?'พบข้อมูลลงทะเบียนเดิม\x20กำลังเข้าสู่ระบบ...':_0x1faf5a(0x115),_0x1faf5a(0x116)),await _0x4d2253(_0x403cbb);}catch(_0x9d0f23){_0x298e20(_0x1faf5a(0x19d),_0x1faf5a(0x180));}finally{_0x5ac39d&&(_0x5ac39d['disabled']=![]);}}async function _0x4d2253(_0x343d5a){const _0x127f3c=_0x164cd1;document['getElementById']('viewRegister')?.['classList'][_0x127f3c(0x1f2)](_0x127f3c(0x2c4)),document['getElementById']('viewOnboarding')?.[_0x127f3c(0x214)][_0x127f3c(0x1f2)]('hidden'),document[_0x127f3c(0x2f5)](_0x127f3c(0x2bd))?.['classList']['remove']('hidden'),document['getElementById'](_0x127f3c(0x1d6))?.[_0x127f3c(0x214)][_0x127f3c(0x20c)](_0x127f3c(0x2c4)),document['getElementById']('btnLogoutPlayer')?.[_0x127f3c(0x214)][_0x127f3c(0x20c)](_0x127f3c(0x2c4));const _0x4a80e8=document['getElementById'](_0x127f3c(0x161));_0x4a80e8&&(_0x4a80e8[_0x127f3c(0x299)]=_0x343d5a[_0x127f3c(0x29a)]);const _0x1719fd=document[_0x127f3c(0x2f5)](_0x127f3c(0x15b));_0x1719fd&&(_0x1719fd[_0x127f3c(0x229)]=''),_0x19ff2c['activityItems']=[],_0x19ff2c[_0x127f3c(0x281)]='',_0x19ff2c[_0x127f3c(0x2af)]={},await _0x24d435(),_0x252110(_0x343d5a[_0x127f3c(0x29b)]),_0x12652d(_0x343d5a['id']);}async function _0x24d435(){const _0x818fe3=_0x164cd1;if(_0x1ffc6d[_0x818fe3(0x292)]&&_0x1ffc6d['db'])try{_0x19ff2c[_0x818fe3(0x285)]=await _0x37ceb7(_0x35155e[_0x818fe3(0x285)]);return;}catch(_0x55873d){console[_0x818fe3(0x180)](_0x818fe3(0x18b),_0x55873d);}_0x19ff2c['products']=_0x364e28(_0x33a1ff[_0x818fe3(0x17a)]);}function _0x46965b(){const _0x25ceaa=_0x164cd1,_0x4543b0=[];return _0x19ff2c['products']['forEach'](_0x23d893=>{const _0x4724fa=_0x4fc1;_0x23d893[_0x4724fa(0x1a2)]&&!_0x4543b0[_0x4724fa(0x1be)](_0x23d893[_0x4724fa(0x1a2)])&&_0x4543b0[_0x4724fa(0x13a)](_0x23d893['group']);}),_0x4543b0['sort']((_0x31c9a3,_0x372c3c)=>String(_0x31c9a3)[_0x25ceaa(0x11d)](String(_0x372c3c),'th'));}function _0x256dc1(_0x1c1cc6){const _0x19d9d4=_0x164cd1,_0x43f599=[];return _0x19ff2c[_0x19d9d4(0x285)]['forEach'](_0x211825=>{const _0x51654e=_0x19d9d4;_0x211825['group']===_0x1c1cc6&&_0x211825[_0x51654e(0x1da)]&&!_0x43f599[_0x51654e(0x1be)](_0x211825['subGroup'])&&_0x43f599['push'](_0x211825[_0x51654e(0x1da)]);}),_0x43f599['sort']((_0x41f350,_0x129c6e)=>String(_0x41f350)['localeCompare'](String(_0x129c6e),'th'));}function _0x12131c(_0xa623c2){const _0xa92462=_0x164cd1,_0x7e547d=_0x19ff2c[_0xa92462(0x285)]['find'](_0x54f5e5=>_0x54f5e5[_0xa92462(0x1a2)]===_0xa623c2&&_0x54f5e5[_0xa92462(0x254)]);return _0x7e547d?_0x7e547d[_0xa92462(0x254)]:'';}window[_0x164cd1(0x157)]=null,window[_0x164cd1(0x1d7)]=null;function _0x12652d(_0x833ce7){const _0x21a5d7=_0x164cd1;if(window[_0x21a5d7(0x157)])window[_0x21a5d7(0x157)]();if(window['unsubscribeUserBootcamp'])window['unsubscribeUserBootcamp']();if(!_0x1ffc6d['ready']||!_0x1ffc6d['db'])return;window[_0x21a5d7(0x157)]=_0x1ffc6d['db'][_0x21a5d7(0x1c5)](_0x35155e[_0x21a5d7(0x208)])[_0x21a5d7(0x27e)](_0x21a5d7(0x1ce),'==',_0x833ce7)[_0x21a5d7(0x23a)](_0x1c2afa=>{const _0x5aaca6=_0x21a5d7,_0x393e3c=_0x1c2afa['docs'][_0x5aaca6(0x1d2)](_0x2e1843=>({'id':_0x2e1843['id'],..._0x2e1843[_0x5aaca6(0x1fc)]()}))[_0x5aaca6(0x2cd)]((_0x1c1f90,_0x4e2307)=>Number(_0x1c1f90['setIndex']||0x0)-Number(_0x4e2307[_0x5aaca6(0x1e6)]||0x0)),_0x4ab39e={};_0x393e3c[_0x5aaca6(0x1bb)](_0x5daf37=>{const _0x2b0832=_0x5aaca6,_0x30cb74=_0x5daf37[_0x2b0832(0x12b)];if(!_0x4ab39e[_0x30cb74])_0x4ab39e[_0x30cb74]=[];_0x4ab39e[_0x30cb74][_0x2b0832(0x13a)](_0x5daf37);});for(const _0x3fc139 in _0x19ff2c['portfolioTabState']){const _0x2b8151=_0x19ff2c['portfolioTabState'][_0x3fc139],_0x2fe551=(_0x4ab39e[_0x3fc139]||[])[_0x5aaca6(0x1d2)](_0x2f6e1d),_0x2edfc9=_0x2b8151['sets'][_0x5aaca6(0x1d2)](_0x24235d=>_0x24235d['id'])['join'](','),_0x18b29d=_0x2fe551[_0x5aaca6(0x1d2)](_0x4b52c1=>_0x4b52c1['id'])[_0x5aaca6(0x1d3)](',');_0x2edfc9!==_0x18b29d?(_0x2b8151[_0x5aaca6(0x1ba)]=_0x2fe551,!_0x2b8151['sets'][_0x5aaca6(0x233)](_0x3fbc0b=>_0x3fbc0b['id']===_0x2b8151[_0x5aaca6(0x152)])&&(_0x2b8151[_0x5aaca6(0x152)]=_0x2b8151[_0x5aaca6(0x1ba)][0x0]?_0x2b8151[_0x5aaca6(0x1ba)][0x0]['id']:''),_0xa4fa48(_0x3fc139),_0x39b3eb(_0x3fc139)):(_0x2fe551['forEach'](_0x273fa2=>{const _0x57069e=_0x5aaca6,_0x2c747a=_0x2b8151['sets'][_0x57069e(0x1fa)](_0x75b703=>_0x75b703['id']===_0x273fa2['id']);_0x2c747a&&Object[_0x57069e(0x297)](_0x273fa2)['forEach'](_0x36de90=>{_0x2c747a[_0x36de90]=_0x273fa2[_0x36de90];});}),_0x2b8151['activeSetId']&&_0x385f4c(_0x3fc139,_0x2b8151[_0x5aaca6(0x152)]));}}),window[_0x21a5d7(0x1d7)]=_0x1ffc6d['db'][_0x21a5d7(0x1c5)](_0x35155e['customerDiagnosis'])[_0x21a5d7(0x23a)](_0xd0e88d=>{const _0x525379=_0x21a5d7;_0xd0e88d[_0x525379(0x228)]['forEach'](_0x8f6a66=>{const _0x29f89e=_0x525379;if(_0x8f6a66['id']['startsWith'](_0x833ce7+'__')){const _0x1af237=_0x8f6a66['id']['split']('__')[0x1],_0x4f03e1=_0x8f6a66['data'](),_0x4a4cba=_0x4f03e1[_0x29f89e(0x1ba)]||[],_0x52f99f=_0x19ff2c[_0x29f89e(0x2b2)][_0x1af237];if(_0x52f99f){const _0x41dc07=_0x52f99f[_0x29f89e(0x1ba)][_0x29f89e(0x1d2)](_0xac340c=>_0xac340c['id'])[_0x29f89e(0x1d3)](','),_0x4b8812=_0x4a4cba[_0x29f89e(0x1d2)](_0x56160c=>_0x56160c['id'])[_0x29f89e(0x1d3)](',');_0x41dc07!==_0x4b8812?(_0x52f99f['sets']=_0x4a4cba,!_0x4a4cba[_0x29f89e(0x233)](_0xc927ee=>_0xc927ee['id']===_0x52f99f['activeSetId'])&&(_0x52f99f[_0x29f89e(0x152)]=_0x4a4cba[0x0]?_0x4a4cba[0x0]['id']:''),_0x56e5c9(_0x1af237),_0x1ca83f(_0x1af237)):_0x52f99f[_0x29f89e(0x1ba)]=_0x4a4cba;}}});});}function _0x252110(_0x304a2c){const _0x55fea8=_0x164cd1;_0x19ff2c['unsubscribeActivityItems']&&(_0x19ff2c[_0x55fea8(0x1ca)](),_0x19ff2c[_0x55fea8(0x1ca)]=null);if(_0x1ffc6d['ready']&&_0x1ffc6d['db']){_0x19ff2c[_0x55fea8(0x1ca)]=_0x1ffc6d['db'][_0x55fea8(0x1c5)](_0x35155e[_0x55fea8(0x1d1)])[_0x55fea8(0x27e)](_0x55fea8(0x29b),'==',_0x304a2c)['onSnapshot'](_0x5c5c1d=>{const _0x183161=_0x55fea8,_0x2d3def=_0x5c5c1d[_0x183161(0x228)][_0x183161(0x1d2)](_0x34fe6b=>({'id':_0x34fe6b['id'],..._0x34fe6b[_0x183161(0x1fc)]()}));_0x3e6d86(_0x2d3def);});return;}const _0x4a0f17=_0x364e28(_0x33a1ff['adminActivityItems'])[_0x55fea8(0x144)](_0x454ba0=>_0x454ba0[_0x55fea8(0x29b)]===_0x304a2c);_0x3e6d86(_0x4a0f17);}function _0x3e6d86(_0x259388){const _0x440969=_0x164cd1,_0x373207=_0x259388[_0x440969(0x192)]()[_0x440969(0x2cd)]((_0xabe79f,_0x37dae1)=>Number(_0xabe79f[_0x440969(0x126)]||0x0)-Number(_0x37dae1[_0x440969(0x126)]||0x0)),_0xf77e52=new Set(_0x373207[_0x440969(0x1d2)](_0x2e409f=>_0x2e409f['id']));_0x19ff2c[_0x440969(0x1d1)][_0x440969(0x1bb)](_0x5b16f9=>{const _0x4a8122=_0x440969;!_0xf77e52[_0x4a8122(0x175)](_0x5b16f9['id'])&&(document[_0x4a8122(0x2f5)](_0x4a8122(0x230)+_0x5b16f9['id'])?.[_0x4a8122(0x20c)](),delete _0x19ff2c['portfolioTabState'][_0x5b16f9['id']]);}),_0x19ff2c['activityItems']=_0x373207,_0xc6d775(),_0x7a83d4(),_0x1c4b6e(),_0x510668();}function _0xc6d775(){const _0x3849fd=_0x164cd1,_0x107c57=_0x19ff2c[_0x3849fd(0x1d1)][_0x3849fd(0x233)](_0x3037a3=>_0x3037a3['id']===_0x19ff2c['activeTabId']&&_0x3037a3[_0x3849fd(0x2c1)]==='on');if(!_0x107c57){const _0x1697f8=_0x19ff2c[_0x3849fd(0x1d1)][_0x3849fd(0x1fa)](_0x45a76a=>_0x45a76a[_0x3849fd(0x2c1)]==='on');_0x19ff2c[_0x3849fd(0x281)]=_0x1697f8?_0x1697f8['id']:'';}}function _0x7a83d4(){const _0x32d8a5=_0x164cd1,_0x3ed562=document['getElementById'](_0x32d8a5(0x1d6));if(!_0x3ed562)return;if(!_0x19ff2c[_0x32d8a5(0x1d1)][_0x32d8a5(0x2ec)]){_0x3ed562['innerHTML']=_0x32d8a5(0x2b4);return;}_0x3ed562[_0x32d8a5(0x229)]=_0x19ff2c['activityItems'][_0x32d8a5(0x1d2)](_0x23d9eb=>{const _0x5e1d86=_0x32d8a5,_0x354884=_0x23d9eb['status']==='on',_0x22c530=_0x354884&&_0x23d9eb['id']===_0x19ff2c[_0x5e1d86(0x281)],_0x36a3aa=_0x34b8ba(_0x23d9eb),_0x26c324=!_0x354884?_0x5e1d86(0x19f):_0x22c530?_0x36a3aa===_0x5e1d86(0x247)?_0x5e1d86(0x1af):_0x5e1d86(0x16b):'text-slate-600\x20hover:bg-slate-100';return _0x5e1d86(0x26f)+_0x23d9eb['id']+'\x22\x20'+(_0x354884?'onclick=\x22switchActiveTab(\x27'+_0x23d9eb['id']+_0x5e1d86(0x24b):_0x5e1d86(0x1c1))+_0x5e1d86(0x18a)+_0x26c324+_0x5e1d86(0x2dc)+_0x5b2432(_0x23d9eb[_0x5e1d86(0x29a)])+_0x5e1d86(0x266);})[_0x32d8a5(0x1d3)]('');}function _0x1c4b6e(){const _0x1f0144=_0x164cd1,_0x32cf50=document[_0x1f0144(0x2f5)](_0x1f0144(0x15b));if(!_0x32cf50)return;_0x19ff2c[_0x1f0144(0x1d1)][_0x1f0144(0x1bb)](_0x13f2a4=>{const _0x519bcd=_0x1f0144;if(document['getElementById']('simTabContent-'+_0x13f2a4['id']))return;const _0x43d967=_0x34b8ba(_0x13f2a4);let _0x3b72a7;if(_0x43d967===_0x519bcd(0x293))_0x3b72a7=_0x39cb21(_0x13f2a4);else _0x43d967==='customerDiagnosis'?_0x3b72a7=_0x31d32f(_0x13f2a4):_0x3b72a7=_0x9de913(_0x13f2a4);_0x3b72a7['classList'][_0x519bcd(0x1f2)](_0x519bcd(0x2c4)),_0x32cf50['appendChild'](_0x3b72a7);});}function _0x510668(){_0x19ff2c['activityItems']['forEach'](_0x29b1af=>{const _0x4e1dac=_0x4fc1,_0x305a94=document[_0x4e1dac(0x2f5)](_0x4e1dac(0x230)+_0x29b1af['id']);_0x305a94&&_0x305a94[_0x4e1dac(0x214)][_0x4e1dac(0x16e)](_0x4e1dac(0x2c4),_0x29b1af['id']!==_0x19ff2c['activeTabId']);});}function _0xf88157(_0x41a579){const _0x3431de=_0x164cd1,_0x7ab8b2=_0x19ff2c[_0x3431de(0x1d1)][_0x3431de(0x1fa)](_0x1a6c25=>_0x1a6c25['id']===_0x41a579);if(!_0x7ab8b2||_0x7ab8b2[_0x3431de(0x2c1)]!=='on')return;_0x19ff2c['activeTabId']=_0x41a579,_0x7a83d4(),_0x510668();}function _0x34b8ba(_0x485610){const _0x3c6e24=_0x164cd1;if(_0x485610[_0x3c6e24(0x1e1)])return _0x485610['template'];const _0x14670a=(_0x485610[_0x3c6e24(0x29a)]||'')[_0x3c6e24(0x207)]();if(_0x14670a===_0x47e87e[_0x3c6e24(0x2e7)])return _0x3c6e24(0x293);if(_0x14670a===_0x47e87e[_0x3c6e24(0x164)]||_0x14670a===_0x3c6e24(0x11f))return'customerDiagnosis';return _0x3c6e24(0x1d5);}function _0x9de913(_0x753052){const _0x25976e=_0x164cd1,_0x328122=document[_0x25976e(0x154)]('div');return _0x328122['id']=_0x25976e(0x230)+_0x753052['id'],_0x328122[_0x25976e(0x21c)]=_0x25976e(0x165),_0x328122;}const _0xa8ff86={'portfolioOverview':{'collection':_0x35155e[_0x164cd1(0x159)],'localKey':_0x33a1ff[_0x164cd1(0x159)]},'customerDiagnosis':{'collection':_0x35155e['customerDiagnosis'],'localKey':_0x33a1ff[_0x164cd1(0x247)]}};async function _0x5de752(_0x521e85,_0x2de68e){const _0x285a50=_0x164cd1,_0x2e7e01=_0xa8ff86[_0x521e85];if(_0x1ffc6d['ready']&&_0x1ffc6d['db'])try{const _0x4a20dd=await _0x1ffc6d['db'][_0x285a50(0x1c5)](_0x2e7e01[_0x285a50(0x1c5)])[_0x285a50(0x27d)](_0x2de68e)[_0x285a50(0x25c)]();return _0x4a20dd['exists']?_0x4a20dd[_0x285a50(0x1fc)]():null;}catch(_0x850220){console[_0x285a50(0x180)]('[bootcamp]\x20อ่าน\x20'+_0x2e7e01[_0x285a50(0x1c5)]+'\x20จาก\x20Firestore\x20ไม่สำเร็จ\x20ใช้ข้อมูลในเครื่องแทน',_0x850220);}const _0x542c13=_0x364e28(_0x2e7e01[_0x285a50(0x196)]);return _0x542c13[_0x285a50(0x1fa)](_0x2dc274=>_0x2dc274['id']===_0x2de68e)||null;}async function _0x1933f3(_0x41734f,_0x3aa331,_0x21474a){const _0x3afdcd=_0x164cd1,_0x514db2=_0xa8ff86[_0x41734f],_0x2c8e9f={..._0x21474a,'updatedAt':Date['now']()};if(_0x1ffc6d[_0x3afdcd(0x292)]&&_0x1ffc6d['db'])try{await _0x1ffc6d['db'][_0x3afdcd(0x1c5)](_0x514db2[_0x3afdcd(0x1c5)])[_0x3afdcd(0x27d)](_0x3aa331)[_0x3afdcd(0x2ff)](_0x2c8e9f,{'merge':!![]});return;}catch(_0x3a89d7){console[_0x3afdcd(0x180)]('[bootcamp]\x20บันทึก\x20'+_0x514db2[_0x3afdcd(0x1c5)]+_0x3afdcd(0x2d5),_0x3a89d7);}const _0x109d7d=_0x364e28(_0x514db2['localKey']),_0x3143c9=_0x109d7d[_0x3afdcd(0x118)](_0xe459b8=>_0xe459b8['id']===_0x3aa331);_0x3143c9>-0x1?_0x109d7d[_0x3143c9]=_0x280b1b(_0x109d7d[_0x3143c9],{..._0x2c8e9f,'id':_0x3aa331}):_0x109d7d[_0x3afdcd(0x13a)]({'id':_0x3aa331,..._0x2c8e9f}),_0x1d02e6(_0x514db2[_0x3afdcd(0x196)],_0x109d7d);}function _0x22e5d7(_0x473e96,_0x586a2d,_0x147650){const _0x2c3516=_0x164cd1,_0x162dd8={..._0x473e96};let _0xcc34a2=_0x162dd8;return _0x586a2d[_0x2c3516(0x1bb)]((_0x4b8065,_0x346aea)=>{const _0x40ddf6=_0x2c3516;_0x346aea===_0x586a2d[_0x40ddf6(0x2ec)]-0x1?_0xcc34a2[_0x4b8065]=_0x147650:(_0xcc34a2[_0x4b8065]={},_0xcc34a2=_0xcc34a2[_0x4b8065]);}),_0x162dd8;}function _0x345d5e(_0x129881,_0x42a5ed){const _0x531138=_0x164cd1;if(!_0x129881)return;_0x129881[_0x531138(0x1e8)](_0x531138(0x111),()=>_0x42a5ed(_0x129881[_0x531138(0x2e5)]));}function _0x56a8ee(){const _0x1c0a88=_0x164cd1,_0x5127d7=()=>({'target':'','actionPlan':'','group':'','subGroup':'','amount':0x0});return{'GRAB':Array[_0x1c0a88(0x257)]({'length':0x5},_0x5127d7),'GROW':Array[_0x1c0a88(0x257)]({'length':0x5},_0x5127d7),'GUARD':Array[_0x1c0a88(0x257)]({'length':0x5},_0x5127d7)};}function _0x5bcfd7(){const _0x35713b=_0x164cd1,_0x20932a=[];return _0x19ff2c[_0x35713b(0x285)][_0x35713b(0x1bb)](_0x2dbf41=>{const _0x55d27f=_0x35713b;_0x2dbf41[_0x55d27f(0x1da)]&&!_0x20932a[_0x55d27f(0x1be)](_0x2dbf41[_0x55d27f(0x1da)])&&_0x20932a[_0x55d27f(0x13a)](_0x2dbf41[_0x55d27f(0x1da)]);}),_0x20932a[_0x35713b(0x2cd)]((_0x1971ac,_0x3335b8)=>String(_0x1971ac)[_0x35713b(0x11d)](String(_0x3335b8),'th'));}function _0x5edcc7(_0x54538a){const _0x41f457=_0x164cd1,_0xcde5f=_0x5bcfd7()[_0x41f457(0x1d2)](_0x4d53ea=>_0x41f457(0x278)+_0x5b2432(_0x4d53ea)+'\x22\x20'+(_0x4d53ea===_0x54538a?_0x41f457(0x23d):'')+'>'+_0x5b2432(_0x4d53ea)+_0x41f457(0x132))[_0x41f457(0x1d3)]('');return _0x41f457(0x2e3)+_0xcde5f;}function _0x147f1a(_0x5cfe33){const _0x11fe42=_0x164cd1,_0x4fcec8=_0x19ff2c[_0x11fe42(0x285)][_0x11fe42(0x1fa)](_0x218017=>_0x218017['subGroup']===_0x5cfe33);return _0x4fcec8?_0x4fcec8[_0x11fe42(0x1a2)]:'';}const _0x5d6ce6=[{'label':_0x164cd1(0x259),'dbGroup':'Deposit','unit':_0x164cd1(0x145)},{'label':'BA','dbGroup':'BA','unit':_0x164cd1(0x145)},{'label':'MF','dbGroup':'MF','unit':_0x164cd1(0x145)},{'label':'SN','dbGroup':'SN','unit':_0x164cd1(0x145)},{'label':'Qualified\x20WB/PB','dbGroup':_0x164cd1(0x241),'unit':'คน'},{'label':_0x164cd1(0x202),'dbGroup':_0x164cd1(0x2f9),'unit':'คน'}];function _0x42040d(_0x19fe09){const _0x3c22c5=_0x164cd1,_0x53c796={};return[_0x3c22c5(0x212),_0x3c22c5(0x1c8),_0x3c22c5(0x2b3)]['forEach'](_0x502498=>{const _0x1f1fbe=_0x3c22c5;(_0x19fe09[_0x1f1fbe(0x294)][_0x502498]||[])['forEach'](_0x5cdb08=>{const _0x3f75d2=_0x1f1fbe;if(_0x5cdb08[_0x3f75d2(0x1da)]){const _0x3b6067=_0x147f1a(_0x5cdb08[_0x3f75d2(0x1da)]);if(_0x3b6067){const _0x280526=Number(_0x5cdb08[_0x3f75d2(0x218)]||0x0);_0x53c796[_0x3b6067]=(_0x53c796[_0x3b6067]||0x0)+_0x280526;}}});}),_0x53c796;}function _0x47b488(_0x59d9c8){const _0x252bdb=_0x164cd1,_0x5f232c=_0x42040d(_0x59d9c8);return _0x5d6ce6[_0x252bdb(0x1d2)](_0x1e863a=>{const _0x3194f4=_0x252bdb,_0x50e4a8=_0x5f232c[_0x1e863a['dbGroup']]||0x0,_0x552a99=_0x50e4a8[_0x3194f4(0x21d)]('th-TH');return _0x3194f4(0x146)+_0x5b2432(_0x1e863a[_0x3194f4(0x271)])+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-1.5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22min-w-28\x20px-3\x20h-7\x20bg-white\x20border\x20border-slate-200\x20rounded\x20flex\x20items-center\x20justify-center\x20text-xs\x20font-black\x20text-orange-700\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x552a99+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20text-slate-600\x20font-semibold\x22>'+_0x5b2432(_0x1e863a[_0x3194f4(0x254)])+_0x3194f4(0x11c);})[_0x252bdb(0x1d3)]('');}function _0x385f4c(_0x12d371,_0x150ad1){const _0x7ac048=_0x164cd1,_0x46915d=document[_0x7ac048(0x2f5)](_0x7ac048(0x287)+_0x150ad1),_0x488a8c=_0x318ca3(_0x12d371,_0x150ad1);_0x46915d&&_0x488a8c&&(_0x46915d[_0x7ac048(0x229)]=_0x47b488(_0x488a8c));}async function _0x32c53d(_0x364e7a,_0x2acb75){const _0x304c38=_0x164cd1;if(_0x1ffc6d[_0x304c38(0x292)]&&_0x1ffc6d['db'])try{const _0x1460f9=await _0x1ffc6d['db']['collection'](_0x35155e[_0x304c38(0x208)])[_0x304c38(0x27e)](_0x304c38(0x1ce),'==',_0x364e7a)[_0x304c38(0x27e)](_0x304c38(0x12b),'==',_0x2acb75)[_0x304c38(0x25c)]();return _0x1460f9[_0x304c38(0x228)]['map'](_0x1c4f51=>({'id':_0x1c4f51['id'],..._0x1c4f51[_0x304c38(0x1fc)]()}))[_0x304c38(0x2cd)]((_0x198ed4,_0xc7520)=>Number(_0x198ed4[_0x304c38(0x1e6)]||0x0)-Number(_0xc7520[_0x304c38(0x1e6)]||0x0));}catch(_0x739ee7){console['error'](_0x304c38(0x13e),_0x739ee7);}return _0x364e28(_0x33a1ff['portfolioSets'])[_0x304c38(0x144)](_0x4f52fe=>_0x4f52fe[_0x304c38(0x1ce)]===_0x364e7a&&_0x4f52fe[_0x304c38(0x12b)]===_0x2acb75)[_0x304c38(0x2cd)]((_0x2514aa,_0x1b60bc)=>Number(_0x2514aa['setIndex']||0x0)-Number(_0x1b60bc['setIndex']||0x0));}async function _0x67eca6(_0x449fc8,_0x4b6acb,_0x9d582a,_0xeceb47){const _0x73e81b=_0x164cd1,_0x9d23d2={'userId':_0x449fc8,'roundId':_0x4b6acb,'activityItemId':_0x9d582a,'setIndex':_0xeceb47,'topic':'','description':'','overview':'','gap':'','opportunity':'','rows':_0x56a8ee(),'createdAt':Date['now'](),'updatedAt':Date[_0x73e81b(0x2d0)]()};if(_0x1ffc6d[_0x73e81b(0x292)]&&_0x1ffc6d['db'])try{const _0x22bd35=await _0x1ffc6d['db'][_0x73e81b(0x1c5)](_0x35155e['portfolioSets'])[_0x73e81b(0x1f2)](_0x9d23d2);return{'id':_0x22bd35['id'],..._0x9d23d2};}catch(_0x42ce43){console['error'](_0x73e81b(0x2f3),_0x42ce43);}const _0x256a36={'id':_0x73e81b(0x1cb)+Date[_0x73e81b(0x2d0)](),..._0x9d23d2},_0x288c65=_0x364e28(_0x33a1ff['portfolioSets']);return _0x288c65[_0x73e81b(0x13a)](_0x256a36),_0x1d02e6(_0x33a1ff[_0x73e81b(0x208)],_0x288c65),_0x256a36;}async function _0x10afc5(_0x3587a4,_0x4e65e0){const _0x5eba5f=_0x164cd1,_0x518445={..._0x4e65e0,'updatedAt':Date[_0x5eba5f(0x2d0)]()};if(_0x1ffc6d[_0x5eba5f(0x292)]&&_0x1ffc6d['db'])try{await _0x1ffc6d['db']['collection'](_0x35155e[_0x5eba5f(0x208)])[_0x5eba5f(0x27d)](_0x3587a4)['set'](_0x518445,{'merge':!![]});return;}catch(_0x1826d2){console[_0x5eba5f(0x180)](_0x5eba5f(0x181),_0x1826d2);}const _0x2a0971=_0x364e28(_0x33a1ff[_0x5eba5f(0x208)]),_0x3d4aad=_0x2a0971['findIndex'](_0x86656f=>_0x86656f['id']===_0x3587a4);_0x3d4aad>-0x1?_0x2a0971[_0x3d4aad]=_0x280b1b(_0x2a0971[_0x3d4aad],_0x518445):_0x2a0971[_0x5eba5f(0x13a)]({'id':_0x3587a4,..._0x518445}),_0x1d02e6(_0x33a1ff[_0x5eba5f(0x208)],_0x2a0971);}async function _0x5d9c2b(_0x4554a4){const _0x4d543a=_0x164cd1;if(_0x1ffc6d['ready']&&_0x1ffc6d['db'])try{await _0x1ffc6d['db']['collection'](_0x35155e[_0x4d543a(0x208)])[_0x4d543a(0x27d)](_0x4554a4)[_0x4d543a(0x2c7)]();return;}catch(_0x405dac){console[_0x4d543a(0x180)]('[bootcamp]\x20ลบ\x20plan_portfolio_sets\x20ใน\x20Firestore\x20ไม่สำเร็จ\x20ลบในเครื่องแทน',_0x405dac);}const _0x5ce57f=_0x364e28(_0x33a1ff[_0x4d543a(0x208)])[_0x4d543a(0x144)](_0x50bfff=>_0x50bfff['id']!==_0x4554a4);_0x1d02e6(_0x33a1ff[_0x4d543a(0x208)],_0x5ce57f);}function _0x943181(_0xe8eea7){const _0x880b3f=_0x164cd1;if(!_0xe8eea7)return'';const _0x4e5a9a=_0x19ff2c[_0x880b3f(0x285)][_0x880b3f(0x1fa)](_0x366cd6=>_0x366cd6['subGroup']===_0xe8eea7);if(!_0x4e5a9a)return'';if(_0x4e5a9a[_0x880b3f(0x254)])return _0x4e5a9a[_0x880b3f(0x254)];const _0x22cb06=_0x4e5a9a[_0x880b3f(0x1a2)];if([_0x880b3f(0x259),'BA','MF','SN'][_0x880b3f(0x1be)](_0x22cb06))return _0x880b3f(0x145);if([_0x880b3f(0x241),_0x880b3f(0x2f9),_0x880b3f(0x202),_0x880b3f(0x2ac)][_0x880b3f(0x1be)](_0x22cb06))return'คน';return'';}window[_0x164cd1(0x117)]=0x1,window['adjustMailFontSize']=_0x22daaa=>{const _0x2008b8=_0x164cd1;window['currentMailScale']=Math[_0x2008b8(0x1a3)](0.7,Math[_0x2008b8(0x2f7)](0x2,window[_0x2008b8(0x117)]+_0x22daaa));const _0xffc0ae=document[_0x2008b8(0x2f5)]('presenterMailContentArea')||document[_0x2008b8(0x2f5)](_0x2008b8(0x20f));_0xffc0ae&&_0xffc0ae[_0x2008b8(0x128)](_0x2008b8(0x1c4))[_0x2008b8(0x1bb)](_0x1c9108=>{const _0xe4c335=_0x2008b8;if(!_0x1c9108[_0xe4c335(0x20b)][_0xe4c335(0x244)]){const _0x567db9=window['getComputedStyle'](_0x1c9108)[_0xe4c335(0x227)];_0x1c9108[_0xe4c335(0x20b)][_0xe4c335(0x244)]=parseFloat(_0x567db9);}const _0x1a5974=parseFloat(_0x1c9108[_0xe4c335(0x20b)][_0xe4c335(0x244)]);_0x1c9108['style']['fontSize']=_0x1a5974*window[_0xe4c335(0x117)]+'px',_0x1c9108['style'][_0xe4c335(0x1b3)]=_0xe4c335(0x28d);});},window['openPresenterMailLightbox']=_0x48b77d=>{const _0x1cc35e=_0x164cd1;let _0x3632e2=null,_0x284a81=0x1,_0x5abff6='';for(const _0x5d7df9 in _0x19ff2c[_0x1cc35e(0x2af)]){const _0x2df69d=_0x19ff2c[_0x1cc35e(0x2af)][_0x5d7df9]?.[_0x1cc35e(0x1ba)]||[],_0x458e5f=_0x2df69d[_0x1cc35e(0x118)](_0x4e1eaf=>_0x4e1eaf['id']===_0x48b77d);if(_0x458e5f!==-0x1){_0x3632e2=_0x2df69d[_0x458e5f],_0x284a81=_0x458e5f+0x1,_0x5abff6=_0x5d7df9;break;}}if(!_0x3632e2)return;window['currentMailScale']=0x1;const _0x4aef63=_0x19ff2c[_0x1cc35e(0x162)]?_0x19ff2c[_0x1cc35e(0x162)][_0x1cc35e(0x29a)]:_0x1cc35e(0x29d);let _0x11f61e=document['getElementById'](_0x1cc35e(0x147));!_0x11f61e&&(_0x11f61e=document[_0x1cc35e(0x154)](_0x1cc35e(0x2e1)),_0x11f61e['id']=_0x1cc35e(0x147),_0x11f61e['className']='fixed\x20inset-0\x20bg-slate-900/60\x20backdrop-blur-sm\x20z-[9999]\x20flex\x20items-center\x20justify-center\x20p-4',document[_0x1cc35e(0x28a)][_0x1cc35e(0x2ee)](_0x11f61e));_0x11f61e[_0x1cc35e(0x214)][_0x1cc35e(0x20c)](_0x1cc35e(0x2c4));const _0x164d55=_0xe7f0d7=>{const _0x2b38af=_0x1cc35e,_0x444e16=_0x3632e2[_0x2b38af(0x294)][_0xe7f0d7]||[],_0x5b9e8d=_0x444e16[0x0]?.[_0x2b38af(0x18f)]||'-',_0x98e7a2=_0x444e16[0x0]?.[_0x2b38af(0x220)]||'-',_0x2019c9=_0x444e16[_0x2b38af(0x1d2)](_0x219289=>{const _0x4a683d=_0x2b38af;if(!_0x219289[_0x4a683d(0x1da)])return'';const _0x4d20e5=_0x943181(_0x219289[_0x4a683d(0x1da)]),_0x51db79=_0x2e38ff(_0x219289[_0x4a683d(0x218)]||0x0);return'<li\x20class=\x22text-xs\x20text-slate-700\x20list-disc\x20list-inside\x22>'+_0x5b2432(_0x219289[_0x4a683d(0x1da)])+_0x4a683d(0x18e)+_0x51db79+'</strong>\x20'+_0x4d20e5+_0x4a683d(0x143);})[_0x2b38af(0x144)](Boolean)[_0x2b38af(0x1d3)]('');return _0x2b38af(0x11e)+_0xe7f0d7+'</h5>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-2\x20gap-4\x20mb-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[12px]\x20text-slate-400\x22>Target</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>'+_0x5b2432(_0x5b9e8d)+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[12px]\x20text-slate-400\x22>Action\x20Plan</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>'+_0x5b2432(_0x98e7a2)+_0x2b38af(0x2f6)+(_0x2019c9?'<ul\x20class=\x22space-y-1\x22>'+_0x2019c9+_0x2b38af(0x269):'<span\x20class=\x22text-xs\x20text-slate-400\x20italic\x22>ไม่มีข้อมูล</span>')+_0x2b38af(0x260);};_0x11f61e['innerHTML']=_0x1cc35e(0x201)+_0x3632e2['id']+_0x1cc35e(0x2cc)+_0x284a81+_0x1cc35e(0x20a)+_0x5b2432(_0x4aef63)+_0x1cc35e(0x205)+_0x5b2432(_0x3632e2[_0x1cc35e(0x240)]||'-')+_0x1cc35e(0x206)+_0x5b2432(_0x3632e2[_0x1cc35e(0x172)]||'-')+_0x1cc35e(0x226)+_0x5b2432(_0x3632e2[_0x1cc35e(0x29c)]||'-')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-[#e9f0f8]\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-xs\x20font-black\x20text-slate-800\x22>3.\x20Opportunity</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>'+_0x5b2432(_0x3632e2[_0x1cc35e(0x1bd)]||'-')+_0x1cc35e(0x2e9)+_0x164d55(_0x1cc35e(0x212))+_0x1cc35e(0x2d2)+_0x164d55('GROW')+_0x1cc35e(0x2d2)+_0x164d55('GUARD')+_0x1cc35e(0x1dd);},window[_0x164cd1(0x2a5)]=(_0xb0e284,_0x3e4f45)=>{const _0x1606a3=_0x164cd1,_0x4c308c=_0x19ff2c[_0x1606a3(0x2b2)][_0xb0e284];if(!_0x4c308c)return;const _0x3d60f6=_0x4c308c[_0x1606a3(0x1ba)][_0x1606a3(0x1fa)](_0x160a5a=>_0x160a5a['id']===_0x3e4f45);if(!_0x3d60f6)return;window[_0x1606a3(0x117)]=0x1;const _0x19b3b2=_0x4c308c['sets']['indexOf'](_0x3d60f6)+0x1,_0x54aca2=_0x19ff2c[_0x1606a3(0x162)]?_0x19ff2c[_0x1606a3(0x162)]['name']:'ไม่ระบุ';let _0x5460ef=document[_0x1606a3(0x2f5)]('presenterMailLightboxModal');!_0x5460ef&&(_0x5460ef=document[_0x1606a3(0x154)]('div'),_0x5460ef['id']=_0x1606a3(0x147),_0x5460ef[_0x1606a3(0x21c)]=_0x1606a3(0x22b),document[_0x1606a3(0x28a)][_0x1606a3(0x2ee)](_0x5460ef));_0x5460ef[_0x1606a3(0x214)][_0x1606a3(0x20c)](_0x1606a3(0x2c4));const _0x9f78c2=_0x3d60f6['act']||{'aim':'','consult':'','track':''},_0x51246d=_0x3d60f6['ion']||{'improve':'','operate':'','notice':''},_0xa76a05=_0x3d60f6[_0x1606a3(0x199)]||{'goalAndLimit':'','idealPortfolio':'','currentPortfolio':'','portfolioSymptom':'','potentialImpact':'','adjustmentGuideline':''},_0x15d3e2=_0x3d60f6[_0x1606a3(0x1a4)]||[],_0xee7f29=_0x4574be=>{const _0x1c1727=_0x1606a3;if(!_0x4574be)return'-';const _0x1bebd0=String(_0x4574be)[_0x1c1727(0x1f0)](/,/g,''),_0x2c0104=Number(_0x1bebd0);return isNaN(_0x2c0104)?_0x4574be:_0x2c0104[_0x1c1727(0x21d)](_0x1c1727(0x238));},_0x302a07=()=>{const _0x490a6e=_0x1606a3;if(!_0x15d3e2['length'])return _0x490a6e(0x1b8);let _0x4e3dca='';return _0x15d3e2[_0x490a6e(0x1bb)]((_0x34f295,_0x2d4851)=>{const _0xd2bbb1=_0x490a6e;_0x4e3dca+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22border-t\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20border-r\x20border-slate-200\x20space-y-2\x20text-left\x20bg-slate-50/50\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[10px]\x20font-bold\x20text-slate-500\x20mb-0.5\x22>เป้าหมายทางการเงิน</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-normal\x20text-slate-800\x22>'+_0x5b2432(_0x34f295['goal']||'-')+_0xd2bbb1(0x12e)+_0x5b2432(_0xee7f29(_0x34f295[_0xd2bbb1(0x218)]))+_0xd2bbb1(0x2e8)+_0x5b2432(_0x34f295[_0xd2bbb1(0x131)]||'-')+_0xd2bbb1(0x217)+_0x5b2432(_0x34f295['expectedReturn']||'-')+_0xd2bbb1(0x2d9)+_0x5b2432(_0x34f295[_0xd2bbb1(0x2d1)]||'-')+_0xd2bbb1(0x179)+_0x5b2432(_0x34f295[_0xd2bbb1(0x2bf)]||'-')+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20border-r\x20border-slate-200\x20text-left\x20whitespace-pre-wrap\x20font-normal\x20text-slate-705\x22>'+_0x5b2432(_0x34f295[_0xd2bbb1(0x16f)]||'-')+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20text-left\x20whitespace-pre-wrap\x20font-normal\x20text-slate-705\x22>'+_0x5b2432(_0x34f295['smartBorrow']||'-')+_0xd2bbb1(0x1ff);}),_0x490a6e(0x27b)+_0x4e3dca+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</table>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';};_0x5460ef[_0x1606a3(0x229)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20w-[95vw]\x20h-[95vh]\x20rounded-3xl\x20shadow-2xl\x20flex\x20flex-col\x20overflow-hidden\x20border\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Header\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22px-6\x20py-4\x20border-b\x20border-slate-200\x20flex\x20items-center\x20justify-between\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22font-extrabold\x20text-slate-800\x20text-sm\x22>ข้อมูลสรุปแผนงาน\x20(Account\x20Planning\x20Bootcamp)</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22adjustMailFontSize(0.1)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-slate-100\x20text-slate-600\x20flex\x20items-center\x20justify-center\x20transition\x22\x20title=\x22ขยายตัวอักษร\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass-plus\x20text-base\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22adjustMailFontSize(-0.1)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-slate-100\x20text-slate-600\x20flex\x20items-center\x20justify-center\x20transition\x22\x20title=\x22ลดตัวอักษร\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass-minus\x20text-base\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22sendBootcampPresenterMailAsEmail(\x27'+_0xb0e284+'\x27,\x20\x27'+_0x3d60f6['id']+_0x1606a3(0x2c5)+_0x19b3b2+_0x1606a3(0x20a)+_0x5b2432(_0x54aca2)+_0x1606a3(0x25b)+_0x5b2432(_0x3d60f6['topic']||'-')+_0x1606a3(0x1fd)+_0x5b2432(_0x3d60f6[_0x1606a3(0x211)]||'-')+_0x1606a3(0x1c9)+_0x5b2432(_0x9f78c2[_0x1606a3(0x130)]||'-')+_0x1606a3(0x13d)+_0x5b2432(_0x9f78c2[_0x1606a3(0x26c)]||'-')+_0x1606a3(0x198)+_0x5b2432(_0x9f78c2['track']||'-')+_0x1606a3(0x283)+_0x5b2432(_0x51246d[_0x1606a3(0x1ef)]||'-')+_0x1606a3(0x1d9)+_0x5b2432(_0x51246d[_0x1606a3(0x13f)]||'-')+_0x1606a3(0x27f)+_0x5b2432(_0x51246d['notice']||'-')+_0x1606a3(0x1a8)+_0x5b2432(_0xa76a05[_0x1606a3(0x1bc)]||'-')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>พอร์ตที่ควรเป็นตามเป้าหมาย</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>'+_0x5b2432(_0xa76a05[_0x1606a3(0x2e2)]||'-')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>พอร์ตปัจจุบันที่ลูกค้ามี</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>'+_0x5b2432(_0xa76a05[_0x1606a3(0x28b)]||'-')+_0x1606a3(0x236)+_0x5b2432(_0xa76a05[_0x1606a3(0x273)]||'-')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>ผลกระทบที่อาจเกิดขึ้น</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>'+_0x5b2432(_0xa76a05['potentialImpact']||'-')+_0x1606a3(0x25f)+_0x5b2432(_0xa76a05[_0x1606a3(0x191)]||_0xa76a05[_0x1606a3(0x1fe)]||'-')+_0x1606a3(0x19c)+_0x302a07()+_0x1606a3(0x135);},window[_0x164cd1(0x2df)]=()=>{const _0x2cd379=_0x164cd1,_0x163d81=document[_0x2cd379(0x2f5)](_0x2cd379(0x147));_0x163d81&&_0x163d81['classList']['add'](_0x2cd379(0x2c4));},window['sendPresenterMailAsEmail']=_0xe3e6=>{const _0x387f14=_0x164cd1,_0x399eb3=document[_0x387f14(0x2f5)]('presenterMailContentArea');if(!_0x399eb3)return;let _0x422f07=null,_0x4db7be=0x1;for(const _0x8aaeee in _0x19ff2c[_0x387f14(0x2af)]){const _0x175ecc=_0x19ff2c['portfolioTabState'][_0x8aaeee]?.[_0x387f14(0x1ba)]||[],_0x21ec67=_0x175ecc['findIndex'](_0x5d817e=>_0x5d817e['id']===_0xe3e6);if(_0x21ec67!==-0x1){_0x422f07=_0x175ecc[_0x21ec67],_0x4db7be=_0x21ec67+0x1;break;}}if(!_0x422f07)return;const _0x19daff=_0x19ff2c[_0x387f14(0x162)]?_0x19ff2c[_0x387f14(0x162)][_0x387f14(0x29a)]:_0x387f14(0x29d),_0x2e4023=_0x387f14(0x193)+_0x4db7be+_0x387f14(0x270)+_0x19daff,_0x2899e2=_0x399eb3[_0x387f14(0x2ab)][_0x387f14(0x189)],_0x4436d5=_0x399eb3[_0x387f14(0x2ab)][_0x387f14(0x2eb)],_0x32b357=_0x399eb3[_0x387f14(0x2ab)][_0x387f14(0x24f)];_0x399eb3[_0x387f14(0x2ab)][_0x387f14(0x189)]='auto',_0x399eb3['style']['maxHeight']=_0x387f14(0x194),_0x399eb3[_0x387f14(0x2ab)][_0x387f14(0x24f)]='visible',html2canvas(_0x399eb3,{'scale':0x2,'useCORS':!![]})[_0x387f14(0x1f5)](_0xcba7c4=>{const _0x756362=_0x387f14;_0x399eb3[_0x756362(0x2ab)][_0x756362(0x189)]=_0x2899e2,_0x399eb3[_0x756362(0x2ab)][_0x756362(0x2eb)]=_0x4436d5,_0x399eb3['style'][_0x756362(0x24f)]=_0x32b357;const _0x4a8dcb=_0xcba7c4['toDataURL']('image/png'),_0x56a9aa=document['createElement']('a');_0x56a9aa['download']='bootcamp_plan_'+_0x4db7be+_0x756362(0x173),_0x56a9aa[_0x756362(0x1ed)]=_0x4a8dcb,_0x56a9aa['click'](),_0xcba7c4[_0x756362(0x2ae)](_0x58eaf8=>{const _0x164072=_0x756362;if(_0x58eaf8)try{navigator[_0x164072(0x1ee)][_0x164072(0x112)]([new ClipboardItem({'image/png':_0x58eaf8})])[_0x164072(0x1f5)](()=>{const _0x5db1d1=_0x164072;console['log'](_0x5db1d1(0x264));})['catch'](_0x1ecda1=>{const _0x3761b7=_0x164072;console[_0x3761b7(0x180)](_0x3761b7(0x1b0),_0x1ecda1);});}catch(_0x536bb2){console[_0x164072(0x180)](_0x164072(0x1e0),_0x536bb2);}},_0x756362(0x290));const _0x4e3b67=_0x756362(0x158),_0x19ce40=_0x756362(0x288)+encodeURIComponent(_0x2e4023)+_0x756362(0x219)+encodeURIComponent(_0x4e3b67);window[_0x756362(0x275)][_0x756362(0x1ed)]=_0x19ce40;});},window[_0x164cd1(0x1b7)]=(_0x5011f7,_0x5e399c)=>{const _0x2ed5c6=_0x164cd1,_0x4d2560=document[_0x2ed5c6(0x2f5)](_0x2ed5c6(0x20f));if(!_0x4d2560)return;const _0x279f63=_0x19ff2c[_0x2ed5c6(0x2b2)][_0x5011f7];if(!_0x279f63)return;const _0xb37e30=_0x279f63[_0x2ed5c6(0x1ba)][_0x2ed5c6(0x1fa)](_0x43aa6c=>_0x43aa6c['id']===_0x5e399c);if(!_0xb37e30)return;const _0xfe7561=_0x279f63[_0x2ed5c6(0x1ba)][_0x2ed5c6(0x153)](_0xb37e30)+0x1,_0x33ba42=_0x19ff2c[_0x2ed5c6(0x162)]?_0x19ff2c['currentUser'][_0x2ed5c6(0x29a)]:_0x2ed5c6(0x29d),_0x2d1f4c=_0x2ed5c6(0x193)+_0xfe7561+_0x2ed5c6(0x270)+_0x33ba42,_0x5bf8a1=_0x4d2560[_0x2ed5c6(0x2ab)][_0x2ed5c6(0x189)],_0x2f2c52=_0x4d2560[_0x2ed5c6(0x2ab)]['maxHeight'],_0x3d3a48=_0x4d2560[_0x2ed5c6(0x2ab)][_0x2ed5c6(0x24f)];_0x4d2560[_0x2ed5c6(0x2ab)]['height']=_0x2ed5c6(0x2ba),_0x4d2560[_0x2ed5c6(0x2ab)]['maxHeight']=_0x2ed5c6(0x194),_0x4d2560[_0x2ed5c6(0x2ab)][_0x2ed5c6(0x24f)]=_0x2ed5c6(0x2f8),html2canvas(_0x4d2560,{'scale':0x2,'useCORS':!![]})[_0x2ed5c6(0x1f5)](_0x46592f=>{const _0x3245a3=_0x2ed5c6;_0x4d2560[_0x3245a3(0x2ab)]['height']=_0x5bf8a1,_0x4d2560[_0x3245a3(0x2ab)][_0x3245a3(0x2eb)]=_0x2f2c52,_0x4d2560[_0x3245a3(0x2ab)]['overflow']=_0x3d3a48;const _0x3c6c83=_0x46592f[_0x3245a3(0x184)](_0x3245a3(0x290)),_0x152d1c=document['createElement']('a');_0x152d1c[_0x3245a3(0x2fc)]='bootcamp_plan_'+_0xfe7561+_0x3245a3(0x173),_0x152d1c['href']=_0x3c6c83,_0x152d1c[_0x3245a3(0x138)](),_0x46592f['toBlob'](_0x4f42e2=>{const _0x552a85=_0x3245a3;if(_0x4f42e2)try{navigator[_0x552a85(0x1ee)]['write']([new ClipboardItem({'image/png':_0x4f42e2})])[_0x552a85(0x1f5)](()=>{const _0x590c00=_0x552a85;console['log'](_0x590c00(0x264));})['catch'](_0x37eed2=>{const _0x127d43=_0x552a85;console[_0x127d43(0x180)](_0x127d43(0x1b0),_0x37eed2);});}catch(_0x1fe695){console[_0x552a85(0x180)](_0x552a85(0x1e0),_0x1fe695);}},_0x3245a3(0x290));const _0x2f8216=_0x3245a3(0x158),_0x2bc2e6=_0x3245a3(0x288)+encodeURIComponent(_0x2d1f4c)+'&body='+encodeURIComponent(_0x2f8216);window[_0x3245a3(0x275)][_0x3245a3(0x1ed)]=_0x2bc2e6;});};function _0x2e38ff(_0x3741cb){const _0x5cfc41=_0x164cd1,_0x28da98=Number(_0x3741cb);return isNaN(_0x28da98)?'0':_0x28da98[_0x5cfc41(0x21d)](_0x5cfc41(0x238));}function _0x508462(_0x472ed2){const _0x5e7a33=_0x164cd1,_0x2eb6fa=Number(String(_0x472ed2)[_0x5e7a33(0x1f0)](/[^0-9.-]/g,''));return isNaN(_0x2eb6fa)?0x0:_0x2eb6fa;}window[_0x164cd1(0x25d)]=_0xef4007=>{const _0x34d2f7=_0x164cd1;let _0x7dd9f2=null;for(const _0xcda9e7 in _0x19ff2c[_0x34d2f7(0x2af)]){const _0x269348=(_0x19ff2c[_0x34d2f7(0x2af)][_0xcda9e7]?.[_0x34d2f7(0x1ba)]||[])[_0x34d2f7(0x1fa)](_0x375608=>_0x375608['id']===_0xef4007);if(_0x269348){_0x7dd9f2=_0x269348;break;}}if(!_0x7dd9f2)return;const _0x3dd8ce=_0x42040d(_0x7dd9f2),_0x82651e=_0x3dd8ce[_0x34d2f7(0x259)]||0x0,_0x36487b=_0x3dd8ce['BA']||0x0,_0x4f276e=_0x3dd8ce['MF']||0x0,_0x200f51=_0x3dd8ce['SN']||0x0,_0x54d6df=_0x3dd8ce[_0x34d2f7(0x241)]||0x0,_0x156914=_0x3dd8ce[_0x34d2f7(0x2f9)]||0x0;let _0x399eea=document['getElementById'](_0x34d2f7(0x1a7));!_0x399eea&&(_0x399eea=document[_0x34d2f7(0x154)]('div'),_0x399eea['id']=_0x34d2f7(0x1a7),_0x399eea[_0x34d2f7(0x21c)]=_0x34d2f7(0x22b),_0x399eea[_0x34d2f7(0x229)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20w-[90vw]\x20h-[90vh]\x20rounded-2xl\x20shadow-2xl\x20flex\x20flex-col\x20overflow-hidden\x20border\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Header\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22px-6\x20py-4\x20border-b\x20border-slate-200\x20flex\x20items-center\x20justify-between\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-sm\x20font-bold\x20text-slate-800\x22>กราฟวิเคราะห์ผลิตภัณฑ์\x20(Product\x20Analysis\x20Charts)</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22closeGraphLightbox()\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-rose-50\x20hover:text-rose-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x22\x20title=\x22ปิด\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-xmark\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Body\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex-grow\x20p-8\x20grid\x20grid-cols-1\x20md:grid-cols-2\x20gap-8\x20items-center\x20justify-center\x20overflow-y-auto\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20flex-col\x20items-center\x20justify-center\x20h-full\x20min-h-[300px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-sm\x20font-bold\x20text-slate-700\x20mb-4\x22>สัดส่วนผลิตภัณฑ์\x20(Deposit,\x20BA,\x20MF,\x20SN)</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22w-full\x20max-w-[320px]\x20max-h-[320px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<canvas\x20id=\x22pieChartCanvas\x22></canvas>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20flex-col\x20items-center\x20justify-center\x20h-full\x20min-h-[300px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-sm\x20font-bold\x20text-slate-700\x20mb-4\x20font-sans\x22>จำนวนพอร์ต\x20(Qualified\x20WB/PB\x20&\x20Relation)</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22w-full\x20max-w-[400px]\x20max-h-[320px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<canvas\x20id=\x22barChartCanvas\x22></canvas>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',document['body']['appendChild'](_0x399eea));_0x399eea['classList']['remove'](_0x34d2f7(0x2c4));if(window[_0x34d2f7(0x2c3)])window[_0x34d2f7(0x2c3)]['destroy']();if(window[_0x34d2f7(0x1e5)])window['myBarChart'][_0x34d2f7(0x178)]();const _0x9e1150=document[_0x34d2f7(0x2f5)](_0x34d2f7(0x24d))[_0x34d2f7(0x188)]('2d');window[_0x34d2f7(0x2c3)]=new Chart(_0x9e1150,{'type':_0x34d2f7(0x258),'data':{'labels':[_0x34d2f7(0x259),'BA','MF','SN'],'datasets':[{'data':[_0x82651e,_0x36487b,_0x4f276e,_0x200f51],'backgroundColor':[_0x34d2f7(0x187),_0x34d2f7(0x289),_0x34d2f7(0x1b1),'#ec4899']}]},'options':{'responsive':!![],'plugins':{'legend':{'position':_0x34d2f7(0x1cf)},'tooltip':{'callbacks':{'label':function(_0x49805d){const _0x1baa01=_0x34d2f7;let _0x3118e8=_0x49805d[_0x1baa01(0x20b)]['data']['reduce']((_0x360d7b,_0x5f3ded)=>_0x360d7b+_0x5f3ded,0x0),_0x59e81f=_0x49805d[_0x1baa01(0x203)],_0x5ed7e3=_0x3118e8>0x0?(_0x59e81f/_0x3118e8*0x64)[_0x1baa01(0x2ce)](0x1)+'%':'0%';return _0x49805d[_0x1baa01(0x271)]+':\x20'+_0x59e81f[_0x1baa01(0x21d)](_0x1baa01(0x238))+'\x20บาท\x20('+_0x5ed7e3+')';}}}}}});const _0x133885=document['getElementById'](_0x34d2f7(0x2c0))['getContext']('2d');window['myBarChart']=new Chart(_0x133885,{'type':'bar','data':{'labels':[_0x34d2f7(0x2ac),_0x34d2f7(0x202)],'datasets':[{'label':_0x34d2f7(0x2f0),'data':[_0x54d6df,_0x156914],'backgroundColor':[_0x34d2f7(0x272),_0x34d2f7(0x2a8)],'borderWidth':0x1}]},'options':{'responsive':!![],'scales':{'y':{'beginAtZero':!![],'ticks':{'stepSize':0x1}}},'plugins':{'legend':{'display':![]}}}});},window[_0x164cd1(0x1e7)]=()=>{const _0x2fd55e=_0x164cd1,_0x494979=document[_0x2fd55e(0x2f5)](_0x2fd55e(0x1a7));_0x494979&&_0x494979[_0x2fd55e(0x214)][_0x2fd55e(0x1f2)](_0x2fd55e(0x2c4));};function _0x5c20ee(_0x3aec1f,_0x46ccae){const _0x2335b0=_0x164cd1;let _0x45f355=document['getElementById'](_0x2335b0(0x1c7));!_0x45f355&&(_0x45f355=document['createElement']('div'),_0x45f355['id']=_0x2335b0(0x1c7),_0x45f355['className']='fixed\x20inset-0\x20bg-slate-900/60\x20backdrop-blur-sm\x20z-[99999]\x20flex\x20items-center\x20justify-center\x20p-4',_0x45f355['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20w-[400px]\x20rounded-2xl\x20shadow-2xl\x20p-6\x20border\x20border-slate-200\x20space-y-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-base\x20font-black\x20text-slate-800\x22>ยืนยันการลบชุดข้อมูล</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-500\x22>กรุณาพิมพ์ข้อความ\x20<strong\x20class=\x22text-rose-600\x22>Delete\x20Page</strong>\x20เพื่อยืนยันการลบชุดข้อมูลนี้</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22deleteConfirmInput\x22\x20placeholder=\x22Delete\x20Page\x22\x20class=\x22w-full\x20border\x20border-slate-200\x20rounded-lg\x20py-2\x20px-3\x20text-xs\x20outline-none\x20focus:border-rose-500\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-3\x20justify-end\x20pt-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22btnCancelDelete\x22\x20class=\x22px-4\x20py-2\x20text-xs\x20font-bold\x20text-slate-500\x20hover:bg-slate-100\x20rounded-lg\x20transition\x22>ยกเลิก</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22btnConfirmDelete\x22\x20disabled\x20class=\x22px-4\x20py-2\x20text-xs\x20font-bold\x20text-white\x20bg-rose-600\x20rounded-lg\x20transition\x20disabled:bg-rose-300\x20disabled:opacity-50\x20disabled:cursor-not-allowed\x22>ยืนยัน</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',document[_0x2335b0(0x28a)][_0x2335b0(0x2ee)](_0x45f355));_0x45f355[_0x2335b0(0x214)][_0x2335b0(0x20c)](_0x2335b0(0x2c4));const _0x4094c4=document[_0x2335b0(0x2f5)](_0x2335b0(0x27c)),_0x14a75f=document[_0x2335b0(0x2f5)](_0x2335b0(0x2a6)),_0x18ec33=document['getElementById'](_0x2335b0(0x225));_0x4094c4[_0x2335b0(0x2e5)]='',_0x14a75f[_0x2335b0(0x1c1)]=!![],_0x4094c4['oninput']=()=>{const _0x206927=_0x2335b0;_0x14a75f[_0x206927(0x1c1)]=_0x4094c4['value']!==_0x206927(0x242);},_0x14a75f[_0x2335b0(0x265)]=async()=>{const _0x598e3a=_0x2335b0;_0x45f355['classList'][_0x598e3a(0x1f2)]('hidden');const _0x13f78c=_0x19ff2c[_0x598e3a(0x2af)][_0x3aec1f];if(!_0x13f78c)return;await _0x5d9c2b(_0x46ccae),_0x13f78c['sets']=_0x13f78c['sets'][_0x598e3a(0x144)](_0x4ea66f=>_0x4ea66f['id']!==_0x46ccae),_0x13f78c[_0x598e3a(0x152)]===_0x46ccae&&(_0x13f78c[_0x598e3a(0x152)]=_0x13f78c[_0x598e3a(0x1ba)][0x0]['id']),_0xa4fa48(_0x3aec1f),_0x39b3eb(_0x3aec1f);},_0x18ec33[_0x2335b0(0x265)]=()=>{const _0x403ff5=_0x2335b0;_0x45f355['classList'][_0x403ff5(0x1f2)](_0x403ff5(0x2c4));};}function _0x50b707(_0x11dda4,_0x5552d9,_0x2b8bda){const _0x5a2a9c=_0x164cd1;if(!_0x11dda4||!_0x5552d9)return;_0x2b8bda?(_0x11dda4[_0x5a2a9c(0x2ab)][_0x5a2a9c(0x1eb)]=_0x5a2a9c(0x2db),_0x11dda4['classList'][_0x5a2a9c(0x20c)](_0x5a2a9c(0x1f7)),_0x11dda4[_0x5a2a9c(0x214)]['add'](_0x5a2a9c(0x195)),_0x5552d9['style']['backgroundColor']=_0x5a2a9c(0x2db),_0x5552d9[_0x5a2a9c(0x214)][_0x5a2a9c(0x20c)](_0x5a2a9c(0x1f7)),_0x5552d9[_0x5a2a9c(0x214)][_0x5a2a9c(0x1f2)]('text-emerald-800')):(_0x11dda4[_0x5a2a9c(0x2ab)][_0x5a2a9c(0x1eb)]=_0x5a2a9c(0x2c8),_0x11dda4[_0x5a2a9c(0x214)]['remove'](_0x5a2a9c(0x195)),_0x11dda4[_0x5a2a9c(0x214)][_0x5a2a9c(0x1f2)]('text-slate-600'),_0x5552d9['style'][_0x5a2a9c(0x1eb)]='#e2e8f0',_0x5552d9[_0x5a2a9c(0x214)]['remove'](_0x5a2a9c(0x195)),_0x5552d9[_0x5a2a9c(0x214)][_0x5a2a9c(0x1f2)]('text-slate-600'));}window['openLightbox']=(_0x233a63,_0x320109,_0x55a39c)=>{const _0x5a853f=_0x164cd1;let _0x1de28c=document[_0x5a853f(0x2f5)](_0x5a853f(0x160));!_0x1de28c&&(_0x1de28c=document[_0x5a853f(0x154)](_0x5a853f(0x2e1)),_0x1de28c['id']=_0x5a853f(0x160),_0x1de28c[_0x5a853f(0x21c)]=_0x5a853f(0x22b),_0x1de28c[_0x5a853f(0x229)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-[#e9f0f8]\x20w-[90vw]\x20h-[90vh]\x20rounded-2xl\x20shadow-2xl\x20flex\x20flex-col\x20overflow-hidden\x20border\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Header\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20px-6\x20py-4\x20border-b\x20border-slate-200\x20flex\x20items-center\x20justify-between\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22lightboxTitle\x22\x20class=\x22text-sm\x20font-bold\x20text-slate-800\x22></span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22zoomLightboxFont(1)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20border\x20border-slate-200\x20bg-white\x20hover:bg-slate-50\x20flex\x20items-center\x20justify-center\x20text-slate-600\x20transition\x22\x20title=\x22ขยายตัวอักษร\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass-plus\x20text-sm\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22zoomLightboxFont(-1)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20border\x20border-slate-200\x20bg-white\x20hover:bg-slate-50\x20flex\x20items-center\x20justify-center\x20text-slate-600\x20transition\x22\x20title=\x22ลดขนาดตัวอักษร\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass-minus\x20text-sm\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22closeLightboxModal()\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-rose-50\x20hover:text-rose-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x22\x20title=\x22ปิด\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-xmark\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Body\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex-grow\x20p-6\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22lightboxTextarea\x22\x20class=\x22w-full\x20flex-grow\x20p-4\x20rounded-xl\x20border\x20border-slate-200\x20outline-none\x20focus:border-blue-500\x20font-normal\x20text-slate-800\x20resize-none\x20shadow-inner\x22\x20style=\x22background-color:\x20#ffffff;\x20font-size:\x2014px;\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',document[_0x5a853f(0x28a)][_0x5a853f(0x2ee)](_0x1de28c));_0x1de28c[_0x5a853f(0x214)][_0x5a853f(0x20c)](_0x5a853f(0x2c4)),document[_0x5a853f(0x2f5)]('lightboxTitle')[_0x5a853f(0x299)]=_0x233a63;const _0x53caa4=document['getElementById'](_0x5a853f(0x26a)),_0x3f7c23=document[_0x5a853f(0x262)](_0x320109);_0x53caa4[_0x5a853f(0x2e5)]=_0x3f7c23?_0x3f7c23[_0x5a853f(0x2e5)]:'',_0x53caa4[_0x5a853f(0x2ab)][_0x5a853f(0x227)]=_0x5a853f(0x182),_0x53caa4[_0x5a853f(0x18d)]=()=>{const _0x51bfa2=_0x5a853f;_0x3f7c23&&(_0x3f7c23[_0x51bfa2(0x2e5)]=_0x53caa4[_0x51bfa2(0x2e5)],_0x55a39c&&_0x55a39c(_0x53caa4[_0x51bfa2(0x2e5)]));};},window[_0x164cd1(0x243)]=_0x243977=>{const _0x3a55c3=_0x164cd1,_0x2f0f27=document['getElementById'](_0x3a55c3(0x26a));if(!_0x2f0f27)return;let _0x512d0d=parseInt(_0x2f0f27[_0x3a55c3(0x2ab)][_0x3a55c3(0x227)]||_0x3a55c3(0x182));_0x512d0d+=_0x243977*0x2;if(_0x512d0d<0xa)_0x512d0d=0xa;if(_0x512d0d>0x24)_0x512d0d=0x24;_0x2f0f27['style'][_0x3a55c3(0x227)]=_0x512d0d+'px';},window['closeLightboxModal']=()=>{const _0x2eb7eb=_0x164cd1,_0xc65208=document['getElementById'](_0x2eb7eb(0x160));_0xc65208&&_0xc65208['classList'][_0x2eb7eb(0x1f2)](_0x2eb7eb(0x2c4));};function _0x39cb21(_0x111574){const _0x43ddc8=_0x164cd1,_0x30446f=document[_0x43ddc8(0x154)]('div');return _0x30446f['id']=_0x43ddc8(0x230)+_0x111574['id'],_0x30446f[_0x43ddc8(0x21c)]=_0x43ddc8(0x1a0),_0x30446f['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22portfolioSetsTabBar-'+_0x111574['id']+_0x43ddc8(0x274)+_0x111574['id']+_0x43ddc8(0x2d3),_0x19ff2c[_0x43ddc8(0x2af)][_0x111574['id']]={'sets':[],'activeSetId':''},_0x1ff2cb(_0x111574),_0x30446f;}async function _0x1ff2cb(_0x48bcdf){const _0xa608d5=_0x164cd1,_0x549231=_0x19ff2c[_0xa608d5(0x162)];if(!_0x549231)return;const _0x4e18da=_0x549231['id']+'__'+_0x48bcdf['id'],_0x56e234=await _0x5de752(_0xa608d5(0x159),_0x4e18da)||{};let _0xa36f7c=await _0x32c53d(_0x549231['id'],_0x48bcdf['id']);if(!_0xa36f7c[_0xa608d5(0x2ec)]){const _0x42342c=await _0x67eca6(_0x549231['id'],_0x549231['roundId'],_0x48bcdf['id'],0x1);(_0x56e234[_0xa608d5(0x172)]||_0x56e234[_0xa608d5(0x29c)]||_0x56e234[_0xa608d5(0x1bd)])&&(_0x42342c[_0xa608d5(0x172)]=_0x56e234[_0xa608d5(0x172)]||'',_0x42342c[_0xa608d5(0x29c)]=_0x56e234['gap']||'',_0x42342c[_0xa608d5(0x1bd)]=_0x56e234[_0xa608d5(0x1bd)]||'',await _0x10afc5(_0x42342c['id'],{'overview':_0x42342c[_0xa608d5(0x172)],'gap':_0x42342c['gap'],'opportunity':_0x42342c['opportunity']})),_0xa36f7c=[_0x42342c];}_0xa36f7c=_0xa36f7c[_0xa608d5(0x1d2)](_0x4f14c5=>_0x2f6e1d(_0x4f14c5,_0x56e234));const _0x5aa22f=_0x19ff2c['portfolioTabState'][_0x48bcdf['id']];if(!_0x5aa22f)return;_0x5aa22f[_0xa608d5(0x1ba)]=_0xa36f7c,_0x5aa22f[_0xa608d5(0x152)]=_0xa36f7c[0x0]['id'],_0xa4fa48(_0x48bcdf['id']),_0x39b3eb(_0x48bcdf['id']);}function _0x2f6e1d(_0x47fad4){const _0x4a2619=_0x164cd1;(!_0x47fad4['rows']||typeof _0x47fad4[_0x4a2619(0x294)]!==_0x4a2619(0x148))&&(_0x47fad4[_0x4a2619(0x294)]=_0x56a8ee());const _0x1cb8b7=_0x56a8ee();return[_0x4a2619(0x212),'GROW',_0x4a2619(0x2b3)][_0x4a2619(0x1bb)](_0xe2e597=>{const _0x56c172=_0x4a2619;!Array[_0x56c172(0x13b)](_0x47fad4[_0x56c172(0x294)][_0xe2e597])?_0x47fad4['rows'][_0xe2e597]=_0x1cb8b7[_0xe2e597]:_0x47fad4[_0x56c172(0x294)][_0xe2e597]=_0x47fad4[_0x56c172(0x294)][_0xe2e597]['map'](_0x4470ad=>({'target':_0x4470ad[_0x56c172(0x18f)]||'','actionPlan':_0x4470ad[_0x56c172(0x220)]||'','group':_0x4470ad[_0x56c172(0x1a2)]||'','subGroup':_0x4470ad[_0x56c172(0x1da)]||'','amount':_0x4470ad[_0x56c172(0x218)]!==undefined?Number(_0x4470ad['amount']):0x0}));}),_0x47fad4;}function _0x318ca3(_0x390f03,_0x17345c){const _0x33cb05=_0x164cd1;return(_0x19ff2c[_0x33cb05(0x2af)][_0x390f03]?.[_0x33cb05(0x1ba)]||[])[_0x33cb05(0x1fa)](_0x47c686=>_0x47c686['id']===_0x17345c)||null;}function _0xa4fa48(_0x26600f){const _0x389a1e=_0x164cd1,_0x418715=document['getElementById'](_0x389a1e(0x2c6)+_0x26600f),_0xcfe019=_0x19ff2c[_0x389a1e(0x2af)][_0x26600f];if(!_0x418715||!_0xcfe019)return;const _0x3179e9=_0xcfe019[_0x389a1e(0x1ba)][_0x389a1e(0x2ec)]>0x1;_0x418715[_0x389a1e(0x229)]=_0xcfe019[_0x389a1e(0x1ba)]['map']((_0x16f1fa,_0x42559d)=>{const _0x5f4f8c=_0x389a1e,_0x5d57a6=_0x16f1fa['id']===_0xcfe019[_0x5f4f8c(0x152)];return _0x5f4f8c(0x1f3)+(_0x5d57a6?_0x5f4f8c(0x2f1):_0x5f4f8c(0x2bb))+_0x5f4f8c(0x1e2)+_0x26600f+_0x5f4f8c(0x168)+_0x16f1fa['id']+_0x5f4f8c(0x25a)+(_0x5d57a6?_0x5f4f8c(0x167):_0x5f4f8c(0x2a0))+'\x22>แผนงานที่\x20'+(_0x42559d+0x1)+'</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x3179e9?_0x5f4f8c(0x19a)+_0x26600f+'\x27,\x27'+_0x16f1fa['id']+_0x5f4f8c(0x183)+(_0x5d57a6?_0x5f4f8c(0x21a):'text-slate-400\x20hover:text-rose-600')+_0x5f4f8c(0x2b7):'')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>';})[_0x389a1e(0x1d3)]('')+(_0x389a1e(0x29e)+_0x26600f+_0x389a1e(0x113));}function _0x53f198(_0x13e1ce,_0x49ff8a){const _0x327a45=_0x164cd1,_0x3d6108={'GRAB':'bg-blue-600','GROW':_0x327a45(0x204),'GUARD':_0x327a45(0x1e3)},_0x7b77ed=_0x13e1ce['rows'][_0x49ff8a]||[];return _0x7b77ed['map']((_0x2bc50f,_0x53fe89)=>{const _0x11d2c0=_0x327a45,_0x2491b9=!!_0x2bc50f['subGroup'],_0x369391=_0x2491b9?_0x11d2c0(0x195):_0x11d2c0(0x1f7),_0x555433=_0x2491b9?'#d1fae5':_0x11d2c0(0x2c8),_0x1a180c=_0x943181(_0x2bc50f[_0x11d2c0(0x1da)]);return _0x11d2c0(0x267)+(_0x53fe89===0x0?_0x11d2c0(0x251)+_0x7b77ed[_0x11d2c0(0x2ec)]+_0x11d2c0(0x24e)+_0x3d6108[_0x49ff8a]+_0x11d2c0(0x22e)+_0x49ff8a+_0x11d2c0(0x12d)+_0x7b77ed['length']+'\x22\x20class=\x22p-1.5\x20border-r\x20border-slate-200\x20align-top\x20w-[35%]\x20relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-between\x20mb-1\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-[10px]\x20font-bold\x20text-slate-500\x22>Target</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openLightbox(\x27Target\x20('+_0x49ff8a+_0x11d2c0(0x170)+_0x13e1ce['id']+'-'+_0x49ff8a+_0x11d2c0(0x279)+_0x13e1ce['activityItemId']+_0x11d2c0(0x1b2)+_0x13e1ce['id']+_0x11d2c0(0x17b)+_0x49ff8a+_0x11d2c0(0x249)+_0x13e1ce['activityItemId']+_0x11d2c0(0x1b2)+_0x13e1ce['id']+'\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20})\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20shrink-0\x22\x20title=\x22ขยายกล่องข้อความ\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22setTarget-'+_0x13e1ce['id']+'-'+_0x49ff8a+_0x11d2c0(0x280)+_0x13e1ce['id']+_0x11d2c0(0x255)+_0x49ff8a+_0x11d2c0(0x1df)+_0x5b2432(_0x7b77ed[0x0][_0x11d2c0(0x18f)]||'')+_0x11d2c0(0x221)+_0x7b77ed[_0x11d2c0(0x2ec)]+'\x22\x20class=\x22p-1.5\x20border-r\x20border-slate-200\x20align-top\x20w-[35%]\x20relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-between\x20mb-1\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-[10px]\x20font-bold\x20text-slate-500\x22>Action\x20Plan</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openLightbox(\x27Action\x20Plan\x20('+_0x49ff8a+_0x11d2c0(0x239)+_0x13e1ce['id']+'-'+_0x49ff8a+_0x11d2c0(0x279)+_0x13e1ce['activityItemId']+_0x11d2c0(0x1b2)+_0x13e1ce['id']+'\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(s)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20s.rows[\x27'+_0x49ff8a+_0x11d2c0(0x1c2)+_0x13e1ce['activityItemId']+'\x27,\x20\x27'+_0x13e1ce['id']+_0x11d2c0(0x245)+_0x13e1ce['id']+'-'+_0x49ff8a+_0x11d2c0(0x280)+_0x13e1ce['id']+_0x11d2c0(0x255)+_0x49ff8a+_0x11d2c0(0x231)+_0x5b2432(_0x7b77ed[0x0][_0x11d2c0(0x220)]||'')+_0x11d2c0(0x1f8):'')+_0x11d2c0(0x185)+_0x13e1ce['id']+_0x11d2c0(0x255)+_0x49ff8a+_0x11d2c0(0x136)+_0x53fe89+_0x11d2c0(0x14f)+_0x369391+_0x11d2c0(0x134)+_0x555433+_0x11d2c0(0x1a1)+_0x5edcc7(_0x2bc50f[_0x11d2c0(0x1da)])+_0x11d2c0(0x2fe)+_0x13e1ce['id']+_0x11d2c0(0x255)+_0x49ff8a+_0x11d2c0(0x136)+_0x53fe89+_0x11d2c0(0x1ac)+_0x369391+'\x20border\x20border-slate-200\x20rounded-lg\x20py-1.5\x20px-1.5\x20text-[11px]\x20text-center\x20font-bold\x20outline-none\x20focus:border-blue-500\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20value=\x22'+_0x2e38ff(_0x2bc50f[_0x11d2c0(0x218)]||0x0)+_0x11d2c0(0x17f)+_0x555433+';\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22w-10\x20text-right\x20flex\x20flex-col\x20justify-end\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x53fe89===0x0?_0x11d2c0(0x2b0):'')+_0x11d2c0(0x256)+_0x13e1ce['id']+'-'+_0x49ff8a+'-'+_0x53fe89+_0x11d2c0(0x1b5)+_0x1a180c+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';})[_0x327a45(0x1d3)]('');}function _0x39b3eb(_0x4b85d3){const _0x37114b=_0x164cd1,_0x1effae=document[_0x37114b(0x2f5)](_0x37114b(0x2e4)+_0x4b85d3),_0x317313=_0x19ff2c[_0x37114b(0x2af)][_0x4b85d3];if(!_0x1effae||!_0x317313)return;const _0x40d18d=_0x317313[_0x37114b(0x1ba)][_0x37114b(0x1fa)](_0x30ce80=>_0x30ce80['id']===_0x317313[_0x37114b(0x152)]);if(!_0x40d18d){_0x1effae[_0x37114b(0x229)]='';return;}_0x1effae['innerHTML']=_0x37114b(0x2ca)+_0x40d18d['id']+_0x37114b(0x268)+_0x40d18d['id']+_0x37114b(0x1de)+_0x40d18d['id']+_0x37114b(0x150)+_0x5b2432(_0x40d18d[_0x37114b(0x240)]||'')+_0x37114b(0x296)+_0x40d18d['id']+_0x37114b(0x1db)+_0x4b85d3+_0x37114b(0x1b2)+_0x40d18d['id']+'\x27,\x20{\x20overview:\x20val\x20}))\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20shrink-0\x22\x20title=\x22ขยายกล่องข้อความ\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22setOverview-'+_0x40d18d['id']+_0x37114b(0x123)+_0x5b2432(_0x40d18d[_0x37114b(0x172)]||'')+'</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-slate-50/50\x20border\x20border-slate-200\x20rounded-xl\x20p-3\x20space-y-1.5\x20relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-between\x20mb-1\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-black\x20text-slate-800\x20block\x22>2.\x20Gap</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openLightbox(\x272.\x20Gap\x27,\x20\x27#setGap-'+_0x40d18d['id']+_0x37114b(0x1db)+_0x4b85d3+_0x37114b(0x1b2)+_0x40d18d['id']+_0x37114b(0x2ea)+_0x40d18d['id']+_0x37114b(0x123)+_0x5b2432(_0x40d18d[_0x37114b(0x29c)]||'')+'</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-slate-50/50\x20border\x20border-slate-200\x20rounded-xl\x20p-3\x20space-y-1.5\x20relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-between\x20mb-1\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-black\x20text-slate-800\x20block\x22>3.\x20Opportunity</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openLightbox(\x273.\x20Opportunity\x27,\x20\x27#setOpportunity-'+_0x40d18d['id']+_0x37114b(0x1db)+_0x4b85d3+'\x27,\x20\x27'+_0x40d18d['id']+_0x37114b(0x1c0)+_0x40d18d['id']+_0x37114b(0x123)+_0x5b2432(_0x40d18d[_0x37114b(0x1bd)]||'')+_0x37114b(0x110)+['GRAB','GROW',_0x37114b(0x2b3)]['map'](_0x1d83a0=>_0x53f198(_0x40d18d,_0x1d83a0))[_0x37114b(0x1d3)]('')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22border-t\x20border-slate-200\x20bg-slate-50\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22bg-slate-500\x20text-white\x20text-center\x20align-middle\x20font-black\x20text-[11px]\x20tracking-widest\x20py-3\x22\x20style=\x22writing-mode:\x20vertical-rl;\x20transform:\x20rotate(180deg);\x22>TOTAL</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20colspan=\x223\x22\x20class=\x22p-3\x20bg-white\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22totalsBar-'+_0x40d18d['id']+_0x37114b(0x2a2)+_0x47b488(_0x40d18d)+_0x37114b(0x15f),_0x21d09b(_0x4b85d3,_0x40d18d['id']);}function _0x3a5dda(_0x5f40b5,_0x1c1290,_0x104e12){const _0x160bd9=_0x164cd1,_0x580ac2=_0x318ca3(_0x5f40b5,_0x1c1290);_0x580ac2&&Object[_0x160bd9(0x1d4)](_0x580ac2,_0x104e12),_0x10afc5(_0x1c1290,_0x104e12);}function _0x5823c2(_0x38b90d,_0x4b912c){const _0x26bd8a=_0x318ca3(_0x38b90d,_0x4b912c);if(!_0x26bd8a)return;_0x10afc5(_0x4b912c,{'rows':_0x26bd8a['rows']});}function _0x21d09b(_0x1fa85f,_0x596ce8){const _0x143d4e=_0x164cd1;_0x345d5e(document[_0x143d4e(0x2f5)]('setTopic-'+_0x596ce8),_0x3a2515=>_0x3a5dda(_0x1fa85f,_0x596ce8,{'topic':_0x3a2515})),_0x345d5e(document[_0x143d4e(0x2f5)](_0x143d4e(0x246)+_0x596ce8),_0x31ee32=>_0x3a5dda(_0x1fa85f,_0x596ce8,{'overview':_0x31ee32})),_0x345d5e(document[_0x143d4e(0x2f5)](_0x143d4e(0x169)+_0x596ce8),_0x49f292=>_0x3a5dda(_0x1fa85f,_0x596ce8,{'gap':_0x49f292})),_0x345d5e(document[_0x143d4e(0x2f5)](_0x143d4e(0x1c3)+_0x596ce8),_0x47068f=>_0x3a5dda(_0x1fa85f,_0x596ce8,{'opportunity':_0x47068f})),document[_0x143d4e(0x128)](_0x143d4e(0x1e4)+_0x596ce8+'\x22]')['forEach'](_0xc97985=>{const _0x519052=_0x143d4e;_0xc97985[_0x519052(0x1e8)](_0x519052(0x111),()=>{const _0x19b39d=_0x519052,_0x4f5d55=_0x318ca3(_0x1fa85f,_0x596ce8);if(!_0x4f5d55)return;_0x4f5d55[_0x19b39d(0x294)][_0xc97985[_0x19b39d(0x20b)][_0x19b39d(0x26d)]][Number(_0xc97985[_0x19b39d(0x20b)]['rowIndex'])][_0xc97985[_0x19b39d(0x20b)][_0x19b39d(0x284)]]=_0xc97985[_0x19b39d(0x2e5)],_0x5823c2(_0x1fa85f,_0x596ce8);});}),document[_0x143d4e(0x128)]('.portfolio-subgroup-field[data-set-id=\x22'+_0x596ce8+'\x22]')[_0x143d4e(0x1bb)](_0x116711=>{const _0xee6f3a=_0x143d4e;_0x116711[_0xee6f3a(0x1e8)](_0xee6f3a(0x1a5),()=>{const _0x3dbf01=_0xee6f3a,_0x583a03=_0x318ca3(_0x1fa85f,_0x596ce8);if(!_0x583a03)return;const _0x139aa8=_0x116711[_0x3dbf01(0x20b)]['category'],_0x54b638=Number(_0x116711[_0x3dbf01(0x20b)][_0x3dbf01(0x2a3)]),_0x21a431=_0x583a03[_0x3dbf01(0x294)][_0x139aa8][_0x54b638];_0x21a431[_0x3dbf01(0x1da)]=_0x116711[_0x3dbf01(0x2e5)];const _0x28915b=document[_0x3dbf01(0x262)]('.portfolio-amount-field[data-set-id=\x22'+_0x596ce8+'\x22][data-category=\x22'+_0x139aa8+'\x22][data-row-index=\x22'+_0x54b638+'\x22]');_0x21a431[_0x3dbf01(0x1da)]===''&&(_0x21a431[_0x3dbf01(0x218)]=0x0,_0x28915b&&(_0x28915b[_0x3dbf01(0x2e5)]='0'));_0x50b707(_0x116711,_0x28915b,_0x21a431['subGroup']!=='');const _0x3d4e17=document[_0x3dbf01(0x2f5)](_0x3dbf01(0x248)+_0x596ce8+'-'+_0x139aa8+'-'+_0x54b638);_0x3d4e17&&(_0x3d4e17[_0x3dbf01(0x299)]=_0x943181(_0x21a431[_0x3dbf01(0x1da)])),_0x5823c2(_0x1fa85f,_0x596ce8),_0x385f4c(_0x1fa85f,_0x596ce8);});}),document[_0x143d4e(0x128)](_0x143d4e(0x261)+_0x596ce8+'\x22]')['forEach'](_0x1de5ad=>{const _0x53cc75=_0x143d4e;_0x1de5ad['addEventListener']('focus',()=>{const _0x1598f1=_0x4fc1,_0xad49d0=_0x318ca3(_0x1fa85f,_0x596ce8);if(!_0xad49d0)return;const _0x177f75=_0x1de5ad['dataset'][_0x1598f1(0x26d)],_0x270215=Number(_0x1de5ad[_0x1598f1(0x20b)][_0x1598f1(0x2a3)]),_0x32bdaf=_0xad49d0[_0x1598f1(0x294)][_0x177f75][_0x270215];_0x1de5ad[_0x1598f1(0x2e5)]=String(_0x32bdaf['amount']||0x0);});const _0x3cc805=()=>{const _0x14c6d2=_0x4fc1,_0x2d2e3b=_0x318ca3(_0x1fa85f,_0x596ce8);if(!_0x2d2e3b)return;const _0x530463=_0x1de5ad['dataset'][_0x14c6d2(0x26d)],_0x3dc172=Number(_0x1de5ad[_0x14c6d2(0x20b)][_0x14c6d2(0x2a3)]),_0x1d50a2=_0x2d2e3b[_0x14c6d2(0x294)][_0x530463][_0x3dc172];let _0x5405f7=_0x508462(_0x1de5ad[_0x14c6d2(0x2e5)]);_0x5405f7<0x0&&(_0x5405f7=0x0);_0x1d50a2[_0x14c6d2(0x218)]=_0x5405f7,_0x1de5ad['value']=_0x2e38ff(_0x5405f7);const _0x575ffc=document[_0x14c6d2(0x262)](_0x14c6d2(0x252)+_0x596ce8+_0x14c6d2(0x142)+_0x530463+'\x22][data-row-index=\x22'+_0x3dc172+'\x22]');_0x50b707(_0x575ffc,_0x1de5ad,_0x1d50a2[_0x14c6d2(0x1da)]!==''),_0x5823c2(_0x1fa85f,_0x596ce8),_0x385f4c(_0x1fa85f,_0x596ce8);};_0x1de5ad[_0x53cc75(0x1e8)](_0x53cc75(0x1a5),_0x3cc805),_0x1de5ad['addEventListener'](_0x53cc75(0x111),_0x3cc805);});}function _0x5635f0(_0x2442d6,_0x183aed){const _0x144306=_0x164cd1,_0x484cc0=_0x19ff2c[_0x144306(0x2af)][_0x2442d6];if(!_0x484cc0)return;_0x484cc0[_0x144306(0x152)]=_0x183aed,_0xa4fa48(_0x2442d6),_0x39b3eb(_0x2442d6);}async function _0x4c0340(_0x4f0b87){const _0x4f285e=_0x164cd1,_0x5190c1=_0x19ff2c[_0x4f285e(0x2af)][_0x4f0b87],_0x150579=_0x19ff2c['currentUser'];if(!_0x5190c1||!_0x150579)return;const _0x51b320=_0x5190c1[_0x4f285e(0x1ba)][_0x4f285e(0x2ec)]+0x1,_0x2d9b29=await _0x67eca6(_0x150579['id'],_0x150579[_0x4f285e(0x29b)],_0x4f0b87,_0x51b320);_0x5190c1[_0x4f285e(0x1ba)]['push'](_0x2d9b29),_0x5190c1[_0x4f285e(0x152)]=_0x2d9b29['id'],_0xa4fa48(_0x4f0b87),_0x39b3eb(_0x4f0b87);}async function _0x32b534(_0x1884ef,_0x1f337c){_0x5c20ee(_0x1884ef,_0x1f337c);}function _0x43703d(_0x36fc75,_0x1419f7,_0x5cbda6,_0x126d0e){const _0x4f43c9=_0x164cd1;return'<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22'+_0x126d0e+_0x4f43c9(0x2ed)+_0x1419f7+_0x4f43c9(0x28e)+_0x5b2432(_0x5cbda6)+_0x4f43c9(0x2b5)+_0x36fc75+'\x22\x20class=\x22w-full\x20min-h-[60px]\x20p-2\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x22\x20style=\x22background-color:\x20#eaf0f7;\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>';}function _0x596842(_0x217c44,_0x311146,_0x3598e2){const _0x4ca1be=_0x164cd1;return _0x4ca1be(0x2a4)+_0x3598e2+_0x4ca1be(0x2ed)+_0x5b2432(_0x311146)+_0x4ca1be(0x2b5)+_0x217c44+_0x4ca1be(0x133);}function _0x31d32f(_0x3bf4ab){const _0x3fe515=_0x164cd1,_0x33652d=document['createElement'](_0x3fe515(0x2e1));return _0x33652d['id']=_0x3fe515(0x230)+_0x3bf4ab['id'],_0x33652d['className']='w-full\x20flex\x20flex-col\x20gap-4',_0x33652d['innerHTML']=_0x3fe515(0x186)+_0x3bf4ab['id']+_0x3fe515(0x209)+_0x3bf4ab['id']+_0x3fe515(0x2d3),_0x19ff2c[_0x3fe515(0x2b2)][_0x3bf4ab['id']]={'sets':[],'activeSetId':''},_0x48ae1a(_0x3bf4ab),_0x33652d;}async function _0x48ae1a(_0x54ed1a){const _0x1b255f=_0x164cd1,_0x5edaf0=_0x19ff2c['currentUser'];if(!_0x5edaf0)return;const _0x3c4145=_0x5edaf0['id']+'__'+_0x54ed1a['id'],_0x9e2013=await _0x5de752(_0x1b255f(0x247),_0x3c4145)||{};let _0x5485ec=_0x9e2013[_0x1b255f(0x1ba)]||[];if(!_0x5485ec[_0x1b255f(0x2ec)]){const _0xd211b9={'id':_0x1b255f(0x2d6)+Date['now']()+'_'+Math[_0x1b255f(0x140)]()[_0x1b255f(0x15e)](0x24)[_0x1b255f(0x2de)](0x2,0x9),'topic':_0x1b255f(0x2e6),'customerInfo':_0x9e2013['customerInfo']||'','act':_0x9e2013['act']||{'aim':'','consult':'','track':''},'ion':_0x9e2013[_0x1b255f(0x14a)]||{'improve':'','operate':'','notice':''},'diagnosis':_0x9e2013[_0x1b255f(0x199)]||{'goalAndLimit':'','idealPortfolio':'','currentPortfolio':'','portfolioSymptom':'','potentialImpact':'','adjustmentGuideline':''},'financialSolutions':_0x9e2013[_0x1b255f(0x1a4)]||[]};_0x5485ec=[_0xd211b9],await _0x1933f3('customerDiagnosis',_0x3c4145,{..._0x9e2013,'sets':_0x5485ec,'activeSetId':_0xd211b9['id']});}const _0x3d3d75=_0x19ff2c['bootcampTabState'][_0x54ed1a['id']];if(!_0x3d3d75)return;_0x3d3d75[_0x1b255f(0x1ba)]=_0x5485ec,(!_0x3d3d75[_0x1b255f(0x152)]||!_0x5485ec['some'](_0x37e368=>_0x37e368['id']===_0x3d3d75[_0x1b255f(0x152)]))&&(_0x3d3d75[_0x1b255f(0x152)]=_0x9e2013[_0x1b255f(0x152)]||_0x5485ec[0x0]['id']),!_0x5485ec['some'](_0x579ed4=>_0x579ed4['id']===_0x3d3d75[_0x1b255f(0x152)])&&(_0x3d3d75[_0x1b255f(0x152)]=_0x5485ec[0x0]['id']),_0x56e5c9(_0x54ed1a['id']),_0x1ca83f(_0x54ed1a['id']);}function _0x56e5c9(_0xb08402){const _0xfc81b7=_0x164cd1,_0x317e10=document[_0xfc81b7(0x2f5)](_0xfc81b7(0x298)+_0xb08402),_0x467b2b=_0x19ff2c[_0xfc81b7(0x2b2)][_0xb08402];if(!_0x317e10||!_0x467b2b)return;const _0x2b831a=_0x467b2b[_0xfc81b7(0x1ba)][_0xfc81b7(0x2ec)]>0x1;_0x317e10[_0xfc81b7(0x229)]=_0x467b2b[_0xfc81b7(0x1ba)]['map']((_0x2bf4dc,_0xd49d14)=>{const _0x2aef4a=_0xfc81b7,_0x290d14=_0x2bf4dc['id']===_0x467b2b['activeSetId'];return _0x2aef4a(0x1f3)+(_0x290d14?_0x2aef4a(0x141):_0x2aef4a(0x2bb))+_0x2aef4a(0x2a1)+_0xb08402+_0x2aef4a(0x168)+_0x2bf4dc['id']+_0x2aef4a(0x25a)+(_0x290d14?_0x2aef4a(0x167):'text-slate-600\x20hover:bg-slate-300')+_0x2aef4a(0x1b4)+(_0xd49d14+0x1)+'</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x2b831a?'<button\x20onclick=\x22removeBootcampSet(\x27'+_0xb08402+_0x2aef4a(0x168)+_0x2bf4dc['id']+_0x2aef4a(0x183)+(_0x290d14?'text-white/70\x20hover:text-white\x20border-l\x20border-orange-400':_0x2aef4a(0x250))+_0x2aef4a(0x2b7):'')+_0x2aef4a(0x291);})[_0xfc81b7(0x1d3)]('')+(_0xfc81b7(0x11a)+_0xb08402+_0xfc81b7(0x113));}function _0x1ca83f(_0x1f6974){const _0x4feb1b=_0x164cd1,_0x14dbd9=document['getElementById'](_0x4feb1b(0x2c9)+_0x1f6974),_0xfe6551=_0x19ff2c[_0x4feb1b(0x2b2)][_0x1f6974];if(!_0x14dbd9||!_0xfe6551)return;const _0x1990a0=_0xfe6551[_0x4feb1b(0x1ba)][_0x4feb1b(0x1fa)](_0x1620bf=>_0x1620bf['id']===_0xfe6551[_0x4feb1b(0x152)]);if(!_0x1990a0){_0x14dbd9['innerHTML']='';return;}const _0x33d8d7=_0x1990a0[_0x4feb1b(0x286)]||{'aim':'','consult':'','track':''},_0xb2866c=_0x1990a0[_0x4feb1b(0x14a)]||{'improve':'','operate':'','notice':''},_0x1aaf09=_0x1990a0[_0x4feb1b(0x199)]||{'goalAndLimit':'','idealPortfolio':'','currentPortfolio':'','portfolioSymptom':'','potentialImpact':'','adjustmentGuideline':''},_0x1918f2=_0x1990a0[_0x4feb1b(0x1a4)]||[];_0x14dbd9[_0x4feb1b(0x229)]=_0x4feb1b(0x2be)+_0x1f6974+_0x4feb1b(0x1b2)+_0x1990a0['id']+_0x4feb1b(0x28c)+_0x1f6974+'\x22\x20value=\x22'+_0x5b2432(_0x1990a0[_0x4feb1b(0x240)]||'')+_0x4feb1b(0x27a)+_0x1f6974+'\x22\x20class=\x22w-full\x20min-h-[90px]\x20rounded-lg\x20p-2\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:ring-2\x20focus:ring-blue-500\x22\x20style=\x22background-color:\x20#eaf0f7;\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x203\x20Columns,\x202\x20Rows\x20grid\x20for\x20A\x20C\x20T\x20I\x20O\x20N\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-3\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x43703d(_0x4feb1b(0x127)+_0x1f6974,'A',_0x4feb1b(0x222),_0x4feb1b(0x149))+_0x4feb1b(0x2c2)+_0x43703d(_0x4feb1b(0x14d)+_0x1f6974,'C',_0x4feb1b(0x1ae),_0x4feb1b(0x149))+_0x4feb1b(0x2c2)+_0x43703d('cdTrack-'+_0x1f6974,'T',_0x4feb1b(0x2b1),_0x4feb1b(0x149))+_0x4feb1b(0x2c2)+_0x43703d(_0x4feb1b(0x277)+_0x1f6974,'I',_0x4feb1b(0x224),_0x4feb1b(0x1a6))+_0x4feb1b(0x2c2)+_0x43703d(_0x4feb1b(0x295)+_0x1f6974,'O','Operate',_0x4feb1b(0x1a6))+_0x4feb1b(0x2c2)+_0x43703d(_0x4feb1b(0x21e)+_0x1f6974,'N','Notice','bgorange')+_0x4feb1b(0x234)+_0x596842(_0x4feb1b(0x2fb)+_0x1f6974,_0x4feb1b(0x1a9),'bgblue')+_0x4feb1b(0x2c2)+_0x596842(_0x4feb1b(0x163)+_0x1f6974,_0x4feb1b(0x14e),_0x4feb1b(0x149))+_0x4feb1b(0x2c2)+_0x596842(_0x4feb1b(0x151)+_0x1f6974,_0x4feb1b(0x1ec),_0x4feb1b(0x149))+_0x4feb1b(0x2c2)+_0x596842(_0x4feb1b(0x1f1)+_0x1f6974,_0x4feb1b(0x13c),'bgorange')+_0x4feb1b(0x2c2)+_0x596842(_0x4feb1b(0x2cb)+_0x1f6974,'ผลกระทบที่อาจเกิดขึ้น',_0x4feb1b(0x1a6))+_0x4feb1b(0x2c2)+_0x596842(_0x4feb1b(0x171)+_0x1f6974,'แนวทางปรับพอร์ต',_0x4feb1b(0x1a6))+_0x4feb1b(0x2dd)+_0x1f6974+_0x4feb1b(0x12c),_0x5ac9ee(_0x4feb1b(0x137)+_0x1f6974,_0x1990a0[_0x4feb1b(0x211)]||''),_0x5ac9ee(_0x4feb1b(0x127)+_0x1f6974,_0x33d8d7[_0x4feb1b(0x130)]||''),_0x5ac9ee('cdConsult-'+_0x1f6974,_0x33d8d7[_0x4feb1b(0x26c)]||''),_0x5ac9ee('cdTrack-'+_0x1f6974,_0x33d8d7[_0x4feb1b(0x14c)]||''),_0x5ac9ee(_0x4feb1b(0x277)+_0x1f6974,_0xb2866c[_0x4feb1b(0x1ef)]||''),_0x5ac9ee('cdOperate-'+_0x1f6974,_0xb2866c[_0x4feb1b(0x13f)]||''),_0x5ac9ee('cdNotice-'+_0x1f6974,_0xb2866c['notice']||''),_0x5ac9ee(_0x4feb1b(0x2fb)+_0x1f6974,_0x1aaf09['goalAndLimit']||''),_0x5ac9ee(_0x4feb1b(0x163)+_0x1f6974,_0x1aaf09[_0x4feb1b(0x2e2)]||''),_0x5ac9ee(_0x4feb1b(0x151)+_0x1f6974,_0x1990a0[_0x4feb1b(0x199)]?.[_0x4feb1b(0x28b)]||_0x1aaf09['currentPortfolio']||''),_0x5ac9ee(_0x4feb1b(0x1f1)+_0x1f6974,_0x1aaf09[_0x4feb1b(0x273)]||''),_0x5ac9ee(_0x4feb1b(0x2cb)+_0x1f6974,_0x1aaf09['potentialImpact']||''),_0x5ac9ee(_0x4feb1b(0x171)+_0x1f6974,_0x1aaf09['adjustmentGuideline']||'');const _0x336baf=document[_0x4feb1b(0x2f5)](_0x4feb1b(0x15d)+_0x1f6974);if(_0x336baf){const _0xcf9335=[_0x4feb1b(0x122),_0x4feb1b(0x1b6),_0x4feb1b(0x129),_0x4feb1b(0x20e),'เพื่อการท่องเที่ยว',_0x4feb1b(0x2fd)];_0x336baf['innerHTML']=Array['from']({'length':0x3})[_0x4feb1b(0x1d2)]((_0x62f0c1,_0x5e1d70)=>{const _0x27277b=_0x4feb1b,_0x2d7605=_0x1918f2[_0x5e1d70]||{},_0x15bbfc=_0xcf9335['map'](_0x3f955d=>'<option\x20value=\x22'+_0x3f955d+'\x22\x20'+(_0x2d7605[_0x27277b(0x1ad)]===_0x3f955d?_0x27277b(0x23d):'')+'>'+_0x3f955d+_0x27277b(0x132))[_0x27277b(0x1d3)]('');return _0x27277b(0x2d7)+_0x1f6974+'-'+_0x5e1d70+_0x27277b(0x1fb)+_0x15bbfc+_0x27277b(0x2bc)+_0x1f6974+'-'+_0x5e1d70+_0x27277b(0x150)+_0x5b2432(_0x2d7605[_0x27277b(0x218)]||'')+_0x27277b(0x2cf)+_0x1f6974+'-'+_0x5e1d70+_0x27277b(0x150)+_0x5b2432(_0x2d7605[_0x27277b(0x131)]||'')+_0x27277b(0x237)+_0x1f6974+'-'+_0x5e1d70+_0x27277b(0x150)+_0x5b2432(_0x2d7605['expectedReturn']||'')+'\x22\x20class=\x22w-full\x20border\x20border-slate-200\x20rounded-lg\x20p-1.5\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:border-blue-500\x22\x20placeholder=\x22ผลตอบแทน\x20%\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-2\x20align-top\x20border-r\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22cdSolSmartSpend-'+_0x1f6974+'-'+_0x5e1d70+_0x27277b(0x276)+_0x5b2432(_0x2d7605[_0x27277b(0x2d1)]||'')+'</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-2\x20align-top\x20border-r\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22cdSolSmartSave-'+_0x1f6974+'-'+_0x5e1d70+_0x27277b(0x276)+_0x5b2432(_0x2d7605[_0x27277b(0x2bf)]||'')+'</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-2\x20align-top\x20border-r\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22cdSolSmartProtect-'+_0x1f6974+'-'+_0x5e1d70+'\x22\x20class=\x22w-full\x20min-h-[240px]\x20border\x20border-slate-200\x20rounded-lg\x20p-1.5\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:border-blue-500\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>'+_0x5b2432(_0x2d7605['smartProtect']||'')+'</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-2\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22cdSolSmartBorrow-'+_0x1f6974+'-'+_0x5e1d70+'\x22\x20class=\x22w-full\x20min-h-[240px]\x20border\x20border-slate-200\x20rounded-lg\x20p-1.5\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:border-blue-500\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>'+_0x5b2432(_0x2d7605[_0x27277b(0x2b6)]||'')+'</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';})['join']('');}const _0x322d8d=(_0x4aa591,_0x3f9a28)=>{const _0x515e76=_0x4feb1b,_0x4e1d10=document[_0x515e76(0x2f5)](_0x4aa591);_0x4e1d10&&_0x345d5e(_0x4e1d10,_0xe9898b=>{_0x2b6fb0(_0x1f6974,_0x1990a0['id'],_0x3f9a28,_0xe9898b);});};_0x322d8d('cdCustomerInfo-'+_0x1f6974,[_0x4feb1b(0x211)]),_0x322d8d(_0x4feb1b(0x127)+_0x1f6974,['act',_0x4feb1b(0x130)]),_0x322d8d('cdConsult-'+_0x1f6974,['act','consult']),_0x322d8d(_0x4feb1b(0x1d8)+_0x1f6974,[_0x4feb1b(0x286),'track']),_0x322d8d(_0x4feb1b(0x277)+_0x1f6974,[_0x4feb1b(0x14a),_0x4feb1b(0x1ef)]),_0x322d8d(_0x4feb1b(0x295)+_0x1f6974,[_0x4feb1b(0x14a),'operate']),_0x322d8d('cdNotice-'+_0x1f6974,[_0x4feb1b(0x14a),_0x4feb1b(0x21b)]),_0x322d8d(_0x4feb1b(0x2fb)+_0x1f6974,['diagnosis',_0x4feb1b(0x1bc)]),_0x322d8d(_0x4feb1b(0x163)+_0x1f6974,[_0x4feb1b(0x199),_0x4feb1b(0x2e2)]),_0x322d8d(_0x4feb1b(0x151)+_0x1f6974,[_0x4feb1b(0x199),_0x4feb1b(0x28b)]),_0x322d8d(_0x4feb1b(0x1f1)+_0x1f6974,[_0x4feb1b(0x199),'portfolioSymptom']),_0x322d8d(_0x4feb1b(0x2cb)+_0x1f6974,['diagnosis',_0x4feb1b(0x124)]),_0x322d8d(_0x4feb1b(0x171)+_0x1f6974,[_0x4feb1b(0x199),'adjustmentGuideline']);const _0x330096=document[_0x4feb1b(0x2f5)](_0x4feb1b(0x2aa)+_0x1f6974);_0x330096&&_0x330096['addEventListener'](_0x4feb1b(0x120),_0x140652=>{const _0x478130=_0x4feb1b,_0x4666a6=_0x140652['target'][_0x478130(0x2e5)];_0x1990a0[_0x478130(0x240)]=_0x4666a6||'แผนงานที่\x20'+(_0xfe6551['sets'][_0x478130(0x153)](_0x1990a0)+0x1),_0x2b6fb0(_0x1f6974,_0x1990a0['id'],['topic'],_0x4666a6),_0x56e5c9(_0x1f6974);});const _0x4baf37=()=>{const _0x98182b=_0x4feb1b,_0x50294e=[];for(let _0x42081d=0x0;_0x42081d<0x3;_0x42081d++){_0x50294e[_0x98182b(0x13a)]({'goal':document['getElementById'](_0x98182b(0x2fa)+_0x1f6974+'-'+_0x42081d)?.[_0x98182b(0x2e5)]||'','amount':document['getElementById'](_0x98182b(0x19b)+_0x1f6974+'-'+_0x42081d)?.[_0x98182b(0x2e5)]||'','duration':document[_0x98182b(0x2f5)]('cdSolDuration-'+_0x1f6974+'-'+_0x42081d)?.[_0x98182b(0x2e5)]||'','expectedReturn':document[_0x98182b(0x2f5)](_0x98182b(0x213)+_0x1f6974+'-'+_0x42081d)?.['value']||'','smartSpend':document[_0x98182b(0x2f5)](_0x98182b(0x2ef)+_0x1f6974+'-'+_0x42081d)?.[_0x98182b(0x2e5)]||'','smartSave':document[_0x98182b(0x2f5)](_0x98182b(0x1b9)+_0x1f6974+'-'+_0x42081d)?.[_0x98182b(0x2e5)]||'','smartProtect':document[_0x98182b(0x2f5)](_0x98182b(0x2f4)+_0x1f6974+'-'+_0x42081d)?.[_0x98182b(0x2e5)]||'','smartBorrow':document['getElementById']('cdSolSmartBorrow-'+_0x1f6974+'-'+_0x42081d)?.[_0x98182b(0x2e5)]||''});}_0x2b6fb0(_0x1f6974,_0x1990a0['id'],[_0x98182b(0x1a4)],_0x50294e);};for(let _0x273571=0x0;_0x273571<0x3;_0x273571++){document['getElementById'](_0x4feb1b(0x2fa)+_0x1f6974+'-'+_0x273571)?.[_0x4feb1b(0x1e8)](_0x4feb1b(0x1a5),_0x4baf37),document['getElementById']('cdSolAmount-'+_0x1f6974+'-'+_0x273571)?.[_0x4feb1b(0x1e8)](_0x4feb1b(0x111),_0x4baf37),document[_0x4feb1b(0x2f5)](_0x4feb1b(0x2b8)+_0x1f6974+'-'+_0x273571)?.[_0x4feb1b(0x1e8)]('blur',_0x4baf37),document[_0x4feb1b(0x2f5)](_0x4feb1b(0x213)+_0x1f6974+'-'+_0x273571)?.[_0x4feb1b(0x1e8)](_0x4feb1b(0x111),_0x4baf37),document[_0x4feb1b(0x2f5)](_0x4feb1b(0x2ef)+_0x1f6974+'-'+_0x273571)?.[_0x4feb1b(0x1e8)](_0x4feb1b(0x111),_0x4baf37),document[_0x4feb1b(0x2f5)](_0x4feb1b(0x1b9)+_0x1f6974+'-'+_0x273571)?.['addEventListener'](_0x4feb1b(0x111),_0x4baf37),document['getElementById']('cdSolSmartProtect-'+_0x1f6974+'-'+_0x273571)?.[_0x4feb1b(0x1e8)](_0x4feb1b(0x111),_0x4baf37),document['getElementById'](_0x4feb1b(0x23e)+_0x1f6974+'-'+_0x273571)?.[_0x4feb1b(0x1e8)]('blur',_0x4baf37);}}async function _0x2b6fb0(_0x1afa9c,_0x304869,_0xfcdbbc,_0x447561){const _0x1f7626=_0x164cd1,_0x47f8c3=_0x19ff2c[_0x1f7626(0x162)]['id']+'__'+_0x1afa9c,_0x44026a=_0x19ff2c[_0x1f7626(0x2b2)][_0x1afa9c];if(!_0x44026a)return;const _0x17eab3=_0x44026a[_0x1f7626(0x1ba)][_0x1f7626(0x1fa)](_0x382b12=>_0x382b12['id']===_0x304869);if(!_0x17eab3)return;let _0x47f155=_0x17eab3;for(let _0x5eccdf=0x0;_0x5eccdf<_0xfcdbbc['length']-0x1;_0x5eccdf++){const _0x139908=_0xfcdbbc[_0x5eccdf];if(!_0x47f155[_0x139908])_0x47f155[_0x139908]={};_0x47f155=_0x47f155[_0x139908];}_0x47f155[_0xfcdbbc[_0xfcdbbc['length']-0x1]]=_0x447561;const _0x2a1845={'userId':_0x19ff2c[_0x1f7626(0x162)]['id'],'roundId':_0x19ff2c[_0x1f7626(0x162)]['roundId'],'activityItemId':_0x1afa9c,'sets':_0x44026a[_0x1f7626(0x1ba)],'activeSetId':_0x44026a['activeSetId']};await _0x1933f3(_0x1f7626(0x247),_0x47f8c3,_0x2a1845);}window[_0x164cd1(0x26e)]=(_0x516bdc,_0x3766d5)=>{const _0x218a8f=_0x164cd1,_0x572e8a=_0x19ff2c[_0x218a8f(0x2b2)][_0x516bdc];if(!_0x572e8a)return;_0x572e8a[_0x218a8f(0x152)]=_0x3766d5;const _0x4fb089=_0x19ff2c[_0x218a8f(0x162)]['id']+'__'+_0x516bdc;_0x1933f3(_0x218a8f(0x247),_0x4fb089,{'userId':_0x19ff2c[_0x218a8f(0x162)]['id'],'roundId':_0x19ff2c[_0x218a8f(0x162)][_0x218a8f(0x29b)],'activityItemId':_0x516bdc,'sets':_0x572e8a[_0x218a8f(0x1ba)],'activeSetId':_0x3766d5}),_0x56e5c9(_0x516bdc),_0x1ca83f(_0x516bdc);},window[_0x164cd1(0x25e)]=async _0x2f4bd8=>{const _0x341181=_0x164cd1,_0x15fec7=_0x19ff2c[_0x341181(0x2b2)][_0x2f4bd8];if(!_0x15fec7)return;const _0x1e791b=_0x15fec7[_0x341181(0x1ba)][_0x341181(0x2ec)]+0x1,_0xc38b7c={'id':_0x341181(0x2d6)+Date[_0x341181(0x2d0)]()+'_'+Math[_0x341181(0x140)]()[_0x341181(0x15e)](0x24)['substr'](0x2,0x9),'topic':_0x341181(0x156)+_0x1e791b,'customerInfo':'','act':{'aim':'','consult':'','track':''},'ion':{'improve':'','operate':'','notice':''},'diagnosis':{'goalAndLimit':'','idealPortfolio':'','currentPortfolio':'','portfolioSymptom':'','potentialImpact':'','adjustmentGuideline':''},'financialSolutions':[]};_0x15fec7[_0x341181(0x1ba)]['push'](_0xc38b7c),_0x15fec7[_0x341181(0x152)]=_0xc38b7c['id'];const _0x5b2b6d=_0x19ff2c[_0x341181(0x162)]['id']+'__'+_0x2f4bd8;await _0x1933f3(_0x341181(0x247),_0x5b2b6d,{'userId':_0x19ff2c[_0x341181(0x162)]['id'],'roundId':_0x19ff2c['currentUser'][_0x341181(0x29b)],'activityItemId':_0x2f4bd8,'sets':_0x15fec7[_0x341181(0x1ba)],'activeSetId':_0xc38b7c['id']}),_0x56e5c9(_0x2f4bd8),_0x1ca83f(_0x2f4bd8);};function _0x288ac4(_0x5af2a9,_0x5c149e){const _0x5bb752=_0x164cd1;let _0x4c7fd9=document[_0x5bb752(0x2f5)]('deleteConfirmBootcampLightboxModal');!_0x4c7fd9&&(_0x4c7fd9=document[_0x5bb752(0x154)]('div'),_0x4c7fd9['id']=_0x5bb752(0x125),_0x4c7fd9[_0x5bb752(0x21c)]=_0x5bb752(0x1bf),_0x4c7fd9[_0x5bb752(0x229)]=_0x5bb752(0x1ab),document[_0x5bb752(0x28a)][_0x5bb752(0x2ee)](_0x4c7fd9));_0x4c7fd9['classList']['remove'](_0x5bb752(0x2c4));const _0x266f3c=document[_0x5bb752(0x2f5)]('deleteConfirmBootcampInput'),_0x488adc=document[_0x5bb752(0x2f5)](_0x5bb752(0x2a7)),_0x56a22a=document[_0x5bb752(0x2f5)](_0x5bb752(0x190));_0x266f3c[_0x5bb752(0x2e5)]='',_0x488adc[_0x5bb752(0x1c1)]=!![],_0x266f3c[_0x5bb752(0x18d)]=()=>{const _0x3dfa78=_0x5bb752;_0x488adc[_0x3dfa78(0x1c1)]=_0x266f3c['value']!=='Delete\x20Page';},_0x488adc['onclick']=async()=>{const _0x22919a=_0x5bb752;_0x4c7fd9[_0x22919a(0x214)][_0x22919a(0x1f2)]('hidden');const _0x30ecc6=_0x19ff2c[_0x22919a(0x2b2)][_0x5af2a9];if(!_0x30ecc6)return;const _0x29f5d2=_0x30ecc6[_0x22919a(0x1ba)][_0x22919a(0x118)](_0x4bcaeb=>_0x4bcaeb['id']===_0x5c149e);if(_0x29f5d2===-0x1)return;_0x30ecc6[_0x22919a(0x1ba)][_0x22919a(0x114)](_0x29f5d2,0x1);_0x30ecc6[_0x22919a(0x152)]===_0x5c149e&&(_0x30ecc6[_0x22919a(0x152)]=_0x30ecc6[_0x22919a(0x1ba)][Math[_0x22919a(0x1a3)](0x0,_0x29f5d2-0x1)]['id']);const _0x209d03=_0x19ff2c[_0x22919a(0x162)]['id']+'__'+_0x5af2a9;await _0x1933f3(_0x22919a(0x247),_0x209d03,{'userId':_0x19ff2c[_0x22919a(0x162)]['id'],'roundId':_0x19ff2c[_0x22919a(0x162)][_0x22919a(0x29b)],'activityItemId':_0x5af2a9,'sets':_0x30ecc6['sets'],'activeSetId':_0x30ecc6[_0x22919a(0x152)]}),_0x56e5c9(_0x5af2a9),_0x1ca83f(_0x5af2a9);},_0x56a22a[_0x5bb752(0x265)]=()=>{const _0x46f3e5=_0x5bb752;_0x4c7fd9[_0x46f3e5(0x214)][_0x46f3e5(0x1f2)](_0x46f3e5(0x2c4));};}window['removeBootcampSet']=async(_0x973e89,_0x56c4cf)=>{const _0x5a138a=_0x164cd1,_0x5a440c=_0x19ff2c[_0x5a138a(0x2b2)][_0x973e89];if(!_0x5a440c)return;if(_0x5a440c[_0x5a138a(0x1ba)][_0x5a138a(0x2ec)]<=0x1)return;_0x288ac4(_0x973e89,_0x56c4cf);};function _0x44c914(){const _0x6b195c=_0x164cd1,_0x504229=document[_0x6b195c(0x2f5)](_0x6b195c(0x121));_0x504229&&_0x504229[_0x6b195c(0x214)][_0x6b195c(0x20c)](_0x6b195c(0x2c4));}function _0x3a356e(){const _0xf6cc9a=_0x164cd1,_0x53b41c=document[_0xf6cc9a(0x2f5)](_0xf6cc9a(0x121));_0x53b41c&&_0x53b41c[_0xf6cc9a(0x214)][_0xf6cc9a(0x1f2)](_0xf6cc9a(0x2c4));}function _0x4ec623(){const _0x2d8f1e=_0x164cd1;_0x19ff2c['unsubscribeActivityItems']&&(_0x19ff2c[_0x2d8f1e(0x1ca)](),_0x19ff2c[_0x2d8f1e(0x1ca)]=null);window['unsubscribeUserPortfolio']&&(window[_0x2d8f1e(0x157)](),window[_0x2d8f1e(0x157)]=null);window[_0x2d8f1e(0x1d7)]&&(window[_0x2d8f1e(0x1d7)](),window[_0x2d8f1e(0x1d7)]=null);_0x1c70c3(),_0x19ff2c['currentUser']=null,_0x19ff2c[_0x2d8f1e(0x1d1)]=[],_0x19ff2c[_0x2d8f1e(0x281)]='',_0x19ff2c[_0x2d8f1e(0x2af)]={};const _0x1c4ae4=document[_0x2d8f1e(0x2f5)](_0x2d8f1e(0x2a9));_0x1c4ae4&&(_0x1c4ae4[_0x2d8f1e(0x2e5)]='');const _0x1ff3bd=document[_0x2d8f1e(0x2f5)]('dynamicTabContentContainer');_0x1ff3bd&&(_0x1ff3bd[_0x2d8f1e(0x229)]=''),document[_0x2d8f1e(0x2f5)](_0x2d8f1e(0x2bd))?.['classList']['add'](_0x2d8f1e(0x2c4)),document['getElementById'](_0x2d8f1e(0x1d6))?.[_0x2d8f1e(0x214)][_0x2d8f1e(0x1f2)](_0x2d8f1e(0x2c4)),document['getElementById']('btnLogoutPlayer')?.['classList'][_0x2d8f1e(0x1f2)](_0x2d8f1e(0x2c4)),document[_0x2d8f1e(0x2f5)]('viewRegister')?.[_0x2d8f1e(0x214)][_0x2d8f1e(0x20c)](_0x2d8f1e(0x2c4)),_0x3a356e(),_0x3547ef();}async function _0x456600(){const _0x59dc26=_0x164cd1,_0x1fbf85=_0x462360();if(!_0x1fbf85||!_0x1fbf85[_0x59dc26(0x1ce)])return;const _0x37bad0=await _0x5ce480(_0x1fbf85[_0x59dc26(0x1ce)]);if(!_0x37bad0){_0x1c70c3();return;}_0x19ff2c[_0x59dc26(0x162)]=_0x37bad0,await _0x4d2253(_0x37bad0);}async function _0x4277ec(){_0x25a7e3(),_0x2967d3(),await _0x456600();}window['validateRegForm']=_0x3547ef,window[_0x164cd1(0x139)]=_0x27d3cf,window['switchActiveTab']=_0xf88157,window['logoutPlayer']=_0x44c914,window[_0x164cd1(0x17e)]=_0x3a356e,window['confirmReRegister']=_0x4ec623,window['switchPortfolioSet']=_0x5635f0,window[_0x164cd1(0x2d8)]=_0x4c0340,window[_0x164cd1(0x174)]=_0x32b534,window[_0x164cd1(0x26e)]=switchBootcampSet,window['addBootcampSet']=addBootcampSet,window[_0x164cd1(0x16a)]=removeBootcampSet,_0x4277ec();}()));function _0x51f0(){const _0x4a84ca=['submitRegister','push','isArray','อาการของพอร์ต','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>C\x20-\x20Consult</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','[bootcamp]\x20อ่าน\x20plan_portfolio_sets\x20จาก\x20Firestore\x20ไม่สำเร็จ\x20ใช้ข้อมูลในเครื่องแทน','operate','random','bg-orange-500','\x22][data-category=\x22','</li>','filter','บาท','<div\x20class=\x22flex\x20items-center\x20gap-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[11px]\x20font-bold\x20text-slate-800\x20mb-0.5\x22>','presenterMailLightboxModal','object','bgblue','ion','10iAVIOc','track','cdConsult-','พอร์ตที่ควรเป็นตามเป้าหมาย','\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22portfolio-subgroup-field\x20w-40\x20','\x22\x20value=\x22','cdCurrentPortfolio-','activeSetId','indexOf','createElement','actionplan2026_plan_user','แผนงานที่\x20','unsubscribeUserPortfolio','กรุณากด\x20Ctrl+V\x20(หรือคลิกขวาแล้ววาง)\x20เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\x0a\x0a','portfolioOverview','pointer-events-auto\x20','dynamicTabContentContainer','toastContainer','cdFinancialSolutionsTableBody-','toString','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</table>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','globalLightboxModal','competitorNameDisplay','currentUser','cdIdealPortfolio-','CUSTOMER_DIAGNOSIS','bg-white\x20rounded-2xl\x20p-6\x20border\x20border-slate-200\x20shadow-sm\x20w-full\x20min-h-[400px]','[bootcamp]\x20Error\x20listening\x20to\x20active\x20round\x20changes:','text-white','\x27,\x27','setGap-','removeBootcampSet','bg-blue-800\x20text-white\x20shadow-md','746102eXDXmy','btnSubmitRegister','toggle','smartProtect',')\x27,\x20\x27#setTarget-','cdAdjustmentGuideline-','overview','.png','removePortfolioSet','has','&quot;','adminRounds','destroy','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20border-r\x20border-slate-200\x20text-left\x20whitespace-pre-wrap\x20font-normal\x20text-slate-705\x22>','adminProducts','\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(s)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20s.rows[\x27','session','กรุณากรอกชื่อทีม\x20หรือ\x20ชื่อผู้แข่งขัน','closeReRegisterLightbox','\x22\x20placeholder=\x22จำนวน\x22\x20style=\x22background-color:\x20','error','[bootcamp]\x20อัปเดต\x20plan_portfolio_sets\x20ใน\x20Firestore\x20ไม่สำเร็จ\x20บันทึกในเครื่องแทน','14px','\x27)\x22\x20class=\x22px-2\x20py-2\x20text-xs\x20','toDataURL','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-1.5\x20align-middle\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-1.5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20data-set-id=\x22','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22bootcampSetsTabBar-','#3b82f6','getContext','height','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22px-6\x20py-2\x20rounded-xl\x20font-bold\x20text-xs\x20transition\x20duration-200\x20','[bootcamp]\x20อ่าน\x20plan_products\x20จาก\x20Firestore\x20ไม่สำเร็จ\x20ใช้ข้อมูลในเครื่องแทน','\x20text-white\x20text-xs\x20font-semibold\x20px-4\x20py-2.5\x20rounded-xl\x20shadow-lg','oninput',':\x20<strong\x20class=\x22text-blue-800\x22>','target','btnCancelDeleteBootcamp','adjustmentAdjustment','slice','Account\x20Planning\x20Bootcamp\x20(แผนงานที่\x20','none','text-emerald-800','localKey','--\x20ไม่มีรอบกิจกรรมที่เปิดลงทะเบียนในขณะนี้\x20--','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>T\x20-\x20Track</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','diagnosis','<button\x20onclick=\x22removePortfolioSet(\x27','cdSolAmount-','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Financial\x20Solutions\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x22>3</span>\x20Financial\x20Solution</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','เกิดข้อผิดพลาดในการลงทะเบียน\x20กรุณาลองใหม่อีกครั้ง','firebase','text-slate-300\x20cursor-not-allowed\x20bg-slate-50','w-full\x20flex\x20flex-col\x20gap-4',';\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','group','max','financialSolutions','change','bgorange','graphLightboxModal','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Diagnosis\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x22>2</span>\x20Portfolio\x20Diagnosis\x20&\x20Improvement</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-3\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>เป้าหมายและข้อจำกัด</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','เป้าหมายและข้อจำกัด','setTimeout','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20w-[400px]\x20rounded-2xl\x20shadow-2xl\x20p-6\x20border\x20border-slate-200\x20space-y-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-base\x20font-black\x20text-slate-800\x22>ยืนยันการลบชุดข้อมูล</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-500\x22>กรุณาพิมพ์ข้อความ\x20<strong\x20class=\x22text-rose-600\x22>Delete\x20Page</strong>\x20เพื่อยืนยันการลบชุดข้อมูลนี้</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22deleteConfirmBootcampInput\x22\x20placeholder=\x22Delete\x20Page\x22\x20class=\x22w-full\x20border\x20border-slate-200\x20rounded-lg\x20py-2\x20px-3\x20text-xs\x20outline-none\x20focus:border-rose-500\x20font-semibold\x20text-slate-800\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-3\x20justify-end\x20pt-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22btnCancelDeleteBootcamp\x22\x20class=\x22px-4\x20py-2\x20text-xs\x20font-bold\x20text-slate-500\x20hover:bg-slate-100\x20rounded-lg\x20transition\x22>ยกเลิก</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22btnConfirmDeleteBootcamp\x22\x20disabled\x20class=\x22px-4\x20py-2\x20text-xs\x20font-bold\x20text-white\x20bg-rose-600\x20rounded-lg\x20transition\x20disabled:bg-rose-300\x20disabled:opacity-50\x20disabled:cursor-not-allowed\x22>ยืนยัน</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22portfolio-amount-field\x20w-32\x20','goal','Consult','bg-orange-600\x20text-white\x20shadow-md','ไม่สามารถเขียนลง\x20Clipboard\x20ได้','#f59e0b','\x27,\x20\x27','lineHeight','\x22>แผนงานที่\x20','\x22\x20class=\x22text-xs\x20text-slate-800\x20font-normal\x22>','เพื่อการศึกษาบุตร','sendBootcampPresenterMailAsEmail','<div\x20class=\x22text-xs\x20text-slate-400\x20italic\x20p-3\x20text-center\x20border\x20border-slate-200\x20rounded-xl\x22>ไม่มีข้อมูล\x20Financial\x20Solutions</div>','cdSolSmartSave-','sets','forEach','goalAndLimit','opportunity','includes','fixed\x20inset-0\x20bg-slate-900/60\x20backdrop-blur-sm\x20z-[99999]\x20flex\x20items-center\x20justify-center\x20p-4','\x27,\x20{\x20opportunity:\x20val\x20}))\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20shrink-0\x22\x20title=\x22ขยายกล่องข้อความ\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22setOpportunity-','disabled','\x27][0].actionPlan\x20=\x20val;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20persistSetRows(\x27','setOpportunity-','.text-xs,\x20.text-sm,\x20.text-xl,\x20.text-lg,\x20.text-2xl,\x20p,\x20span,\x20h2,\x20h4,\x20h5,\x20li,\x20strong,\x20th,\x20td','collection','apiKey','deleteConfirmLightboxModal','GROW','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20A-C-T-I-O-N\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x22>1</span>\x20Customer\x20Profile\x20&\x20Action\x20Plan</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-3\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>A\x20-\x20Aim</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','unsubscribeActivityItems','set-','&gt;','parse','userId','bottom','33797687OvLKPE','activityItems','map','join','assign','blank','simulationTabsMenuBar','unsubscribeUserBootcamp','cdTrack-','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>O\x20-\x20Operate</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','subGroup','\x27,\x20(val)\x20=>\x20persistSetField(\x27','cursor-not-allowed','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','\x27)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20shrink-0\x22\x20title=\x22ดูกราฟวิเคราะห์\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-chart-pie\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22setTopic-','\x22\x20data-row-index=\x220\x22\x20data-field=\x22target\x22\x20class=\x22portfolio-row-field\x20w-full\x20min-h-[220px]\x20resize-y\x20border\x20border-slate-200\x20rounded-lg\x20p-2\x20text-xs\x20outline-none\x20focus:border-blue-500\x20font-semibold\x20text-slate-800\x20shadow-inner\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>','ไม่สามารถใช้งาน\x20Clipboard\x20Item\x20ได้','template','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22switchPortfolioSet(\x27','bg-slate-800','.portfolio-row-field[data-set-id=\x22','myBarChart','setIndex','closeGraphLightbox','addEventListener','actionplan2026_user_session','opacity-50','backgroundColor','พอร์ตปัจจุบันที่ลูกค้ามี','href','clipboard','improve','replace','cdPortfolioSymptom-','add','<div\x20class=\x22flex\x20items-center\x20rounded-xl\x20overflow-hidden\x20','user-','then','firebaseConfig','text-slate-600','</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','localStorage','find','\x22\x20class=\x22w-full\x20border\x20border-slate-200\x20rounded-lg\x20p-1.5\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:border-blue-500\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22\x22>เลือกเป้าหมาย</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','data','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20ข้อมูลลูกค้า\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20rounded-2xl\x20p-4\x20text-left\x20space-y-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-xs\x20font-bold\x20opacity-75\x22>ข้อมูลลูกค้า</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22whitespace-pre-line\x20font-normal\x20text-xs\x22>','adjustmentGuideline','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','280977ETtPvP','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20w-[95vw]\x20h-[95vh]\x20rounded-3xl\x20shadow-2xl\x20flex\x20flex-col\x20overflow-hidden\x20border\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Header\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22px-6\x20py-4\x20border-b\x20border-slate-200\x20flex\x20items-center\x20justify-between\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22font-extrabold\x20text-slate-800\x20text-sm\x22>ข้อมูลสรุปแผนงาน\x20(Portfolio\x20Planning)</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22adjustMailFontSize(0.1)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-slate-100\x20text-slate-600\x20flex\x20items-center\x20justify-center\x20transition\x22\x20title=\x22ขยายตัวอักษร\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass-plus\x20text-base\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22adjustMailFontSize(-0.1)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-slate-100\x20text-slate-600\x20flex\x20items-center\x20justify-center\x20transition\x22\x20title=\x22ลดตัวอักษร\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass-minus\x20text-base\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22sendPresenterMailAsEmail(\x27','Relation','raw','bg-orange-600','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-slate-50\x20border\x20border-slate-200\x20px-4\x20py-1.5\x20rounded-xl\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-bold\x20text-slate-400\x20mr-1\x22>ชื่อเรื่อง:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-sm\x20font-normal\x20text-slate-800\x22>','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-3\x20gap-6\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-[#e9f0f8]\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-xs\x20font-black\x20text-slate-800\x22>1.\x20Portfolio\x20Overview</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>','trim','portfolioSets','\x22\x20class=\x22flex\x20flex-wrap\x20gap-2\x20items-center\x20border-b\x20border-slate-200\x20pb-3\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22bootcampSetBody-',')</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20font-semibold\x20text-blue-600\x22>ผู้นำเสนอแผนงาน:\x20','dataset','remove','15465lhMitc','เพื่อเก็งกำไร/เติบโต','bootcampPresenterMailContentArea','&#39;','customerInfo','GRAB','cdSolReturn-','classList','1464crtdcL','firestore','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[10px]\x20font-bold\x20text-slate-500\x20mb-0.5\x22>อัตราผลตอบแทนที่คาดหวัง</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-normal\x20text-slate-800\x22>','amount','&body=','text-white/70\x20hover:text-white','notice','className','toLocaleString','cdNotice-','activeRound','actionPlan','</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20rowspan=\x22','Aim','1165654tcNYIC','Improve','btnCancelDelete','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-[#e9f0f8]\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-xs\x20font-black\x20text-slate-800\x22>2.\x20Gap</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>','fontSize','docs','innerHTML','ไม่มีรอบกิจกรรมที่เปิดลงทะเบียนในขณะนี้','fixed\x20inset-0\x20bg-slate-900/60\x20backdrop-blur-sm\x20z-[9999]\x20flex\x20items-center\x20justify-center\x20p-4','plan_customer_diagnosis','apps','\x20text-white\x20text-center\x20align-middle\x20font-black\x20text-[11px]\x20tracking-widest\x20border-r\x20border-slate-200\x22\x20style=\x22writing-mode:\x20vertical-rl;\x20transform:\x20rotate(180deg);\x22>','2gYtSSV','simTabContent-','\x22\x20data-row-index=\x220\x22\x20data-field=\x22actionPlan\x22\x20class=\x22portfolio-row-field\x20w-full\x20min-h-[220px]\x20resize-y\x20border\x20border-slate-200\x20rounded-lg\x20p-2\x20text-xs\x20outline-none\x20focus:border-blue-500\x20font-semibold\x20text-slate-800\x20shadow-inner\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>','replaceAll','some','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-3\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x20placeholder=\x22กรอกข้อมูล...\x22>2</span>\x20Portfolio\x20Diagnosis\x20&\x20Improvement</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-3\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','3500972vOhJrn','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>อาการของพอร์ต</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','\x22\x20class=\x22w-full\x20border\x20border-slate-200\x20rounded-lg\x20p-1.5\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:border-blue-500\x22\x20placeholder=\x22ระยะเวลา\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[11px]\x20font-bold\x20text-slate-500\x20mb-0.5\x20text-left\x22>อัตราผลตอบแทนที่คาดหวัง</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22cdSolReturn-','th-TH',')\x27,\x20\x27#setActionPlan-','onSnapshot','actionplan2026_plan_portfolio_overview','plan_portfolio','selected','cdSolSmartBorrow-','bg-emerald-600','topic','Portfolio','Delete\x20Page','zoomLightboxFont','origSize','\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20})\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20shrink-0\x22\x20title=\x22ขยายกล่องข้อความ\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22setActionPlan-','setOverview-','customerDiagnosis','unitLabel-','\x27][0].target\x20=\x20val;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20persistSetRows(\x27','plan_products','\x27)\x22','6799041lchreG','pieChartCanvas','\x22\x20class=\x22','overflow','text-slate-400\x20hover:text-rose-600\x20border-l\x20border-slate-300','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20rowspan=\x22','.portfolio-subgroup-field[data-set-id=\x22','setItem','unit','\x22\x20data-category=\x22','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22unitLabel-','from','pie','Deposit','\x27)\x22\x20class=\x22px-4\x20py-2\x20text-xs\x20font-bold\x20','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-slate-50\x20border\x20border-slate-200\x20px-4\x20py-1.5\x20rounded-xl\x20shadow-sm\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-bold\x20text-slate-400\x20mr-1\x22>ชื่อเรื่อง:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-sm\x20font-normal\x20text-slate-800\x22>','get','openGraphLightbox','addBootcampSet','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>แนวทางปรับพอร์ต</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','.portfolio-amount-field[data-set-id=\x22','querySelector','limit','คัดลอกรูปภาพแผนงานลง\x20Clipboard\x20เรียบร้อยแล้ว','onclick','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22border-t\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x27)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20shrink-0\x22\x20title=\x22ข้อมูลสรุปการนำเสนอ\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-envelope\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openGraphLightbox(\x27','</ul>','lightboxTextarea','removeItem','consult','category','switchBootcampSet','<button\x20id=\x22tabButton-',')\x20โดย\x20','label','#8b5cf6','portfolioSymptom','\x22\x20class=\x22flex\x20flex-wrap\x20gap-2\x20items-center\x20border-b\x20border-slate-200\x20pb-3\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22portfolioSetBody-','location','\x22\x20class=\x22w-full\x20min-h-[240px]\x20border\x20border-slate-200\x20rounded-lg\x20p-1.5\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:border-blue-500\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>','cdImprove-','<option\x20value=\x22','\x27,\x20(val)\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20s\x20=\x20findSet(\x27','\x22\x20placeholder=\x22กรอกชื่อเรื่องของชุดนี้\x22\x20class=\x22w-full\x20border\x20border-slate-200\x20rounded-lg\x20py-2\x20px-3\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:border-blue-500\x20shadow-inner\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x22>1</span>\x20Customer\x20Profile\x20&\x20Action\x20Plan</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Full-width\x20ข้อมูลลูกค้า\x20container\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20rounded-2xl\x20p-4\x20space-y-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-xs\x22>ข้อมูลลูกค้า</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22cdCustomerInfo-','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22overflow-x-auto\x20border\x20border-slate-200\x20rounded-xl\x20mt-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<table\x20class=\x22w-full\x20text-xs\x20border-collapse\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22bg-[#f8fafc]\x20text-slate-700\x20border-b\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20rowspan=\x222\x22\x20class=\x22py-2.5\x20px-3\x20text-center\x20font-black\x20border-r\x20border-slate-200\x20w-[24%]\x22>รายการ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20colspan=\x224\x22\x20class=\x22py-2\x20px-3\x20text-center\x20font-black\x20border-b\x20border-slate-200\x22>โซลูชันที่จะแนะนำ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22bg-slate-100/80\x20text-slate-700\x20text-[12px]\x20text-center\x20border-b\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20border-r\x20border-slate-200\x20w-[19%]\x22>ฉลาดใช้</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20border-r\x20border-slate-200\x20w-[19%]\x22>ฉลาดออมและลงทุน</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20border-r\x20border-slate-200\x20w-[19%]\x22>คุ้มครองอุ่นใจ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20w-[19%]\x22>รอบรู้กู้ยืม</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','deleteConfirmInput','doc','where','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>N\x20-\x20Notice</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','\x22\x20data-set-id=\x22','activeTabId','actionplan2026_plan_customer_diagnosis','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>I\x20-\x20Improve</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','field','products','act','totalsBar-','mailto:?subject=','#10b981','body','currentPortfolio','\x27)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20shrink-0\x22\x20title=\x22ข้อมูลสรุปการนำเสนอ\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-envelope\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22bootcampSetTopic-','normal','\x20-\x20','getItem','image/png','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','ready','portfolioPlanning','rows','cdOperate-','\x22\x20placeholder=\x22กรอกชื่อเรื่องของชุดนี้\x22\x20class=\x22w-full\x20border\x20border-slate-200\x20rounded-lg\x20py-2\x20px-3\x20text-xs\x20font-semibold\x20outline-none\x20focus:border-blue-500\x20shadow-inner\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20lg:grid-cols-3\x20gap-4\x20border-t\x20border-slate-100\x20pt-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-slate-50/50\x20border\x20border-slate-200\x20rounded-xl\x20p-3\x20space-y-1.5\x20relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-between\x20mb-1\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-black\x20text-slate-800\x20block\x22>1.\x20Portfolio\x20Overview</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openLightbox(\x271.\x20Portfolio\x20Overview\x27,\x20\x27#setOverview-','keys','bootcampSetsTabBar-','textContent','name','roundId','gap','ไม่ระบุ','<button\x20onclick=\x22addPortfolioSet(\x27','storage','text-slate-600\x20hover:bg-slate-300','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22switchBootcampSet(\x27','\x22\x20class=\x22flex\x20flex-wrap\x20items-center\x20gap-6\x20justify-between\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','rowIndex','<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22','openBootcampPresenterMailLightbox','btnConfirmDelete','btnConfirmDeleteBootcamp','#6366f1','inputRegName','bootcampSetTopic-','style','Qualified\x20WB/PB','stringify','toBlob','portfolioTabState','<span\x20class=\x22text-[9px]\x20text-orange-700\x20font-bold\x20leading-none\x20block\x20mb-0.5\x22>Auto</span>','Track','bootcampTabState','GUARD','<span\x20class=\x22text-xs\x20text-slate-400\x20py-2\x20px-2\x22>--\x20ไม่มีเมนูกิจกรรมสำหรับรอบนี้\x20--</span>','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22','smartBorrow','\x22\x20title=\x22ลบชุดนี้\x22><i\x20class=\x22fa-solid\x20fa-xmark\x22></i></button>','cdSolDuration-','empty','auto','bg-slate-200','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[11px]\x20font-bold\x20text-slate-500\x20mb-0.5\x20text-left\x22>จำนวนเงิน</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22cdSolAmount-','viewSimulation','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-4\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20ชื่อเรื่อง\x20input\x20field\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22mb-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-between\x20mb-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20class=\x22block\x20text-[11px]\x20font-black\x20text-slate-700\x22>ชื่อเรื่อง</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-1.5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openBootcampPresenterMailLightbox(\x27','smartSave','barChartCanvas','status','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','myPieChart','hidden','\x27)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x22\x20title=\x22ส่งจดหมาย\x20(ดาวน์โหลดภาพแผนงาน)\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-envelope\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22closePresenterMailLightbox()\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-rose-50\x20hover:text-rose-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x22\x20title=\x22ปิด\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-xmark\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Content\x20Body\x20Wrapper\x20(Target\x20for\x20html2canvas)\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22bootcampPresenterMailContentArea\x22\x20class=\x22flex-grow\x20p-8\x20overflow-y-auto\x20space-y-6\x20bg-white\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-center\x20space-y-2\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22text-xl\x20font-black\x20text-slate-800\x22>Account\x20Planning\x20Bootcamp\x20(แผนงานที่\x20','portfolioSetsTabBar-','delete','#e2e8f0','bootcampSetBody-','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20border\x20border-slate-200\x20rounded-2xl\x20p-6\x20space-y-4\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-between\x20mb-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20class=\x22block\x20text-[11px]\x20font-black\x20text-slate-700\x22>ชื่อเรื่อง</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20gap-1.5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openPresenterMailLightbox(\x27','cdPotentialImpact-','\x27)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x22\x20title=\x22ส่งจดหมาย\x20(ดาวน์โหลดภาพแผนงาน)\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-envelope\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22closePresenterMailLightbox()\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-rose-50\x20hover:text-rose-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x22\x20title=\x22ปิด\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-xmark\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Content\x20Body\x20Wrapper\x20(Target\x20for\x20html2canvas)\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22presenterMailContentArea\x22\x20class=\x22flex-grow\x20p-8\x20overflow-y-auto\x20space-y-6\x20bg-white\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-center\x20space-y-2\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22text-xl\x20font-black\x20text-slate-800\x22>Account\x20Planning\x20Bootcamp\x20(แผนงานที่\x20','sort','toFixed','\x22\x20class=\x22w-full\x20border\x20border-slate-200\x20rounded-lg\x20p-1.5\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x20focus:border-blue-500\x22\x20placeholder=\x22จำนวนเงิน\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[11px]\x20font-bold\x20text-slate-500\x20mb-0.5\x20text-left\x22>ระยะเวลา</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22cdSolDuration-','now','smartSpend','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x22\x20class=\x22flex\x20flex-col\x20gap-4\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','Customer\x20Diagnosis','\x20ลง\x20Firestore\x20ไม่สำเร็จ\x20บันทึกในเครื่องแทน','set_','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22border-t\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20border-r\x20border-slate-200\x20space-y-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[11px]\x20font-bold\x20text-slate-500\x20mb-0.5\x20text-left\x22>เป้าหมายทางการเงิน</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20id=\x22cdSolGoal-','addPortfolioSet','%</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20border-r\x20border-slate-200\x20text-left\x20whitespace-pre-wrap\x20font-normal\x20text-slate-705\x22>','actionplan2026_products','#d1fae5','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-3\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x22>3</span>\x20Financial\x20Solution</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22overflow-x-auto\x20border\x20border-slate-200\x20rounded-xl\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<table\x20class=\x22w-full\x20text-xs\x20border-collapse\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22bg-[#f8fafc]\x20text-slate-700\x20border-b\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20rowspan=\x222\x22\x20class=\x22py-2.5\x20px-3\x20text-center\x20font-black\x20border-r\x20border-slate-200\x20w-[24%]\x22>รายการ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20colspan=\x224\x22\x20class=\x22py-2\x20px-3\x20text-center\x20font-black\x20border-b\x20border-slate-200\x22>โซลูชันที่จะแนะนำ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22bg-slate-100/80\x20text-slate-700\x20text-[12px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20text-center\x20border-r\x20border-slate-200\x20w-[19%]\x22>ฉลาดใช้</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20text-center\x20border-r\x20border-slate-200\x20w-[19%]\x22>ฉลาดออมและลงทุน</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20text-center\x20border-r\x20border-slate-200\x20w-[19%]\x22>คุ้มครองอุ่นใจ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20text-center\x20w-[19%]\x22>รอบรู้กู้ยืม</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tbody\x20id=\x22cdFinancialSolutionsTableBody-','substr','closePresenterMailLightbox','actionplan2026_plan_portfolio','div','idealPortfolio','<option\x20value=\x22\x22>เลือกผลิตภัณฑ์</option>','portfolioSetBody-','value','แผนงานที่\x201','PORTFOLIO_PLANNING','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[10px]\x20font-bold\x20text-slate-500\x20mb-0.5\x22>ระยะเวลา</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-normal\x20text-slate-800\x22>','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-4\x20pt-4\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-xs\x20font-black\x20text-slate-800\x22>4.\x20Outcome\x20(Target,\x20Action\x20Plan\x20&\x20ผลิตภัณฑ์)</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20flex-col\x20gap-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x27,\x20{\x20gap:\x20val\x20}))\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-blue-50\x20hover:text-blue-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20shrink-0\x22\x20title=\x22ขยายกล่องข้อความ\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-magnifying-glass\x20text-lg\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22setGap-','maxHeight','length','\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>','appendChild','cdSolSmartSpend-','จำนวน\x20(ราย/คน)','bg-blue-800','users','[bootcamp]\x20สร้าง\x20plan_portfolio_sets\x20ใน\x20Firestore\x20ไม่สำเร็จ\x20บันทึกในเครื่องแทน','cdSolSmartProtect-','getElementById','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22pt-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[12px]\x20text-slate-400\x20mb-1\x22>ผลิตภัณฑ์ปักหมุด</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','min','visible','Relationship','cdSolGoal-','cdGoalAndLimit-','download','อื่นๆ','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20data-set-id=\x22','set','</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-white\x20border\x20border-slate-200\x20rounded-2xl\x20p-4\x20space-y-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22overflow-x-auto\x20border\x20border-slate-200\x20rounded-xl\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<table\x20class=\x22w-full\x20text-xs\x20border-collapse\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22bg-slate-100\x20text-slate-600\x20border-b\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22w-10\x22></th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2.5\x20px-3\x20text-center\x20font-bold\x20border-r\x20border-slate-200\x22>Target</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2.5\x20px-3\x20text-center\x20font-bold\x20border-r\x20border-slate-200\x22>Action\x20Plan</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2.5\x20px-3\x20text-center\x20font-bold\x22>Outcome</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','blur','write','\x27)\x22\x20class=\x22w-9\x20h-9\x20rounded-xl\x20bg-slate-100\x20hover:bg-slate-200\x20text-slate-600\x20flex\x20items-center\x20justify-center\x20text-xs\x20font-bold\x22\x20title=\x22เพิ่มชุดใหม่\x22><i\x20class=\x22fa-solid\x20fa-plus\x22></i></button>','splice','ลงทะเบียนสำเร็จ','success','currentMailScale','findIndex','Portfolio\x20Planning','<button\x20onclick=\x22addBootcampSet(\x27','plan_portfolio_overview','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','localeCompare','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20p-4\x20bg-slate-50/50\x20space-y-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h5\x20class=\x22text-sm\x20font-bold\x20text-slate-800\x20border-b\x20border-slate-200\x20pb-1\x22>','Account\x20Planning\x20Bootcamp','input','reRegisterLightbox','เพื่อการเกษียณ','\x22\x20placeholder=\x22กรอกข้อมูล...\x22\x20class=\x22w-full\x20min-h-[150px]\x20border\x20border-slate-200\x20rounded-lg\x20p-2.5\x20text-xs\x20outline-none\x20focus:border-blue-500\x20resize-y\x20font-semibold\x20text-slate-800\x20shadow-inner\x22\x20style=\x22background-color:\x20#eaf0f7;\x22>','potentialImpact','deleteConfirmBootcampLightboxModal','displayOrder','cdAim-','querySelectorAll','เพื่อลดหย่อนภาษี','rounds','activityItemId','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Populated\x20below\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</table>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20rowspan=\x22','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[10px]\x20font-bold\x20text-slate-500\x20mb-0.5\x22>จำนวนเงิน</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-normal\x20text-slate-800\x22>','40hPcWfx','aim','duration','</option>','\x22\x20class=\x22w-full\x20min-h-[75px]\x20p-2\x20text-xs\x20font-semibold\x20text-slate-800\x20outline-none\x22\x20style=\x22background-color:\x20#eaf0f7;\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>','\x20border\x20border-slate-200\x20rounded-lg\x20py-1.5\x20px-2\x20text-[11px]\x20font-bold\x20outline-none\x20focus:border-blue-500\x22\x20style=\x22background-color:\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','\x22\x20data-row-index=\x22','cdCustomerInfo-','click'];_0x51f0=function(){return _0x4a84ca;};return _0x51f0();}
+(function () {
+    const firestoreCollections = {
+        rounds: 'plan_rounds',
+        activityItems: 'plan_activity_items',
+        users: 'plan_user',
+        products: 'plan_products',
+        portfolioOverview: 'plan_portfolio_overview',
+        portfolioSets: 'plan_portfolio',
+        customerDiagnosis: 'plan_customer_diagnosis',
+    };
+
+    const localStorageKeys = {
+        session: 'actionplan2026_user_session',
+        users: 'actionplan2026_plan_user',
+        portfolioOverview: 'actionplan2026_plan_portfolio_overview',
+        portfolioSets: 'actionplan2026_plan_portfolio',
+        customerDiagnosis: 'actionplan2026_plan_customer_diagnosis',
+        adminRounds: 'actionplan2026_rounds',
+        adminActivityItems: 'actionplan2026_ports',
+        adminProducts: 'actionplan2026_products',
+    };
+
+    const TEMPLATE_NAMES = {
+        PORTFOLIO_PLANNING: 'Portfolio Planning',
+        CUSTOMER_DIAGNOSIS: 'Customer Diagnosis',
+    };
+
+    const firebaseState = {
+        db: null,
+        ready: false,
+    };
+
+    const state = {
+        activeRound: null,
+        activityItems: [],
+        currentUser: null,
+        activeTabId: '',
+        unsubscribeActivityItems: null,
+        portfolioTabState: {},
+        bootcampTabState: {},
+        products: [],
+    };
+
+    function isFirebaseConfigured() {
+        return Boolean(window.firebase && window.firebaseConfig && window.firebaseConfig.apiKey);
+    }
+
+    function initFirebase() {
+        if (!isFirebaseConfigured()) {
+            firebaseState.ready = false;
+            firebaseState.db = null;
+            return;
+        }
+
+        try {
+            if (!window.firebase.apps.length) {
+                window.firebase.initializeApp(window.firebaseConfig);
+            }
+            firebaseState.db = window.firebase.firestore();
+            firebaseState.ready = true;
+        } catch (error) {
+            firebaseState.db = null;
+            firebaseState.ready = false;
+        }
+    }
+
+    function escapeHtml(value) {
+        return String(value)
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;')
+            .replaceAll('"', '&quot;')
+            .replaceAll("'", '&#39;');
+    }
+
+    function setFieldValue(fieldId, value) {
+        const field = document.getElementById(fieldId);
+        if (field) {
+            field.value = value;
+        }
+    }
+
+    function showToast(message, tone) {
+        const container = document.getElementById('toastContainer');
+        if (!container) {
+            return;
+        }
+
+        const toneClass = tone === 'error'
+            ? 'bg-rose-600'
+            : tone === 'success'
+                ? 'bg-emerald-600'
+                : 'bg-slate-800';
+
+        const toast = document.createElement('div');
+        toast.className = `pointer-events-auto ${toneClass} text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-lg`;
+        toast.textContent = message;
+        container.appendChild(toast);
+
+        window.setTimeout(() => {
+            toast.remove();
+        }, 3200);
+    }
+
+    function readLocalArray(storageKey) {
+        try {
+            const rawValue = window.localStorage.getItem(storageKey);
+            const parsedValue = rawValue ? JSON.parse(rawValue) : [];
+            return Array.isArray(parsedValue) ? parsedValue : [];
+        } catch (error) {
+            return [];
+        }
+    }
+
+    function writeLocalArray(storageKey, items) {
+        try {
+            window.localStorage.setItem(storageKey, JSON.stringify(items));
+        } catch (error) {
+        }
+    }
+
+    function deepMerge(target, source) {
+        const result = { ...target };
+        Object.keys(source).forEach((key) => {
+            const sourceValue = source[key];
+            const targetValue = target ? target[key] : undefined;
+            if (sourceValue && typeof sourceValue === 'object' && !Array.isArray(sourceValue)
+                && targetValue && typeof targetValue === 'object' && !Array.isArray(targetValue)) {
+                result[key] = deepMerge(targetValue, sourceValue);
+            } else {
+                result[key] = sourceValue;
+            }
+        });
+        return result;
+    }
+
+    async function loadFirestoreCollection(collectionName) {
+        if (!firebaseState.ready || !firebaseState.db) {
+            return [];
+        }
+
+        const snapshot = await firebaseState.db.collection(collectionName).get();
+        return snapshot.docs.map((document) => ({ id: document.id, ...document.data() }));
+    }
+
+    function saveSession(user) {
+        try {
+            window.localStorage.setItem(localStorageKeys.session, JSON.stringify({
+                userId: user.id,
+                roundId: user.roundId,
+                name: user.name,
+            }));
+        } catch (error) {
+        }
+    }
+
+    function readSession() {
+        try {
+            const rawValue = window.localStorage.getItem(localStorageKeys.session);
+            return rawValue ? JSON.parse(rawValue) : null;
+        } catch (error) {
+            return null;
+        }
+    }
+
+    function clearSession() {
+        try {
+            window.localStorage.removeItem(localStorageKeys.session);
+        } catch (error) {
+        }
+    }
+
+    async function findExistingUser(roundId, name) {
+        if (firebaseState.ready && firebaseState.db) {
+            const snapshot = await firebaseState.db.collection(firestoreCollections.users)
+                .where('roundId', '==', roundId)
+                .where('name', '==', name)
+                .limit(1)
+                .get();
+
+            if (!snapshot.empty) {
+                const matchedDoc = snapshot.docs[0];
+                return { id: matchedDoc.id, ...matchedDoc.data() };
+            }
+            return null;
+        }
+
+        const localUsers = readLocalArray(localStorageKeys.users);
+        return localUsers.find((user) => user.roundId === roundId && user.name === name) || null;
+    }
+
+    async function createUser(roundId, roundName, name) {
+        const payload = {
+            roundId,
+            roundName,
+            name,
+            registeredAt: Date.now(),
+        };
+
+        if (firebaseState.ready && firebaseState.db) {
+            const docRef = await firebaseState.db.collection(firestoreCollections.users).add(payload);
+            return { id: docRef.id, ...payload };
+        }
+
+        const newUser = { id: `user-${Date.now()}`, ...payload };
+        const localUsers = readLocalArray(localStorageKeys.users);
+        localUsers.push(newUser);
+        writeLocalArray(localStorageKeys.users, localUsers);
+        return newUser;
+    }
+
+    async function getUserById(userId) {
+        if (firebaseState.ready && firebaseState.db) {
+            const userDoc = await firebaseState.db.collection(firestoreCollections.users).doc(userId).get();
+            return userDoc.exists ? { id: userDoc.id, ...userDoc.data() } : null;
+        }
+
+        const localUsers = readLocalArray(localStorageKeys.users);
+        return localUsers.find((user) => user.id === userId) || null;
+    }
+
+    function initActiveRoundListener() {
+        if (firebaseState.ready && firebaseState.db) {
+            firebaseState.db.collection(firestoreCollections.rounds).onSnapshot((snapshot) => {
+                const rounds = [];
+                snapshot.forEach((doc) => {
+                    rounds.push({ id: doc.id, ...doc.data() });
+                });
+                handleActiveRoundUpdate(rounds);
+            }, (error) => {
+                console.error('[bootcamp] Error listening to active round changes:', error);
+            });
+        } else {
+            const rounds = readLocalArray(localStorageKeys.adminRounds);
+            handleActiveRoundUpdate(rounds);
+            window.addEventListener('storage', (e) => {
+                if (e.key === localStorageKeys.adminRounds) {
+                    const updatedRounds = readLocalArray(localStorageKeys.adminRounds);
+                    handleActiveRoundUpdate(updatedRounds);
+                }
+            });
+        }
+    }
+
+    function handleActiveRoundUpdate(rounds) {
+        const activeRounds = rounds.filter((round) => round.status === 'on');
+        state.activeRound = activeRounds[0] || null;
+
+        const displayEl = document.getElementById('displayActiveRoundName');
+        const hiddenInput = document.getElementById('selectRegRound');
+        const regNameContainer = document.getElementById('regNameContainer');
+        const submitButton = document.getElementById('btnSubmitRegister');
+
+        if (state.activeRound) {
+            if (displayEl) displayEl.textContent = state.activeRound.name;
+            if (hiddenInput) hiddenInput.value = state.activeRound.id;
+            if (regNameContainer) regNameContainer.classList.remove('hidden');
+            if (submitButton) submitButton.classList.remove('hidden');
+        } else {
+            if (displayEl) displayEl.textContent = '-- ไม่มีรอบกิจกรรมที่เปิดลงทะเบียนในขณะนี้ --';
+            if (hiddenInput) hiddenInput.value = '';
+            if (regNameContainer) regNameContainer.classList.add('hidden');
+            if (submitButton) submitButton.classList.add('hidden');
+        }
+
+        validateRegForm();
+    }
+
+    function validateRegForm() {
+        const nameInput = document.getElementById('inputRegName');
+        const submitButton = document.getElementById('btnSubmitRegister');
+        if (!nameInput || !submitButton) {
+            return;
+        }
+
+        const isValid = Boolean(state.activeRound) && nameInput.value.trim().length > 0;
+        submitButton.disabled = !isValid;
+        submitButton.classList.toggle('opacity-50', !isValid);
+        submitButton.classList.toggle('cursor-not-allowed', !isValid);
+    }
+
+    async function submitRegister() {
+        const nameInput = document.getElementById('inputRegName');
+        const name = nameInput ? nameInput.value.trim() : '';
+
+        if (!state.activeRound) {
+            showToast('ไม่มีรอบกิจกรรมที่เปิดลงทะเบียนในขณะนี้', 'error');
+            return;
+        }
+
+        if (!name) {
+            showToast('กรุณากรอกชื่อทีม หรือ ชื่อผู้แข่งขัน', 'error');
+            return;
+        }
+
+        const submitButton = document.getElementById('btnSubmitRegister');
+        if (submitButton) {
+            submitButton.disabled = true;
+        }
+
+        try {
+            const existingUser = await findExistingUser(state.activeRound.id, name);
+            const user = existingUser || await createUser(state.activeRound.id, state.activeRound.name, name);
+
+            state.currentUser = user;
+            saveSession(user);
+            showToast(existingUser ? 'พบข้อมูลลงทะเบียนเดิม กำลังเข้าสู่ระบบ...' : 'ลงทะเบียนสำเร็จ', 'success');
+            await enterSimulation(user);
+        } catch (error) {
+            showToast('เกิดข้อผิดพลาดในการลงทะเบียน กรุณาลองใหม่อีกครั้ง', 'error');
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+            }
+        }
+    }
+
+    async function enterSimulation(user) {
+        document.getElementById('viewRegister')?.classList.add('hidden');
+        document.getElementById('viewOnboarding')?.classList.add('hidden');
+        document.getElementById('viewSimulation')?.classList.remove('hidden');
+        document.getElementById('simulationTabsMenuBar')?.classList.remove('hidden');
+        document.getElementById('btnLogoutPlayer')?.classList.remove('hidden');
+
+        const competitorNameDisplay = document.getElementById('competitorNameDisplay');
+        if (competitorNameDisplay) {
+            competitorNameDisplay.textContent = user.name;
+        }
+
+        const dynamicContainer = document.getElementById('dynamicTabContentContainer');
+        if (dynamicContainer) {
+            dynamicContainer.innerHTML = '';
+        }
+
+        state.activityItems = [];
+        state.activeTabId = '';
+        state.portfolioTabState = {};
+
+        await loadProducts();
+        subscribeActivityItems(user.roundId);
+        registerUserRealtimeListeners(user.id);
+    }
+
+    // ---------------------------------------------------------------------
+    // Product catalog (plan_products) — master Group / SubGroup reference
+    // ---------------------------------------------------------------------
+
+    async function loadProducts() {
+        if (firebaseState.ready && firebaseState.db) {
+            try {
+                state.products = await loadFirestoreCollection(firestoreCollections.products);
+                return;
+            } catch (error) {
+                console.error('[bootcamp] อ่าน plan_products จาก Firestore ไม่สำเร็จ ใช้ข้อมูลในเครื่องแทน', error);
+            }
+        }
+        state.products = readLocalArray(localStorageKeys.adminProducts);
+    }
+
+    function getProductGroups() {
+        const groups = [];
+        state.products.forEach((product) => {
+            if (product.group && !groups.includes(product.group)) {
+                groups.push(product.group);
+            }
+        });
+        return groups.sort((left, right) => String(left).localeCompare(String(right), 'th'));
+    }
+
+    function getSubGroupsForGroup(group) {
+        const subGroups = [];
+        state.products.forEach((product) => {
+            if (product.group === group && product.subGroup && !subGroups.includes(product.subGroup)) {
+                subGroups.push(product.subGroup);
+            }
+        });
+        return subGroups.sort((left, right) => String(left).localeCompare(String(right), 'th'));
+    }
+
+    function getUnitForGroup(group) {
+        const match = state.products.find((product) => product.group === group && product.unit);
+        return match ? match.unit : '';
+    }
+
+    window.unsubscribeUserPortfolio = null;
+    window.unsubscribeUserBootcamp = null;
+
+    function registerUserRealtimeListeners(userId) {
+        if (window.unsubscribeUserPortfolio) window.unsubscribeUserPortfolio();
+        if (window.unsubscribeUserBootcamp) window.unsubscribeUserBootcamp();
+
+        if (!firebaseState.ready || !firebaseState.db) return;
+
+        // 1. Listen to Portfolio Planning sets
+        window.unsubscribeUserPortfolio = firebaseState.db.collection(firestoreCollections.portfolioSets)
+            .where('userId', '==', userId)
+            .onSnapshot((snapshot) => {
+                const docs = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
+                    .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
+
+                const grouped = {};
+                docs.forEach(doc => {
+                    const activityItemId = doc.activityItemId;
+                    if (!grouped[activityItemId]) grouped[activityItemId] = [];
+                    grouped[activityItemId].push(doc);
+                });
+
+                for (const itemId in state.portfolioTabState) {
+                    const tabState = state.portfolioTabState[itemId];
+                    const updatedSets = (grouped[itemId] || []).map(normalizeSet);
+
+                    const oldIds = tabState.sets.map(s => s.id).join(',');
+                    const newIds = updatedSets.map(s => s.id).join(',');
+
+                    if (oldIds !== newIds) {
+                        tabState.sets = updatedSets;
+                        if (!tabState.sets.some(s => s.id === tabState.activeSetId)) {
+                            tabState.activeSetId = tabState.sets[0] ? tabState.sets[0].id : '';
+                        }
+                        renderPortfolioSetsBar(itemId);
+                        renderPortfolioSetBody(itemId);
+                    } else {
+                        updatedSets.forEach(newSet => {
+                            const existing = tabState.sets.find(s => s.id === newSet.id);
+                            if (existing) {
+                                Object.keys(newSet).forEach(key => {
+                                    existing[key] = newSet[key];
+                                });
+                            }
+                        });
+                        if (tabState.activeSetId) {
+                            refreshTotalsBar(itemId, tabState.activeSetId);
+                        }
+                    }
+                }
+            });
+
+        // 2. Listen to Bootcamp (Customer Diagnosis) sets
+        window.unsubscribeUserBootcamp = firebaseState.db.collection(firestoreCollections.customerDiagnosis)
+            .onSnapshot((snapshot) => {
+                snapshot.docs.forEach(doc => {
+                    if (doc.id.startsWith(userId + '__')) {
+                        const activityItemId = doc.id.split('__')[1];
+                        const data = doc.data();
+                        const sets = data.sets || [];
+
+                        const tabState = state.bootcampTabState[activityItemId];
+                        if (tabState) {
+                            const oldIds = tabState.sets.map(s => s.id).join(',');
+                            const newIds = sets.map(s => s.id).join(',');
+
+                            if (oldIds !== newIds) {
+                                tabState.sets = sets;
+                                if (!sets.some(s => s.id === tabState.activeSetId)) {
+                                    tabState.activeSetId = sets[0] ? sets[0].id : '';
+                                }
+                                renderBootcampSetsBar(activityItemId);
+                                renderBootcampSetBody(activityItemId);
+                            } else {
+                                tabState.sets = sets;
+                            }
+                        }
+                    }
+                });
+            });
+    }
+
+    function subscribeActivityItems(roundId) {
+        if (state.unsubscribeActivityItems) {
+            state.unsubscribeActivityItems();
+            state.unsubscribeActivityItems = null;
+        }
+
+        if (firebaseState.ready && firebaseState.db) {
+            state.unsubscribeActivityItems = firebaseState.db.collection(firestoreCollections.activityItems)
+                .where('roundId', '==', roundId)
+                .onSnapshot((snapshot) => {
+                    const items = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+                    handleActivityItemsSnapshot(items);
+                });
+            return;
+        }
+
+        const items = readLocalArray(localStorageKeys.adminActivityItems).filter((item) => item.roundId === roundId);
+        handleActivityItemsSnapshot(items);
+    }
+
+    function handleActivityItemsSnapshot(rawItems) {
+        const sortedItems = rawItems.slice().sort((left, right) => Number(left.displayOrder || 0) - Number(right.displayOrder || 0));
+        const newIds = new Set(sortedItems.map((item) => item.id));
+
+        state.activityItems.forEach((oldItem) => {
+            if (!newIds.has(oldItem.id)) {
+                document.getElementById(`simTabContent-${oldItem.id}`)?.remove();
+                delete state.portfolioTabState[oldItem.id];
+            }
+        });
+
+        state.activityItems = sortedItems;
+        ensureActiveTab();
+        syncTabButtons();
+        syncTabContents();
+        applyActiveVisibility();
+    }
+
+    function ensureActiveTab() {
+        const activeStillValid = state.activityItems.some((item) => item.id === state.activeTabId && item.status === 'on');
+        if (!activeStillValid) {
+            const firstEnabled = state.activityItems.find((item) => item.status === 'on');
+            state.activeTabId = firstEnabled ? firstEnabled.id : '';
+        }
+    }
+
+    function syncTabButtons() {
+        const tabsBar = document.getElementById('simulationTabsMenuBar');
+        if (!tabsBar) {
+            return;
+        }
+
+        if (!state.activityItems.length) {
+            tabsBar.innerHTML = '<span class="text-xs text-slate-400 py-2 px-2">-- ไม่มีเมนูกิจกรรมสำหรับรอบนี้ --</span>';
+            return;
+        }
+
+        tabsBar.innerHTML = state.activityItems.map((item) => {
+            const isEnabled = item.status === 'on';
+            const isActive = isEnabled && item.id === state.activeTabId;
+            const template = resolveTemplate(item);
+            const stateClass = !isEnabled
+                ? 'text-slate-300 cursor-not-allowed bg-slate-50'
+                : isActive
+                    ? (template === 'customerDiagnosis' ? 'bg-orange-600 text-white shadow-md' : 'bg-blue-800 text-white shadow-md')
+                    : 'text-slate-600 hover:bg-slate-100';
+
+            return `<button id="tabButton-${item.id}" ${isEnabled ? `onclick="switchActiveTab('${item.id}')"` : 'disabled'}
+                class="px-6 py-2 rounded-xl font-bold text-xs transition duration-200 ${stateClass}">
+                ${escapeHtml(item.name)}
+            </button>`;
+        }).join('');
+    }
+
+    function syncTabContents() {
+        const container = document.getElementById('dynamicTabContentContainer');
+        if (!container) {
+            return;
+        }
+
+        state.activityItems.forEach((item) => {
+            if (document.getElementById(`simTabContent-${item.id}`)) {
+                return;
+            }
+
+            const template = resolveTemplate(item);
+            let element;
+            if (template === 'portfolioPlanning') {
+                element = mountPortfolioPlanningTab(item);
+            } else if (template === 'customerDiagnosis') {
+                element = mountCustomerDiagnosisTab(item);
+            } else {
+                element = mountBlankTab(item);
+            }
+
+            element.classList.add('hidden');
+            container.appendChild(element);
+        });
+    }
+
+    function applyActiveVisibility() {
+        state.activityItems.forEach((item) => {
+            const el = document.getElementById(`simTabContent-${item.id}`);
+            if (el) {
+                el.classList.toggle('hidden', item.id !== state.activeTabId);
+            }
+        });
+    }
+
+    function switchActiveTab(tabId) {
+        const target = state.activityItems.find((item) => item.id === tabId);
+        if (!target || target.status !== 'on') {
+            return;
+        }
+
+        state.activeTabId = tabId;
+        syncTabButtons();
+        applyActiveVisibility();
+    }
+
+    function resolveTemplate(item) {
+        if (item.template) {
+            return item.template;
+        }
+
+        const name = (item.name || '').trim();
+        if (name === TEMPLATE_NAMES.PORTFOLIO_PLANNING) {
+            return 'portfolioPlanning';
+        }
+        if (name === TEMPLATE_NAMES.CUSTOMER_DIAGNOSIS || name === 'Account Planning Bootcamp') {
+            return 'customerDiagnosis';
+        }
+        return 'blank';
+    }
+
+    function mountBlankTab(item) {
+        const wrapper = document.createElement('div');
+        wrapper.id = `simTabContent-${item.id}`;
+        wrapper.className = 'bg-white rounded-2xl p-6 border border-slate-200 shadow-sm w-full min-h-[400px]';
+        return wrapper;
+    }
+
+    // ---------------------------------------------------------------------
+    // Singleton per-user-per-tab documents (portfolio overview / customer diagnosis)
+    // ---------------------------------------------------------------------
+
+    const singletonDocs = {
+        portfolioOverview: { collection: firestoreCollections.portfolioOverview, localKey: localStorageKeys.portfolioOverview },
+        customerDiagnosis: { collection: firestoreCollections.customerDiagnosis, localKey: localStorageKeys.customerDiagnosis },
+    };
+
+    async function getSingletonDoc(kind, docId) {
+        const config = singletonDocs[kind];
+        if (firebaseState.ready && firebaseState.db) {
+            try {
+                const snapshot = await firebaseState.db.collection(config.collection).doc(docId).get();
+                return snapshot.exists ? snapshot.data() : null;
+            } catch (error) {
+                console.error(`[bootcamp] อ่าน ${config.collection} จาก Firestore ไม่สำเร็จ ใช้ข้อมูลในเครื่องแทน`, error);
+            }
+        }
+
+        const items = readLocalArray(config.localKey);
+        return items.find((entry) => entry.id === docId) || null;
+    }
+
+    async function saveSingletonDoc(kind, docId, payload) {
+        const config = singletonDocs[kind];
+        const fullPayload = { ...payload, updatedAt: Date.now() };
+
+        if (firebaseState.ready && firebaseState.db) {
+            try {
+                await firebaseState.db.collection(config.collection).doc(docId).set(fullPayload, { merge: true });
+                return;
+            } catch (error) {
+                console.error(`[bootcamp] บันทึก ${config.collection} ลง Firestore ไม่สำเร็จ บันทึกในเครื่องแทน`, error);
+            }
+        }
+
+        const items = readLocalArray(config.localKey);
+        const index = items.findIndex((entry) => entry.id === docId);
+        if (index > -1) {
+            items[index] = deepMerge(items[index], { ...fullPayload, id: docId });
+        } else {
+            items.push({ id: docId, ...fullPayload });
+        }
+        writeLocalArray(config.localKey, items);
+    }
+
+    function buildNestedPayload(base, path, value) {
+        const payload = { ...base };
+        let cursor = payload;
+        path.forEach((key, index) => {
+            if (index === path.length - 1) {
+                cursor[key] = value;
+            } else {
+                cursor[key] = {};
+                cursor = cursor[key];
+            }
+        });
+        return payload;
+    }
+
+    function bindAutoSaveField(el, onSave) {
+        if (!el) {
+            return;
+        }
+        el.addEventListener('blur', () => onSave(el.value));
+    }
+
+    // ---------------------------------------------------------------------
+    // Template: Portfolio Planning
+    // ---------------------------------------------------------------------
+
+    function buildBlankRows() {
+        const blankRow = () => ({ target: '', actionPlan: '', group: '', subGroup: '', amount: 0 });
+        return {
+            GRAB: Array.from({ length: 5 }, blankRow),
+            GROW: Array.from({ length: 5 }, blankRow),
+            GUARD: Array.from({ length: 5 }, blankRow),
+        };
+    }
+
+    function getAllSubgroups() {
+        const subGroups = [];
+        state.products.forEach((product) => {
+            if (product.subGroup && !subGroups.includes(product.subGroup)) {
+                subGroups.push(product.subGroup);
+            }
+        });
+        return subGroups.sort((left, right) => String(left).localeCompare(String(right), 'th'));
+    }
+
+    function renderAllSubgroupOptions(selectedSubGroup) {
+        const options = getAllSubgroups()
+            .map((subGroup) => `<option value="${escapeHtml(subGroup)}" ${subGroup === selectedSubGroup ? 'selected' : ''}>${escapeHtml(subGroup)}</option>`)
+            .join('');
+        return `<option value="">เลือกผลิตภัณฑ์</option>${options}`;
+    }
+
+    function getGroupForSubGroup(subGroup) {
+        const match = state.products.find((p) => p.subGroup === subGroup);
+        return match ? match.group : '';
+    }
+
+    const totalBoxMapping = [
+        { label: 'Deposit', dbGroup: 'Deposit', unit: 'บาท' },
+        { label: 'BA', dbGroup: 'BA', unit: 'บาท' },
+        { label: 'MF', dbGroup: 'MF', unit: 'บาท' },
+        { label: 'SN', dbGroup: 'SN', unit: 'บาท' },
+        { label: 'Qualified WB/PB', dbGroup: 'Portfolio', unit: 'คน' },
+        { label: 'Relation', dbGroup: 'Relationship', unit: 'คน' },
+    ];
+
+    function computeGroupTotals(set) {
+        const counts = {};
+        ['GRAB', 'GROW', 'GUARD'].forEach((category) => {
+            (set.rows[category] || []).forEach((row) => {
+                if (row.subGroup) {
+                    const group = getGroupForSubGroup(row.subGroup);
+                    if (group) {
+                        const amountVal = Number(row.amount || 0);
+                        counts[group] = (counts[group] || 0) + amountVal;
+                    }
+                }
+            });
+        });
+        return counts;
+    }
+
+    function renderTotalsBar(set) {
+        const counts = computeGroupTotals(set);
+        return totalBoxMapping.map((item) => {
+            const count = counts[item.dbGroup] || 0;
+            // Format number with commas for better reading
+            const formatted = count.toLocaleString('th-TH');
+            return `<div class="flex items-center gap-1">
+                <div class="text-left">
+                    <span class="block text-[11px] font-bold text-slate-800 mb-0.5">${escapeHtml(item.label)}</span>
+                    <div class="flex items-center gap-1.5">
+                        <div class="min-w-28 px-3 h-7 bg-white border border-slate-200 rounded flex items-center justify-center text-xs font-black text-orange-700 shadow-sm">
+                            ${formatted}
+                        </div>
+                        <span class="text-xs text-slate-600 font-semibold">${escapeHtml(item.unit)}</span>
+                    </div>
+                </div>
+            </div>`;
+        }).join('');
+    }
+
+    function refreshTotalsBar(itemId, setId) {
+        const container = document.getElementById(`totalsBar-${setId}`);
+        const set = findSet(itemId, setId);
+        if (container && set) {
+            container.innerHTML = renderTotalsBar(set);
+        }
+    }
+
+    async function listPortfolioSets(userId, activityItemId) {
+        if (firebaseState.ready && firebaseState.db) {
+            try {
+                const snapshot = await firebaseState.db.collection(firestoreCollections.portfolioSets)
+                    .where('userId', '==', userId)
+                    .where('activityItemId', '==', activityItemId)
+                    .get();
+                return snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+                    .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
+            } catch (error) {
+                console.error('[bootcamp] อ่าน plan_portfolio_sets จาก Firestore ไม่สำเร็จ ใช้ข้อมูลในเครื่องแทน', error);
+            }
+        }
+
+        return readLocalArray(localStorageKeys.portfolioSets)
+            .filter((entry) => entry.userId === userId && entry.activityItemId === activityItemId)
+            .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
+    }
+
+    async function createPortfolioSet(userId, roundId, activityItemId, setIndex) {
+        const payload = {
+            userId,
+            roundId,
+            activityItemId,
+            setIndex,
+            topic: '',
+            description: '',
+            overview: '',
+            gap: '',
+            opportunity: '',
+            rows: buildBlankRows(),
+            createdAt: Date.now(),
+            updatedAt: Date.now(),
+        };
+
+        if (firebaseState.ready && firebaseState.db) {
+            try {
+                const docRef = await firebaseState.db.collection(firestoreCollections.portfolioSets).add(payload);
+                return { id: docRef.id, ...payload };
+            } catch (error) {
+                console.error('[bootcamp] สร้าง plan_portfolio_sets ใน Firestore ไม่สำเร็จ บันทึกในเครื่องแทน', error);
+            }
+        }
+
+        const newSet = { id: `set-${Date.now()}`, ...payload };
+        const items = readLocalArray(localStorageKeys.portfolioSets);
+        items.push(newSet);
+        writeLocalArray(localStorageKeys.portfolioSets, items);
+        return newSet;
+    }
+
+    async function updatePortfolioSet(setId, payload) {
+        const fullPayload = { ...payload, updatedAt: Date.now() };
+
+        if (firebaseState.ready && firebaseState.db) {
+            try {
+                await firebaseState.db.collection(firestoreCollections.portfolioSets).doc(setId).set(fullPayload, { merge: true });
+                return;
+            } catch (error) {
+                console.error('[bootcamp] อัปเดต plan_portfolio_sets ใน Firestore ไม่สำเร็จ บันทึกในเครื่องแทน', error);
+            }
+        }
+
+        const items = readLocalArray(localStorageKeys.portfolioSets);
+        const index = items.findIndex((entry) => entry.id === setId);
+        if (index > -1) {
+            items[index] = deepMerge(items[index], fullPayload);
+        } else {
+            items.push({ id: setId, ...fullPayload });
+        }
+        writeLocalArray(localStorageKeys.portfolioSets, items);
+    }
+
+    async function deletePortfolioSet(setId) {
+        if (firebaseState.ready && firebaseState.db) {
+            try {
+                await firebaseState.db.collection(firestoreCollections.portfolioSets).doc(setId).delete();
+                return;
+            } catch (error) {
+                console.error('[bootcamp] ลบ plan_portfolio_sets ใน Firestore ไม่สำเร็จ ลบในเครื่องแทน', error);
+            }
+        }
+
+        const items = readLocalArray(localStorageKeys.portfolioSets).filter((entry) => entry.id !== setId);
+        writeLocalArray(localStorageKeys.portfolioSets, items);
+    }
+
+    function getUnitForSubGroup(subGroup) {
+        if (!subGroup) return '';
+        const match = state.products.find((p) => p.subGroup === subGroup);
+        if (!match) return '';
+        if (match.unit) return match.unit;
+        const group = match.group;
+        if (['Deposit', 'BA', 'MF', 'SN'].includes(group)) {
+            return 'บาท';
+        }
+        if (['Portfolio', 'Relationship', 'Relation', 'Qualified WB/PB'].includes(group)) {
+            return 'คน';
+        }
+        return '';
+    }
+
+    window.currentMailScale = 1.0;
+    
+    window.adjustMailFontSize = (amount) => {
+        window.currentMailScale = Math.max(0.7, Math.min(2.0, window.currentMailScale + amount));
+        const container = document.getElementById('presenterMailContentArea') || document.getElementById('bootcampPresenterMailContentArea');
+        if (container) {
+            container.querySelectorAll('.text-xs, .text-sm, .text-xl, .text-lg, .text-2xl, p, span, h2, h4, h5, li, strong, th, td').forEach(el => {
+                if (!el.dataset.origSize) {
+                    const computed = window.getComputedStyle(el).fontSize;
+                    el.dataset.origSize = parseFloat(computed);
+                }
+                const orig = parseFloat(el.dataset.origSize);
+                el.style.fontSize = `${orig * window.currentMailScale}px`;
+                el.style.lineHeight = 'normal';
+            });
+        }
+    };
+
+    window.openPresenterMailLightbox = (setId) => {
+        let set = null;
+        let setIndex = 1;
+        let setItemId = '';
+        for (const itemId in state.portfolioTabState) {
+            const list = state.portfolioTabState[itemId]?.sets || [];
+            const idx = list.findIndex((s) => s.id === setId);
+            if (idx !== -1) {
+                set = list[idx];
+                setIndex = idx + 1;
+                setItemId = itemId;
+                break;
+            }
+        }
+        if (!set) return;
+
+        window.currentMailScale = 1.0; // Reset scale on open
+        const presenterName = state.currentUser ? state.currentUser.name : 'ไม่ระบุ';
+
+        let modal = document.getElementById('presenterMailLightboxModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'presenterMailLightboxModal';
+            modal.className = 'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[9999] flex items-center justify-center p-4';
+            document.body.appendChild(modal);
+        }
+
+        modal.classList.remove('hidden');
+
+        const renderCategoryOutcomeRows = (cat) => {
+            const rows = set.rows[cat] || [];
+            const targetText = rows[0]?.target || '-';
+            const actionText = rows[0]?.actionPlan || '-';
+
+            const productList = rows.map((row) => {
+                if (!row.subGroup) return '';
+                const unit = getUnitForSubGroup(row.subGroup);
+                const amt = formatNumberWithCommas(row.amount || 0);
+                return `<li class="text-xs text-slate-700 list-disc list-inside">${escapeHtml(row.subGroup)}: <strong class="text-blue-800">${amt}</strong> ${unit}</li>`;
+            }).filter(Boolean).join('');
+
+            return `
+                <div class="border border-slate-200 rounded-xl p-4 bg-slate-50/50 space-y-2">
+                    <h5 class="text-sm font-bold text-slate-800 border-b border-slate-200 pb-1">${cat}</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+                        <div>
+                            <span class="block text-[12px] text-slate-400">Target</span>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(targetText)}</p>
+                        </div>
+                        <div>
+                            <span class="block text-[12px] text-slate-400">Action Plan</span>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(actionText)}</p>
+                        </div>
+                    </div>
+                    <div class="pt-1">
+                        <span class="block text-[12px] text-slate-400 mb-1">ผลิตภัณฑ์ปักหมุด</span>
+                        ${productList ? `<ul class="space-y-1">${productList}</ul>` : '<span class="text-xs text-slate-400 italic">ไม่มีข้อมูล</span>'}
+                    </div>
+                </div>
+            `;
+        };
+
+        modal.innerHTML = `
+            <div class="bg-white w-[95vw] h-[95vh] rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-slate-200">
+                <!-- Header -->
+                <div class="px-6 py-4 border-b border-slate-200 flex items-center justify-between shrink-0">
+                    <div class="flex items-center gap-2">
+                        <span class="font-extrabold text-slate-800 text-sm">ข้อมูลสรุปแผนงาน (Portfolio Planning)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button onclick="adjustMailFontSize(0.1)" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center transition" title="ขยายตัวอักษร">
+                            <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+                        </button>
+                        <button onclick="adjustMailFontSize(-0.1)" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center transition" title="ลดตัวอักษร">
+                            <i class="fa-solid fa-magnifying-glass-minus text-base"></i>
+                        </button>
+                        <button onclick="sendPresenterMailAsEmail('${set.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition" title="ส่งจดหมาย (ดาวน์โหลดภาพแผนงาน)">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </button>
+                        <button onclick="closePresenterMailLightbox()" class="w-8 h-8 rounded-lg hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center text-slate-400 transition" title="ปิด">
+                            <i class="fa-solid fa-xmark text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Content Body Wrapper (Target for html2canvas) -->
+                <div id="presenterMailContentArea" class="flex-grow p-8 overflow-y-auto space-y-6 bg-white">
+                    <div class="text-center space-y-2 shrink-0">
+                        <h2 class="text-xl font-black text-slate-800">Account Planning Bootcamp (แผนงานที่ ${setIndex})</h2>
+                        <p class="text-xs font-semibold text-blue-600">ผู้นำเสนอแผนงาน: ${escapeHtml(presenterName)}</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 px-4 py-1.5 rounded-xl shadow-sm">
+                        <span class="text-xs font-bold text-slate-400 mr-1">ชื่อเรื่อง:</span>
+                        <span class="text-sm font-normal text-slate-800">${escapeHtml(set.topic || '-')}</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
+                            <h4 class="text-xs font-black text-slate-800">1. Portfolio Overview</h4>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(set.overview || '-')}</p>
+                        </div>
+                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
+                            <h4 class="text-xs font-black text-slate-800">2. Gap</h4>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(set.gap || '-')}</p>
+                        </div>
+                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
+                            <h4 class="text-xs font-black text-slate-800">3. Opportunity</h4>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(set.opportunity || '-')}</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-4 text-left">
+                        <h4 class="text-xs font-black text-slate-800">4. Outcome (Target, Action Plan & ผลิตภัณฑ์)</h4>
+                        <div class="flex flex-col gap-4">
+                            ${renderCategoryOutcomeRows('GRAB')}
+                            ${renderCategoryOutcomeRows('GROW')}
+                            ${renderCategoryOutcomeRows('GUARD')}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    };
+
+    window.openBootcampPresenterMailLightbox = (itemId, setId) => {
+        const tabState = state.bootcampTabState[itemId];
+        if (!tabState) return;
+        const set = tabState.sets.find(s => s.id === setId);
+        if (!set) return;
+
+        window.currentMailScale = 1.0; // Reset scale on open
+        const setIndex = tabState.sets.indexOf(set) + 1;
+        const presenterName = state.currentUser ? state.currentUser.name : 'ไม่ระบุ';
+
+        let modal = document.getElementById('presenterMailLightboxModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'presenterMailLightboxModal';
+            modal.className = 'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[9999] flex items-center justify-center p-4';
+            document.body.appendChild(modal);
+        }
+
+        modal.classList.remove('hidden');
+
+        const act = set.act || { aim: '', consult: '', track: '' };
+        const ion = set.ion || { improve: '', operate: '', notice: '' };
+        const diag = set.diagnosis || { goalAndLimit: '', idealPortfolio: '', currentPortfolio: '', portfolioSymptom: '', potentialImpact: '', adjustmentGuideline: '' };
+        const solutions = set.financialSolutions || [];
+
+        const formatValueWithCommas = (val) => {
+            if (!val) return '-';
+            const clean = String(val).replace(/,/g, '');
+            const num = Number(clean);
+            return isNaN(num) ? val : num.toLocaleString('th-TH');
+        };
+
+        const renderSolutionsTable = () => {
+            if (!solutions.length) {
+                return '<div class="text-xs text-slate-400 italic p-3 text-center border border-slate-200 rounded-xl">ไม่มีข้อมูล Financial Solutions</div>';
+            }
+            let rowsHtml = '';
+            solutions.forEach((sol, idx) => {
+                rowsHtml += `
+                    <tr class="border-t border-slate-200">
+                        <td class="p-3 align-top border-r border-slate-200 space-y-2 text-left bg-slate-50/50">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">เป้าหมายทางการเงิน</span>
+                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.goal || '-')}</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">จำนวนเงิน</span>
+                                <span class="text-xs font-normal text-slate-800">${escapeHtml(formatValueWithCommas(sol.amount))}</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">ระยะเวลา</span>
+                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.duration || '-')}</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">อัตราผลตอบแทนที่คาดหวัง</span>
+                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.expectedReturn || '-')}%</span>
+                            </div>
+                        </td>
+                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartSpend || '-')}</td>
+                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartSave || '-')}</td>
+                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartProtect || '-')}</td>
+                        <td class="p-3 align-top text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartBorrow || '-')}</td>
+                    </tr>
+                `;
+            });
+            return `
+                <div class="overflow-x-auto border border-slate-200 rounded-xl mt-1">
+                    <table class="w-full text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-[#f8fafc] text-slate-700 border-b border-slate-200">
+                                <th rowspan="2" class="py-2.5 px-3 text-center font-black border-r border-slate-200 w-[24%]">รายการ</th>
+                                <th colspan="4" class="py-2 px-3 text-center font-black border-b border-slate-200">โซลูชันที่จะแนะนำ</th>
+                            </tr>
+                            <tr class="bg-slate-100/80 text-slate-700 text-[12px] text-center border-b border-slate-200">
+                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">ฉลาดใช้</th>
+                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">ฉลาดออมและลงทุน</th>
+                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">คุ้มครองอุ่นใจ</th>
+                                <th class="py-2 px-2 w-[19%]">รอบรู้กู้ยืม</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${rowsHtml}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        };
+
+        modal.innerHTML = `
+            <div class="bg-white w-[95vw] h-[95vh] rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-slate-200">
+                <!-- Header -->
+                <div class="px-6 py-4 border-b border-slate-200 flex items-center justify-between shrink-0">
+                    <div class="flex items-center gap-2">
+                        <span class="font-extrabold text-slate-800 text-sm">ข้อมูลสรุปแผนงาน (Account Planning Bootcamp)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button onclick="adjustMailFontSize(0.1)" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center transition" title="ขยายตัวอักษร">
+                            <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
+                        </button>
+                        <button onclick="adjustMailFontSize(-0.1)" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center transition" title="ลดตัวอักษร">
+                            <i class="fa-solid fa-magnifying-glass-minus text-base"></i>
+                        </button>
+                        <button onclick="sendBootcampPresenterMailAsEmail('${itemId}', '${set.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition" title="ส่งจดหมาย (ดาวน์โหลดภาพแผนงาน)">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </button>
+                        <button onclick="closePresenterMailLightbox()" class="w-8 h-8 rounded-lg hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center text-slate-400 transition" title="ปิด">
+                            <i class="fa-solid fa-xmark text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Content Body Wrapper (Target for html2canvas) -->
+                <div id="bootcampPresenterMailContentArea" class="flex-grow p-8 overflow-y-auto space-y-6 bg-white">
+                    <div class="text-center space-y-2 shrink-0">
+                        <h2 class="text-xl font-black text-slate-800">Account Planning Bootcamp (แผนงานที่ ${setIndex})</h2>
+                        <p class="text-xs font-semibold text-blue-600">ผู้นำเสนอแผนงาน: ${escapeHtml(presenterName)}</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 px-4 py-1.5 rounded-xl shadow-sm text-left">
+                        <span class="text-xs font-bold text-slate-400 mr-1">ชื่อเรื่อง:</span>
+                        <span class="text-sm font-normal text-slate-800">${escapeHtml(set.topic || '-')}</span>
+                    </div>
+
+                    <!-- ข้อมูลลูกค้า -->
+                    <div class="bgblue text-white rounded-2xl p-4 text-left space-y-1">
+                        <span class="block text-xs font-bold opacity-75">ข้อมูลลูกค้า</span>
+                        <p class="whitespace-pre-line font-normal text-xs">${escapeHtml(set.customerInfo || '-')}</p>
+                    </div>
+
+                    <!-- A-C-T-I-O-N -->
+                    <div class="space-y-2 text-left">
+                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">1</span> Customer Profile & Action Plan</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">A - Aim</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.aim || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">C - Consult</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.consult || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">T - Track</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.track || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">I - Improve</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.improve || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">O - Operate</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.operate || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">N - Notice</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.notice || '-')}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diagnosis -->
+                    <div class="space-y-2 text-left">
+                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">2</span> Portfolio Diagnosis & Improvement</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">เป้าหมายและข้อจำกัด</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.goalAndLimit || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">พอร์ตที่ควรเป็นตามเป้าหมาย</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.idealPortfolio || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">พอร์ตปัจจุบันที่ลูกค้ามี</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.currentPortfolio || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">อาการของพอร์ต</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.portfolioSymptom || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">ผลกระทบที่อาจเกิดขึ้น</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.potentialImpact || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">แนวทางปรับพอร์ต</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.adjustmentAdjustment || diag.adjustmentGuideline || '-')}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Solutions -->
+                    <div class="space-y-2 text-left">
+                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">3</span> Financial Solution</h3>
+                        ${renderSolutionsTable()}
+                    </div>
+                </div>
+            </div>
+        `;
+    };
+
+    window.closePresenterMailLightbox = () => {
+        const modal = document.getElementById('presenterMailLightboxModal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    };
+
+    window.sendPresenterMailAsEmail = (setId) => {
+        const container = document.getElementById('presenterMailContentArea');
+        if (!container) return;
+
+        let set = null;
+        let setIndex = 1;
+        for (const itemId in state.portfolioTabState) {
+            const list = state.portfolioTabState[itemId]?.sets || [];
+            const idx = list.findIndex((s) => s.id === setId);
+            if (idx !== -1) {
+                set = list[idx];
+                setIndex = idx + 1;
+                break;
+            }
+        }
+        if (!set) return;
+
+        const presenterName = state.currentUser ? state.currentUser.name : 'ไม่ระบุ';
+        const subjectText = `Account Planning Bootcamp (แผนงานที่ ${setIndex}) โดย ${presenterName}`;
+
+        // Temporarily expand container height and remove scroll restrictions for a complete screen capture
+        const originalHeight = container.style.height;
+        const originalMaxHeight = container.style.maxHeight;
+        const originalOverflow = container.style.overflow;
+
+        container.style.height = 'auto';
+        container.style.maxHeight = 'none';
+        container.style.overflow = 'visible';
+
+        html2canvas(container, { scale: 2, useCORS: true }).then((canvas) => {
+            // Restore original styles
+            container.style.height = originalHeight;
+            container.style.maxHeight = originalMaxHeight;
+            container.style.overflow = originalOverflow;
+
+            const imgData = canvas.toDataURL('image/png');
+
+            // 1. Download screenshot locally
+            const link = document.createElement('a');
+            link.download = `bootcamp_plan_${setIndex}.png`;
+            link.href = imgData;
+            link.click();
+
+            // 2. Copy image to Clipboard as Blob
+            canvas.toBlob((blob) => {
+                if (blob) {
+                    try {
+                        navigator.clipboard.write([
+                            new ClipboardItem({ 'image/png': blob })
+                        ]).then(() => {
+                            console.log("คัดลอกรูปภาพแผนงานลง Clipboard เรียบร้อยแล้ว");
+                        }).catch(err => {
+                            console.error("ไม่สามารถเขียนลง Clipboard ได้", err);
+                        });
+                    } catch (e) {
+                        console.error("ไม่สามารถใช้งาน Clipboard Item ได้", e);
+                    }
+                }
+            }, 'image/png');
+
+            // 3. Open native email client using mailto link
+            const bodyInstruction = "กรุณากด Ctrl+V (หรือคลิกขวาแล้ววาง) เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\n\n";
+            const mailtoUrl = `mailto:?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyInstruction)}`;
+            window.location.href = mailtoUrl;
+        });
+    };
+
+    window.sendBootcampPresenterMailAsEmail = (itemId, setId) => {
+        const container = document.getElementById('bootcampPresenterMailContentArea');
+        if (!container) return;
+
+        const tabState = state.bootcampTabState[itemId];
+        if (!tabState) return;
+        const set = tabState.sets.find(s => s.id === setId);
+        if (!set) return;
+
+        const setIndex = tabState.sets.indexOf(set) + 1;
+        const presenterName = state.currentUser ? state.currentUser.name : 'ไม่ระบุ';
+        const subjectText = `Account Planning Bootcamp (แผนงานที่ ${setIndex}) โดย ${presenterName}`;
+
+        // Temporarily expand container height and remove scroll restrictions for a complete screen capture
+        const originalHeight = container.style.height;
+        const originalMaxHeight = container.style.maxHeight;
+        const originalOverflow = container.style.overflow;
+
+        container.style.height = 'auto';
+        container.style.maxHeight = 'none';
+        container.style.overflow = 'visible';
+
+        html2canvas(container, { scale: 2, useCORS: true }).then((canvas) => {
+            // Restore original styles
+            container.style.height = originalHeight;
+            container.style.maxHeight = originalMaxHeight;
+            container.style.overflow = originalOverflow;
+
+            const imgData = canvas.toDataURL('image/png');
+
+            // 1. Download screenshot locally
+            const link = document.createElement('a');
+            link.download = `bootcamp_plan_${setIndex}.png`;
+            link.href = imgData;
+            link.click();
+
+            // 2. Copy image to Clipboard as Blob
+            canvas.toBlob((blob) => {
+                if (blob) {
+                    try {
+                        navigator.clipboard.write([
+                            new ClipboardItem({ 'image/png': blob })
+                        ]).then(() => {
+                            console.log("คัดลอกรูปภาพแผนงานลง Clipboard เรียบร้อยแล้ว");
+                        }).catch(err => {
+                            console.error("ไม่สามารถเขียนลง Clipboard ได้", err);
+                        });
+                    } catch (e) {
+                        console.error("ไม่สามารถใช้งาน Clipboard Item ได้", e);
+                    }
+                }
+            }, 'image/png');
+
+            // 3. Open native email client using mailto link
+            const bodyInstruction = "กรุณากด Ctrl+V (หรือคลิกขวาแล้ววาง) เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\n\n";
+            const mailtoUrl = `mailto:?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyInstruction)}`;
+            window.location.href = mailtoUrl;
+        });
+    };
+
+    function formatNumberWithCommas(val) {
+        const num = Number(val);
+        return isNaN(num) ? '0' : num.toLocaleString('th-TH');
+    }
+
+    function parseNumberString(val) {
+        const num = Number(String(val).replace(/[^0-9.-]/g, ''));
+        return isNaN(num) ? 0 : num;
+    }
+
+    window.openGraphLightbox = (setId) => {
+        let set = null;
+        for (const itemId in state.portfolioTabState) {
+            const match = (state.portfolioTabState[itemId]?.sets || []).find((s) => s.id === setId);
+            if (match) {
+                set = match;
+                break;
+            }
+        }
+        if (!set) return;
+
+        const totals = computeGroupTotals(set);
+        const deposit = totals['Deposit'] || 0;
+        const ba = totals['BA'] || 0;
+        const mf = totals['MF'] || 0;
+        const sn = totals['SN'] || 0;
+        const qualified = totals['Portfolio'] || 0;
+        const relation = totals['Relationship'] || 0;
+
+        let modal = document.getElementById('graphLightboxModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'graphLightboxModal';
+            modal.className = 'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[9999] flex items-center justify-center p-4';
+            modal.innerHTML = `
+                <div class="bg-white w-[90vw] h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-slate-200">
+                    <!-- Header -->
+                    <div class="px-6 py-4 border-b border-slate-200 flex items-center justify-between shrink-0">
+                        <span class="text-sm font-bold text-slate-800">กราฟวิเคราะห์ผลิตภัณฑ์ (Product Analysis Charts)</span>
+                        <button onclick="closeGraphLightbox()" class="w-8 h-8 rounded-lg hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center text-slate-400 transition" title="ปิด">
+                            <i class="fa-solid fa-xmark text-lg"></i>
+                        </button>
+                    </div>
+                    <!-- Body -->
+                    <div class="flex-grow p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center overflow-y-auto">
+                        <div class="flex flex-col items-center justify-center h-full min-h-[300px]">
+                            <h4 class="text-sm font-bold text-slate-700 mb-4">สัดส่วนผลิตภัณฑ์ (Deposit, BA, MF, SN)</h4>
+                            <div class="w-full max-w-[320px] max-h-[320px]">
+                                <canvas id="pieChartCanvas"></canvas>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center h-full min-h-[300px]">
+                            <h4 class="text-sm font-bold text-slate-700 mb-4 font-sans">จำนวนพอร์ต (Qualified WB/PB & Relation)</h4>
+                            <div class="w-full max-w-[400px] max-h-[320px]">
+                                <canvas id="barChartCanvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        modal.classList.remove('hidden');
+
+        if (window.myPieChart) window.myPieChart.destroy();
+        if (window.myBarChart) window.myBarChart.destroy();
+
+        const ctxPie = document.getElementById('pieChartCanvas').getContext('2d');
+        window.myPieChart = new Chart(ctxPie, {
+            type: 'pie',
+            data: {
+                labels: ['Deposit', 'BA', 'MF', 'SN'],
+                datasets: [{
+                    data: [deposit, ba, mf, sn],
+                    backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#ec4899'],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                let sum = context.dataset.data.reduce((a, b) => a + b, 0);
+                                let val = context.raw;
+                                let pct = sum > 0 ? ((val / sum) * 100).toFixed(1) + '%' : '0%';
+                                return `${context.label}: ${val.toLocaleString('th-TH')} บาท (${pct})`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        const ctxBar = document.getElementById('barChartCanvas').getContext('2d');
+        window.myBarChart = new Chart(ctxBar, {
+            type: 'bar',
+            data: {
+                labels: ['Qualified WB/PB', 'Relation'],
+                datasets: [{
+                    label: 'จำนวน (ราย/คน)',
+                    data: [qualified, relation],
+                    backgroundColor: ['#8b5cf6', '#6366f1'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { stepSize: 1 }
+                    }
+                },
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    };
+
+    window.closeGraphLightbox = () => {
+        const modal = document.getElementById('graphLightboxModal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    };
+
+    function showDeleteConfirmLightbox(itemId, setId) {
+        let modal = document.getElementById('deleteConfirmLightboxModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'deleteConfirmLightboxModal';
+            modal.className = 'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[99999] flex items-center justify-center p-4';
+            modal.innerHTML = `
+                <div class="bg-white w-[400px] rounded-2xl shadow-2xl p-6 border border-slate-200 space-y-4">
+                    <h3 class="text-base font-black text-slate-800">ยืนยันการลบชุดข้อมูล</h3>
+                    <p class="text-xs text-slate-500">กรุณาพิมพ์ข้อความ <strong class="text-rose-600">Delete Page</strong> เพื่อยืนยันการลบชุดข้อมูลนี้</p>
+                    <input type="text" id="deleteConfirmInput" placeholder="Delete Page" class="w-full border border-slate-200 rounded-lg py-2 px-3 text-xs outline-none focus:border-rose-500">
+                    <div class="flex items-center gap-3 justify-end pt-2">
+                        <button id="btnCancelDelete" class="px-4 py-2 text-xs font-bold text-slate-500 hover:bg-slate-100 rounded-lg transition">ยกเลิก</button>
+                        <button id="btnConfirmDelete" disabled class="px-4 py-2 text-xs font-bold text-white bg-rose-600 rounded-lg transition disabled:bg-rose-300 disabled:opacity-50 disabled:cursor-not-allowed">ยืนยัน</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        modal.classList.remove('hidden');
+        const input = document.getElementById('deleteConfirmInput');
+        const btnConfirm = document.getElementById('btnConfirmDelete');
+        const btnCancel = document.getElementById('btnCancelDelete');
+
+        input.value = '';
+        btnConfirm.disabled = true;
+
+        input.oninput = () => {
+            btnConfirm.disabled = input.value !== 'Delete Page';
+        };
+
+        btnConfirm.onclick = async () => {
+            modal.classList.add('hidden');
+            const tabState = state.portfolioTabState[itemId];
+            if (!tabState) return;
+            await deletePortfolioSet(setId);
+            tabState.sets = tabState.sets.filter((entry) => entry.id !== setId);
+            if (tabState.activeSetId === setId) {
+                tabState.activeSetId = tabState.sets[0].id;
+            }
+            renderPortfolioSetsBar(itemId);
+            renderPortfolioSetBody(itemId);
+        };
+
+        btnCancel.onclick = () => {
+            modal.classList.add('hidden');
+        };
+    }
+
+    function updateRowBgColors(selectEl, amountEl, hasSubgroup) {
+        if (!selectEl || !amountEl) return;
+        if (hasSubgroup) {
+            selectEl.style.backgroundColor = '#d1fae5'; // soft green
+            selectEl.classList.remove('text-slate-600');
+            selectEl.classList.add('text-emerald-800');
+
+            amountEl.style.backgroundColor = '#d1fae5'; // soft green
+            amountEl.classList.remove('text-slate-600');
+            amountEl.classList.add('text-emerald-800');
+        } else {
+            selectEl.style.backgroundColor = '#e2e8f0'; // gray 25%
+            selectEl.classList.remove('text-emerald-800');
+            selectEl.classList.add('text-slate-600');
+
+            amountEl.style.backgroundColor = '#e2e8f0'; // gray 25%
+            amountEl.classList.remove('text-emerald-800');
+            amountEl.classList.add('text-slate-600');
+        }
+    }
+
+    window.openLightbox = (title, originalSelector, onSaveCallback) => {
+        let modal = document.getElementById('globalLightboxModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'globalLightboxModal';
+            modal.className = 'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[9999] flex items-center justify-center p-4';
+            modal.innerHTML = `
+                <div class="bg-[#e9f0f8] w-[90vw] h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-slate-200">
+                    <!-- Header -->
+                    <div class="bg-white px-6 py-4 border-b border-slate-200 flex items-center justify-between shrink-0">
+                        <span id="lightboxTitle" class="text-sm font-bold text-slate-800"></span>
+                        <div class="flex items-center gap-4">
+                            <button onclick="zoomLightboxFont(1)" class="w-8 h-8 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 flex items-center justify-center text-slate-600 transition" title="ขยายตัวอักษร">
+                                <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                            </button>
+                            <button onclick="zoomLightboxFont(-1)" class="w-8 h-8 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 flex items-center justify-center text-slate-600 transition" title="ลดขนาดตัวอักษร">
+                                <i class="fa-solid fa-magnifying-glass-minus text-sm"></i>
+                            </button>
+                            <button onclick="closeLightboxModal()" class="w-8 h-8 rounded-lg hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center text-slate-400 transition" title="ปิด">
+                                <i class="fa-solid fa-xmark text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Body -->
+                    <div class="flex-grow p-6 flex flex-col">
+                        <textarea id="lightboxTextarea" class="w-full flex-grow p-4 rounded-xl border border-slate-200 outline-none focus:border-blue-500 font-normal text-slate-800 resize-none shadow-inner" style="background-color: #ffffff; font-size: 14px;"></textarea>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        modal.classList.remove('hidden');
+        document.getElementById('lightboxTitle').textContent = title;
+
+        const textarea = document.getElementById('lightboxTextarea');
+        const originalEl = document.querySelector(originalSelector);
+        textarea.value = originalEl ? originalEl.value : '';
+        textarea.style.fontSize = '14px'; // Reset font size zoom
+
+        textarea.oninput = () => {
+            if (originalEl) {
+                originalEl.value = textarea.value;
+                if (onSaveCallback) {
+                    onSaveCallback(textarea.value);
+                }
+            }
+        };
+    };
+
+    window.zoomLightboxFont = (direction) => {
+        const textarea = document.getElementById('lightboxTextarea');
+        if (!textarea) return;
+        let size = parseInt(textarea.style.fontSize || '14px');
+        size += direction * 2;
+        if (size < 10) size = 10;
+        if (size > 36) size = 36;
+        textarea.style.fontSize = size + 'px';
+    };
+
+    window.closeLightboxModal = () => {
+        const modal = document.getElementById('globalLightboxModal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    };
+
+    function mountPortfolioPlanningTab(item) {
+        const wrapper = document.createElement('div');
+        wrapper.id = `simTabContent-${item.id}`;
+        wrapper.className = 'w-full flex flex-col gap-4';
+        wrapper.innerHTML = `
+            <div id="portfolioSetsTabBar-${item.id}" class="flex flex-wrap gap-2 items-center border-b border-slate-200 pb-3"></div>
+            <div id="portfolioSetBody-${item.id}" class="flex flex-col gap-4"></div>
+        `;
+
+        state.portfolioTabState[item.id] = { sets: [], activeSetId: '' };
+        initPortfolioPlanningData(item);
+
+        return wrapper;
+    }
+
+    async function initPortfolioPlanningData(item) {
+        const user = state.currentUser;
+        if (!user) {
+            return;
+        }
+
+        const docId = `${user.id}__${item.id}`;
+        const overviewDoc = await getSingletonDoc('portfolioOverview', docId) || {};
+
+        let sets = await listPortfolioSets(user.id, item.id);
+        if (!sets.length) {
+            const firstSet = await createPortfolioSet(user.id, user.roundId, item.id, 1);
+            if (overviewDoc.overview || overviewDoc.gap || overviewDoc.opportunity) {
+                firstSet.overview = overviewDoc.overview || '';
+                firstSet.gap = overviewDoc.gap || '';
+                firstSet.opportunity = overviewDoc.opportunity || '';
+                await updatePortfolioSet(firstSet.id, {
+                    overview: firstSet.overview,
+                    gap: firstSet.gap,
+                    opportunity: firstSet.opportunity
+                });
+            }
+            sets = [firstSet];
+        }
+        sets = sets.map((s) => normalizeSet(s, overviewDoc));
+
+        const tabState = state.portfolioTabState[item.id];
+        if (!tabState) {
+            return;
+        }
+        tabState.sets = sets;
+        tabState.activeSetId = sets[0].id;
+        renderPortfolioSetsBar(item.id);
+        renderPortfolioSetBody(item.id);
+    }
+
+    function normalizeSet(set) {
+        if (!set.rows || typeof set.rows !== 'object') {
+            set.rows = buildBlankRows();
+        }
+        const blank = buildBlankRows();
+        ['GRAB', 'GROW', 'GUARD'].forEach((category) => {
+            if (!Array.isArray(set.rows[category])) {
+                set.rows[category] = blank[category];
+            } else {
+                set.rows[category] = set.rows[category].map((row) => ({
+                    target: row.target || '',
+                    actionPlan: row.actionPlan || '',
+                    group: row.group || '',
+                    subGroup: row.subGroup || '',
+                    amount: row.amount !== undefined ? Number(row.amount) : 0
+                }));
+            }
+        });
+        return set;
+    }
+
+    function findSet(itemId, setId) {
+        return (state.portfolioTabState[itemId]?.sets || []).find((entry) => entry.id === setId) || null;
+    }
+
+    function renderPortfolioSetsBar(itemId) {
+        const bar = document.getElementById(`portfolioSetsTabBar-${itemId}`);
+        const tabState = state.portfolioTabState[itemId];
+        if (!bar || !tabState) {
+            return;
+        }
+
+        const canDelete = tabState.sets.length > 1;
+        bar.innerHTML = tabState.sets.map((set, index) => {
+            const isActive = set.id === tabState.activeSetId;
+            return `<div class="flex items-center rounded-xl overflow-hidden ${isActive ? 'bg-blue-800' : 'bg-slate-200'}">
+                <button onclick="switchPortfolioSet('${itemId}','${set.id}')" class="px-4 py-2 text-xs font-bold ${isActive ? 'text-white' : 'text-slate-600 hover:bg-slate-300'}">แผนงานที่ ${index + 1}</button>
+                ${canDelete ? `<button onclick="removePortfolioSet('${itemId}','${set.id}')" class="px-2 py-2 text-xs ${isActive ? 'text-white/70 hover:text-white' : 'text-slate-400 hover:text-rose-600'}" title="ลบชุดนี้"><i class="fa-solid fa-xmark"></i></button>` : ''}
+            </div>`;
+        }).join('') + `<button onclick="addPortfolioSet('${itemId}')" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center text-xs font-bold" title="เพิ่มชุดใหม่"><i class="fa-solid fa-plus"></i></button>`;
+    }
+
+    function renderCategoryRows(set, category) {
+        const colors = { GRAB: 'bg-blue-600', GROW: 'bg-orange-600', GUARD: 'bg-slate-800' };
+        const rows = set.rows[category] || [];
+        return rows.map((row, rowIndex) => {
+            const hasSubgroup = !!row.subGroup;
+            const bgClass = hasSubgroup ? 'text-emerald-800' : 'text-slate-600';
+            const bgColor = hasSubgroup ? '#d1fae5' : '#e2e8f0';
+            const unit = getUnitForSubGroup(row.subGroup);
+
+            return `
+            <tr class="border-t border-slate-200">
+                ${rowIndex === 0 ? `
+                    <td rowspan="${rows.length}" class="${colors[category]} text-white text-center align-middle font-black text-[11px] tracking-widest border-r border-slate-200" style="writing-mode: vertical-rl; transform: rotate(180deg);">${category}</td>
+                    <td rowspan="${rows.length}" class="p-1.5 border-r border-slate-200 align-top w-[35%] relative">
+                        <div class="flex items-center justify-between mb-1 shrink-0">
+                            <span class="text-[10px] font-bold text-slate-500">Target</span>
+                            <button onclick="openLightbox('Target (${category})', '#setTarget-${set.id}-${category}', (val) => {
+                                const s = findSet('${set.activityItemId}', '${set.id}');
+                                if (s) {
+                                    s.rows['${category}'][0].target = val;
+                                    persistSetRows('${set.activityItemId}', '${set.id}');
+                                }
+                            })" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ขยายกล่องข้อความ">
+                                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                            </button>
+                        </div>
+                        <textarea id="setTarget-${set.id}-${category}" data-set-id="${set.id}" data-category="${category}" data-row-index="0" data-field="target" class="portfolio-row-field w-full min-h-[220px] resize-y border border-slate-200 rounded-lg p-2 text-xs outline-none focus:border-blue-500 font-semibold text-slate-800 shadow-inner" style="background-color: #eaf0f7;">${escapeHtml(rows[0].target || '')}</textarea>
+                    </td>
+                    <td rowspan="${rows.length}" class="p-1.5 border-r border-slate-200 align-top w-[35%] relative">
+                        <div class="flex items-center justify-between mb-1 shrink-0">
+                            <span class="text-[10px] font-bold text-slate-500">Action Plan</span>
+                            <button onclick="openLightbox('Action Plan (${category})', '#setActionPlan-${set.id}-${category}', (val) => {
+                                const s = findSet('${set.activityItemId}', '${set.id}');
+                                if (s) {
+                                    s.rows['${category}'][0].actionPlan = val;
+                                    persistSetRows('${set.activityItemId}', '${set.id}');
+                                }
+                            })" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ขยายกล่องข้อความ">
+                                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                            </button>
+                        </div>
+                        <textarea id="setActionPlan-${set.id}-${category}" data-set-id="${set.id}" data-category="${category}" data-row-index="0" data-field="actionPlan" class="portfolio-row-field w-full min-h-[220px] resize-y border border-slate-200 rounded-lg p-2 text-xs outline-none focus:border-blue-500 font-semibold text-slate-800 shadow-inner" style="background-color: #eaf0f7;">${escapeHtml(rows[0].actionPlan || '')}</textarea>
+                    </td>
+                ` : ''}
+                <td class="p-1.5 align-middle">
+                    <div class="flex items-center gap-1.5">
+                        <select data-set-id="${set.id}" data-category="${category}" data-row-index="${rowIndex}"
+                            class="portfolio-subgroup-field w-40 ${bgClass} border border-slate-200 rounded-lg py-1.5 px-2 text-[11px] font-bold outline-none focus:border-blue-500" style="background-color: ${bgColor};">
+                            ${renderAllSubgroupOptions(row.subGroup)}
+                        </select>
+                        <input type="text" data-set-id="${set.id}" data-category="${category}" data-row-index="${rowIndex}"
+                            class="portfolio-amount-field w-32 ${bgClass} border border-slate-200 rounded-lg py-1.5 px-1.5 text-[11px] text-center font-bold outline-none focus:border-blue-500"
+                            value="${formatNumberWithCommas(row.amount || 0)}" placeholder="จำนวน" style="background-color: ${bgColor};">
+                        <div class="w-10 text-right flex flex-col justify-end">
+                            ${rowIndex === 0 ? '<span class="text-[9px] text-orange-700 font-bold leading-none block mb-0.5">Auto</span>' : ''}
+                            <span id="unitLabel-${set.id}-${category}-${rowIndex}" class="text-xs text-slate-800 font-normal">${unit}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            `;
+        }).join('');
+    }
+
+    function renderPortfolioSetBody(itemId) {
+        const body = document.getElementById(`portfolioSetBody-${itemId}`);
+        const tabState = state.portfolioTabState[itemId];
+        if (!body || !tabState) {
+            return;
+        }
+
+        const activeSet = tabState.sets.find((entry) => entry.id === tabState.activeSetId);
+        if (!activeSet) {
+            body.innerHTML = '';
+            return;
+        }
+
+        body.innerHTML = `
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 space-y-4 shadow-sm">
+                <div>
+                    <div class="flex items-center justify-between mb-1">
+                        <label class="block text-[11px] font-black text-slate-700">ชื่อเรื่อง</label>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="openPresenterMailLightbox('${activeSet.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ข้อมูลสรุปการนำเสนอ">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </button>
+                            <button onclick="openGraphLightbox('${activeSet.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ดูกราฟวิเคราะห์">
+                                <i class="fa-solid fa-chart-pie text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <input type="text" id="setTopic-${activeSet.id}" value="${escapeHtml(activeSet.topic || '')}" placeholder="กรอกชื่อเรื่องของชุดนี้" class="w-full border border-slate-200 rounded-lg py-2 px-3 text-xs font-semibold outline-none focus:border-blue-500 shadow-inner" style="background-color: #eaf0f7;">
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 border-t border-slate-100 pt-4">
+                    <div class="bg-slate-50/50 border border-slate-200 rounded-xl p-3 space-y-1.5 relative">
+                        <div class="flex items-center justify-between mb-1 shrink-0">
+                            <span class="text-xs font-black text-slate-800 block">1. Portfolio Overview</span>
+                            <button onclick="openLightbox('1. Portfolio Overview', '#setOverview-${activeSet.id}', (val) => persistSetField('${itemId}', '${activeSet.id}', { overview: val }))" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ขยายกล่องข้อความ">
+                                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                            </button>
+                        </div>
+                        <textarea id="setOverview-${activeSet.id}" placeholder="กรอกข้อมูล..." class="w-full min-h-[150px] border border-slate-200 rounded-lg p-2.5 text-xs outline-none focus:border-blue-500 resize-y font-semibold text-slate-800 shadow-inner" style="background-color: #eaf0f7;">${escapeHtml(activeSet.overview || '')}</textarea>
+                    </div>
+                    <div class="bg-slate-50/50 border border-slate-200 rounded-xl p-3 space-y-1.5 relative">
+                        <div class="flex items-center justify-between mb-1 shrink-0">
+                            <span class="text-xs font-black text-slate-800 block">2. Gap</span>
+                            <button onclick="openLightbox('2. Gap', '#setGap-${activeSet.id}', (val) => persistSetField('${itemId}', '${activeSet.id}', { gap: val }))" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ขยายกล่องข้อความ">
+                                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                            </button>
+                        </div>
+                        <textarea id="setGap-${activeSet.id}" placeholder="กรอกข้อมูล..." class="w-full min-h-[150px] border border-slate-200 rounded-lg p-2.5 text-xs outline-none focus:border-blue-500 resize-y font-semibold text-slate-800 shadow-inner" style="background-color: #eaf0f7;">${escapeHtml(activeSet.gap || '')}</textarea>
+                    </div>
+                    <div class="bg-slate-50/50 border border-slate-200 rounded-xl p-3 space-y-1.5 relative">
+                        <div class="flex items-center justify-between mb-1 shrink-0">
+                            <span class="text-xs font-black text-slate-800 block">3. Opportunity</span>
+                            <button onclick="openLightbox('3. Opportunity', '#setOpportunity-${activeSet.id}', (val) => persistSetField('${itemId}', '${activeSet.id}', { opportunity: val }))" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ขยายกล่องข้อความ">
+                                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                            </button>
+                        </div>
+                        <textarea id="setOpportunity-${activeSet.id}" placeholder="กรอกข้อมูล..." class="w-full min-h-[150px] border border-slate-200 rounded-lg p-2.5 text-xs outline-none focus:border-blue-500 resize-y font-semibold text-slate-800 shadow-inner" style="background-color: #eaf0f7;">${escapeHtml(activeSet.opportunity || '')}</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 space-y-3">
+                <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                    <table class="w-full text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100 text-slate-600 border-b border-slate-200">
+                                <th class="w-10"></th>
+                                <th class="py-2.5 px-3 text-center font-bold border-r border-slate-200">Target</th>
+                                <th class="py-2.5 px-3 text-center font-bold border-r border-slate-200">Action Plan</th>
+                                <th class="py-2.5 px-3 text-center font-bold">Outcome</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${['GRAB', 'GROW', 'GUARD'].map((category) => renderCategoryRows(activeSet, category)).join('')}
+                            <tr class="border-t border-slate-200 bg-slate-50">
+                                <td class="bg-slate-500 text-white text-center align-middle font-black text-[11px] tracking-widest py-3" style="writing-mode: vertical-rl; transform: rotate(180deg);">TOTAL</td>
+                                <td colspan="3" class="p-3 bg-white">
+                                    <div id="totalsBar-${activeSet.id}" class="flex flex-wrap items-center gap-6 justify-between">
+                                        ${renderTotalsBar(activeSet)}
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+
+        bindPortfolioSetFieldEvents(itemId, activeSet.id);
+    }
+
+    function persistSetField(itemId, setId, payload) {
+        const set = findSet(itemId, setId);
+        if (set) {
+            Object.assign(set, payload);
+        }
+        updatePortfolioSet(setId, payload);
+    }
+
+    function persistSetRows(itemId, setId) {
+        const set = findSet(itemId, setId);
+        if (!set) {
+            return;
+        }
+        updatePortfolioSet(setId, { rows: set.rows });
+    }
+
+    function bindPortfolioSetFieldEvents(itemId, setId) {
+        bindAutoSaveField(document.getElementById(`setTopic-${setId}`), (value) => persistSetField(itemId, setId, { topic: value }));
+        bindAutoSaveField(document.getElementById(`setOverview-${setId}`), (value) => persistSetField(itemId, setId, { overview: value }));
+        bindAutoSaveField(document.getElementById(`setGap-${setId}`), (value) => persistSetField(itemId, setId, { gap: value }));
+        bindAutoSaveField(document.getElementById(`setOpportunity-${setId}`), (value) => persistSetField(itemId, setId, { opportunity: value }));
+
+        // Target / Action Plan textareas
+        document.querySelectorAll(`.portfolio-row-field[data-set-id="${setId}"]`).forEach((field) => {
+            field.addEventListener('blur', () => {
+                const set = findSet(itemId, setId);
+                if (!set) {
+                    return;
+                }
+                set.rows[field.dataset.category][Number(field.dataset.rowIndex)][field.dataset.field] = field.value;
+                persistSetRows(itemId, setId);
+            });
+        });
+
+        // Outcome dropdown: SubGroup
+        document.querySelectorAll(`.portfolio-subgroup-field[data-set-id="${setId}"]`).forEach((field) => {
+            field.addEventListener('change', () => {
+                const set = findSet(itemId, setId);
+                if (!set) {
+                    return;
+                }
+                const category = field.dataset.category;
+                const rowIndex = Number(field.dataset.rowIndex);
+                const row = set.rows[category][rowIndex];
+                row.subGroup = field.value;
+
+                const amountInput = document.querySelector(`.portfolio-amount-field[data-set-id="${setId}"][data-category="${category}"][data-row-index="${rowIndex}"]`);
+
+                // If unselected "เลือกผลิตภัณฑ์", set amount to 0 automatically
+                if (row.subGroup === '') {
+                    row.amount = 0;
+                    if (amountInput) {
+                        amountInput.value = '0';
+                    }
+                }
+
+                // Update background colors dynamically
+                updateRowBgColors(field, amountInput, row.subGroup !== '');
+
+                // Update dynamic unit label
+                const unitLabel = document.getElementById(`unitLabel-${setId}-${category}-${rowIndex}`);
+                if (unitLabel) {
+                    unitLabel.textContent = getUnitForSubGroup(row.subGroup);
+                }
+
+                persistSetRows(itemId, setId);
+                refreshTotalsBar(itemId, setId);
+            });
+        });
+
+        // Outcome amount: text inputs (with thousands separator)
+        document.querySelectorAll(`.portfolio-amount-field[data-set-id="${setId}"]`).forEach((field) => {
+            field.addEventListener('focus', () => {
+                const set = findSet(itemId, setId);
+                if (!set) return;
+                const category = field.dataset.category;
+                const rowIndex = Number(field.dataset.rowIndex);
+                const row = set.rows[category][rowIndex];
+                // Show raw numeric string on focus
+                field.value = String(row.amount || 0);
+            });
+
+            const handleAmountChange = () => {
+                const set = findSet(itemId, setId);
+                if (!set) {
+                    return;
+                }
+                const category = field.dataset.category;
+                const rowIndex = Number(field.dataset.rowIndex);
+                const row = set.rows[category][rowIndex];
+                let val = parseNumberString(field.value);
+                if (val < 0) {
+                    val = 0;
+                }
+
+                row.amount = val;
+                field.value = formatNumberWithCommas(val);
+
+                // Update background colors dynamically
+                const selectDropdown = document.querySelector(`.portfolio-subgroup-field[data-set-id="${setId}"][data-category="${category}"][data-row-index="${rowIndex}"]`);
+                updateRowBgColors(selectDropdown, field, row.subGroup !== '');
+
+                persistSetRows(itemId, setId);
+                refreshTotalsBar(itemId, setId);
+            };
+
+            field.addEventListener('change', handleAmountChange);
+            field.addEventListener('blur', handleAmountChange);
+        });
+    }
+
+    function switchPortfolioSet(itemId, setId) {
+        const tabState = state.portfolioTabState[itemId];
+        if (!tabState) {
+            return;
+        }
+        tabState.activeSetId = setId;
+        renderPortfolioSetsBar(itemId);
+        renderPortfolioSetBody(itemId);
+    }
+
+    async function addPortfolioSet(itemId) {
+        const tabState = state.portfolioTabState[itemId];
+        const user = state.currentUser;
+        if (!tabState || !user) {
+            return;
+        }
+        const nextIndex = tabState.sets.length + 1;
+        const newSet = await createPortfolioSet(user.id, user.roundId, itemId, nextIndex);
+        tabState.sets.push(newSet);
+        tabState.activeSetId = newSet.id;
+        renderPortfolioSetsBar(itemId);
+        renderPortfolioSetBody(itemId);
+    }
+
+    async function removePortfolioSet(itemId, setId) {
+        showDeleteConfirmLightbox(itemId, setId);
+    }
+
+    // ---------------------------------------------------------------------
+    // Template: Customer Diagnosis
+    // ---------------------------------------------------------------------
+
+    function actIonCell(fieldId, letter, label, colorClass) {
+        return `<div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+            <div class="${colorClass} text-white text-center text-[12px] font-bold py-2 px-2">${letter} - ${escapeHtml(label)}</div>
+            <textarea id="${fieldId}" class="w-full min-h-[60px] p-2 text-xs font-semibold text-slate-800 outline-none" style="background-color: #eaf0f7;"></textarea>
+        </div>`;
+    }
+
+    function diagnosisCell(fieldId, label, colorClass) {
+        return `<div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+            <div class="${colorClass} text-white text-center text-[12px] font-bold py-2 px-2">${escapeHtml(label)}</div>
+            <textarea id="${fieldId}" class="w-full min-h-[75px] p-2 text-xs font-semibold text-slate-800 outline-none" style="background-color: #eaf0f7;"></textarea>
+        </div>`;
+    }
+
+    function mountCustomerDiagnosisTab(item) {
+        const wrapper = document.createElement('div');
+        wrapper.id = `simTabContent-${item.id}`;
+        wrapper.className = 'w-full flex flex-col gap-4';
+        wrapper.innerHTML = `
+            <div id="bootcampSetsTabBar-${item.id}" class="flex flex-wrap gap-2 items-center border-b border-slate-200 pb-3"></div>
+            <div id="bootcampSetBody-${item.id}" class="flex flex-col gap-4"></div>
+        `;
+
+        state.bootcampTabState[item.id] = { sets: [], activeSetId: '' };
+        initCustomerDiagnosisData(item);
+
+        return wrapper;
+    }
+
+    async function initCustomerDiagnosisData(item) {
+        const user = state.currentUser;
+        if (!user) {
+            return;
+        }
+
+        const docId = `${user.id}__${item.id}`;
+        const data = await getSingletonDoc('customerDiagnosis', docId) || {};
+
+        let sets = data.sets || [];
+        if (!sets.length) {
+            const firstSet = {
+                id: 'set_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
+                topic: 'แผนงานที่ 1',
+                customerInfo: data.customerInfo || '',
+                act: data.act || { aim: '', consult: '', track: '' },
+                ion: data.ion || { improve: '', operate: '', notice: '' },
+                diagnosis: data.diagnosis || {
+                    goalAndLimit: '',
+                    idealPortfolio: '',
+                    currentPortfolio: '',
+                    portfolioSymptom: '',
+                    potentialImpact: '',
+                    adjustmentGuideline: ''
+                },
+                financialSolutions: data.financialSolutions || []
+            };
+            sets = [firstSet];
+            await saveSingletonDoc('customerDiagnosis', docId, { ...data, sets, activeSetId: firstSet.id });
+        }
+
+        const tabState = state.bootcampTabState[item.id];
+        if (!tabState) return;
+
+        tabState.sets = sets;
+        if (!tabState.activeSetId || !sets.some(s => s.id === tabState.activeSetId)) {
+            tabState.activeSetId = data.activeSetId || sets[0].id;
+        }
+        if (!sets.some(s => s.id === tabState.activeSetId)) {
+            tabState.activeSetId = sets[0].id;
+        }
+
+        renderBootcampSetsBar(item.id);
+        renderBootcampSetBody(item.id);
+    }
+
+    function renderBootcampSetsBar(itemId) {
+        const bar = document.getElementById(`bootcampSetsTabBar-${itemId}`);
+        const tabState = state.bootcampTabState[itemId];
+        if (!bar || !tabState) {
+            return;
+        }
+
+        const canDelete = tabState.sets.length > 1;
+        bar.innerHTML = tabState.sets.map((set, index) => {
+            const isActive = set.id === tabState.activeSetId;
+            return `<div class="flex items-center rounded-xl overflow-hidden ${isActive ? 'bg-orange-500' : 'bg-slate-200'}">
+                <button onclick="switchBootcampSet('${itemId}','${set.id}')" class="px-4 py-2 text-xs font-bold ${isActive ? 'text-white' : 'text-slate-600 hover:bg-slate-300'}">แผนงานที่ ${index + 1}</button>
+                ${canDelete ? `<button onclick="removeBootcampSet('${itemId}','${set.id}')" class="px-2 py-2 text-xs ${isActive ? 'text-white/70 hover:text-white border-l border-orange-400' : 'text-slate-400 hover:text-rose-600 border-l border-slate-300'}" title="ลบชุดนี้"><i class="fa-solid fa-xmark"></i></button>` : ''}
+            </div>`;
+        }).join('') + `<button onclick="addBootcampSet('${itemId}')" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center text-xs font-bold" title="เพิ่มชุดใหม่"><i class="fa-solid fa-plus"></i></button>`;
+    }
+
+    function renderBootcampSetBody(itemId) {
+        const body = document.getElementById(`bootcampSetBody-${itemId}`);
+        const tabState = state.bootcampTabState[itemId];
+        if (!body || !tabState) return;
+
+        const activeSet = tabState.sets.find((entry) => entry.id === tabState.activeSetId);
+        if (!activeSet) {
+            body.innerHTML = '';
+            return;
+        }
+
+        const act = activeSet.act || { aim: '', consult: '', track: '' };
+        const ion = activeSet.ion || { improve: '', operate: '', notice: '' };
+        const diagnosis = activeSet.diagnosis || {
+            goalAndLimit: '',
+            idealPortfolio: '',
+            currentPortfolio: '',
+            portfolioSymptom: '',
+            potentialImpact: '',
+            adjustmentGuideline: ''
+        };
+        const solutions = activeSet.financialSolutions || [];
+
+        body.innerHTML = `
+            <div class="bg-white border border-slate-200 rounded-2xl p-5 space-y-4 shadow-sm">
+                <!-- ชื่อเรื่อง input field -->
+                <div class="mb-2">
+                    <div class="flex items-center justify-between mb-1">
+                        <label class="block text-[11px] font-black text-slate-700">ชื่อเรื่อง</label>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="openBootcampPresenterMailLightbox('${itemId}', '${activeSet.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ข้อมูลสรุปการนำเสนอ">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <input type="text" id="bootcampSetTopic-${itemId}" value="${escapeHtml(activeSet.topic || '')}" placeholder="กรอกชื่อเรื่องของชุดนี้" class="w-full border border-slate-200 rounded-lg py-2 px-3 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500 shadow-inner" style="background-color: #eaf0f7;">
+                </div>
+
+                <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">1</span> Customer Profile & Action Plan</h3>
+                
+                <!-- Full-width ข้อมูลลูกค้า container -->
+                <div class="bgblue text-white rounded-2xl p-4 space-y-2">
+                    <span class="block text-xs">ข้อมูลลูกค้า</span>
+                    <textarea id="cdCustomerInfo-${itemId}" class="w-full min-h-[90px] rounded-lg p-2 text-xs font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-blue-500" style="background-color: #eaf0f7;"></textarea>
+                </div>
+
+                <!-- 3 Columns, 2 Rows grid for A C T I O N -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    ${actIonCell(`cdAim-${itemId}`, 'A', 'Aim', 'bgblue')}
+                    ${actIonCell(`cdConsult-${itemId}`, 'C', 'Consult', 'bgblue')}
+                    ${actIonCell(`cdTrack-${itemId}`, 'T', 'Track', 'bgblue')}
+                    ${actIonCell(`cdImprove-${itemId}`, 'I', 'Improve', 'bgorange')}
+                    ${actIonCell(`cdOperate-${itemId}`, 'O', 'Operate', 'bgorange')}
+                    ${actIonCell(`cdNotice-${itemId}`, 'N', 'Notice', 'bgorange')}
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl p-5 space-y-3 shadow-sm">
+                <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px] placeholder="กรอกข้อมูล...">2</span> Portfolio Diagnosis & Improvement</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    ${diagnosisCell(`cdGoalAndLimit-${itemId}`, 'เป้าหมายและข้อจำกัด', 'bgblue')}
+                    ${diagnosisCell(`cdIdealPortfolio-${itemId}`, 'พอร์ตที่ควรเป็นตามเป้าหมาย', 'bgblue')}
+                    ${diagnosisCell(`cdCurrentPortfolio-${itemId}`, 'พอร์ตปัจจุบันที่ลูกค้ามี', 'bgblue')}
+                    ${diagnosisCell(`cdPortfolioSymptom-${itemId}`, 'อาการของพอร์ต', 'bgorange')}
+                    ${diagnosisCell(`cdPotentialImpact-${itemId}`, 'ผลกระทบที่อาจเกิดขึ้น', 'bgorange')}
+                    ${diagnosisCell(`cdAdjustmentGuideline-${itemId}`, 'แนวทางปรับพอร์ต', 'bgorange')}
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl p-5 space-y-3 shadow-sm">
+                <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">3</span> Financial Solution</h3>
+                <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                    <table class="w-full text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-[#f8fafc] text-slate-700 border-b border-slate-200">
+                                <th rowspan="2" class="py-2.5 px-3 text-center font-black border-r border-slate-200 w-[24%]">รายการ</th>
+                                <th colspan="4" class="py-2 px-3 text-center font-black border-b border-slate-200">โซลูชันที่จะแนะนำ</th>
+                            </tr>
+                            <tr class="bg-slate-100/80 text-slate-700 text-[12px]">
+                                <th class="py-2 px-2 text-center border-r border-slate-200 w-[19%]">ฉลาดใช้</th>
+                                <th class="py-2 px-2 text-center border-r border-slate-200 w-[19%]">ฉลาดออมและลงทุน</th>
+                                <th class="py-2 px-2 text-center border-r border-slate-200 w-[19%]">คุ้มครองอุ่นใจ</th>
+                                <th class="py-2 px-2 text-center w-[19%]">รอบรู้กู้ยืม</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cdFinancialSolutionsTableBody-${itemId}">
+                            <!-- Populated below -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+
+        setFieldValue(`cdCustomerInfo-${itemId}`, activeSet.customerInfo || '');
+        setFieldValue(`cdAim-${itemId}`, act.aim || '');
+        setFieldValue(`cdConsult-${itemId}`, act.consult || '');
+        setFieldValue(`cdTrack-${itemId}`, act.track || '');
+        setFieldValue(`cdImprove-${itemId}`, ion.improve || '');
+        setFieldValue(`cdOperate-${itemId}`, ion.operate || '');
+        setFieldValue(`cdNotice-${itemId}`, ion.notice || '');
+        setFieldValue(`cdGoalAndLimit-${itemId}`, diagnosis.goalAndLimit || '');
+        setFieldValue(`cdIdealPortfolio-${itemId}`, diagnosis.idealPortfolio || '');
+        setFieldValue(`cdCurrentPortfolio-${itemId}`, activeSet.diagnosis?.currentPortfolio || diagnosis.currentPortfolio || '');
+        setFieldValue(`cdPortfolioSymptom-${itemId}`, diagnosis.portfolioSymptom || '');
+        setFieldValue(`cdPotentialImpact-${itemId}`, diagnosis.potentialImpact || '');
+        setFieldValue(`cdAdjustmentGuideline-${itemId}`, diagnosis.adjustmentGuideline || '');
+
+        const tableBody = document.getElementById(`cdFinancialSolutionsTableBody-${itemId}`);
+        if (tableBody) {
+            const goals = [
+                'เพื่อการเกษียณ',
+                'เพื่อการศึกษาบุตร',
+                'เพื่อลดหย่อนภาษี',
+                'เพื่อเก็งกำไร/เติบโต',
+                'เพื่อการท่องเที่ยว',
+                'อื่นๆ'
+            ];
+            tableBody.innerHTML = Array.from({ length: 3 }).map((_, index) => {
+                const sol = solutions[index] || {};
+                const goalOptions = goals.map(g => `<option value="${g}" ${sol.goal === g ? 'selected' : ''}>${g}</option>`).join('');
+
+                return `
+                    <tr class="border-t border-slate-200">
+                        <td class="p-3 align-top border-r border-slate-200 space-y-2">
+                            <div>
+                                <span class="block text-[11px] font-bold text-slate-500 mb-0.5 text-left">เป้าหมายทางการเงิน</span>
+                                <select id="cdSolGoal-${itemId}-${index}" class="w-full border border-slate-200 rounded-lg p-1.5 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500" style="background-color: #eaf0f7;">
+                                    <option value="">เลือกเป้าหมาย</option>
+                                    ${goalOptions}
+                                </select>
+                            </div>
+                            <div>
+                                <span class="block text-[11px] font-bold text-slate-500 mb-0.5 text-left">จำนวนเงิน</span>
+                                <input type="text" id="cdSolAmount-${itemId}-${index}" value="${escapeHtml(sol.amount || '')}" class="w-full border border-slate-200 rounded-lg p-1.5 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500" placeholder="จำนวนเงิน" style="background-color: #eaf0f7;">
+                            </div>
+                            <div>
+                                <span class="block text-[11px] font-bold text-slate-500 mb-0.5 text-left">ระยะเวลา</span>
+                                <input type="text" id="cdSolDuration-${itemId}-${index}" value="${escapeHtml(sol.duration || '')}" class="w-full border border-slate-200 rounded-lg p-1.5 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500" placeholder="ระยะเวลา" style="background-color: #eaf0f7;">
+                            </div>
+                            <div>
+                                <span class="block text-[11px] font-bold text-slate-500 mb-0.5 text-left">อัตราผลตอบแทนที่คาดหวัง</span>
+                                <input type="text" id="cdSolReturn-${itemId}-${index}" value="${escapeHtml(sol.expectedReturn || '')}" class="w-full border border-slate-200 rounded-lg p-1.5 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500" placeholder="ผลตอบแทน %" style="background-color: #eaf0f7;">
+                            </div>
+                        </td>
+                        <td class="p-2 align-top border-r border-slate-200">
+                            <textarea id="cdSolSmartSpend-${itemId}-${index}" class="w-full min-h-[240px] border border-slate-200 rounded-lg p-1.5 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500" style="background-color: #eaf0f7;">${escapeHtml(sol.smartSpend || '')}</textarea>
+                        </td>
+                        <td class="p-2 align-top border-r border-slate-200">
+                            <textarea id="cdSolSmartSave-${itemId}-${index}" class="w-full min-h-[240px] border border-slate-200 rounded-lg p-1.5 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500" style="background-color: #eaf0f7;">${escapeHtml(sol.smartSave || '')}</textarea>
+                        </td>
+                        <td class="p-2 align-top border-r border-slate-200">
+                            <textarea id="cdSolSmartProtect-${itemId}-${index}" class="w-full min-h-[240px] border border-slate-200 rounded-lg p-1.5 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500" style="background-color: #eaf0f7;">${escapeHtml(sol.smartProtect || '')}</textarea>
+                        </td>
+                        <td class="p-2 align-top">
+                            <textarea id="cdSolSmartBorrow-${itemId}-${index}" class="w-full min-h-[240px] border border-slate-200 rounded-lg p-1.5 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500" style="background-color: #eaf0f7;">${escapeHtml(sol.smartBorrow || '')}</textarea>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        const bindSave = (fieldId, pathArray) => {
+            const el = document.getElementById(fieldId);
+            if (el) {
+                bindAutoSaveField(el, (val) => {
+                    persistBootcampSetField(itemId, activeSet.id, pathArray, val);
+                });
+            }
+        };
+
+        bindSave(`cdCustomerInfo-${itemId}`, ['customerInfo']);
+        bindSave(`cdAim-${itemId}`, ['act', 'aim']);
+        bindSave(`cdConsult-${itemId}`, ['act', 'consult']);
+        bindSave(`cdTrack-${itemId}`, ['act', 'track']);
+        bindSave(`cdImprove-${itemId}`, ['ion', 'improve']);
+        bindSave(`cdOperate-${itemId}`, ['ion', 'operate']);
+        bindSave(`cdNotice-${itemId}`, ['ion', 'notice']);
+        bindSave(`cdGoalAndLimit-${itemId}`, ['diagnosis', 'goalAndLimit']);
+        bindSave(`cdIdealPortfolio-${itemId}`, ['diagnosis', 'idealPortfolio']);
+        bindSave(`cdCurrentPortfolio-${itemId}`, ['diagnosis', 'currentPortfolio']);
+        bindSave(`cdPortfolioSymptom-${itemId}`, ['diagnosis', 'portfolioSymptom']);
+        bindSave(`cdPotentialImpact-${itemId}`, ['diagnosis', 'potentialImpact']);
+        bindSave(`cdAdjustmentGuideline-${itemId}`, ['diagnosis', 'adjustmentGuideline']);
+
+        // Bind Save for Title in real-time
+        const titleInput = document.getElementById(`bootcampSetTopic-${itemId}`);
+        if (titleInput) {
+            titleInput.addEventListener('input', (e) => {
+                const val = e.target.value;
+                activeSet.topic = val || `แผนงานที่ ${tabState.sets.indexOf(activeSet) + 1}`;
+                persistBootcampSetField(itemId, activeSet.id, ['topic'], val);
+                renderBootcampSetsBar(itemId);
+            });
+        }
+
+        const saveFinancialSolutions = () => {
+            const list = [];
+            for (let i = 0; i < 3; i++) {
+                list.push({
+                    goal: document.getElementById(`cdSolGoal-${itemId}-${i}`)?.value || '',
+                    amount: document.getElementById(`cdSolAmount-${itemId}-${i}`)?.value || '',
+                    duration: document.getElementById(`cdSolDuration-${itemId}-${i}`)?.value || '',
+                    expectedReturn: document.getElementById(`cdSolReturn-${itemId}-${i}`)?.value || '',
+                    smartSpend: document.getElementById(`cdSolSmartSpend-${itemId}-${i}`)?.value || '',
+                    smartSave: document.getElementById(`cdSolSmartSave-${itemId}-${i}`)?.value || '',
+                    smartProtect: document.getElementById(`cdSolSmartProtect-${itemId}-${i}`)?.value || '',
+                    smartBorrow: document.getElementById(`cdSolSmartBorrow-${itemId}-${i}`)?.value || '',
+                });
+            }
+            persistBootcampSetField(itemId, activeSet.id, ['financialSolutions'], list);
+        };
+
+        for (let i = 0; i < 3; i++) {
+            document.getElementById(`cdSolGoal-${itemId}-${i}`)?.addEventListener('change', saveFinancialSolutions);
+            document.getElementById(`cdSolAmount-${itemId}-${i}`)?.addEventListener('blur', saveFinancialSolutions);
+            document.getElementById(`cdSolDuration-${itemId}-${i}`)?.addEventListener('blur', saveFinancialSolutions);
+            document.getElementById(`cdSolReturn-${itemId}-${i}`)?.addEventListener('blur', saveFinancialSolutions);
+            document.getElementById(`cdSolSmartSpend-${itemId}-${i}`)?.addEventListener('blur', saveFinancialSolutions);
+            document.getElementById(`cdSolSmartSave-${itemId}-${i}`)?.addEventListener('blur', saveFinancialSolutions);
+            document.getElementById(`cdSolSmartProtect-${itemId}-${i}`)?.addEventListener('blur', saveFinancialSolutions);
+            document.getElementById(`cdSolSmartBorrow-${itemId}-${i}`)?.addEventListener('blur', saveFinancialSolutions);
+        }
+    }
+
+    async function persistBootcampSetField(itemId, setId, fieldPathArray, value) {
+        const docId = `${state.currentUser.id}__${itemId}`;
+        const tabState = state.bootcampTabState[itemId];
+        if (!tabState) return;
+
+        const set = tabState.sets.find((s) => s.id === setId);
+        if (!set) return;
+
+        let current = set;
+        for (let i = 0; i < fieldPathArray.length - 1; i++) {
+            const key = fieldPathArray[i];
+            if (!current[key]) current[key] = {};
+            current = current[key];
+        }
+        current[fieldPathArray[fieldPathArray.length - 1]] = value;
+
+        const payload = {
+            userId: state.currentUser.id,
+            roundId: state.currentUser.roundId,
+            activityItemId: itemId,
+            sets: tabState.sets,
+            activeSetId: tabState.activeSetId
+        };
+        await saveSingletonDoc('customerDiagnosis', docId, payload);
+    }
+
+    window.switchBootcampSet = (itemId, setId) => {
+        const tabState = state.bootcampTabState[itemId];
+        if (!tabState) return;
+
+        tabState.activeSetId = setId;
+        const docId = `${state.currentUser.id}__${itemId}`;
+        saveSingletonDoc('customerDiagnosis', docId, {
+            userId: state.currentUser.id,
+            roundId: state.currentUser.roundId,
+            activityItemId: itemId,
+            sets: tabState.sets,
+            activeSetId: setId
+        });
+
+        renderBootcampSetsBar(itemId);
+        renderBootcampSetBody(itemId);
+    };
+
+    window.addBootcampSet = async (itemId) => {
+        const tabState = state.bootcampTabState[itemId];
+        if (!tabState) return;
+
+        const nextIndex = tabState.sets.length + 1;
+        const newSet = {
+            id: 'set_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
+            topic: `แผนงานที่ ${nextIndex}`,
+            customerInfo: '',
+            act: { aim: '', consult: '', track: '' },
+            ion: { improve: '', operate: '', notice: '' },
+            diagnosis: {
+                goalAndLimit: '',
+                idealPortfolio: '',
+                currentPortfolio: '',
+                portfolioSymptom: '',
+                potentialImpact: '',
+                adjustmentGuideline: ''
+            },
+            financialSolutions: []
+        };
+
+        tabState.sets.push(newSet);
+        tabState.activeSetId = newSet.id;
+
+        const docId = `${state.currentUser.id}__${itemId}`;
+        await saveSingletonDoc('customerDiagnosis', docId, {
+            userId: state.currentUser.id,
+            roundId: state.currentUser.roundId,
+            activityItemId: itemId,
+            sets: tabState.sets,
+            activeSetId: newSet.id
+        });
+
+        renderBootcampSetsBar(itemId);
+        renderBootcampSetBody(itemId);
+    };
+
+    function showDeleteConfirmBootcampLightbox(itemId, setId) {
+        let modal = document.getElementById('deleteConfirmBootcampLightboxModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'deleteConfirmBootcampLightboxModal';
+            modal.className = 'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[99999] flex items-center justify-center p-4';
+            modal.innerHTML = `
+                <div class="bg-white w-[400px] rounded-2xl shadow-2xl p-6 border border-slate-200 space-y-4">
+                    <h3 class="text-base font-black text-slate-800">ยืนยันการลบชุดข้อมูล</h3>
+                    <p class="text-xs text-slate-500">กรุณาพิมพ์ข้อความ <strong class="text-rose-600">Delete Page</strong> เพื่อยืนยันการลบชุดข้อมูลนี้</p>
+                    <input type="text" id="deleteConfirmBootcampInput" placeholder="Delete Page" class="w-full border border-slate-200 rounded-lg py-2 px-3 text-xs outline-none focus:border-rose-500 font-semibold text-slate-800">
+                    <div class="flex items-center gap-3 justify-end pt-2">
+                        <button id="btnCancelDeleteBootcamp" class="px-4 py-2 text-xs font-bold text-slate-500 hover:bg-slate-100 rounded-lg transition">ยกเลิก</button>
+                        <button id="btnConfirmDeleteBootcamp" disabled class="px-4 py-2 text-xs font-bold text-white bg-rose-600 rounded-lg transition disabled:bg-rose-300 disabled:opacity-50 disabled:cursor-not-allowed">ยืนยัน</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        modal.classList.remove('hidden');
+        const input = document.getElementById('deleteConfirmBootcampInput');
+        const btnConfirm = document.getElementById('btnConfirmDeleteBootcamp');
+        const btnCancel = document.getElementById('btnCancelDeleteBootcamp');
+
+        input.value = '';
+        btnConfirm.disabled = true;
+
+        input.oninput = () => {
+            btnConfirm.disabled = input.value !== 'Delete Page';
+        };
+
+        btnConfirm.onclick = async () => {
+            modal.classList.add('hidden');
+            const tabState = state.bootcampTabState[itemId];
+            if (!tabState) return;
+
+            const index = tabState.sets.findIndex((s) => s.id === setId);
+            if (index === -1) return;
+
+            tabState.sets.splice(index, 1);
+
+            if (tabState.activeSetId === setId) {
+                tabState.activeSetId = tabState.sets[Math.max(0, index - 1)].id;
+            }
+
+            const docId = `${state.currentUser.id}__${itemId}`;
+            await saveSingletonDoc('customerDiagnosis', docId, {
+                userId: state.currentUser.id,
+                roundId: state.currentUser.roundId,
+                activityItemId: itemId,
+                sets: tabState.sets,
+                activeSetId: tabState.activeSetId
+            });
+
+            renderBootcampSetsBar(itemId);
+            renderBootcampSetBody(itemId);
+        };
+
+        btnCancel.onclick = () => {
+            modal.classList.add('hidden');
+        };
+    }
+
+    window.removeBootcampSet = async (itemId, setId) => {
+        const tabState = state.bootcampTabState[itemId];
+        if (!tabState) return;
+
+        if (tabState.sets.length <= 1) return;
+        showDeleteConfirmBootcampLightbox(itemId, setId);
+    };
+
+    // ---------------------------------------------------------------------
+    // Session / logout
+    // ---------------------------------------------------------------------
+
+    function logoutPlayer() {
+        const lightbox = document.getElementById('reRegisterLightbox');
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeReRegisterLightbox() {
+        const lightbox = document.getElementById('reRegisterLightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    function confirmReRegister() {
+        if (state.unsubscribeActivityItems) {
+            state.unsubscribeActivityItems();
+            state.unsubscribeActivityItems = null;
+        }
+        if (window.unsubscribeUserPortfolio) {
+            window.unsubscribeUserPortfolio();
+            window.unsubscribeUserPortfolio = null;
+        }
+        if (window.unsubscribeUserBootcamp) {
+            window.unsubscribeUserBootcamp();
+            window.unsubscribeUserBootcamp = null;
+        }
+
+        clearSession();
+        state.currentUser = null;
+        state.activityItems = [];
+        state.activeTabId = '';
+        state.portfolioTabState = {};
+
+        const nameInput = document.getElementById('inputRegName');
+        if (nameInput) {
+            nameInput.value = '';
+        }
+
+        const dynamicContainer = document.getElementById('dynamicTabContentContainer');
+        if (dynamicContainer) {
+            dynamicContainer.innerHTML = '';
+        }
+
+        document.getElementById('viewSimulation')?.classList.add('hidden');
+        document.getElementById('simulationTabsMenuBar')?.classList.add('hidden');
+        document.getElementById('btnLogoutPlayer')?.classList.add('hidden');
+        document.getElementById('viewRegister')?.classList.remove('hidden');
+
+        closeReRegisterLightbox();
+        validateRegForm();
+    }
+
+    async function tryResumeSession() {
+        const session = readSession();
+        if (!session || !session.userId) {
+            return;
+        }
+
+        const user = await getUserById(session.userId);
+        if (!user) {
+            clearSession();
+            return;
+        }
+
+        state.currentUser = user;
+        await enterSimulation(user);
+    }
+
+    async function init() {
+        initFirebase();
+        initActiveRoundListener();
+        await tryResumeSession();
+    }
+
+    window.validateRegForm = validateRegForm;
+    window.submitRegister = submitRegister;
+    window.switchActiveTab = switchActiveTab;
+    window.logoutPlayer = logoutPlayer;
+    window.closeReRegisterLightbox = closeReRegisterLightbox;
+    window.confirmReRegister = confirmReRegister;
+    window.switchPortfolioSet = switchPortfolioSet;
+    window.addPortfolioSet = addPortfolioSet;
+    window.removePortfolioSet = removePortfolioSet;
+    window.switchBootcampSet = switchBootcampSet;
+    window.addBootcampSet = addBootcampSet;
+    window.removeBootcampSet = removeBootcampSet;
+
+    init();
+})();

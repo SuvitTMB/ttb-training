@@ -1,1 +1,2326 @@
-(function(_0x164d16,_0x232c49){const _0x143bf8=_0x33a2,_0x141303=_0x164d16();while(!![]){try{const _0x43c7a2=parseInt(_0x143bf8(0x1f9))/0x1*(-parseInt(_0x143bf8(0x20d))/0x2)+-parseInt(_0x143bf8(0x21b))/0x3+-parseInt(_0x143bf8(0x2c1))/0x4+parseInt(_0x143bf8(0x2e2))/0x5*(parseInt(_0x143bf8(0x2d8))/0x6)+-parseInt(_0x143bf8(0x1aa))/0x7+-parseInt(_0x143bf8(0x23e))/0x8+parseInt(_0x143bf8(0x1e0))/0x9*(parseInt(_0x143bf8(0x15a))/0xa);if(_0x43c7a2===_0x232c49)break;else _0x141303['push'](_0x141303['shift']());}catch(_0x54f058){_0x141303['push'](_0x141303['shift']());}}}(_0x97f7,0xb26d9),(function(){const _0x57f393=_0x33a2,_0xb5263b=[{'id':_0x57f393(0x16d),'name':_0x57f393(0x15f),'details':_0x57f393(0x22a),'registrationCount':0x12,'status':'on'},{'id':_0x57f393(0x337),'name':'รอบฝึกอบรมทีมที่\x202','details':_0x57f393(0x1cd),'registrationCount':0xb,'status':'on'},{'id':_0x57f393(0x201),'name':_0x57f393(0x192),'details':_0x57f393(0x2b2),'registrationCount':0x6,'status':'off'}],_0x18f20c=[{'id':_0x57f393(0x188),'roundId':_0x57f393(0x16d),'displayOrder':0x1,'name':_0x57f393(0x351),'status':'on'},{'id':'port-2','roundId':_0x57f393(0x16d),'displayOrder':0x2,'name':'เมนูเงินฝาก','status':'on'},{'id':_0x57f393(0x16b),'roundId':_0x57f393(0x337),'displayOrder':0x1,'name':_0x57f393(0x228),'status':'off'}],_0x1b1bfa=[{'id':_0x57f393(0x1eb),'roundId':_0x57f393(0x16d),'parentPortId':_0x57f393(0x188),'type':_0x57f393(0x29f),'name':_0x57f393(0x2e4),'displayOrder':0x1,'status':'on'},{'id':_0x57f393(0x1f1),'roundId':_0x57f393(0x16d),'parentPortId':_0x57f393(0x188),'type':'ประกันสุขภาพแบบพรีเมียม','name':'Health\x20Plus','displayOrder':0x2,'status':'on'},{'id':_0x57f393(0x2ec),'roundId':_0x57f393(0x16d),'parentPortId':_0x57f393(0x2bd),'type':_0x57f393(0x310),'name':'Savings\x20Flex','displayOrder':0x1,'status':'on'}],_0x54ae6b=[{'id':_0x57f393(0x160),'subPortId':'subport-1','employeeName':'กิตติพงษ์\x20แสนดี','branch':_0x57f393(0x1a0),'department':_0x57f393(0x225),'status':'on'},{'id':_0x57f393(0x36f),'subPortId':_0x57f393(0x1eb),'employeeName':'อรทัย\x20ศรีสุข','branch':_0x57f393(0x20f),'department':_0x57f393(0x225),'status':'on'},{'id':_0x57f393(0x1e7),'subPortId':'subport-2','employeeName':_0x57f393(0x32d),'branch':_0x57f393(0x302),'department':_0x57f393(0x180),'status':_0x57f393(0x1f2)},{'id':_0x57f393(0x308),'subPortId':_0x57f393(0x2ec),'employeeName':_0x57f393(0x2fd),'branch':'ภูเก็ต','department':_0x57f393(0x270),'status':'on'}],_0xe7cd63=[{'id':'product-deposit-1','group':_0x57f393(0x27f),'subGroup':'Deposit\x20Non_TXN','unit':_0x57f393(0x22b),'order':0x1},{'id':'product-deposit-2','group':_0x57f393(0x27f),'subGroup':'FCD','unit':'บาท','order':0x2},{'id':_0x57f393(0x224),'group':'MF','subGroup':_0x57f393(0x343),'unit':'บาท','order':0x3},{'id':_0x57f393(0x322),'group':'MF','subGroup':_0x57f393(0x1ae),'unit':_0x57f393(0x22b),'order':0x4},{'id':'product-mf-3','group':'MF','subGroup':_0x57f393(0x20c),'unit':_0x57f393(0x22b),'order':0x5},{'id':_0x57f393(0x16f),'group':'MF','subGroup':_0x57f393(0x219),'unit':_0x57f393(0x22b),'order':0x6},{'id':_0x57f393(0x2d5),'group':'MF','subGroup':_0x57f393(0x30f),'unit':'บาท','order':0x7},{'id':_0x57f393(0x1d6),'group':'MF','subGroup':'MF\x20Term\x20Fund','unit':_0x57f393(0x22b),'order':0x8},{'id':_0x57f393(0x35a),'group':'SN','subGroup':_0x57f393(0x193),'unit':_0x57f393(0x22b),'order':0x9},{'id':'product-sn-2','group':'SN','subGroup':_0x57f393(0x17a),'unit':_0x57f393(0x22b),'order':0xa},{'id':'product-sn-3','group':'SN','subGroup':_0x57f393(0x378),'unit':'บาท','order':0xb},{'id':_0x57f393(0x35f),'group':'SN','subGroup':'Equity\x20Linked\x20Note','unit':_0x57f393(0x22b),'order':0xc},{'id':_0x57f393(0x1ce),'group':'BA','subGroup':_0x57f393(0x196),'unit':_0x57f393(0x22b),'order':0xd},{'id':_0x57f393(0x354),'group':'BA','subGroup':'BA\x20Life_Health','unit':_0x57f393(0x22b),'order':0xe},{'id':_0x57f393(0x259),'group':'BA','subGroup':_0x57f393(0x321),'unit':_0x57f393(0x22b),'order':0xf},{'id':'product-ba-4','group':'BA','subGroup':_0x57f393(0x1da),'unit':_0x57f393(0x22b),'order':0x10},{'id':_0x57f393(0x34f),'group':'BA','subGroup':_0x57f393(0x191),'unit':_0x57f393(0x22b),'order':0x11},{'id':_0x57f393(0x1dc),'group':'Credit\x20card','subGroup':_0x57f393(0x181),'unit':_0x57f393(0x304),'order':0x12},{'id':_0x57f393(0x2a3),'group':_0x57f393(0x161),'subGroup':_0x57f393(0x2da),'unit':_0x57f393(0x250),'order':0x13},{'id':_0x57f393(0x197),'group':_0x57f393(0x161),'subGroup':_0x57f393(0x2be),'unit':'ราย','order':0x14},{'id':_0x57f393(0x27c),'group':_0x57f393(0x1f3),'subGroup':_0x57f393(0x17f),'unit':'ราย','order':0x15}],_0x4c0277={'rounds':_0xb5263b[_0x57f393(0x257)](_0x1dfd76=>({..._0x1dfd76})),'ports':_0x18f20c['map'](_0x386f37=>({..._0x386f37})),'subPorts':_0x1b1bfa['map'](_0x1a440d=>({..._0x1a440d})),'employees':_0x54ae6b[_0x57f393(0x257)](_0x3df151=>({..._0x3df151})),'products':_0xe7cd63['map'](_0x1ae822=>({..._0x1ae822})),'selectedRoundId':'all','selectedPortId':'','selectedSubPortId':'','productsPageSize':0xa,'productsPage':0x1,'productsGroupFilter':_0x57f393(0x213),'users':[],'portfolioSets':[],'customerDiagnosis':[]},_0x1b7126={'rounds':_0x57f393(0x24e),'ports':_0x57f393(0x1fd),'subPorts':_0x57f393(0x1b1),'employees':_0x57f393(0x28b),'products':_0x57f393(0x353),'users':_0x57f393(0x340),'portfolioSets':'actionplan2026_plan_portfolio','customerDiagnosis':_0x57f393(0x232)},_0x16a95a={'rounds':_0x57f393(0x268),'ports':_0x57f393(0x199),'subPorts':_0x57f393(0x18a),'employees':_0x57f393(0x1c6),'products':'plan_products','users':_0x57f393(0x373),'portfolioSets':_0x57f393(0x346),'customerDiagnosis':'plan_customer_diagnosis'},_0x57a559={'db':null,'ready':![]},_0x768d5f=['portsRoundSelect','competitorsRoundSelect'];function _0x3b0bb6(_0x1550fc){const _0x2ecca0=_0x57f393;return _0x1550fc[_0x2ecca0(0x257)](_0x2dd091=>({..._0x2dd091}));}function _0x6e12d0(){const _0x243abc=_0x57f393;return Boolean(window[_0x243abc(0x330)]&&window[_0x243abc(0x2aa)]&&window[_0x243abc(0x2aa)][_0x243abc(0x19b)]);}function _0x21f379(){const _0x5363f8=_0x57f393;if(!_0x6e12d0()){_0x57a559['ready']=![],_0x57a559['db']=null;return;}try{!window[_0x5363f8(0x330)][_0x5363f8(0x2c9)]['length']&&window[_0x5363f8(0x330)][_0x5363f8(0x20e)](window[_0x5363f8(0x2aa)]),_0x57a559['db']=window[_0x5363f8(0x330)]['firestore'](),_0x57a559[_0x5363f8(0x260)]=!![];}catch(_0x10f04e){_0x57a559['db']=null,_0x57a559[_0x5363f8(0x260)]=![];}}function _0x1ef6d5(_0x1b8556,_0x28f270){const _0x337e41=_0x57f393;try{const _0x5cf973=window['localStorage']['getItem'](_0x1b8556);if(!_0x5cf973)return _0x3b0bb6(_0x28f270);const _0x3fcc6f=JSON['parse'](_0x5cf973);return Array[_0x337e41(0x29e)](_0x3fcc6f)?_0x3fcc6f:_0x3b0bb6(_0x28f270);}catch(_0x473bae){return _0x3b0bb6(_0x28f270);}}function _0x4c2bac(_0x42d3f6,_0x187471){const _0x53a417=_0x57f393;try{window['localStorage'][_0x53a417(0x348)](_0x42d3f6,JSON['stringify'](_0x187471));}catch(_0x267546){}}function _0x214513(){const _0x40427a=_0x57f393;_0x4c0277[_0x40427a(0x1b6)]=_0x1ef6d5(_0x1b7126[_0x40427a(0x1b6)],_0xb5263b),_0x4c0277['ports']=_0x1ef6d5(_0x1b7126[_0x40427a(0x17e)],_0x18f20c),_0x4c0277[_0x40427a(0x331)]=_0x1ef6d5(_0x1b7126[_0x40427a(0x331)],_0x1b1bfa),_0x4c0277[_0x40427a(0x2d2)]=_0x1ef6d5(_0x1b7126[_0x40427a(0x2d2)],_0x54ae6b),_0x4c0277['products']=_0x1ef6d5(_0x1b7126[_0x40427a(0x194)],_0xe7cd63),_0x4c0277['users']=_0x1ef6d5(_0x1b7126[_0x40427a(0x2f0)],[]),_0x4c0277[_0x40427a(0x273)]=_0x1ef6d5(_0x1b7126['portfolioSets'],[]),_0x4c0277['customerDiagnosis']=_0x1ef6d5(_0x1b7126[_0x40427a(0x36b)],[]);}function _0x1c13d0(){const _0x28e9e5=_0x57f393;_0x4c2bac(_0x1b7126[_0x28e9e5(0x1b6)],_0x4c0277[_0x28e9e5(0x1b6)]),_0x4c2bac(_0x1b7126[_0x28e9e5(0x17e)],_0x4c0277[_0x28e9e5(0x17e)]),_0x4c2bac(_0x1b7126[_0x28e9e5(0x331)],_0x4c0277[_0x28e9e5(0x331)]),_0x4c2bac(_0x1b7126['employees'],_0x4c0277[_0x28e9e5(0x2d2)]),_0x4c2bac(_0x1b7126['products'],_0x4c0277[_0x28e9e5(0x194)]),_0x4c2bac(_0x1b7126['users'],_0x4c0277['users']),_0x4c2bac(_0x1b7126[_0x28e9e5(0x273)],_0x4c0277[_0x28e9e5(0x273)]),_0x4c2bac(_0x1b7126[_0x28e9e5(0x36b)],_0x4c0277[_0x28e9e5(0x36b)]);}async function _0x825d65(_0x2d0751){const _0x46d189=_0x57f393;if(!_0x57a559[_0x46d189(0x260)]||!_0x57a559['db'])return[];const _0xc1441d=await _0x57a559['db']['collection'](_0x2d0751)[_0x46d189(0x1ab)]();return _0xc1441d[_0x46d189(0x27b)][_0x46d189(0x257)](_0x366952=>({'id':_0x366952['id'],..._0x366952[_0x46d189(0x27a)]()}));}async function _0x548756(_0x887cfa,_0xbbf99e=[]){const _0x403d1c=_0x57f393;try{return await _0x825d65(_0x887cfa);}catch(_0x474510){return console[_0x403d1c(0x23a)]('[admin]\x20Failed\x20to\x20load\x20collection\x20'+_0x887cfa+':',_0x474510),_0x1ef6d5(_0x887cfa[_0x403d1c(0x306)](_0x403d1c(0x281),_0x403d1c(0x2f5)),_0xbbf99e);}}async function _0xc2bac2(_0x3c54c1,_0x1b1946,_0x4f7ba9){const _0x4c24ec=_0x57f393;if(!_0x57a559[_0x4c24ec(0x260)]||!_0x57a559['db'])return;await _0x57a559['db'][_0x4c24ec(0x325)](_0x3c54c1)[_0x4c24ec(0x2e8)](_0x1b1946)[_0x4c24ec(0x314)]({..._0x4f7ba9,'updatedAt':Date['now']()},{'merge':!![]});}async function _0x322deb(_0x580bbb,_0x3c2ccf){const _0x4c5cce=_0x57f393;if(!_0x57a559['ready']||!_0x57a559['db'])return;await _0x57a559['db'][_0x4c5cce(0x325)](_0x580bbb)[_0x4c5cce(0x2e8)](_0x3c2ccf)[_0x4c5cce(0x33e)]();}async function _0x4a8122(){const _0x316c58=_0x57f393;if(_0x57a559[_0x316c58(0x260)]){try{const [_0x281995,_0x297873,_0x193903,_0x29dcfa,_0x2a6a53,_0x29f480,_0x2513c0]=await Promise[_0x316c58(0x213)]([_0x548756(_0x16a95a['rounds'],_0xb5263b),_0x548756(_0x16a95a[_0x316c58(0x17e)],_0x18f20c),_0x548756(_0x16a95a[_0x316c58(0x331)],_0x1b1bfa),_0x548756(_0x16a95a[_0x316c58(0x2d2)],_0x54ae6b),_0x548756(_0x16a95a[_0x316c58(0x2f0)],[]),_0x548756(_0x16a95a[_0x316c58(0x273)],[]),_0x548756(_0x16a95a[_0x316c58(0x36b)],[])]);_0x4c0277['users']=_0x2a6a53||[],_0x4c0277[_0x316c58(0x273)]=_0x29f480||[],_0x4c0277[_0x316c58(0x36b)]=_0x2513c0||[],_0x281995[_0x316c58(0x223)]||_0x297873[_0x316c58(0x223)]||_0x193903[_0x316c58(0x223)]||_0x29dcfa[_0x316c58(0x223)]?(_0x4c0277[_0x316c58(0x1b6)]=_0x281995[_0x316c58(0x223)]?_0x281995:_0x3b0bb6(_0xb5263b),_0x4c0277['ports']=_0x297873[_0x316c58(0x223)]?_0x297873:_0x3b0bb6(_0x18f20c),_0x4c0277[_0x316c58(0x331)]=_0x193903['length']?_0x193903:_0x3b0bb6(_0x1b1bfa),_0x4c0277['employees']=_0x29dcfa[_0x316c58(0x223)]?_0x29dcfa:_0x3b0bb6(_0x54ae6b)):(_0x4c0277['rounds']=_0x3b0bb6(_0xb5263b),_0x4c0277[_0x316c58(0x17e)]=_0x3b0bb6(_0x18f20c),_0x4c0277[_0x316c58(0x331)]=_0x3b0bb6(_0x1b1bfa),_0x4c0277[_0x316c58(0x2d2)]=_0x3b0bb6(_0x54ae6b),await Promise[_0x316c58(0x213)]([..._0x4c0277[_0x316c58(0x1b6)][_0x316c58(0x257)](_0xbca91=>_0xc2bac2(_0x16a95a[_0x316c58(0x1b6)],_0xbca91['id'],_0xbca91)),..._0x4c0277[_0x316c58(0x17e)][_0x316c58(0x257)](_0x2e55c6=>_0xc2bac2(_0x16a95a['ports'],_0x2e55c6['id'],_0x2e55c6)),..._0x4c0277['subPorts'][_0x316c58(0x257)](_0x325355=>_0xc2bac2(_0x16a95a['subPorts'],_0x325355['id'],_0x325355)),..._0x4c0277[_0x316c58(0x2d2)][_0x316c58(0x257)](_0x19c09a=>_0xc2bac2(_0x16a95a[_0x316c58(0x2d2)],_0x19c09a['id'],_0x19c09a))])),_0x1c13d0();}catch(_0x2c84d8){console[_0x316c58(0x28f)](_0x316c58(0x1f8),_0x2c84d8),_0x214513();}try{const _0x349566=await _0x825d65(_0x16a95a['products']);_0x4c0277[_0x316c58(0x194)]=_0x349566['length']?_0x349566:_0x3b0bb6(_0xe7cd63),!_0x349566[_0x316c58(0x223)]&&await Promise[_0x316c58(0x213)](_0x4c0277['products']['map'](_0x1b9365=>_0xc2bac2(_0x16a95a['products'],_0x1b9365['id'],_0x1b9365))),_0x4c2bac(_0x1b7126[_0x316c58(0x194)],_0x4c0277[_0x316c58(0x194)]);}catch(_0x157e1e){console[_0x316c58(0x28f)](_0x316c58(0x21f),_0x157e1e),_0x4c0277[_0x316c58(0x194)]=_0x1ef6d5(_0x1b7126[_0x316c58(0x194)],_0xe7cd63);}}else _0x214513();_0x4d34e5();const _0x524e04=_0x4c0277[_0x316c58(0x1b6)]['find'](_0xa7eb3a=>_0xa7eb3a[_0x316c58(0x2fa)]==='on')||_0x4c0277['rounds'][0x0]||null;_0xfbfadb(_0x524e04?_0x524e04['id']:_0x316c58(0x213)),_0x371770(),_0x23167d(),_0x447e8a(),_0x200162(),_0x3fb99f();}function _0x3fb99f(){const _0x3d175c=_0x57f393;if(!_0x57a559[_0x3d175c(0x260)]||!_0x57a559['db'])return;_0x57a559['db'][_0x3d175c(0x325)](_0x16a95a[_0x3d175c(0x2f0)])['onSnapshot'](_0xf1c672=>{const _0x45cc38=_0x3d175c;_0x4c0277[_0x45cc38(0x2f0)]=_0xf1c672[_0x45cc38(0x27b)][_0x45cc38(0x257)](_0x349341=>({'id':_0x349341['id'],..._0x349341[_0x45cc38(0x27a)]()})),_0x1a0482();if(!document[_0x45cc38(0x19e)]('competitorDetailsLightbox')['classList'][_0x45cc38(0x206)](_0x45cc38(0x1fe))){if(window['activePortfolioUserId'])_0x2d786f(window['activePortfolioUserId'],window[_0x45cc38(0x33c)]);else window['activeBootcampUserId']&&renderActiveBootcampDetails(window[_0x45cc38(0x2dd)],window[_0x45cc38(0x186)]);}}),_0x57a559['db'][_0x3d175c(0x325)](_0x16a95a[_0x3d175c(0x273)])['onSnapshot'](_0x4d455f=>{const _0xef4700=_0x3d175c;_0x4c0277[_0xef4700(0x273)]=_0x4d455f[_0xef4700(0x27b)][_0xef4700(0x257)](_0x46b9d7=>({'id':_0x46b9d7['id'],..._0x46b9d7[_0xef4700(0x27a)]()})),_0x1a0482(),!document[_0xef4700(0x19e)](_0xef4700(0x216))[_0xef4700(0x248)][_0xef4700(0x206)](_0xef4700(0x1fe))&&window[_0xef4700(0x230)]&&_0x2d786f(window[_0xef4700(0x230)],window[_0xef4700(0x33c)]);}),_0x57a559['db'][_0x3d175c(0x325)](_0x16a95a['customerDiagnosis'])['onSnapshot'](_0x27569b=>{const _0x439334=_0x3d175c;_0x4c0277[_0x439334(0x36b)]=_0x27569b[_0x439334(0x27b)]['map'](_0x11b3d4=>({'id':_0x11b3d4['id'],..._0x11b3d4[_0x439334(0x27a)]()})),_0x1a0482(),!document[_0x439334(0x19e)](_0x439334(0x216))[_0x439334(0x248)][_0x439334(0x206)](_0x439334(0x1fe))&&window[_0x439334(0x2dd)]&&renderActiveBootcampDetails(window['activeBootcampUserId'],window[_0x439334(0x186)]);});}function _0x2ba971(_0x45b755){const _0x29feae=_0x57f393;return String(_0x45b755)['replaceAll']('&','&amp;')[_0x29feae(0x2a0)]('<',_0x29feae(0x255))[_0x29feae(0x2a0)]('>',_0x29feae(0x256))['replaceAll']('\x22','&quot;')['replaceAll']('\x27',_0x29feae(0x25e));}function _0x43b22e(_0x1ff720){const _0xbbd14f=_0x57f393;return _0x4c0277['rounds'][_0xbbd14f(0x198)](_0x216fb2=>_0x216fb2['id']===_0x1ff720)||null;}function _0x8582f(_0x2be9fb){const _0x158083=_0x57f393,_0x28376a=_0x43b22e(_0x2be9fb);return _0x28376a?_0x28376a['name']:_0x158083(0x212);}function _0xdce97b(_0x495a01,_0x224052=''){const _0x41c79e=_0x57f393,_0x38a6e9=_0x495a01==='on',_0x33a6d9=_0x38a6e9?_0x41c79e(0x183)+(_0x224052?_0x41c79e(0x22d):''):_0x41c79e(0x2f1)+(_0x224052?_0x41c79e(0x2af):''),_0x56ebbe=_0x224052?_0x41c79e(0x33a)+_0x224052+'\x22':'';return _0x41c79e(0x333)+_0x56ebbe+_0x41c79e(0x26f)+_0x33a6d9+'\x22>'+(_0x38a6e9?'เปิดใช้งาน':_0x41c79e(0x305))+_0x41c79e(0x2b0);}function _0x1b0221(_0x103301,_0x54af16,_0x1327e6,_0x45885b){const _0x4ee72f=_0x57f393;return _0x4ee72f(0x207)+_0x45885b+_0x4ee72f(0x2eb)+_0x103301+_0x4ee72f(0x367)+_0x1327e6+_0x4ee72f(0x237)+_0x54af16+_0x4ee72f(0x1d8);}function _0x45efab(_0x597dad,_0x3c6f0f){const _0x2dee0f=_0x57f393,_0x5ce5d6=document['getElementById'](_0x597dad);if(!_0x5ce5d6)return;const _0x416e4f=_0x5ce5d6['value']||(_0x3c6f0f?_0x2dee0f(0x213):''),_0x4d0553=_0x3c6f0f?_0x2dee0f(0x2dc)+_0x3c6f0f+'</option>':'<option\x20value=\x22\x22>--\x20เลือกรอบกิจกรรม\x20--</option>',_0x28a45e=_0x4c0277['rounds'][_0x2dee0f(0x257)](_0x3be0a9=>'<option\x20value=\x22'+_0x3be0a9['id']+'\x22>'+_0x2ba971(_0x3be0a9[_0x2dee0f(0x2c7)])+_0x2dee0f(0x2ae))[_0x2dee0f(0x21c)]('');_0x5ce5d6['innerHTML']=_0x4d0553+_0x28a45e;if(_0x416e4f&&[..._0x5ce5d6['options']][_0x2dee0f(0x276)](_0x51469f=>_0x51469f[_0x2dee0f(0x15e)]===_0x416e4f))_0x5ce5d6['value']=_0x416e4f;else{if(!_0x3c6f0f&&_0x4c0277[_0x2dee0f(0x1b6)][_0x2dee0f(0x223)])_0x5ce5d6[_0x2dee0f(0x15e)]=_0x4c0277[_0x2dee0f(0x1b6)][0x0]['id'];else _0x3c6f0f&&(_0x5ce5d6[_0x2dee0f(0x15e)]=_0x416e4f===_0x2dee0f(0x213)?'all':'all');}}function _0x4d34e5(){const _0xc70694=_0x57f393;_0x768d5f['forEach'](_0x2bff62=>_0x45efab(_0x2bff62,_0x2bff62===_0xc70694(0x323)?'--\x20โหลดข้อมูลรอบ\x20--':_0xc70694(0x2f7)));const _0x39adad=_0x4c0277[_0xc70694(0x1b6)][_0xc70694(0x257)](_0x266246=>_0xc70694(0x2d7)+_0x266246['id']+'\x22>'+_0x2ba971(_0x266246[_0xc70694(0x2c7)])+'</option>')[_0xc70694(0x21c)]('');['addPortRoundId',_0xc70694(0x1ea)]['forEach'](_0x37592b=>{const _0xac2a39=_0xc70694,_0x494052=document[_0xac2a39(0x19e)](_0x37592b);_0x494052&&(_0x494052[_0xac2a39(0x349)]=_0xac2a39(0x18f)+_0x39adad,_0x4c0277[_0xac2a39(0x1b6)]['length']&&(_0x494052[_0xac2a39(0x15e)]=_0x494052[_0xac2a39(0x278)]['defaultRound']||_0x4c0277[_0xac2a39(0x1b6)][0x0]['id']));});}function _0x371770(){const _0x4be708=_0x57f393,_0x36f6ec=document['getElementById']('roundsTableBody'),_0x1f7d1e=document[_0x4be708(0x19e)](_0x4be708(0x359));if(!_0x36f6ec)return;_0x1f7d1e&&(_0x1f7d1e[_0x4be708(0x2ed)]=String(_0x4c0277[_0x4be708(0x1b6)][_0x4be708(0x223)]));if(!_0x4c0277[_0x4be708(0x1b6)][_0x4be708(0x223)]){_0x36f6ec[_0x4be708(0x349)]=_0x4be708(0x182);return;}const _0x1c6ff6=_0x5f2cf7=>{const _0x2b02b7=_0x4be708;if(!_0x4c0277[_0x2b02b7(0x2f0)]||!_0x4c0277[_0x2b02b7(0x2f0)][_0x2b02b7(0x223)])return 0x0;const _0x2ce3d4=_0x4c0277[_0x2b02b7(0x2f0)][_0x2b02b7(0x22c)](_0x3aa16c=>_0x3aa16c[_0x2b02b7(0x26d)]===_0x5f2cf7&&_0x3aa16c[_0x2b02b7(0x2c7)])[_0x2b02b7(0x257)](_0x1985f0=>_0x1985f0[_0x2b02b7(0x2c7)]['trim']()['toLowerCase']());return new Set(_0x2ce3d4)[_0x2b02b7(0x358)];};_0x36f6ec[_0x4be708(0x349)]=_0x4c0277[_0x4be708(0x1b6)][_0x4be708(0x257)]((_0x4fb63b,_0x4efd02)=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22hover:bg-slate-50\x20transition\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22font-bold\x20text-slate-900\x22>'+_0x2ba971(_0x4fb63b[_0x4be708(0x2c7)])+_0x4be708(0x25b)+(_0x4efd02+0x1)+_0x4be708(0x1f5)+_0x2ba971(_0x4fb63b[_0x4be708(0x29a)])+_0x4be708(0x294)+_0x1c6ff6(_0x4fb63b['id'])+_0x4be708(0x2e3)+_0xdce97b(_0x4fb63b[_0x4be708(0x2fa)],_0x4be708(0x277)+_0x4fb63b['id']+'\x27)')+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-center\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x1b0221(_0x4be708(0x288),_0x4be708(0x292),'แก้ไขรอบกิจกรรม',_0x4be708(0x303)+_0x4fb63b['id']+'\x27)')+_0x4be708(0x1d9)+_0x1b0221(_0x4be708(0x1cc),_0x4be708(0x374),_0x4be708(0x1e8),_0x4be708(0x1cb)+_0x4fb63b['id']+'\x27)')+_0x4be708(0x1fc))['join']('');}function _0x23167d(){const _0x52dcd6=_0x57f393,_0x4d3c53=document[_0x52dcd6(0x19e)](_0x52dcd6(0x2d6));if(!_0x4d3c53)return;const _0x22d8b4=_0x4c0277[_0x52dcd6(0x338)]==='all'?_0x4c0277[_0x52dcd6(0x17e)]:_0x4c0277[_0x52dcd6(0x17e)][_0x52dcd6(0x22c)](_0x41ed5d=>_0x41ed5d[_0x52dcd6(0x26d)]===_0x4c0277[_0x52dcd6(0x338)]);!_0x22d8b4[_0x52dcd6(0x276)](_0xec7086=>_0xec7086['id']===_0x4c0277[_0x52dcd6(0x2c0)])&&(_0x4c0277['selectedPortId']=_0x22d8b4[0x0]?_0x22d8b4[0x0]['id']:'');if(!_0x22d8b4[_0x52dcd6(0x223)]){_0x4d3c53[_0x52dcd6(0x349)]=_0x52dcd6(0x320),_0x3c2ef9(),_0x44f22f();return;}_0x4d3c53[_0x52dcd6(0x349)]=_0x22d8b4['slice']()[_0x52dcd6(0x1dd)]((_0x3ad4b1,_0x45b159)=>Number(_0x3ad4b1['displayOrder'])-Number(_0x45b159[_0x52dcd6(0x375)]))[_0x52dcd6(0x257)]((_0x405793,_0x5207ef)=>_0x52dcd6(0x23f)+(_0x4c0277['selectedPortId']===_0x405793['id']?_0x52dcd6(0x25a):'')+'\x22\x20onclick=\x22selectMainPort(\x27'+_0x405793['id']+_0x52dcd6(0x2b4)+(_0x5207ef+0x1)+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-left\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22font-bold\x20text-slate-900\x22>'+_0x2ba971(_0x405793[_0x52dcd6(0x2c7)])+_0x52dcd6(0x2a4)+_0x2ba971(_0x8582f(_0x405793[_0x52dcd6(0x26d)]))+_0x52dcd6(0x176)+(_0x405793[_0x52dcd6(0x173)]===_0x52dcd6(0x36b)?_0x52dcd6(0x293):_0x52dcd6(0x1c5))+_0x52dcd6(0x298)+_0xdce97b(_0x405793[_0x52dcd6(0x2fa)])+_0x52dcd6(0x30a)+_0x1b0221(_0x52dcd6(0x288),_0x52dcd6(0x292),_0x52dcd6(0x352),_0x52dcd6(0x28a)+_0x405793['id']+'\x27)')+_0x52dcd6(0x361)+_0x1b0221(_0x52dcd6(0x1cc),_0x52dcd6(0x374),_0x52dcd6(0x31d),_0x52dcd6(0x15c)+_0x405793['id']+'\x27)')+_0x52dcd6(0x170))[_0x52dcd6(0x21c)](''),_0x3c2ef9(),_0x44f22f();}function _0x34ae99(){const _0x3cee0c=_0x57f393;return(_0x4c0277['selectedRoundId']===_0x3cee0c(0x213)?_0x4c0277[_0x3cee0c(0x17e)]:_0x4c0277[_0x3cee0c(0x17e)]['filter'](_0x189d52=>_0x189d52['roundId']===_0x4c0277[_0x3cee0c(0x338)]))[_0x3cee0c(0x379)]()[_0x3cee0c(0x1dd)]((_0x5de6b8,_0x2e2718)=>Number(_0x5de6b8[_0x3cee0c(0x375)])-Number(_0x2e2718[_0x3cee0c(0x375)]));}function _0x3f891f(){const _0xfe42b5=_0x57f393;return _0x4c0277[_0xfe42b5(0x17e)][_0xfe42b5(0x198)](_0xc8ec2d=>_0xc8ec2d['id']===_0x4c0277['selectedPortId'])||_0x34ae99()[0x0]||null;}function _0x971c69(){const _0x5f3c02=_0x57f393,_0x4b17b0=_0x3f891f(),_0x10073f=_0x4c0277[_0x5f3c02(0x331)]['filter'](_0x3ac566=>_0x4b17b0&&_0x3ac566['parentPortId']===_0x4b17b0['id'])[_0x5f3c02(0x379)]()[_0x5f3c02(0x1dd)]((_0x4007df,_0x4e9979)=>Number(_0x4007df[_0x5f3c02(0x375)])-Number(_0x4e9979['displayOrder']));return _0x4c0277['subPorts']['find'](_0x362e6e=>_0x362e6e['id']===_0x4c0277['selectedSubPortId']&&_0x4b17b0&&_0x362e6e[_0x5f3c02(0x209)]===_0x4b17b0['id'])||_0x10073f[0x0]||null;}function _0x3c2ef9(){const _0x3febc0=_0x57f393,_0x46147a=_0x3f891f(),_0x37b8db=document[_0x3febc0(0x19e)](_0x3febc0(0x32a));if(_0x46147a)_0x4c0277[_0x3febc0(0x2c0)]=_0x46147a['id'],_0x37b8db&&(_0x37b8db[_0x3febc0(0x2ed)]='เมนูย่อยของ:\x20'+_0x46147a['name']);else _0x37b8db&&(_0x37b8db[_0x3febc0(0x2ed)]=_0x3febc0(0x336));}function _0x44f22f(){const _0x3a60a8=_0x57f393,_0x25610f=document[_0x3a60a8(0x19e)]('subPortsTableBody');if(!_0x25610f)return;const _0xa3840a=_0x3f891f(),_0x2eef77=document[_0x3a60a8(0x19e)](_0x3a60a8(0x1e4)),_0x474a09=document['getElementById'](_0x3a60a8(0x28c));_0x2eef77&&_0x2eef77[_0x3a60a8(0x248)][_0x3a60a8(0x246)](_0x3a60a8(0x1fe),!_0xa3840a);_0x474a09&&!_0xa3840a&&_0x474a09[_0x3a60a8(0x248)]['add'](_0x3a60a8(0x1fe));if(!_0xa3840a){_0x25610f[_0x3a60a8(0x349)]=_0x3a60a8(0x34c),_0x4c0277[_0x3a60a8(0x2ca)]='',_0x1ddab4(),_0x5b3851();return;}const _0x3af01c=_0x4c0277[_0x3a60a8(0x331)][_0x3a60a8(0x22c)](_0x35a6eb=>_0x35a6eb[_0x3a60a8(0x209)]===_0xa3840a['id'])[_0x3a60a8(0x379)]()[_0x3a60a8(0x1dd)]((_0x2b2aa4,_0x539b25)=>Number(_0x2b2aa4[_0x3a60a8(0x375)])-Number(_0x539b25[_0x3a60a8(0x375)]));!_0x3af01c['some'](_0x5d3a77=>_0x5d3a77['id']===_0x4c0277[_0x3a60a8(0x2ca)])&&(_0x4c0277['selectedSubPortId']=_0x3af01c[0x0]?_0x3af01c[0x0]['id']:'');if(!_0x3af01c[_0x3a60a8(0x223)]){_0x25610f[_0x3a60a8(0x349)]=_0x3a60a8(0x2a5),_0x1ddab4(),_0x5b3851();return;}_0x25610f[_0x3a60a8(0x349)]=_0x3af01c[_0x3a60a8(0x257)]((_0x3f99c4,_0x2e971c)=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22hover:bg-slate-50\x20transition\x20cursor-pointer\x20'+(_0x4c0277[_0x3a60a8(0x2ca)]===_0x3f99c4['id']?_0x3a60a8(0x25a):'')+_0x3a60a8(0x1c9)+_0x3f99c4['id']+_0x3a60a8(0x261)+_0x2ba971(_0x3f99c4[_0x3a60a8(0x1af)])+_0x3a60a8(0x25b)+(_0x2e971c+0x1)+_0x3a60a8(0x1f6)+_0x2ba971(_0x3f99c4[_0x3a60a8(0x2c7)])+_0x3a60a8(0x244)+_0x1b0221(_0x3a60a8(0x288),_0x3a60a8(0x292),_0x3a60a8(0x319),_0x3a60a8(0x19a)+_0x3f99c4['id']+'\x27)')+_0x3a60a8(0x1d9)+_0x1b0221(_0x3a60a8(0x1cc),_0x3a60a8(0x374),_0x3a60a8(0x28e),'deleteSubPort(\x27'+_0x3f99c4['id']+'\x27)')+_0x3a60a8(0x1fc))[_0x3a60a8(0x21c)](''),_0x1ddab4(),_0x5b3851();}function _0x1ddab4(){const _0x5337d7=_0x57f393,_0x69ea8f=_0x971c69(),_0x52079b=document['getElementById'](_0x5337d7(0x1e5)),_0x50f77d=document[_0x5337d7(0x19e)](_0x5337d7(0x26b));_0x69ea8f?(_0x52079b&&(_0x52079b[_0x5337d7(0x2ed)]=_0x69ea8f[_0x5337d7(0x2c7)]),_0x50f77d&&(_0x50f77d['textContent']=_0x69ea8f[_0x5337d7(0x1af)])):(_0x52079b&&(_0x52079b['textContent']='--'),_0x50f77d&&(_0x50f77d['textContent']='--'));}function _0x5b3851(){const _0x50965a=_0x57f393,_0x1596d8=document[_0x50965a(0x19e)]('employeesTableBody');if(!_0x1596d8)return;const _0xcf074e=_0x971c69();if(!_0xcf074e){_0x1596d8[_0x50965a(0x349)]=_0x50965a(0x1ca);return;}const _0x282996=_0x4c0277[_0x50965a(0x2d2)][_0x50965a(0x22c)](_0x58969d=>_0x58969d[_0x50965a(0x31a)]===_0xcf074e['id'])[_0x50965a(0x379)]()['sort']((_0x5625be,_0x4211da)=>String(_0x5625be[_0x50965a(0x344)])['localeCompare'](String(_0x4211da[_0x50965a(0x344)]),'th'));if(!_0x282996[_0x50965a(0x223)]){_0x1596d8[_0x50965a(0x349)]='<tr><td\x20colspan=\x224\x22\x20class=\x22py-6\x20text-center\x20text-slate-400\x22>--\x20ยังไม่มีข้อมูลพนักงานในพอร์ตย่อยนี้\x20--</td></tr>';return;}_0x1596d8[_0x50965a(0x349)]=_0x282996[_0x50965a(0x257)]((_0x25d8ad,_0x5d2f1f)=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22hover:bg-slate-50\x20transition\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20text-center\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22inline-flex\x20items-center\x20justify-center\x20min-w-9\x20px-2.5\x20py-1\x20rounded-full\x20bg-slate-100\x20text-slate-700\x20border\x20border-slate-200\x20font-bold\x20text-[11px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x5d2f1f+0x1)+_0x50965a(0x2f6)+_0x2ba971(_0x25d8ad[_0x50965a(0x344)])+_0x50965a(0x328)+_0x2ba971(_0x25d8ad[_0x50965a(0x17b)])+_0x50965a(0x283)+_0xdce97b(_0x25d8ad[_0x50965a(0x2fa)])+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20')[_0x50965a(0x21c)]('');}function _0xfbfadb(_0x189506){const _0x336a08=_0x57f393;_0x4c0277[_0x336a08(0x338)]=_0x189506||_0x336a08(0x213),_0x768d5f[_0x336a08(0x1c1)](_0x209087=>{const _0x7236c8=_0x336a08,_0x4ab1cd=document[_0x7236c8(0x19e)](_0x209087);_0x4ab1cd&&(_0x4ab1cd[_0x7236c8(0x15e)]=_0x4c0277['selectedRoundId']);}),_0x23167d(),_0x1a0482();}function _0x396774(_0x269f73){const _0x53e5ff=_0x57f393;_0x4c0277[_0x53e5ff(0x2c0)]=_0x269f73,_0x4c0277[_0x53e5ff(0x2ca)]='';const _0x185a98=_0x4c0277[_0x53e5ff(0x17e)]['find'](_0x1272d0=>_0x1272d0['id']===_0x269f73)||null;if(_0x185a98){_0x4c0277[_0x53e5ff(0x338)]=_0x185a98['roundId'];const _0x5c4070=document[_0x53e5ff(0x19e)](_0x53e5ff(0x226));_0x5c4070&&(_0x5c4070[_0x53e5ff(0x15e)]=_0x185a98[_0x53e5ff(0x26d)]);}_0x23167d();}function _0x31dea1(_0x2a2577){const _0xd5661c=_0x57f393;_0x4c0277[_0xd5661c(0x2ca)]=_0x2a2577,_0x44f22f();}function _0x21ebf3(_0x21ffb8){_0xfbfadb(_0x21ffb8);}function _0x1663ea(_0xc0f3db){const _0x54b81f=_0x57f393,_0x3c8c82=[_0x54b81f(0x1b6),_0x54b81f(0x17e),_0x54b81f(0x282)];_0x3c8c82[_0x54b81f(0x1c1)](_0x12d36b=>{const _0x2cded2=_0x54b81f,_0x1be5b9=document[_0x2cded2(0x19e)](_0x2cded2(0x324)+_0x12d36b),_0x6cdf0e=document[_0x2cded2(0x19e)](_0x2cded2(0x25d)+_0x12d36b),_0x5cbad0=_0x12d36b===_0xc0f3db;_0x1be5b9&&_0x1be5b9[_0x2cded2(0x248)][_0x2cded2(0x246)](_0x2cded2(0x1fe),!_0x5cbad0),_0x6cdf0e&&(_0x6cdf0e['classList'][_0x2cded2(0x246)](_0x2cded2(0x335),_0x5cbad0),_0x6cdf0e['classList']['toggle']('text-indigo-600',_0x5cbad0),_0x6cdf0e[_0x2cded2(0x248)]['toggle'](_0x2cded2(0x334),!_0x5cbad0),_0x6cdf0e['classList'][_0x2cded2(0x246)](_0x2cded2(0x289),!_0x5cbad0),_0x6cdf0e[_0x2cded2(0x248)]['toggle'](_0x2cded2(0x33f),_0x5cbad0),_0x6cdf0e[_0x2cded2(0x248)][_0x2cded2(0x246)]('font-semibold',!_0x5cbad0));});if(_0xc0f3db===_0x54b81f(0x17e)){const _0x5b49d3=_0x4c0277[_0x54b81f(0x1b6)][_0x54b81f(0x198)](_0xb0b885=>_0xb0b885[_0x54b81f(0x2fa)]==='on')||_0x4c0277['rounds'][0x0]||null;if(_0x5b49d3&&(_0x4c0277[_0x54b81f(0x338)]===_0x54b81f(0x213)||!_0x43b22e(_0x4c0277[_0x54b81f(0x338)]))){_0x4c0277[_0x54b81f(0x338)]=_0x5b49d3['id'];const _0xa7f63d=document[_0x54b81f(0x19e)]('portsRoundSelect');_0xa7f63d&&(_0xa7f63d[_0x54b81f(0x15e)]=_0x5b49d3['id']),_0x23167d();}}else _0xc0f3db==='competitors'&&_0x1a0482();}function _0x396931(){const _0x54c450=_0x57f393,_0x1aa5cc=document[_0x54c450(0x19e)]('roundLightbox'),_0x1f4132=document[_0x54c450(0x19e)](_0x54c450(0x167)),_0x905ff6=document[_0x54c450(0x19e)](_0x54c450(0x172));document['getElementById'](_0x54c450(0x210))[_0x54c450(0x15e)]='',document['getElementById'](_0x54c450(0x2c4))[_0x54c450(0x15e)]='',document[_0x54c450(0x19e)](_0x54c450(0x1ee))[_0x54c450(0x15e)]='',document['getElementById'](_0x54c450(0x265))[_0x54c450(0x15e)]='0',document[_0x54c450(0x19e)](_0x54c450(0x243))[_0x54c450(0x15e)]='on',_0x1f4132&&(_0x1f4132['textContent']='เพิ่มรอบกิจกรรมใหม่'),_0x905ff6&&(_0x905ff6[_0x54c450(0x18b)]=_0x54c450(0x1f0)),_0x1aa5cc&&_0x1aa5cc['classList']['remove'](_0x54c450(0x1fe));}function _0x5ec51f(_0x5476b6){const _0x3d8a98=_0x57f393,_0x5f3715=_0x43b22e(_0x5476b6);if(!_0x5f3715)return;const _0x14fac4=document[_0x3d8a98(0x19e)](_0x3d8a98(0x339)),_0xfc7f37=document[_0x3d8a98(0x19e)](_0x3d8a98(0x167)),_0x4f8bcc=document[_0x3d8a98(0x19e)]('roundLightboxIcon');document[_0x3d8a98(0x19e)](_0x3d8a98(0x210))['value']=_0x5f3715['id'],document[_0x3d8a98(0x19e)](_0x3d8a98(0x2c4))[_0x3d8a98(0x15e)]=_0x5f3715[_0x3d8a98(0x2c7)],document[_0x3d8a98(0x19e)](_0x3d8a98(0x1ee))[_0x3d8a98(0x15e)]=_0x5f3715[_0x3d8a98(0x29a)],document['getElementById'](_0x3d8a98(0x265))[_0x3d8a98(0x15e)]=_0x5f3715[_0x3d8a98(0x2b1)],document[_0x3d8a98(0x19e)](_0x3d8a98(0x243))[_0x3d8a98(0x15e)]=_0x5f3715[_0x3d8a98(0x2fa)],_0xfc7f37&&(_0xfc7f37[_0x3d8a98(0x2ed)]=_0x3d8a98(0x1f7)),_0x4f8bcc&&(_0x4f8bcc[_0x3d8a98(0x18b)]=_0x3d8a98(0x16c)),_0x14fac4&&_0x14fac4[_0x3d8a98(0x248)][_0x3d8a98(0x1a9)](_0x3d8a98(0x1fe));}function _0x441109(){const _0x307740=_0x57f393,_0x5bce8f=document[_0x307740(0x19e)](_0x307740(0x339));_0x5bce8f&&_0x5bce8f[_0x307740(0x248)][_0x307740(0x2c8)](_0x307740(0x1fe));}function _0x26a7c6(){const _0x306c0b=_0x57f393,_0x3ae7e0=document[_0x306c0b(0x19e)](_0x306c0b(0x210))['value'],_0x5783a9={'name':document[_0x306c0b(0x19e)](_0x306c0b(0x2c4))[_0x306c0b(0x15e)][_0x306c0b(0x2b3)](),'details':document[_0x306c0b(0x19e)]('roundDetails')[_0x306c0b(0x15e)][_0x306c0b(0x2b3)](),'registrationCount':Number(document[_0x306c0b(0x19e)](_0x306c0b(0x265))[_0x306c0b(0x15e)]||0x0),'status':document[_0x306c0b(0x19e)](_0x306c0b(0x243))['value']};if(!_0x5783a9[_0x306c0b(0x2c7)])return;if(_0x3ae7e0){const _0x59b8e4=_0x4c0277[_0x306c0b(0x1b6)][_0x306c0b(0x2a9)](_0x5b6da1=>_0x5b6da1['id']===_0x3ae7e0);_0x59b8e4>-0x1&&(_0x4c0277[_0x306c0b(0x1b6)][_0x59b8e4]={..._0x4c0277['rounds'][_0x59b8e4],..._0x5783a9},void _0xc2bac2(_0x16a95a['rounds'],_0x3ae7e0,_0x4c0277[_0x306c0b(0x1b6)][_0x59b8e4]));}else{const _0xc100e7={'id':_0x306c0b(0x221)+Date[_0x306c0b(0x164)](),..._0x5783a9};_0x4c0277['rounds']['unshift']({..._0xc100e7}),void _0xc2bac2(_0x16a95a[_0x306c0b(0x1b6)],_0xc100e7['id'],_0xc100e7);}_0x1c13d0(),_0x4d34e5(),_0x371770(),_0x23167d(),_0x441109();}function _0x4beaa2(_0x221cee){const _0x2c5d4a=_0x57f393,_0x2e87ef=_0x4c0277[_0x2c5d4a(0x17e)][_0x2c5d4a(0x22c)](_0x1c1339=>_0x1c1339[_0x2c5d4a(0x26d)]===_0x221cee),_0x27d3f4=_0x4c0277['subPorts'][_0x2c5d4a(0x22c)](_0x58ba3e=>_0x58ba3e[_0x2c5d4a(0x26d)]===_0x221cee);_0x4c0277[_0x2c5d4a(0x1b6)]=_0x4c0277[_0x2c5d4a(0x1b6)][_0x2c5d4a(0x22c)](_0x1eee1c=>_0x1eee1c['id']!==_0x221cee),_0x4c0277['ports']=_0x4c0277[_0x2c5d4a(0x17e)][_0x2c5d4a(0x22c)](_0x1edfd3=>_0x1edfd3['roundId']!==_0x221cee),_0x4c0277[_0x2c5d4a(0x331)]=_0x4c0277[_0x2c5d4a(0x331)]['filter'](_0x1be95b=>_0x1be95b[_0x2c5d4a(0x26d)]!==_0x221cee),void _0x322deb(_0x16a95a[_0x2c5d4a(0x1b6)],_0x221cee),_0x2e87ef['forEach'](_0x560c2d=>void _0x322deb(_0x16a95a[_0x2c5d4a(0x17e)],_0x560c2d['id'])),_0x27d3f4[_0x2c5d4a(0x1c1)](_0x599c24=>void _0x322deb(_0x16a95a[_0x2c5d4a(0x331)],_0x599c24['id']));if(!_0x4c0277[_0x2c5d4a(0x1b6)][_0x2c5d4a(0x223)])_0x4c0277[_0x2c5d4a(0x338)]=_0x2c5d4a(0x213);else!_0x4c0277[_0x2c5d4a(0x1b6)][_0x2c5d4a(0x276)](_0x514c67=>_0x514c67['id']===_0x4c0277['selectedRoundId'])&&(_0x4c0277['selectedRoundId']='all');_0x1c13d0(),_0x4d34e5(),_0xfbfadb(_0x4c0277[_0x2c5d4a(0x338)]),_0x371770();}async function _0x44241d(_0x7ebe06){const _0x48335b=_0x57f393,_0xd4d79b=_0x43b22e(_0x7ebe06);if(!_0xd4d79b)return;const _0x450d7d=_0xd4d79b['status']==='on'?_0x48335b(0x1f2):'on';if(_0x450d7d==='on')for(let _0x7fc0f8 of _0x4c0277[_0x48335b(0x1b6)]){_0x7fc0f8['id']!==_0x7ebe06&&_0x7fc0f8['status']==='on'&&(_0x7fc0f8['status']='off',await _0xc2bac2(_0x16a95a[_0x48335b(0x1b6)],_0x7fc0f8['id'],_0x7fc0f8));}_0xd4d79b['status']=_0x450d7d,await _0xc2bac2(_0x16a95a['rounds'],_0x7ebe06,_0xd4d79b),_0x1c13d0(),_0x4d34e5(),_0x371770(),_0x23167d();}function _0x4533f3(){const _0x137959=_0x57f393;return _0x4c0277[_0x137959(0x338)]!==_0x137959(0x213)&&_0x43b22e(_0x4c0277[_0x137959(0x338)])?_0x4c0277[_0x137959(0x338)]:_0x4c0277[_0x137959(0x1b6)][0x0]?_0x4c0277[_0x137959(0x1b6)][0x0]['id']:'';}function _0x34da8e(){const _0x5b03ee=_0x57f393,_0x22bdf2=document[_0x5b03ee(0x19e)](_0x5b03ee(0x222));document[_0x5b03ee(0x19e)](_0x5b03ee(0x1ac))[_0x5b03ee(0x15e)]=_0x4533f3(),document[_0x5b03ee(0x19e)](_0x5b03ee(0x211))[_0x5b03ee(0x15e)]=String((_0x4c0277[_0x5b03ee(0x17e)][_0x5b03ee(0x223)]||0x0)+0x1),document[_0x5b03ee(0x19e)]('addPortName')[_0x5b03ee(0x15e)]='',document[_0x5b03ee(0x19e)](_0x5b03ee(0x36e))[_0x5b03ee(0x15e)]='portfolioPlanning',document[_0x5b03ee(0x19e)](_0x5b03ee(0x27e))[_0x5b03ee(0x15e)]='on',_0x22bdf2&&_0x22bdf2['classList'][_0x5b03ee(0x1a9)](_0x5b03ee(0x1fe));}function _0xe7cb04(){const _0x492a85=_0x57f393,_0x462f22=document[_0x492a85(0x19e)](_0x492a85(0x222));_0x462f22&&_0x462f22[_0x492a85(0x248)]['add'](_0x492a85(0x1fe));}function _0x51f83a(_0x5cc7dc){const _0x260ac5=_0x57f393,_0x450c3b=_0x4c0277['ports'][_0x260ac5(0x198)](_0x1eb900=>_0x1eb900['id']===_0x5cc7dc);if(!_0x450c3b)return;document['getElementById'](_0x260ac5(0x35c))[_0x260ac5(0x15e)]=_0x450c3b['id'],document[_0x260ac5(0x19e)](_0x260ac5(0x1ea))[_0x260ac5(0x15e)]=_0x450c3b[_0x260ac5(0x26d)],document['getElementById']('editPortDisplayOrder')['value']=_0x450c3b['displayOrder'],document['getElementById'](_0x260ac5(0x2cf))['value']=_0x450c3b[_0x260ac5(0x2c7)],document[_0x260ac5(0x19e)](_0x260ac5(0x26a))[_0x260ac5(0x15e)]=_0x450c3b[_0x260ac5(0x173)]||(_0x450c3b[_0x260ac5(0x2c7)]==='Customer\x20Diagnosis'||_0x450c3b['name']===_0x260ac5(0x372)?_0x260ac5(0x36b):_0x260ac5(0x21e)),document['getElementById'](_0x260ac5(0x25c))[_0x260ac5(0x15e)]=_0x450c3b[_0x260ac5(0x2fa)];const _0x3aacd5=document['getElementById']('editPortLightbox');_0x3aacd5&&_0x3aacd5[_0x260ac5(0x248)][_0x260ac5(0x1a9)](_0x260ac5(0x1fe));}function _0x4d8fe0(){const _0x1eada0=_0x57f393,_0x39424a=document['getElementById'](_0x1eada0(0x1e1));_0x39424a&&_0x39424a['classList'][_0x1eada0(0x2c8)](_0x1eada0(0x1fe));}function _0x1b6353(){const _0x3e939c=_0x57f393,_0x1901eb={'id':_0x3e939c(0x252)+Date['now'](),'roundId':document[_0x3e939c(0x19e)](_0x3e939c(0x1ac))['value']||_0x4533f3(),'displayOrder':Number(document[_0x3e939c(0x19e)](_0x3e939c(0x211))[_0x3e939c(0x15e)]||0x1),'name':document[_0x3e939c(0x19e)](_0x3e939c(0x1c2))[_0x3e939c(0x15e)]['trim'](),'template':document['getElementById'](_0x3e939c(0x36e))[_0x3e939c(0x15e)],'status':document['getElementById']('addPortStatus')['value']};if(!_0x1901eb[_0x3e939c(0x2c7)])return;_0x4c0277['ports']['unshift']({..._0x1901eb}),void _0xc2bac2(_0x16a95a['ports'],_0x1901eb['id'],_0x1901eb),_0x1c13d0(),_0x23167d(),_0xe7cb04();}function _0xf2db9b(){const _0x4e6d2f=_0x57f393,_0x239758=document[_0x4e6d2f(0x19e)](_0x4e6d2f(0x35c))[_0x4e6d2f(0x15e)],_0x52c91a={'roundId':document[_0x4e6d2f(0x19e)]('editPortRoundId')[_0x4e6d2f(0x15e)]||_0x4533f3(),'displayOrder':Number(document['getElementById']('editPortDisplayOrder')[_0x4e6d2f(0x15e)]||0x1),'name':document['getElementById'](_0x4e6d2f(0x2cf))['value']['trim'](),'template':document['getElementById']('editPortTemplate')[_0x4e6d2f(0x15e)],'status':document[_0x4e6d2f(0x19e)]('editPortStatus')['value']};if(!_0x52c91a['name']||!_0x239758)return;const _0x43e709=_0x4c0277[_0x4e6d2f(0x17e)][_0x4e6d2f(0x2a9)](_0x1c4d1a=>_0x1c4d1a['id']===_0x239758);_0x43e709>-0x1&&(_0x4c0277['ports'][_0x43e709]={..._0x4c0277[_0x4e6d2f(0x17e)][_0x43e709],..._0x52c91a},void _0xc2bac2(_0x16a95a[_0x4e6d2f(0x17e)],_0x239758,_0x4c0277[_0x4e6d2f(0x17e)][_0x43e709])),_0x1c13d0(),_0x23167d(),_0x4d8fe0();}function _0x2d4460(_0x124db7){const _0x26ca46=_0x57f393,_0x296375=_0x4c0277[_0x26ca46(0x331)][_0x26ca46(0x22c)](_0x156441=>_0x156441[_0x26ca46(0x209)]===_0x124db7);_0x4c0277[_0x26ca46(0x17e)]=_0x4c0277[_0x26ca46(0x17e)][_0x26ca46(0x22c)](_0x1d6e3a=>_0x1d6e3a['id']!==_0x124db7),_0x4c0277[_0x26ca46(0x331)]=_0x4c0277[_0x26ca46(0x331)]['filter'](_0x37308f=>_0x37308f[_0x26ca46(0x209)]!==_0x124db7),void _0x322deb(_0x16a95a[_0x26ca46(0x17e)],_0x124db7),_0x296375[_0x26ca46(0x1c1)](_0xce243e=>void _0x322deb(_0x16a95a['subPorts'],_0xce243e['id'])),_0x1c13d0(),_0x4c0277[_0x26ca46(0x2c0)]===_0x124db7&&(_0x4c0277['selectedPortId']='',_0x4c0277[_0x26ca46(0x2ca)]=''),_0x23167d();}function _0xf69080(){const _0xf6000d=_0x57f393,_0x53f413=document[_0xf6000d(0x19e)]('subPortExcelUploadArea');_0x53f413&&_0x53f413['classList']['toggle'](_0xf6000d(0x1fe));}function _0x43bff9(){const _0x56c5cf=_0x57f393,_0x33c283=_0x3f891f(),_0x1f57f4=document[_0x56c5cf(0x19e)](_0x56c5cf(0x299));document[_0x56c5cf(0x19e)](_0x56c5cf(0x233))['value']=_0x33c283?_0x33c283['id']:'',document['getElementById'](_0x56c5cf(0x21a))[_0x56c5cf(0x15e)]='',document[_0x56c5cf(0x19e)]('addSubPortName')[_0x56c5cf(0x15e)]='',_0x1f57f4&&_0x1f57f4['classList'][_0x56c5cf(0x1a9)]('hidden');}function _0x76256e(){const _0x5b5012=_0x57f393,_0x5a880c=document[_0x5b5012(0x19e)](_0x5b5012(0x299));_0x5a880c&&_0x5a880c[_0x5b5012(0x248)]['add']('hidden');}function _0x2b8194(_0x40256a){const _0x4397a4=_0x57f393,_0x432cae=_0x4c0277[_0x4397a4(0x331)]['find'](_0x2b40f8=>_0x2b40f8['id']===_0x40256a);if(!_0x432cae)return;document['getElementById']('editSubPortId')[_0x4397a4(0x15e)]=_0x432cae['id'],document['getElementById'](_0x4397a4(0x2c5))[_0x4397a4(0x15e)]=_0x432cae[_0x4397a4(0x1af)],document[_0x4397a4(0x19e)]('editSubPortName')['value']=_0x432cae[_0x4397a4(0x2c7)];const _0xe22c70=document[_0x4397a4(0x19e)](_0x4397a4(0x18d));_0xe22c70&&_0xe22c70['classList'][_0x4397a4(0x1a9)](_0x4397a4(0x1fe));}function _0x21a419(){const _0x15807c=_0x57f393,_0x29c920=document[_0x15807c(0x19e)](_0x15807c(0x18d));_0x29c920&&_0x29c920['classList'][_0x15807c(0x2c8)]('hidden');}function _0x2f300e(){const _0x5c37dc=_0x57f393,_0x1d2d69=document[_0x5c37dc(0x19e)](_0x5c37dc(0x233))['value'],_0x3cf69f=_0x4c0277['ports'][_0x5c37dc(0x198)](_0x5cd799=>_0x5cd799['id']===_0x1d2d69)||null,_0x41feb6={'id':'subport-'+Date['now'](),'roundId':_0x3cf69f?_0x3cf69f[_0x5c37dc(0x26d)]:_0x4c0277[_0x5c37dc(0x338)],'parentPortId':_0x1d2d69,'type':document[_0x5c37dc(0x19e)]('addSubPortType')['value'][_0x5c37dc(0x2b3)](),'name':document['getElementById']('addSubPortName')[_0x5c37dc(0x15e)][_0x5c37dc(0x2b3)](),'displayOrder':Number(_0x4c0277[_0x5c37dc(0x331)][_0x5c37dc(0x22c)](_0x106654=>_0x106654['parentPortId']===_0x1d2d69)[_0x5c37dc(0x223)]+0x1),'status':'on'};if(!_0x41feb6[_0x5c37dc(0x209)]||!_0x41feb6[_0x5c37dc(0x1af)]||!_0x41feb6[_0x5c37dc(0x2c7)])return;_0x4c0277[_0x5c37dc(0x331)][_0x5c37dc(0x205)]({..._0x41feb6}),void _0xc2bac2(_0x16a95a[_0x5c37dc(0x331)],_0x41feb6['id'],_0x41feb6),_0x1c13d0(),_0x4c0277[_0x5c37dc(0x2ca)]=_0x41feb6['id'],_0x44f22f(),_0x76256e();}function _0x31aa88(){const _0x19b6e8=_0x57f393,_0x445125=document[_0x19b6e8(0x19e)](_0x19b6e8(0x2a6))[_0x19b6e8(0x15e)],_0x2cf47d={'type':document[_0x19b6e8(0x19e)](_0x19b6e8(0x2c5))[_0x19b6e8(0x15e)]['trim'](),'name':document[_0x19b6e8(0x19e)]('editSubPortName')[_0x19b6e8(0x15e)]['trim']()};if(!_0x445125||!_0x2cf47d[_0x19b6e8(0x1af)]||!_0x2cf47d['name'])return;const _0x5856a5=_0x4c0277[_0x19b6e8(0x331)][_0x19b6e8(0x2a9)](_0xe2014e=>_0xe2014e['id']===_0x445125);_0x5856a5>-0x1&&(_0x4c0277[_0x19b6e8(0x331)][_0x5856a5]={..._0x4c0277[_0x19b6e8(0x331)][_0x5856a5],..._0x2cf47d},void _0xc2bac2(_0x16a95a[_0x19b6e8(0x331)],_0x445125,_0x4c0277['subPorts'][_0x5856a5])),_0x1c13d0(),_0x44f22f(),_0x21a419();}function _0x3a59f0(_0x5be2b4){const _0x3ae202=_0x57f393,_0x12af38=_0x4c0277[_0x3ae202(0x2d2)][_0x3ae202(0x22c)](_0xc1231f=>_0xc1231f['subPortId']===_0x5be2b4);_0x4c0277['subPorts']=_0x4c0277[_0x3ae202(0x331)][_0x3ae202(0x22c)](_0x2ef785=>_0x2ef785['id']!==_0x5be2b4),_0x4c0277['employees']=_0x4c0277[_0x3ae202(0x2d2)][_0x3ae202(0x22c)](_0x5101a8=>_0x5101a8[_0x3ae202(0x31a)]!==_0x5be2b4),void _0x322deb(_0x16a95a['subPorts'],_0x5be2b4),_0x12af38[_0x3ae202(0x1c1)](_0x40df13=>void _0x322deb(_0x16a95a[_0x3ae202(0x2d2)],_0x40df13['id'])),_0x1c13d0(),_0x4c0277['selectedSubPortId']===_0x5be2b4&&(_0x4c0277[_0x3ae202(0x2ca)]=''),_0x44f22f();}function _0x17bbfe(){_0x396931();}function _0x380e6b(){_0x441109();}function _0x51d889(){_0x371770();}function _0x3b4cdd(){const _0x281cfa=_0x57f393,_0x52f99d=[];return _0x4c0277['products'][_0x281cfa(0x1c1)](_0x127b6f=>{const _0x2a98f6=_0x281cfa;_0x127b6f[_0x2a98f6(0x1a2)]&&!_0x52f99d[_0x2a98f6(0x1e3)](_0x127b6f[_0x2a98f6(0x1a2)])&&_0x52f99d[_0x2a98f6(0x2e0)](_0x127b6f[_0x2a98f6(0x1a2)]);}),_0x52f99d;}function _0x31f2ed(){const _0x2c18ab=_0x57f393,_0x19425a=[];return _0x4c0277[_0x2c18ab(0x194)][_0x2c18ab(0x1c1)](_0x383692=>{const _0x1e6818=_0x2c18ab;_0x383692[_0x1e6818(0x290)]&&!_0x19425a[_0x1e6818(0x1e3)](_0x383692[_0x1e6818(0x290)])&&_0x19425a['push'](_0x383692[_0x1e6818(0x290)]);}),_0x19425a;}function _0x447e8a(){const _0x48b262=_0x57f393,_0x603e3=document[_0x48b262(0x19e)](_0x48b262(0x1d3));if(_0x603e3){const _0x2e9cc9=_0x603e3[_0x48b262(0x15e)]||_0x4c0277[_0x48b262(0x1d3)]||_0x48b262(0x213),_0x5e1f87=_0x3b4cdd()['map'](_0x51129d=>_0x48b262(0x2d7)+_0x2ba971(_0x51129d)+'\x22>'+_0x2ba971(_0x51129d)+_0x48b262(0x2ae))[_0x48b262(0x21c)]('');_0x603e3['innerHTML']=_0x48b262(0x240)+_0x5e1f87,_0x603e3[_0x48b262(0x15e)]=[..._0x603e3['options']][_0x48b262(0x276)](_0x5250c3=>_0x5250c3['value']===_0x2e9cc9)?_0x2e9cc9:_0x48b262(0x213);}const _0x3e4244=document[_0x48b262(0x19e)](_0x48b262(0x187));_0x3e4244&&(_0x3e4244[_0x48b262(0x349)]=_0x3b4cdd()['map'](_0x274aff=>'<option\x20value=\x22'+_0x2ba971(_0x274aff)+_0x48b262(0x2e6))[_0x48b262(0x21c)](''));const _0x53d79e=document[_0x48b262(0x19e)](_0x48b262(0x266));_0x53d79e&&(_0x53d79e[_0x48b262(0x349)]=_0x31f2ed()[_0x48b262(0x257)](_0x50e99d=>'<option\x20value=\x22'+_0x2ba971(_0x50e99d)+_0x48b262(0x2e6))['join'](''));}function _0x2bd2c3(){const _0x8ff5e4=_0x57f393,_0x81ab81={};return _0x4c0277[_0x8ff5e4(0x194)][_0x8ff5e4(0x1c1)](_0x5b7f49=>{const _0x43383a=_0x8ff5e4,_0x5e3dd6=_0x5b7f49[_0x43383a(0x1a2)]||'',_0x2ff66e=Number(_0x5b7f49['order']||0x0);_0x81ab81[_0x5e3dd6]=_0x5e3dd6 in _0x81ab81?Math[_0x43383a(0x329)](_0x81ab81[_0x5e3dd6],_0x2ff66e):_0x2ff66e;}),_0x81ab81;}function _0x4ccda3(){const _0x598983=_0x57f393,_0x4f5c7c=_0x2bd2c3();return _0x4c0277['products'][_0x598983(0x379)]()[_0x598983(0x1dd)]((_0x20a82b,_0x30397e)=>{const _0x427d1b=_0x598983,_0x407724=_0x4f5c7c[_0x20a82b[_0x427d1b(0x1a2)]||'']||0x0,_0x51c9d6=_0x4f5c7c[_0x30397e[_0x427d1b(0x1a2)]||'']||0x0;if(_0x407724!==_0x51c9d6)return _0x407724-_0x51c9d6;return Number(_0x20a82b['order']||0x0)-Number(_0x30397e[_0x427d1b(0x22e)]||0x0);});}function _0x472406(){const _0x5a2070=_0x57f393,_0x1d56fb=_0x4ccda3();return _0x4c0277[_0x5a2070(0x1d3)]==='all'?_0x1d56fb:_0x1d56fb[_0x5a2070(0x22c)](_0x3d2c78=>_0x3d2c78['group']===_0x4c0277[_0x5a2070(0x1d3)]);}function _0xc2bf7e(){const _0x4bdda7=_0x57f393;return _0x4c0277['products'][_0x4bdda7(0x274)]((_0x85dfa1,_0x3a6b90)=>Math[_0x4bdda7(0x16e)](_0x85dfa1,Number(_0x3a6b90[_0x4bdda7(0x22e)]||0x0)),0x0)+0x1;}function _0x1b1d00(_0x49bde5){const _0x1af914=_0x57f393,_0x451653=document[_0x1af914(0x19e)](_0x1af914(0x33d));if(!_0x451653)return;if(_0x49bde5<=0x1){_0x451653[_0x1af914(0x349)]='';return;}const _0xb89ce7=_0x4c0277['productsPage'],_0x10fcf3=(_0xcd34ea,_0x36d56f,_0x1a9344,_0x5f1e1e)=>_0x1af914(0x332)+(_0x1a9344?_0x1af914(0x175):_0x1af914(0x1e2)+_0x36d56f+')\x22')+_0x1af914(0x20b)+(_0x5f1e1e?_0x1af914(0x185):_0x1af914(0x365))+'\x20'+(_0x1a9344?_0x1af914(0x1a3):'')+'\x22>'+_0xcd34ea+_0x1af914(0x1bd);let _0x47f2c5=_0x10fcf3(_0x1af914(0x1f4),_0xb89ce7-0x1,_0xb89ce7<=0x1,![]);for(let _0x2b85f7=0x1;_0x2b85f7<=_0x49bde5;_0x2b85f7+=0x1){_0x47f2c5+=_0x10fcf3(String(_0x2b85f7),_0x2b85f7,![],_0x2b85f7===_0xb89ce7);}_0x47f2c5+=_0x10fcf3(_0x1af914(0x1a7),_0xb89ce7+0x1,_0xb89ce7>=_0x49bde5,![]),_0x451653['innerHTML']=_0x47f2c5;}function _0x200162(){const _0xba4389=_0x57f393,_0x5a6ac4=document[_0xba4389(0x19e)](_0xba4389(0x22f)),_0x4fed11=document[_0xba4389(0x19e)](_0xba4389(0x1d4));if(!_0x5a6ac4)return;const _0x3ac7fe=_0x472406();_0x4fed11&&(_0x4fed11[_0xba4389(0x2ed)]=String(_0x3ac7fe[_0xba4389(0x223)]));if(!_0x3ac7fe[_0xba4389(0x223)]){_0x5a6ac4[_0xba4389(0x349)]=_0xba4389(0x24d),_0x1b1d00(0x0);return;}const _0x47efd5=_0x4c0277['productsPageSize'],_0x319b3b=Math[_0xba4389(0x16e)](0x1,Math[_0xba4389(0x200)](_0x3ac7fe['length']/_0x47efd5));_0x4c0277[_0xba4389(0x313)]=Math[_0xba4389(0x329)](Math['max'](_0x4c0277['productsPage'],0x1),_0x319b3b);const _0x2a10f6=(_0x4c0277['productsPage']-0x1)*_0x47efd5,_0xab8a11=_0x3ac7fe[_0xba4389(0x379)](_0x2a10f6,_0x2a10f6+_0x47efd5);let _0x325ce0=null;_0x5a6ac4[_0xba4389(0x349)]=_0xab8a11['map'](_0x7679d1=>{const _0x4250dd=_0xba4389,_0x40fdc3=_0x7679d1['group']!==_0x325ce0;return _0x325ce0=_0x7679d1[_0x4250dd(0x1a2)],_0x4250dd(0x203)+(_0x40fdc3?_0x4250dd(0x2cd):_0x4250dd(0x218))+'\x22>'+_0x2ba971(_0x7679d1[_0x4250dd(0x1a2)]||'-')+_0x4250dd(0x2bb)+_0x2ba971(_0x7679d1[_0x4250dd(0x247)]||'-')+_0x4250dd(0x1d9)+(_0x7679d1[_0x4250dd(0x290)]?_0x4250dd(0x364)+_0x2ba971(_0x7679d1[_0x4250dd(0x290)])+_0x4250dd(0x169):'')+_0x4250dd(0x2f4)+_0x1b0221('text-indigo-600',_0x4250dd(0x292),_0x4250dd(0x29d),_0x4250dd(0x1fb)+_0x7679d1['id']+'\x27)')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x1b0221('text-rose-600','fa-trash-can','ลบผลิตภัณฑ์','deleteProduct(\x27'+_0x7679d1['id']+'\x27)')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>';})[_0xba4389(0x21c)](''),_0x1b1d00(_0x319b3b);}function _0x324519(_0x15813f){_0x4c0277['productsPage']=Number(_0x15813f)||0x1,_0x200162();}function _0x4bb788(_0x481725){const _0x328d87=_0x57f393;_0x4c0277[_0x328d87(0x369)]=Number(_0x481725)||0xa,_0x4c0277[_0x328d87(0x313)]=0x1,_0x200162();}function _0x125767(_0x1232ec){const _0x31a8a1=_0x57f393;_0x4c0277['productsGroupFilter']=_0x1232ec||_0x31a8a1(0x213),_0x4c0277[_0x31a8a1(0x313)]=0x1,_0x200162();}function _0x2e5149(){const _0x1ec8b5=_0x57f393;_0x447e8a(),document[_0x1ec8b5(0x19e)]('addProductGroup')[_0x1ec8b5(0x15e)]='',document[_0x1ec8b5(0x19e)](_0x1ec8b5(0x2a8))['value']='',document[_0x1ec8b5(0x19e)](_0x1ec8b5(0x214))[_0x1ec8b5(0x15e)]='';const _0x11d950=document[_0x1ec8b5(0x19e)]('addProductLightbox');_0x11d950&&_0x11d950['classList'][_0x1ec8b5(0x1a9)]('hidden');}function _0x4c5015(){const _0x188929=_0x57f393,_0x39e479=document[_0x188929(0x19e)]('addProductLightbox');_0x39e479&&_0x39e479['classList']['add'](_0x188929(0x1fe));}function _0x3e9479(){const _0x56434c=_0x57f393,_0x2d7072={'id':_0x56434c(0x190)+Date[_0x56434c(0x164)](),'group':document[_0x56434c(0x19e)](_0x56434c(0x25f))[_0x56434c(0x15e)][_0x56434c(0x2b3)](),'subGroup':document['getElementById'](_0x56434c(0x2a8))[_0x56434c(0x15e)][_0x56434c(0x2b3)](),'unit':document[_0x56434c(0x19e)](_0x56434c(0x214))['value'][_0x56434c(0x2b3)](),'order':_0xc2bf7e()};if(!_0x2d7072[_0x56434c(0x1a2)]||!_0x2d7072[_0x56434c(0x247)])return;_0x4c0277[_0x56434c(0x194)]['push']({..._0x2d7072}),void _0xc2bac2(_0x16a95a[_0x56434c(0x194)],_0x2d7072['id'],_0x2d7072),_0x1c13d0(),_0x447e8a(),_0x200162(),_0x4c5015();}function _0x5df856(_0x345f59){const _0x30d387=_0x57f393,_0x3f53c5=_0x4c0277[_0x30d387(0x194)][_0x30d387(0x198)](_0x3e6fb2=>_0x3e6fb2['id']===_0x345f59);if(!_0x3f53c5)return;_0x447e8a(),document['getElementById'](_0x30d387(0x368))['value']=_0x3f53c5['id'],document['getElementById'](_0x30d387(0x376))[_0x30d387(0x15e)]=_0x3f53c5[_0x30d387(0x1a2)]||'',document[_0x30d387(0x19e)](_0x30d387(0x34a))['value']=_0x3f53c5[_0x30d387(0x247)]||'',document[_0x30d387(0x19e)](_0x30d387(0x285))['value']=_0x3f53c5[_0x30d387(0x290)]||'';const _0x53f3a2=document[_0x30d387(0x19e)]('editProductLightbox');_0x53f3a2&&_0x53f3a2[_0x30d387(0x248)][_0x30d387(0x1a9)](_0x30d387(0x1fe));}function _0x1ef674(){const _0x93c629=_0x57f393,_0x1ab2d9=document[_0x93c629(0x19e)]('editProductLightbox');_0x1ab2d9&&_0x1ab2d9[_0x93c629(0x248)]['add']('hidden');}function _0x5d68a1(){const _0x2a22a8=_0x57f393,_0x415d56=document[_0x2a22a8(0x19e)](_0x2a22a8(0x368))[_0x2a22a8(0x15e)],_0x5da1a7={'group':document[_0x2a22a8(0x19e)]('editProductGroup')[_0x2a22a8(0x15e)][_0x2a22a8(0x2b3)](),'subGroup':document['getElementById']('editProductSubGroup')['value'][_0x2a22a8(0x2b3)](),'unit':document[_0x2a22a8(0x19e)](_0x2a22a8(0x285))[_0x2a22a8(0x15e)][_0x2a22a8(0x2b3)]()};if(!_0x415d56||!_0x5da1a7[_0x2a22a8(0x1a2)]||!_0x5da1a7[_0x2a22a8(0x247)])return;const _0x5ab58c=_0x4c0277[_0x2a22a8(0x194)][_0x2a22a8(0x2a9)](_0x557ea5=>_0x557ea5['id']===_0x415d56);_0x5ab58c>-0x1&&(_0x4c0277['products'][_0x5ab58c]={..._0x4c0277[_0x2a22a8(0x194)][_0x5ab58c],..._0x5da1a7},void _0xc2bac2(_0x16a95a[_0x2a22a8(0x194)],_0x415d56,_0x4c0277[_0x2a22a8(0x194)][_0x5ab58c])),_0x1c13d0(),_0x447e8a(),_0x200162(),_0x1ef674();}function _0x1db83d(_0x3cb008){const _0x307756=_0x57f393;_0x4c0277[_0x307756(0x194)]=_0x4c0277[_0x307756(0x194)][_0x307756(0x22c)](_0x17ac7d=>_0x17ac7d['id']!==_0x3cb008),void _0x322deb(_0x16a95a[_0x307756(0x194)],_0x3cb008),_0x1c13d0(),_0x447e8a(),_0x200162();}function _0x495cc6(_0x1271ed){const _0x49a489=_0x57f393,_0x16678e=_0x1271ed[_0x49a489(0x326)],_0x4a5b21=_0x16678e[_0x49a489(0x267)]&&_0x16678e[_0x49a489(0x267)][0x0];if(!_0x4a5b21)return;const _0x5051bc=new FileReader();_0x5051bc[_0x49a489(0x30d)]=_0x52dd4a=>{const _0x2d2312=_0x49a489;try{const _0x13db5d=new Uint8Array(_0x52dd4a[_0x2d2312(0x326)][_0x2d2312(0x32c)]),_0x55bc1b=window[_0x2d2312(0x242)]['read'](_0x13db5d,{'type':_0x2d2312(0x262)}),_0x4e224f=_0x55bc1b[_0x2d2312(0x2fb)][_0x55bc1b['SheetNames'][0x0]],_0x551355=window[_0x2d2312(0x242)][_0x2d2312(0x2ce)]['sheet_to_json'](_0x4e224f,{'header':0x1,'defval':''}),_0x4ce31e=new Set(_0x4c0277['products'][_0x2d2312(0x257)](_0xe45e5d=>_0xe45e5d[_0x2d2312(0x1a2)]+'||'+_0xe45e5d[_0x2d2312(0x247)])),_0xc31dda=[];let _0x416537=_0xc2bf7e();_0x551355[_0x2d2312(0x1c1)]((_0x4030be,_0x265473)=>{const _0x1c9fe3=_0x2d2312,_0x24c7e2=String(_0x4030be[0x0]||'')[_0x1c9fe3(0x2b3)](),_0x1ccce8=String(_0x4030be[0x1]||'')['trim'](),_0x9026df=String(_0x4030be[0x2]||'')['trim']();if(!_0x24c7e2||!_0x1ccce8)return;if(_0x24c7e2['toLowerCase']()===_0x1c9fe3(0x1a2)&&_0x1ccce8[_0x1c9fe3(0x20a)]()==='subgroup')return;const _0x2b89af=_0x24c7e2+'||'+_0x1ccce8;if(_0x4ce31e[_0x1c9fe3(0x316)](_0x2b89af))return;_0x4ce31e[_0x1c9fe3(0x2c8)](_0x2b89af),_0xc31dda[_0x1c9fe3(0x2e0)]({'id':_0x1c9fe3(0x190)+Date['now']()+'-'+_0x265473,'group':_0x24c7e2,'subGroup':_0x1ccce8,'unit':_0x9026df,'order':_0x416537}),_0x416537+=0x1;}),_0xc31dda[_0x2d2312(0x223)]&&(_0xc31dda[_0x2d2312(0x1c1)](_0x43f2a3=>{const _0x5de4c4=_0x2d2312;_0x4c0277[_0x5de4c4(0x194)][_0x5de4c4(0x2e0)]({..._0x43f2a3}),void _0xc2bac2(_0x16a95a[_0x5de4c4(0x194)],_0x43f2a3['id'],_0x43f2a3);}),_0x1c13d0(),_0x447e8a(),_0x200162());}catch(_0x260a49){}finally{_0x16678e['value']='';}},_0x5051bc[_0x49a489(0x1b3)](_0x4a5b21);}function _0x1a0482(){const _0x2f7de5=_0x57f393,_0x575255=document[_0x2f7de5(0x19e)]('competitorsTableBody');if(!_0x575255)return;const _0x18b9ab=_0x4c0277[_0x2f7de5(0x338)]===_0x2f7de5(0x213)?_0x4c0277[_0x2f7de5(0x2f0)]:_0x4c0277['users'][_0x2f7de5(0x22c)](_0x4dc96b=>_0x4dc96b['roundId']===_0x4c0277['selectedRoundId']);if(!_0x18b9ab[_0x2f7de5(0x223)]){_0x575255['innerHTML']='<tr><td\x20colspan=\x225\x22\x20class=\x22py-6\x20text-center\x20text-slate-400\x22>--\x20ไม่พบข้อมูลผู้สมัครแข่งขัน\x20--</td></tr>';return;}_0x575255[_0x2f7de5(0x349)]=_0x18b9ab['map']((_0x3ff1b7,_0x5dd902)=>{const _0x5f1a46=_0x2f7de5,_0x1f4f50=_0x4c0277[_0x5f1a46(0x273)][_0x5f1a46(0x22c)](_0x2fc62d=>_0x2fc62d[_0x5f1a46(0x179)]===_0x3ff1b7['id']),_0x56eb07=_0x1f4f50['length'],_0x2bd05c=_0x4c0277['customerDiagnosis'][_0x5f1a46(0x22c)](_0x57596f=>_0x57596f['id']['startsWith'](_0x3ff1b7['id']+'__')),_0x3aa68e=_0x2bd05c[_0x5f1a46(0x274)]((_0x1e457f,_0x4c49e1)=>_0x1e457f+(_0x4c49e1[_0x5f1a46(0x171)]||[])['length'],0x0);return _0x5f1a46(0x15b)+(_0x5dd902+0x1)+_0x5f1a46(0x235)+_0x2ba971(_0x3ff1b7[_0x5f1a46(0x2c7)]||'-')+_0x5f1a46(0x30b)+_0x3ff1b7['id']+_0x5f1a46(0x204)+_0x56eb07+_0x5f1a46(0x32b)+_0x3ff1b7['id']+_0x5f1a46(0x36c)+_0x3aa68e+_0x5f1a46(0x1c8)+_0x3ff1b7['id']+_0x5f1a46(0x32e);})[_0x2f7de5(0x21c)]('');}function _0x11da74(_0x103067){const _0x592b1f=_0x57f393,_0x5a8778=_0x4c0277[_0x592b1f(0x2f0)][_0x592b1f(0x198)](_0x40860b=>_0x40860b['id']===_0x103067);if(!_0x5a8778)return;const _0x29ee12=_0x4c0277['portfolioSets'][_0x592b1f(0x22c)](_0x13457f=>_0x13457f['userId']===_0x103067)[_0x592b1f(0x1dd)]((_0x2de1ff,_0x3ec1da)=>Number(_0x2de1ff['setIndex']||0x0)-Number(_0x3ec1da[_0x592b1f(0x2c6)]||0x0));if(!_0x29ee12[_0x592b1f(0x223)]){const _0x433abf=document[_0x592b1f(0x19e)]('competitorDetailsBody'),_0x475ad1=document[_0x592b1f(0x19e)](_0x592b1f(0x21d)),_0x12bfc3=document[_0x592b1f(0x19e)](_0x592b1f(0x2cb)),_0x21c391=document[_0x592b1f(0x19e)](_0x592b1f(0x1d2));if(_0x12bfc3)_0x12bfc3[_0x592b1f(0x2ed)]=_0x592b1f(0x327)+_0x5a8778['name'];if(_0x21c391)_0x21c391['textContent']='แผนงานจัดพอร์ตทั้งหมดของทีม\x20'+_0x5a8778['name'];if(_0x475ad1)_0x475ad1['classList'][_0x592b1f(0x2c8)](_0x592b1f(0x1fe));if(_0x433abf)_0x433abf[_0x592b1f(0x349)]=_0x592b1f(0x272);document['getElementById'](_0x592b1f(0x216))[_0x592b1f(0x248)][_0x592b1f(0x1a9)](_0x592b1f(0x1fe));return;}_0x2d786f(_0x103067,0x0),document[_0x592b1f(0x19e)](_0x592b1f(0x216))[_0x592b1f(0x248)]['remove'](_0x592b1f(0x1fe));}function _0x2d786f(_0x1f8106,_0x39ad53){const _0x31ff00=_0x57f393;window[_0x31ff00(0x230)]=_0x1f8106,window[_0x31ff00(0x33c)]=_0x39ad53;const _0x21f9e0=_0x4c0277[_0x31ff00(0x2f0)][_0x31ff00(0x198)](_0x41af88=>_0x41af88['id']===_0x1f8106);if(!_0x21f9e0)return;const _0x36333b=_0x4c0277[_0x31ff00(0x273)][_0x31ff00(0x22c)](_0x25bf5f=>_0x25bf5f[_0x31ff00(0x179)]===_0x1f8106)[_0x31ff00(0x1dd)]((_0x326885,_0x3c26cd)=>Number(_0x326885[_0x31ff00(0x2c6)]||0x0)-Number(_0x3c26cd['setIndex']||0x0)),_0x2e08e7=document[_0x31ff00(0x19e)]('competitorDetailsTitle'),_0x3eca5e=document['getElementById']('competitorDetailsSubtitle'),_0x4ecf1a=document[_0x31ff00(0x19e)]('competitorDetailsBody'),_0x1f3858=document[_0x31ff00(0x19e)](_0x31ff00(0x21d));if(_0x2e08e7)_0x2e08e7[_0x31ff00(0x2ed)]='Portfolio\x20Planning:\x20'+_0x21f9e0[_0x31ff00(0x2c7)];if(_0x3eca5e)_0x3eca5e[_0x31ff00(0x2ed)]=_0x31ff00(0x234)+_0x21f9e0[_0x31ff00(0x2c7)];if(!_0x36333b[_0x31ff00(0x223)]){if(_0x1f3858)_0x1f3858[_0x31ff00(0x248)]['add']('hidden');if(_0x4ecf1a)_0x4ecf1a[_0x31ff00(0x349)]=_0x31ff00(0x272);return;}_0x1f3858&&(_0x1f3858[_0x31ff00(0x248)]['remove'](_0x31ff00(0x1fe)),_0x1f3858[_0x31ff00(0x2ee)]=()=>_0x4f56ea(_0x1f8106,_0x39ad53));const _0x4abfd0=document[_0x31ff00(0x19e)](_0x31ff00(0x32f));_0x4abfd0&&(_0x4abfd0[_0x31ff00(0x2ee)]=()=>openConfirmDeleteSetLightbox(_0x31ff00(0x2ad)));const _0x389a3b=_0x36333b[_0x39ad53]||_0x36333b[0x0],_0x46122f=_0x36333b[_0x31ff00(0x2a7)](_0x389a3b)+0x1;let _0x14b43f=_0x31ff00(0x300);_0x36333b[_0x31ff00(0x1c1)]((_0x337ef4,_0x1f640f)=>{const _0x34fe10=_0x31ff00,_0x35b762=_0x1f640f===_0x39ad53;_0x14b43f+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22renderActivePortfolioDetails(\x27'+_0x1f8106+_0x34fe10(0x189)+_0x1f640f+_0x34fe10(0x2ff)+(_0x35b762?_0x34fe10(0x2d1):'bg-slate-100\x20text-slate-700\x20hover:bg-slate-205')+_0x34fe10(0x356)+(_0x1f640f+0x1)+_0x34fe10(0x311);}),_0x14b43f+=_0x31ff00(0x2ac);const _0x5a137e=_0x37e8e0=>{const _0x4caa5b=_0x31ff00;if(!_0x37e8e0)return'';const _0x412cab=_0x4c0277['products'][_0x4caa5b(0x198)](_0x3865bb=>_0x3865bb['subGroup']===_0x37e8e0);if(!_0x412cab)return'';if(_0x412cab['unit'])return _0x412cab['unit'];const _0x51dcdc=_0x412cab['group'];if([_0x4caa5b(0x27f),'BA','MF','SN'][_0x4caa5b(0x1e3)](_0x51dcdc))return _0x4caa5b(0x22b);if([_0x4caa5b(0x161),_0x4caa5b(0x1f3),_0x4caa5b(0x341),_0x4caa5b(0x17c)][_0x4caa5b(0x1e3)](_0x51dcdc))return'คน';return'';},_0x2d7c8b=_0x25a13f=>{const _0x5bcfee=_0x31ff00,_0x268a76=Number(_0x25a13f);return isNaN(_0x268a76)?'0':_0x268a76[_0x5bcfee(0x1a5)]('th-TH');},_0x3d088d=_0x34482d=>{const _0x38a0c7=_0x31ff00,_0x263782=_0x389a3b[_0x38a0c7(0x2b9)][_0x34482d]||[],_0x21958a=_0x263782[0x0]?.[_0x38a0c7(0x326)]||'-',_0x4e5819=_0x263782[0x0]?.[_0x38a0c7(0x1b8)]||'-',_0xc08cf3=_0x263782[_0x38a0c7(0x257)](_0x148bea=>{const _0x5bf017=_0x38a0c7;if(!_0x148bea['subGroup'])return'';const _0x5e8835=_0x5a137e(_0x148bea[_0x5bf017(0x247)]),_0x4dce39=_0x2d7c8b(_0x148bea[_0x5bf017(0x37a)]||0x0);return _0x5bf017(0x231)+_0x2ba971(_0x148bea[_0x5bf017(0x247)])+_0x5bf017(0x2b5)+_0x4dce39+'</strong>\x20'+_0x5e8835+_0x5bf017(0x2c2);})[_0x38a0c7(0x22c)](Boolean)[_0x38a0c7(0x21c)]('');return'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20p-4\x20bg-slate-50/50\x20space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h5\x20class=\x22text-sm\x20font-bold\x20text-slate-800\x20border-b\x20border-slate-200\x20pb-1\x22>'+_0x34482d+_0x38a0c7(0x27d)+_0x2ba971(_0x21958a)+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[12px]\x20text-slate-400\x22>Action\x20Plan</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>'+_0x2ba971(_0x4e5819)+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22pt-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[12px]\x20text-slate-400\x20mb-1\x22>ผลิตภัณฑ์ปักหมุด</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0xc08cf3?_0x38a0c7(0x286)+_0xc08cf3+_0x38a0c7(0x245):_0x38a0c7(0x19c))+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';},_0x1e2a35='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x14b43f+_0x31ff00(0x1ef)+_0x46122f+_0x31ff00(0x2e5)+_0x2ba971(_0x21f9e0[_0x31ff00(0x2c7)])+_0x31ff00(0x1a1)+_0x2ba971(_0x389a3b[_0x31ff00(0x2cc)]||'-')+_0x31ff00(0x1e9)+_0x2ba971(_0x389a3b[_0x31ff00(0x1bf)]||'-')+_0x31ff00(0x30c)+_0x2ba971(_0x389a3b[_0x31ff00(0x1ff)]||'-')+_0x31ff00(0x1c7)+_0x2ba971(_0x389a3b[_0x31ff00(0x19d)]||'-')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-4\x20pt-4\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-xs\x20font-black\x20text-slate-800\x22>4.\x20Outcome\x20(Target,\x20Action\x20Plan\x20&\x20ผลิตภัณฑ์)</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20flex-col\x20gap-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x3d088d(_0x31ff00(0x249))+_0x31ff00(0x361)+_0x3d088d(_0x31ff00(0x1a4))+_0x31ff00(0x361)+_0x3d088d(_0x31ff00(0x2b8))+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20';if(_0x4ecf1a)_0x4ecf1a['innerHTML']=_0x1e2a35;}function _0x4f56ea(_0xb0173a,_0x14deef){const _0x5b2d0b=_0x57f393,_0x4f6ab5=document[_0x5b2d0b(0x19e)]('adminPortfolioMailContentArea');if(!_0x4f6ab5)return;const _0x1933dd=_0x4c0277[_0x5b2d0b(0x2f0)][_0x5b2d0b(0x198)](_0x484b52=>_0x484b52['id']===_0xb0173a);if(!_0x1933dd)return;const _0x5644ab=_0x4c0277['portfolioSets'][_0x5b2d0b(0x22c)](_0x5d941f=>_0x5d941f[_0x5b2d0b(0x179)]===_0xb0173a)[_0x5b2d0b(0x1dd)]((_0x240b36,_0x1d391c)=>Number(_0x240b36[_0x5b2d0b(0x2c6)]||0x0)-Number(_0x1d391c[_0x5b2d0b(0x2c6)]||0x0)),_0x2dc49a=_0x5644ab[_0x14deef];if(!_0x2dc49a)return;const _0x135d13=_0x14deef+0x1,_0x2fb162=_0x5b2d0b(0x18e)+_0x135d13+')\x20โดย\x20'+_0x1933dd[_0x5b2d0b(0x2c7)],_0x47d228=_0x4f6ab5['style'][_0x5b2d0b(0x35b)],_0x4da7f9=_0x4f6ab5[_0x5b2d0b(0x166)][_0x5b2d0b(0x355)],_0x4126d7=_0x4f6ab5['style'][_0x5b2d0b(0x2d4)];_0x4f6ab5[_0x5b2d0b(0x166)][_0x5b2d0b(0x35b)]=_0x5b2d0b(0x1b2),_0x4f6ab5['style']['maxHeight']=_0x5b2d0b(0x2ef),_0x4f6ab5[_0x5b2d0b(0x166)]['overflow']='visible',html2canvas(_0x4f6ab5,{'scale':0x2,'useCORS':!![]})[_0x5b2d0b(0x1d0)](_0x56321c=>{const _0x29aff4=_0x5b2d0b;_0x4f6ab5[_0x29aff4(0x166)][_0x29aff4(0x35b)]=_0x47d228,_0x4f6ab5[_0x29aff4(0x166)]['maxHeight']=_0x4da7f9,_0x4f6ab5[_0x29aff4(0x166)]['overflow']=_0x4126d7;const _0x4f21b7=_0x56321c['toDataURL'](_0x29aff4(0x307)),_0x572f69=document[_0x29aff4(0x28d)]('a');_0x572f69[_0x29aff4(0x1be)]=_0x29aff4(0x220)+_0x135d13+_0x29aff4(0x2e7),_0x572f69['href']=_0x4f21b7,_0x572f69[_0x29aff4(0x1df)](),_0x56321c['toBlob'](_0x1fcf43=>{const _0x19b10b=_0x29aff4;if(_0x1fcf43)try{navigator[_0x19b10b(0x24a)]['write']([new ClipboardItem({'image/png':_0x1fcf43})])[_0x19b10b(0x1d0)](()=>{const _0x58d033=_0x19b10b;console['log'](_0x58d033(0x2a1));})['catch'](_0x4f1b5c=>{const _0x54f8d7=_0x19b10b;console[_0x54f8d7(0x28f)]('ไม่สามารถเขียนลง\x20Clipboard\x20ได้',_0x4f1b5c);});}catch(_0x2c4605){console['error'](_0x19b10b(0x31b),_0x2c4605);}},_0x29aff4(0x307));const _0x5edc5e=_0x29aff4(0x1b4),_0x8e4462=_0x29aff4(0x19f)+encodeURIComponent(_0x2fb162)+'&body='+encodeURIComponent(_0x5edc5e);window['location'][_0x29aff4(0x253)]=_0x8e4462;});}window[_0x57f393(0x2dd)]=null,window['activeBootcampIndex']=0x0,window[_0x57f393(0x162)]=0x1,window[_0x57f393(0x1b9)]=_0x133a9f=>{const _0x55d86f=_0x57f393;window[_0x55d86f(0x162)]=Math[_0x55d86f(0x16e)](0.5,Math['min'](0x2,window['currentAdminMailScale']+_0x133a9f));const _0x61b416=document[_0x55d86f(0x19e)](_0x55d86f(0x168))||document['getElementById'](_0x55d86f(0x254));if(!_0x61b416)return;const _0x215c75=_0x61b416[_0x55d86f(0x36d)](_0x55d86f(0x177));_0x215c75[_0x55d86f(0x1c1)](_0x23ddfa=>{const _0xbf5747=_0x55d86f;if(!_0x23ddfa['hasAttribute'](_0xbf5747(0x1bb))){const _0x4f170a=window['getComputedStyle'](_0x23ddfa)[_0xbf5747(0x227)];_0x23ddfa[_0xbf5747(0x1a8)]('data-orig-size',_0x4f170a);}const _0x90edaa=parseFloat(_0x23ddfa[_0xbf5747(0x29b)](_0xbf5747(0x1bb)));!isNaN(_0x90edaa)&&(_0x23ddfa[_0xbf5747(0x166)][_0xbf5747(0x227)]=_0x90edaa*window['currentAdminMailScale']+'px');});},window[_0x57f393(0x291)]=_0x173922=>{const _0xca21fd=_0x57f393;window[_0xca21fd(0x230)]=null,window['activePortfolioIndex']=0x0,window[_0xca21fd(0x162)]=0x1,renderActiveBootcampDetails(_0x173922,0x0),document['getElementById'](_0xca21fd(0x216))[_0xca21fd(0x248)]['remove']('hidden');},window[_0x57f393(0x174)]=(_0x2dc2a,_0x21bd96)=>{const _0x5d9528=_0x57f393;window['activeBootcampUserId']=_0x2dc2a,window[_0x5d9528(0x186)]=_0x21bd96;const _0x4fa3f8=_0x4c0277[_0x5d9528(0x2f0)][_0x5d9528(0x198)](_0x283805=>_0x283805['id']===_0x2dc2a);if(!_0x4fa3f8)return;const _0x312536=_0x4c0277[_0x5d9528(0x36b)][_0x5d9528(0x22c)](_0x2cda02=>_0x2cda02['id'][_0x5d9528(0x2d0)](_0x2dc2a+'__')),_0x140216=[];_0x312536[_0x5d9528(0x1c1)](_0x35a3de=>{const _0x43c9d7=_0x5d9528,_0x351de9=_0x35a3de['id'][_0x43c9d7(0x1ec)]('__')[0x1]||'',_0x5b2a26=_0x4c0277[_0x43c9d7(0x17e)][_0x43c9d7(0x198)](_0x5e8d26=>_0x5e8d26['id']===_0x351de9)||{'name':_0x43c9d7(0x1de)};(_0x35a3de[_0x43c9d7(0x171)]||[])[_0x43c9d7(0x1c1)](_0x151362=>{const _0x5978f2=_0x43c9d7;_0x140216[_0x5978f2(0x2e0)]({'activityItem':_0x5b2a26,'docId':_0x35a3de['id'],'set':_0x151362});});});const _0xaa18f4=document[_0x5d9528(0x19e)](_0x5d9528(0x2cb)),_0x3fa931=document[_0x5d9528(0x19e)]('competitorDetailsSubtitle'),_0x506015=document[_0x5d9528(0x19e)]('competitorDetailsBody'),_0x5dd7fd=document[_0x5d9528(0x19e)](_0x5d9528(0x21d));if(_0xaa18f4)_0xaa18f4[_0x5d9528(0x2ed)]='Account\x20Planning\x20Bootcamp:\x20'+_0x4fa3f8[_0x5d9528(0x2c7)];if(_0x3fa931)_0x3fa931[_0x5d9528(0x2ed)]=_0x5d9528(0x24b)+_0x4fa3f8['name'];if(!_0x140216[_0x5d9528(0x223)]){if(_0x5dd7fd)_0x5dd7fd['classList'][_0x5d9528(0x2c8)](_0x5d9528(0x1fe));if(_0x506015)_0x506015[_0x5d9528(0x349)]=_0x5d9528(0x1c0);return;}_0x5dd7fd&&(_0x5dd7fd[_0x5d9528(0x248)]['remove']('hidden'),_0x5dd7fd[_0x5d9528(0x2ee)]=()=>_0x3f2c73(_0x2dc2a,_0x21bd96));const _0x15787d=document[_0x5d9528(0x19e)](_0x5d9528(0x32f));_0x15787d&&(_0x15787d[_0x5d9528(0x2ee)]=()=>openConfirmDeleteSetLightbox('bootcamp'));const _0x50d0a7=_0x140216[_0x21bd96]||_0x140216[0x0],_0x2a4369=_0x50d0a7['set'],_0x2fa6ea=_0x50d0a7[_0x5d9528(0x23d)],_0x230e87=_0x25342c=>{const _0x1fb54e=_0x5d9528;if(!_0x25342c)return'-';const _0x20796f=String(_0x25342c)[_0x1fb54e(0x306)](/,/g,''),_0x493355=Number(_0x20796f);return isNaN(_0x493355)?_0x25342c:_0x493355[_0x1fb54e(0x1a5)]('th-TH');};let _0x218626='<div\x20class=\x22flex\x20flex-wrap\x20gap-2\x20border-b\x20border-slate-200\x20pb-3\x20mb-4\x20shrink-0\x22>';_0x140216['forEach']((_0x2a8416,_0x870efe)=>{const _0x2de99a=_0x5d9528,_0x4f0b28=_0x870efe===_0x21bd96;_0x218626+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22renderActiveBootcampDetails(\x27'+_0x2dc2a+_0x2de99a(0x189)+_0x870efe+_0x2de99a(0x2ff)+(_0x4f0b28?_0x2de99a(0x2ba):'bg-slate-100\x20text-slate-700\x20hover:bg-slate-205')+_0x2de99a(0x356)+(_0x870efe+0x1)+_0x2de99a(0x311);}),_0x218626+=_0x5d9528(0x2ac);const _0x1d5405=_0x2a4369[_0x5d9528(0x1ba)]||{'aim':'','consult':'','track':''},_0x35a075=_0x2a4369[_0x5d9528(0x309)]||{'improve':'','operate':'','notice':''},_0x41851c=_0x2a4369[_0x5d9528(0x2f8)]||{'goalAndLimit':'','idealPortfolio':'','currentPortfolio':'','portfolioSymptom':'','potentialImpact':'','adjustmentGuideline':''},_0x52115e=_0x2a4369[_0x5d9528(0x1d5)]||[],_0x315184=()=>{const _0x32b129=_0x5d9528;if(!_0x52115e[_0x32b129(0x223)])return _0x32b129(0x342);let _0x2d8039='';return _0x52115e[_0x32b129(0x1c1)]((_0x594846,_0x49ad63)=>{const _0x426088=_0x32b129;_0x2d8039+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22border-t\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20border-r\x20border-slate-200\x20space-y-2\x20text-left\x20bg-slate-50/50\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[10px]\x20font-bold\x20text-slate-500\x20mb-0.5\x22>เป้าหมายทางการเงิน</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-normal\x20text-slate-800\x22>'+_0x2ba971(_0x594846['goal']||'-')+_0x426088(0x1a6)+_0x2ba971(_0x230e87(_0x594846[_0x426088(0x37a)]))+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[10px]\x20font-bold\x20text-slate-500\x20mb-0.5\x22>ระยะเวลา</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-normal\x20text-slate-800\x22>'+_0x2ba971(_0x594846[_0x426088(0x2df)]||'-')+_0x426088(0x24c)+_0x2ba971(_0x594846[_0x426088(0x1b5)]||'-')+_0x426088(0x18c)+_0x2ba971(_0x594846[_0x426088(0x239)]||'-')+_0x426088(0x280)+_0x2ba971(_0x594846[_0x426088(0x241)]||'-')+_0x426088(0x280)+_0x2ba971(_0x594846[_0x426088(0x208)]||'-')+_0x426088(0x350)+_0x2ba971(_0x594846['smartBorrow']||'-')+_0x426088(0x26c);}),_0x32b129(0x1c4)+_0x2d8039+_0x32b129(0x284);},_0xec66d6='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x218626+_0x5d9528(0x2e9)+_0x2ba971(_0x2fa6ea[_0x5d9528(0x2c7)])+_0x5d9528(0x1db)+(_0x21bd96+0x1)+_0x5d9528(0x2e5)+_0x2ba971(_0x4fa3f8['name'])+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-slate-50\x20border\x20border-slate-200\x20px-4\x20py-1.5\x20rounded-xl\x20shadow-sm\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-bold\x20text-slate-400\x20mr-1\x22>ชื่อเรื่อง:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-sm\x20font-normal\x20text-slate-800\x22>'+_0x2ba971(_0x2a4369['topic']||'-')+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20ข้อมูลลูกค้า\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20rounded-2xl\x20p-4\x20text-left\x20space-y-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-xs\x20font-bold\x20opacity-75\x22>ข้อมูลลูกค้า</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22whitespace-pre-line\x20font-normal\x20text-xs\x22>'+_0x2ba971(_0x2a4369[_0x5d9528(0x34d)]||'-')+_0x5d9528(0x2ea)+_0x2ba971(_0x1d5405[_0x5d9528(0x16a)]||'-')+_0x5d9528(0x1e6)+_0x2ba971(_0x1d5405[_0x5d9528(0x301)]||'-')+_0x5d9528(0x287)+_0x2ba971(_0x1d5405[_0x5d9528(0x2bc)]||'-')+_0x5d9528(0x275)+_0x2ba971(_0x35a075[_0x5d9528(0x2f3)]||'-')+_0x5d9528(0x31f)+_0x2ba971(_0x35a075[_0x5d9528(0x345)]||'-')+_0x5d9528(0x251)+_0x2ba971(_0x35a075[_0x5d9528(0x362)]||'-')+_0x5d9528(0x297)+_0x2ba971(_0x41851c[_0x5d9528(0x315)]||'-')+_0x5d9528(0x30e)+_0x2ba971(_0x41851c[_0x5d9528(0x238)]||'-')+_0x5d9528(0x2d9)+_0x2ba971(_0x41851c[_0x5d9528(0x279)]||'-')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>อาการของพอร์ต</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>'+_0x2ba971(_0x41851c[_0x5d9528(0x2b7)]||'-')+_0x5d9528(0x34b)+_0x2ba971(_0x41851c['potentialImpact']||'-')+_0x5d9528(0x31e)+_0x2ba971(_0x41851c['adjustmentAdjustment']||_0x41851c[_0x5d9528(0x229)]||'-')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Financial\x20Solutions\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x22>3</span>\x20Financial\x20Solution</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x315184()+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20';if(_0x506015)_0x506015['innerHTML']=_0xec66d6;};function _0x3f2c73(_0x8a2dc6,_0x4bb319){const _0x336e4e=_0x57f393,_0x36622b=document['getElementById'](_0x336e4e(0x254));if(!_0x36622b)return;const _0x34c520=_0x4c0277['users'][_0x336e4e(0x198)](_0x5595dc=>_0x5595dc['id']===_0x8a2dc6);if(!_0x34c520)return;const _0x161427=_0x4c0277[_0x336e4e(0x36b)][_0x336e4e(0x22c)](_0x1ade71=>_0x1ade71['id'][_0x336e4e(0x2d0)](_0x8a2dc6+'__')),_0x4e8a5e=[];_0x161427['forEach'](_0x26d6a5=>{const _0x3643c3=_0x336e4e,_0x95c987=_0x26d6a5['id'][_0x3643c3(0x1ec)]('__')[0x1]||'',_0x460eff=_0x4c0277[_0x3643c3(0x17e)][_0x3643c3(0x198)](_0x4c6b79=>_0x4c6b79['id']===_0x95c987)||{'name':_0x3643c3(0x1de)};(_0x26d6a5['sets']||[])['forEach'](_0x4f24a0=>{const _0x461c00=_0x3643c3;_0x4e8a5e[_0x461c00(0x2e0)]({'activityItem':_0x460eff,'set':_0x4f24a0});});});const _0x3ce99b=_0x4e8a5e[_0x4bb319];if(!_0x3ce99b)return;const _0x47292f=_0x4bb319+0x1,_0x2316e3=_0x336e4e(0x18e)+_0x47292f+_0x336e4e(0x2de)+_0x34c520[_0x336e4e(0x2c7)],_0x2070ee=_0x36622b['style'][_0x336e4e(0x35b)],_0x15e1b1=_0x36622b['style']['maxHeight'],_0x44c46b=_0x36622b[_0x336e4e(0x166)][_0x336e4e(0x2d4)];_0x36622b[_0x336e4e(0x166)][_0x336e4e(0x35b)]=_0x336e4e(0x1b2),_0x36622b['style'][_0x336e4e(0x355)]='none',_0x36622b[_0x336e4e(0x166)]['overflow']=_0x336e4e(0x2b6),html2canvas(_0x36622b,{'scale':0x2,'useCORS':!![]})[_0x336e4e(0x1d0)](_0x3f622c=>{const _0x10ce01=_0x336e4e;_0x36622b['style'][_0x10ce01(0x35b)]=_0x2070ee,_0x36622b[_0x10ce01(0x166)]['maxHeight']=_0x15e1b1,_0x36622b[_0x10ce01(0x166)][_0x10ce01(0x2d4)]=_0x44c46b;const _0x5e976e=_0x3f622c[_0x10ce01(0x29c)]('image/png'),_0x218587=document[_0x10ce01(0x28d)]('a');_0x218587['download']='bootcamp_plan_'+_0x47292f+_0x10ce01(0x2e7),_0x218587[_0x10ce01(0x253)]=_0x5e976e,_0x218587[_0x10ce01(0x1df)](),_0x3f622c[_0x10ce01(0x34e)](_0x3e6bdf=>{const _0x4c8357=_0x10ce01;if(_0x3e6bdf)try{navigator[_0x4c8357(0x24a)][_0x4c8357(0x1fa)]([new ClipboardItem({'image/png':_0x3e6bdf})])[_0x4c8357(0x1d0)](()=>{const _0x1d6edb=_0x4c8357;console[_0x1d6edb(0x318)](_0x1d6edb(0x2a1));})[_0x4c8357(0x1c3)](_0x2d8dcc=>{const _0x39c8e0=_0x4c8357;console[_0x39c8e0(0x28f)](_0x39c8e0(0x35e),_0x2d8dcc);});}catch(_0x2f5bd8){console[_0x4c8357(0x28f)](_0x4c8357(0x31b),_0x2f5bd8);}},_0x10ce01(0x307));const _0x485ebd=_0x10ce01(0x1b4),_0x148b8a='mailto:?subject='+encodeURIComponent(_0x2316e3)+_0x10ce01(0x296)+encodeURIComponent(_0x485ebd);window['location'][_0x10ce01(0x253)]=_0x148b8a;});}function _0x53808c(){const _0x5482bb=_0x57f393;document['getElementById'](_0x5482bb(0x216))[_0x5482bb(0x248)][_0x5482bb(0x2c8)]('hidden'),window[_0x5482bb(0x230)]=null,window[_0x5482bb(0x33c)]=0x0,window[_0x5482bb(0x2dd)]=null,window[_0x5482bb(0x186)]=0x0,window['currentAdminMailScale']=0x1;}function _0x300f0b(_0x57448b){const _0x3cea19=_0x57f393;document['getElementById']('deletePlanUserId')['value']=_0x57448b,document['getElementById'](_0x3cea19(0x2ab))[_0x3cea19(0x248)][_0x3cea19(0x1a9)](_0x3cea19(0x1fe));}function _0x5c1ffc(){const _0x3744d6=_0x57f393;document[_0x3744d6(0x19e)](_0x3744d6(0x2ab))[_0x3744d6(0x248)][_0x3744d6(0x2c8)](_0x3744d6(0x1fe));}window[_0x57f393(0x2bf)]=_0x3d7ae8=>{const _0x10297d=_0x57f393;window[_0x10297d(0x236)]=_0x3d7ae8;const _0x47728f=document[_0x10297d(0x19e)](_0x10297d(0x26e));if(_0x47728f)_0x47728f['value']='';const _0x2d504a=document['getElementById'](_0x10297d(0x1d1));_0x2d504a&&(_0x2d504a[_0x10297d(0x175)]=!![],_0x2d504a[_0x10297d(0x248)]['add'](_0x10297d(0x215),_0x10297d(0x263)),_0x2d504a['classList'][_0x10297d(0x1a9)](_0x10297d(0x163),'cursor-pointer')),document[_0x10297d(0x19e)](_0x10297d(0x269))[_0x10297d(0x248)][_0x10297d(0x1a9)](_0x10297d(0x1fe));},window[_0x57f393(0x2db)]=()=>{const _0x17f462=_0x57f393,_0x39048=document['getElementById'](_0x17f462(0x26e))['value']['trim'](),_0x507b90=document[_0x17f462(0x19e)]('confirmDeleteSetBtn');if(!_0x507b90)return;_0x39048===_0x17f462(0x2fe)?(_0x507b90[_0x17f462(0x175)]=![],_0x507b90[_0x17f462(0x248)][_0x17f462(0x1a9)](_0x17f462(0x215),_0x17f462(0x263)),_0x507b90['classList'][_0x17f462(0x2c8)]('opacity-100',_0x17f462(0x1b0))):(_0x507b90[_0x17f462(0x175)]=!![],_0x507b90[_0x17f462(0x248)][_0x17f462(0x2c8)](_0x17f462(0x215),'cursor-not-allowed'),_0x507b90[_0x17f462(0x248)][_0x17f462(0x1a9)](_0x17f462(0x163),_0x17f462(0x1b0)));},window[_0x57f393(0x1d7)]=()=>{const _0x3b4f42=_0x57f393;document[_0x3b4f42(0x19e)](_0x3b4f42(0x269))[_0x3b4f42(0x248)][_0x3b4f42(0x2c8)](_0x3b4f42(0x1fe));},window['confirmDeleteActiveSet']=async()=>{const _0x4d3a8f=_0x57f393,_0x5f340b=document[_0x4d3a8f(0x19e)](_0x4d3a8f(0x26e))[_0x4d3a8f(0x15e)][_0x4d3a8f(0x2b3)]();if(_0x5f340b!==_0x4d3a8f(0x2fe)){alert('กรุณาพิมพ์\x20\x22Delete\x20Page\x22\x20ให้ถูกต้องเพื่อยืนยัน');return;}try{if(window[_0x4d3a8f(0x236)]===_0x4d3a8f(0x2ad)){const _0x2b1695=window[_0x4d3a8f(0x230)],_0x503ab4=window['activePortfolioIndex'],_0x4fd3c2=_0x4c0277[_0x4d3a8f(0x273)]['filter'](_0x45e0b7=>_0x45e0b7[_0x4d3a8f(0x179)]===_0x2b1695)[_0x4d3a8f(0x1dd)]((_0xb67765,_0x58cc5c)=>Number(_0xb67765[_0x4d3a8f(0x2c6)]||0x0)-Number(_0x58cc5c[_0x4d3a8f(0x2c6)]||0x0)),_0x34812e=_0x4fd3c2[_0x503ab4];_0x34812e&&(await _0x322deb(_0x16a95a[_0x4d3a8f(0x273)],_0x34812e['id']),console['log'](_0x4d3a8f(0x23c)));}else{if(window[_0x4d3a8f(0x236)]==='bootcamp'){const _0x1807ad=window['activeBootcampUserId'],_0xb4e5b1=window[_0x4d3a8f(0x186)],_0xe6c3a3=_0x4c0277[_0x4d3a8f(0x36b)][_0x4d3a8f(0x22c)](_0x2258f1=>_0x2258f1['id'][_0x4d3a8f(0x2d0)](_0x1807ad+'__')),_0x2b3869=[];_0xe6c3a3[_0x4d3a8f(0x1c1)](_0x3fbb22=>{const _0x44e70e=_0x4d3a8f;(_0x3fbb22['sets']||[])[_0x44e70e(0x1c1)](_0x2ee31a=>{_0x2b3869['push']({'docId':_0x3fbb22['id'],'set':_0x2ee31a});});});const _0x12c68f=_0x2b3869[_0xb4e5b1];if(_0x12c68f){const _0x41cb01=_0x4c0277[_0x4d3a8f(0x36b)][_0x4d3a8f(0x198)](_0x10a166=>_0x10a166['id']===_0x12c68f['docId']);if(_0x41cb01){const _0x12fad3=_0x41cb01[_0x4d3a8f(0x171)][_0x4d3a8f(0x2a7)](_0x12c68f[_0x4d3a8f(0x314)]);_0x12fad3>-0x1&&(_0x41cb01['sets'][_0x4d3a8f(0x264)](_0x12fad3,0x1),await _0xc2bac2(_0x16a95a[_0x4d3a8f(0x36b)],_0x41cb01['id'],{'sets':_0x41cb01[_0x4d3a8f(0x171)]}),console[_0x4d3a8f(0x318)](_0x4d3a8f(0x295)));}}}}closeConfirmDeleteSetLightbox(),_0x53808c();}catch(_0x171062){console['error'](_0x4d3a8f(0x36a),_0x171062),alert('ลบข้อมูลไม่สำเร็จ:\x20'+_0x171062[_0x4d3a8f(0x347)]);}};async function _0x108d25(){const _0x1d45ad=_0x57f393,_0x430faa=document['getElementById']('deletePlanUserId')['value'];if(!_0x430faa)return;try{await _0x322deb(_0x16a95a[_0x1d45ad(0x2f0)],_0x430faa);const _0x47e0ac=_0x4c0277[_0x1d45ad(0x273)][_0x1d45ad(0x22c)](_0xfe8f86=>_0xfe8f86[_0x1d45ad(0x179)]===_0x430faa),_0x303efc=_0x4c0277[_0x1d45ad(0x36b)][_0x1d45ad(0x22c)](_0x5da262=>_0x5da262['id'][_0x1d45ad(0x2d0)](_0x430faa+'__'));for(let _0x1e6817 of _0x47e0ac){await _0x322deb(_0x16a95a[_0x1d45ad(0x273)],_0x1e6817['id']);}for(let _0x4c8ae2 of _0x303efc){await _0x322deb(_0x16a95a[_0x1d45ad(0x36b)],_0x4c8ae2['id']);}_0x4c0277[_0x1d45ad(0x2f0)]=_0x4c0277[_0x1d45ad(0x2f0)][_0x1d45ad(0x22c)](_0xd9ce29=>_0xd9ce29['id']!==_0x430faa),_0x4c0277[_0x1d45ad(0x273)]=_0x4c0277[_0x1d45ad(0x273)][_0x1d45ad(0x22c)](_0x36040f=>_0x36040f[_0x1d45ad(0x179)]!==_0x430faa),_0x4c0277[_0x1d45ad(0x36b)]=_0x4c0277[_0x1d45ad(0x36b)]['filter'](_0x46d089=>!_0x46d089['id'][_0x1d45ad(0x2d0)](_0x430faa+'__')),_0x5c1ffc(),_0x1a0482();}catch(_0x4f2d59){console[_0x1d45ad(0x28f)]('Error\x20deleting\x20competitor\x20data:',_0x4f2d59);}}window['switchTab']=_0x1663ea,window[_0x57f393(0x33b)]=_0x17bbfe,window[_0x57f393(0x271)]=_0x441109,window[_0x57f393(0x2c3)]=_0x26a7c6,window[_0x57f393(0x1ad)]=_0x5ec51f,window[_0x57f393(0x1b7)]=_0x4beaa2,window[_0x57f393(0x1cf)]=_0x44241d,window[_0x57f393(0x31c)]=_0x51d889,window[_0x57f393(0x23b)]=_0x21ebf3,window['syncSelectedRound']=_0xfbfadb,window[_0x57f393(0x312)]=_0x396774,window['selectSubPort']=_0x31dea1,window[_0x57f393(0x202)]=_0x34da8e,window[_0x57f393(0x178)]=_0xe7cb04,window[_0x57f393(0x363)]=_0x1b6353,window[_0x57f393(0x2a2)]=_0x51f83a,window[_0x57f393(0x2f2)]=_0x4d8fe0,window[_0x57f393(0x2e1)]=_0xf2db9b,window[_0x57f393(0x15d)]=_0x2d4460,window[_0x57f393(0x17d)]=_0xf69080,window[_0x57f393(0x366)]=_0x43bff9,window[_0x57f393(0x371)]=_0x76256e,window[_0x57f393(0x2f9)]=_0x2f300e,window[_0x57f393(0x195)]=_0x2b8194,window['closeEditSubPortLightbox']=_0x21a419,window[_0x57f393(0x24f)]=_0x31aa88,window['deleteSubPort']=_0x3a59f0,window[_0x57f393(0x165)]=_0x2e5149,window['closeAddProductLightbox']=_0x4c5015,window[_0x57f393(0x1bc)]=_0x3e9479,window[_0x57f393(0x357)]=_0x5df856,window[_0x57f393(0x2fc)]=_0x1ef674,window['saveProductEdit']=_0x5d68a1,window[_0x57f393(0x258)]=_0x1db83d,window[_0x57f393(0x35d)]=_0x495cc6,window[_0x57f393(0x184)]=_0x4bb788,window[_0x57f393(0x370)]=_0x125767,window[_0x57f393(0x317)]=_0x324519,window['renderCompetitorsTable']=_0x1a0482,window['openCompetitorPortfolioSetsLightbox']=_0x11da74,window[_0x57f393(0x291)]=openCompetitorAccountSetsLightbox,window[_0x57f393(0x377)]=_0x2d786f,window[_0x57f393(0x217)]=_0x4f56ea,window[_0x57f393(0x2d3)]=_0x53808c,window['openConfirmDeletePlanLightbox']=_0x300f0b,window[_0x57f393(0x1ed)]=_0x5c1ffc,window[_0x57f393(0x360)]=_0x108d25,_0x21f379(),_0x4a8122();}()));function _0x33a2(_0x3a8936,_0x597503){_0x3a8936=_0x3a8936-0x15a;const _0x97f795=_0x97f7();let _0x33a294=_0x97f795[_0x3a8936];return _0x33a294;}function _0x97f7(){const _0x31541d=['MF\x20Type_A','เงินฝากออมทรัพย์','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','selectMainPort','productsPage','set','goalAndLimit','has','goToProductsPage','log','แก้ไขพอร์ตย่อย','subPortId','ไม่สามารถใช้งาน\x20Clipboard\x20Item\x20ได้','changeRoundsPageSize','ลบเมนู','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>แนวทางปรับพอร์ต</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>O\x20-\x20Operate</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','<tr><td\x20colspan=\x224\x22\x20class=\x22py-6\x20text-center\x20text-slate-400\x22>--\x20ไม่พบข้อมูลเมนูที่เปิดใช้งาน\x20--</td></tr>','BA\x20Life_Protection','product-mf-2','controlRoundSelect','tab-content-','collection','target','Portfolio\x20Planning:\x20','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20align-top\x20text-slate-700\x20font-normal\x22>','min','selectedPortTitle','\x20ชุดแผนงาน\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-middle\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openCompetitorAccountSetsLightbox(\x27','result','สุชาติ\x20พรหมมา','\x27)\x22\x20class=\x22w-8\x20h-8\x20rounded-lg\x20hover:bg-rose-50\x20hover:text-rose-600\x20flex\x20items-center\x20justify-center\x20text-slate-400\x20transition\x20mx-auto\x22\x20title=\x22ลบข้อมูลทีมนี้\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-trash-can\x20text-base\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','adminDeleteSetBtn','firebase','subPorts','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20','<span\x20','border-transparent','border-indigo-600','กรุณาเลือกพอร์ตหลักฝั่งซ้าย','round-2','selectedRoundId','roundLightbox','onclick=\x22','openAddRoundLightbox','activePortfolioIndex','productsPaginationButtons','delete','font-bold','actionplan2026_plan_user','Relation','<div\x20class=\x22text-xs\x20text-slate-400\x20italic\x20p-3\x20text-center\x20border\x20border-slate-200\x20rounded-xl\x22>ไม่มีข้อมูล\x20Financial\x20Solutions</div>','Debenture','employeeName','operate','plan_portfolio','message','setItem','innerHTML','editProductSubGroup','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>ผลกระทบที่อาจเกิดขึ้น</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','<tr><td\x20colspan=\x223\x22\x20class=\x22py-6\x20text-center\x20text-slate-400\x22>--\x20กรุณาเลือกพอร์ตหลัก\x20--</td></tr>','customerInfo','toBlob','product-ba-5','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20text-left\x20whitespace-pre-wrap\x20font-normal\x20text-slate-705\x22>','เมนูประกันสุขภาพ','แก้ไขเมนู','actionplan2026_products','product-ba-2','maxHeight','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20แผนงานที่\x20','openEditProductLightbox','size','roundsTotalCount','product-sn-1','height','editPortId','importProductsExcel','ไม่สามารถเขียนลง\x20Clipboard\x20ได้','product-sn-4','deletePlanConfirm','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','notice','savePort','<span\x20class=\x22ml-1\x20text-[10px]\x20text-slate-400\x20font-normal\x22>(','bg-white\x20text-slate-600\x20border-slate-200\x20hover:bg-slate-50','openAddSubPortLightbox','\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20title=\x22','editProductId','productsPageSize','ลบข้อมูลไม่สำเร็จ','customerDiagnosis','\x27)\x22\x20class=\x22px-3\x20py-1.5\x20rounded-lg\x20text-xs\x20font-bold\x20bg-orange-100\x20text-orange-700\x20hover:bg-orange-250\x20transition\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','querySelectorAll','addPortTemplate','employee-2','changeProductsGroupFilter','closeAddSubPortLightbox','Account\x20Planning\x20Bootcamp','plan_user','fa-trash-can','displayOrder','editProductGroup','renderActivePortfolioDetails','Interest\x20Linked\x20Note','slice','amount','18830wYkIck','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22hover:bg-slate-50\x20transition\x20border-b\x20border-slate-100\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-middle\x22>','deletePort(\x27','deletePort','value','รอบเปิดกิจกรรมเดือนกรกฎาคม','employee-1','Portfolio','currentAdminMailScale','opacity-100','now','openAddProductLightbox','style','roundLightboxTitle','adminPortfolioMailContentArea',')</span>','aim','port-3','fa-solid\x20fa-calendar-days','round-1','max','product-mf-4','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','sets','roundLightboxIcon','template','renderActiveBootcampDetails','disabled','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-indigo-600\x20font-semibold\x22>(Template:\x20','p,\x20span,\x20h2,\x20h3,\x20h4,\x20h5,\x20th,\x20td,\x20li,\x20strong','closeAddPortLightbox','userId','FX\x20Linked\x20Note','branch','Qualified\x20WB/PB','toggleExcelUploadArea','ports','Customer\x20Relation\x20-\x20Hot/\x20Super\x20Hot','ประกันพรีเมียม','ttb\x20reserve','<tr><td\x20colspan=\x225\x22\x20class=\x22py-6\x20text-center\x20text-slate-400\x22>--\x20ไม่พบข้อมูลรอบกิจกรรม\x20--</td></tr>','bg-emerald-50\x20text-emerald-700\x20border-emerald-100','changeProductsPageSize','bg-indigo-600\x20text-white\x20border-indigo-600','activeBootcampIndex','productGroupOptions','port-1','\x27,\x20','plan_activity_sub_items','className','%</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20border-r\x20border-slate-200\x20text-left\x20whitespace-pre-wrap\x20font-normal\x20text-slate-705\x22>','editSubPortLightbox','Account\x20Planning\x20Bootcamp\x20(แผนงานที่\x20','<option\x20value=\x22\x22>--\x20เลือกรอบกิจกรรม\x20--</option>','product-','BA\x20Life_Retirement','รอบทดสอบก่อนเปิดจริง','Index\x20Linked\x20Note','products','openEditSubPortLightbox','BA\x20Life_Saving','product-pf-2','find','plan_activity_items','openEditSubPortLightbox(\x27','apiKey','<span\x20class=\x22text-xs\x20text-slate-400\x20italic\x22>ไม่มีข้อมูล</span>','opportunity','getElementById','mailto:?subject=','สำนักงานใหญ่','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-slate-50\x20border\x20border-slate-200\x20px-4\x20py-1.5\x20rounded-xl\x20shadow-sm\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-bold\x20text-slate-400\x20mr-1\x22>ชื่อเรื่อง:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-sm\x20font-normal\x20text-slate-800\x22>','group','opacity-40\x20cursor-not-allowed','GROW','toLocaleString','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[10px]\x20font-bold\x20text-slate-500\x20mb-0.5\x22>จำนวนเงิน</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-normal\x20text-slate-800\x22>','<i\x20class=\x22fa-solid\x20fa-chevron-right\x22></i>','setAttribute','remove','8864744hrJcMe','get','addPortRoundId','openEditRoundLightbox','MF\x20Type_B','type','cursor-pointer','actionplan2026_sub_ports','auto','readAsArrayBuffer','กรุณากด\x20Ctrl+V\x20(หรือคลิกขวาแล้ววาง)\x20เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\x0a\x0a','expectedReturn','rounds','deleteRound','actionPlan','adjustAdminMailFontSize','act','data-orig-size','saveProduct','</button>','download','overview','<div\x20class=\x22text-center\x20py-12\x20text-slate-400\x22>--\x20ไม่พบแผนงาน\x20Account\x20Planning\x20ของทีมนี้\x20--</div>','forEach','addPortName','catch','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22overflow-x-auto\x20border\x20border-slate-200\x20rounded-xl\x20mt-1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<table\x20class=\x22w-full\x20text-xs\x20border-collapse\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22bg-[#f8fafc]\x20text-slate-700\x20border-b\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20rowspan=\x222\x22\x20class=\x22py-2.5\x20px-3\x20text-center\x20font-black\x20border-r\x20border-slate-200\x20w-[24%]\x22>รายการ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20colspan=\x224\x22\x20class=\x22py-2\x20px-3\x20text-center\x20font-black\x20border-b\x20border-slate-200\x22>โซลูชันที่จะแนะนำ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22bg-slate-100/80\x20text-slate-700\x20text-[12px]\x20text-center\x20border-b\x20border-slate-200\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20border-r\x20border-slate-200\x20w-[19%]\x22>ฉลาดใช้</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20border-r\x20border-slate-200\x20w-[19%]\x22>ฉลาดออมและลงทุน</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20border-r\x20border-slate-200\x20w-[19%]\x22>คุ้มครองอุ่นใจ</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22py-2\x20px-2\x20w-[19%]\x22>รอบรู้กู้ยืม</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Portfolio\x20Planning','plan_activity_sub_employees','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-[#e9f0f8]\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-xs\x20font-black\x20text-slate-800\x22>3.\x20Opportunity</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>','\x20ชุดแผนงาน\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-middle\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openConfirmDeletePlanLightbox(\x27','\x22\x20onclick=\x22selectSubPort(\x27','<tr><td\x20colspan=\x224\x22\x20class=\x22py-6\x20text-center\x20text-slate-400\x22>--\x20กรุณาเลือกพอร์ตย่อยเพื่อดูข้อมูลพนักงาน\x20--</td></tr>','deleteRound(\x27','text-rose-600','ใช้สำหรับสาธิตขั้นตอนการลงทะเบียนและตรวจสอบเมนูหลักในระบบ','product-ba-1','toggleRoundStatus','then','confirmDeleteSetBtn','competitorDetailsSubtitle','productsGroupFilter','productsTotalCount','financialSolutions','product-mf-6','closeConfirmDeleteSetLightbox','\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</button>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','BA\x20Life_Unit\x20linked','\x20(แผนงานที่\x20','product-cc-1','sort','ไม่ระบุกิจกรรม','click','28359dOmBAQ','editPortLightbox','onclick=\x22goToProductsPage(','includes','subPortActionButtons','selectedSubPortTitle','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>C\x20-\x20Consult</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','employee-3','ลบรอบกิจกรรม','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-3\x20gap-6\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-[#e9f0f8]\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-xs\x20font-black\x20text-slate-800\x22>1.\x20Portfolio\x20Overview</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>','editPortRoundId','subport-1','split','closeConfirmDeletePlanLightbox','roundDetails','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Content\x20Area\x20(Target\x20for\x20html2canvas)\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22adminPortfolioMailContentArea\x22\x20class=\x22p-8\x20overflow-y-auto\x20space-y-6\x20bg-white\x20border\x20border-slate-100\x20rounded-2xl\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-center\x20space-y-2\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22text-xl\x20font-black\x20text-slate-800\x22>Portfolio\x20Planning\x20(แผนงานที่\x20','fa-solid\x20fa-calendar-plus','subport-2','off','Relationship','<i\x20class=\x22fa-solid\x20fa-chevron-left\x22></i>','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20align-top\x20text-slate-600\x20font-normal\x20leading-relaxed\x20max-w-[420px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20align-top\x20text-slate-700\x20font-normal\x22>','แก้ไขข้อมูลรอบกิจกรรม','[admin]\x20โหลดข้อมูลหลักจาก\x20Firestore\x20ไม่สำเร็จ\x20ใช้ข้อมูลในเครื่องแทน','9706BxxBZc','write','openEditProductLightbox(\x27','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','actionplan2026_ports','hidden','gap','ceil','round-3','openAddPortLightbox','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22hover:bg-slate-50\x20transition\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20','\x27)\x22\x20class=\x22px-3\x20py-1.5\x20rounded-lg\x20text-xs\x20font-bold\x20bg-blue-100\x20text-blue-700\x20hover:bg-blue-250\x20transition\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','unshift','contains','<button\x20type=\x22button\x22\x20onclick=\x22','smartProtect','parentPortId','toLowerCase','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22min-w-8\x20h-8\x20px-2\x20rounded-lg\x20border\x20text-[11px]\x20font-bold\x20transition\x20','Ultimate\x20GA\x20Series','172HElxCi','initializeApp','กรุงเทพฯ','roundEditId','addPortDisplayOrder','ไม่ระบุรอบ','all','addProductUnit','opacity-50','competitorDetailsLightbox','sendAdminPortfolioMailAsEmail','text-transparent\x20select-none','MF\x20Type_C','addSubPortType','3588663bDIxkZ','join','adminPortfolioMailBtn','portfolioPlanning','[admin]\x20โหลด/สร้าง\x20plan_products\x20บน\x20Firestore\x20ไม่สำเร็จ\x20—\x20ตรวจสอบ\x20Firestore\x20Security\x20Rules\x20ให้อนุญาตคอลเลกชันนี้\x20(ตอนนี้ใช้ข้อมูลในเครื่องแทน)','bootcamp_plan_','round-','addPortLightbox','length','product-mf-1','ประกันสุขภาพ','portsRoundSelect','fontSize','เมนูกองทุนตราสารหนี้','adjustmentGuideline','รอบตัวอย่างสำหรับเปิดรับผู้เข้าแข่งขันชุดแรกและทดสอบเมนูที่เปิดใช้งาน','บาท','filter','\x20cursor-pointer\x20hover:bg-emerald-100','order','productsTableBody','activePortfolioUserId','<li\x20class=\x22text-xs\x20text-slate-700\x20list-disc\x20list-inside\x22>','actionplan2026_plan_customer_diagnosis','addSubPortParentId','แผนงานจัดพอร์ตทั้งหมดของทีม\x20','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-left\x20align-middle\x20font-bold\x20text-slate-900\x22>','deleteSetType','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20','idealPortfolio','smartSpend','warn','changePortsRound','ลบแผนงาน\x20Portfolio\x20สำเร็จ','activityItem','7948496HIDBXX','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22hover:bg-slate-50\x20transition\x20cursor-pointer\x20','<option\x20value=\x22all\x22>ทุกหมวด\x20Group</option>','smartSave','XLSX','roundStatus','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20text-center\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-center\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','</ul>','toggle','subGroup','classList','GRAB','clipboard','แผนงานบูทแคมป์ทั้งหมดของทีม\x20','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[10px]\x20font-bold\x20text-slate-500\x20mb-0.5\x22>อัตราผลตอบแทนที่คาดหวัง</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-xs\x20font-normal\x20text-slate-800\x22>','<tr><td\x20colspan=\x223\x22\x20class=\x22py-6\x20text-center\x20text-slate-400\x22>--\x20ยังไม่มีข้อมูลผลิตภัณฑ์\x20--</td></tr>','actionplan2026_rounds','saveSubPortEditManual','ราย','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>N\x20-\x20Notice</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','port-','href','adminBootcampMailContentArea','&lt;','&gt;','map','deleteProduct','product-ba-3','bg-orange-50\x20ring-1\x20ring-inset\x20ring-orange-200','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-[11px]\x20text-slate-400\x20mt-0.5\x22>ลำดับ\x20','editPortStatus','tabBtn-','&#39;','addProductGroup','ready','\x27)\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22font-bold\x20text-slate-900\x22>','array','cursor-not-allowed','splice','roundRegistrationCount','productUnitOptions','files','plan_rounds','confirmDeleteSetLightbox','editPortTemplate','selectedEmployeeSubPortTitle','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','roundId','confirmDeleteSetInput','\x20class=\x22inline-flex\x20items-center\x20px-2.5\x20py-1\x20rounded-full\x20border\x20text-[11px]\x20font-bold\x20transition-colors\x20','เงินฝาก','closeRoundLightbox','<div\x20class=\x22text-center\x20py-12\x20text-slate-400\x22>--\x20ไม่พบแผนงาน\x20Portfolio\x20Planning\x20ของทีมนี้\x20--</div>','portfolioSets','reduce','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgorange\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>I\x20-\x20Improve</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','some','toggleRoundStatus(\x27','dataset','currentPortfolio','data','docs','product-rel-1','</h5>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-2\x20gap-4\x20mb-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22block\x20text-[12px]\x20text-slate-400\x22>Target</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>','addPortStatus','Deposit','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20align-top\x20border-r\x20border-slate-200\x20text-left\x20whitespace-pre-wrap\x20font-normal\x20text-slate-705\x22>','plan_','competitors','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20align-top\x20text-center\x22>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</table>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','editProductUnit','<ul\x20class=\x22space-y-1\x22>','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>T\x20-\x20Track</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','text-indigo-600','text-slate-500','openEditPortLightbox(\x27','actionplan2026_employees','subPortExcelUploadArea','createElement','ลบพอร์ตย่อย','error','unit','openCompetitorAccountSetsLightbox','fa-pen-to-square','Customer\x20Diagnosis','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22inline-flex\x20items-center\x20justify-center\x20min-w-10\x20px-2.5\x20py-1\x20rounded-full\x20bg-indigo-50\x20text-indigo-700\x20border\x20border-indigo-100\x20font-bold\x20text-[11px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','ลบแผนงาน\x20Bootcamp\x20สำเร็จ','&body=','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Diagnosis\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x22>2</span>\x20Portfolio\x20Diagnosis\x20&\x20Improvement</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-3\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>เป้าหมายและข้อจำกัด</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>',')</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-top\x22>','addSubPortLightbox','details','getAttribute','toDataURL','แก้ไขผลิตภัณฑ์','isArray','ประกันสุขภาพแบบมาตรฐาน','replaceAll','คัดลอกรูปภาพแผนงานลง\x20Clipboard\x20เรียบร้อยแล้ว','openEditPortLightbox','product-pf-1','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-[11px]\x20text-slate-500\x20mt-0.5\x20font-normal\x20flex\x20flex-wrap\x20gap-x-2\x20gap-y-0.5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>รอบกิจกรรม:\x20','<tr><td\x20colspan=\x223\x22\x20class=\x22py-6\x20text-center\x20text-slate-400\x22>--\x20ยังไม่มีพอร์ตย่อยในหมวดนี้\x20--</td></tr>','editSubPortId','indexOf','addProductSubGroup','findIndex','firebaseConfig','confirmDeletePlanLightbox','</div>','portfolio','</option>','\x20cursor-pointer\x20hover:bg-slate-200','</span>','registrationCount','รอบสำหรับตรวจสอบข้อมูลก่อนใช้งานจริงและเตรียมความพร้อมของเมนูทั้งหมด','trim','\x27)\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22inline-flex\x20items-center\x20justify-center\x20min-w-9\x20px-2.5\x20py-1\x20rounded-full\x20bg-slate-100\x20text-slate-700\x20border\x20border-slate-200\x20font-bold\x20text-[11px]\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',':\x20<strong\x20class=\x22text-blue-800\x22>','visible','portfolioSymptom','GUARD','rows','bg-orange-500\x20text-white\x20shadow-sm','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20font-semibold\x20text-slate-700\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','track','port-2','New\x20to\x20Wealth','openConfirmDeleteSetLightbox','selectedPortId','4440560hvaDka','</li>','saveRound','roundName','editSubPortType','setIndex','name','add','apps','selectedSubPortId','competitorDetailsTitle','topic','font-black\x20text-slate-800','utils','editPortName','startsWith','bg-blue-600\x20text-white\x20shadow-sm','employees','closeCompetitorDetailsLightbox','overflow','product-mf-5','portsTableBody','<option\x20value=\x22','108294LKdxWX','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>พอร์ตปัจจุบันที่ลูกค้ามี</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','Qualified\x20Wealth','checkDeleteSetInput','<option\x20value=\x22all\x22>','activeBootcampUserId',')\x20โดย\x20','duration','push','savePortEdit','55sfOFMq','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-top\x22>','Health\x20Basic',')</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20font-semibold\x20text-blue-600\x22>ผู้นำเสนอแผนงาน:\x20','\x22></option>','.png','doc','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Content\x20Area\x20(Target\x20for\x20html2canvas)\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22adminBootcampMailContentArea\x22\x20class=\x22p-8\x20overflow-y-auto\x20space-y-6\x20bg-white\x20border\x20border-slate-100\x20rounded-2xl\x20shadow-sm\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-center\x20space-y-2\x20shrink-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22text-xl\x20font-black\x20text-slate-800\x22>','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20A-C-T-I-O-N\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22text-xs\x20font-black\x20text-slate-700\x20flex\x20items-center\x20gap-2\x22><span\x20class=\x22w-5\x20h-5\x20rounded-full\x20bg-blue-800\x20text-white\x20flex\x20items-center\x20justify-center\x20text-[10px]\x22>1</span>\x20Customer\x20Profile\x20&\x20Action\x20Plan</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20grid-cols-1\x20md:grid-cols-3\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>A\x20-\x20Aim</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>','\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22inline-flex\x20items-center\x20justify-center\x20w-8\x20h-8\x20rounded-lg\x20border\x20border-slate-200\x20text-slate-500\x20hover:text-slate-700\x20hover:bg-slate-50\x20transition\x20','subport-3','textContent','onclick','none','users','bg-slate-100\x20text-slate-500\x20border-slate-200','closeEditPortLightbox','improve','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20text-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-center\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','actionplan2026_','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-2.5\x20px-4\x20align-top\x20font-bold\x20text-slate-900\x22>','แสดงทุกรอบ','diagnosis','saveSubPortManual','status','Sheets','closeEditProductLightbox','นฤมล\x20พูลสวัสดิ์','Delete\x20Page',')\x22\x20class=\x22px-4\x20py-2\x20rounded-lg\x20text-xs\x20font-bold\x20transition\x20','<div\x20class=\x22flex\x20flex-wrap\x20gap-2\x20border-b\x20border-slate-200\x20pb-3\x20mb-4\x20shrink-0\x22>','consult','เชียงใหม่','openEditRoundLightbox(\x27','บัตร','ปิดใช้งาน','replace','image/png','employee-4','ion','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-top\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20items-center\x20justify-center\x20gap-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22py-3\x20px-4\x20text-center\x20align-middle\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22openCompetitorPortfolioSetsLightbox(\x27','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bg-[#e9f0f8]\x20border\x20border-slate-200\x20rounded-2xl\x20p-5\x20space-y-2\x20text-left\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4\x20class=\x22text-xs\x20font-black\x20text-slate-800\x22>2.\x20Gap</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-xs\x20text-slate-700\x20whitespace-pre-wrap\x22>','onload','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22border\x20border-slate-200\x20rounded-xl\x20overflow-hidden\x20flex\x20flex-col\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22bgblue\x20text-white\x20text-center\x20text-[12px]\x20font-bold\x20py-2\x20px-2\x22>พอร์ตที่ควรเป็นตามเป้าหมาย</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22p-3\x20text-xs\x20text-slate-700\x20whitespace-pre-wrap\x20font-normal\x22>'];_0x97f7=function(){return _0x31541d;};return _0x97f7();}
+(function () {
+    const defaultRounds = [
+        {
+            id: 'round-1',
+            name: 'รอบเปิดกิจกรรมเดือนกรกฎาคม',
+            details: 'รอบตัวอย่างสำหรับเปิดรับผู้เข้าแข่งขันชุดแรกและทดสอบเมนูที่เปิดใช้งาน',
+            registrationCount: 18,
+            status: 'on',
+        },
+        {
+            id: 'round-2',
+            name: 'รอบฝึกอบรมทีมที่ 2',
+            details: 'ใช้สำหรับสาธิตขั้นตอนการลงทะเบียนและตรวจสอบเมนูหลักในระบบ',
+            registrationCount: 11,
+            status: 'on',
+        },
+        {
+            id: 'round-3',
+            name: 'รอบทดสอบก่อนเปิดจริง',
+            details: 'รอบสำหรับตรวจสอบข้อมูลก่อนใช้งานจริงและเตรียมความพร้อมของเมนูทั้งหมด',
+            registrationCount: 6,
+            status: 'off',
+        },
+    ];
+
+    const defaultPorts = [
+        {
+            id: 'port-1',
+            roundId: 'round-1',
+            displayOrder: 1,
+            name: 'เมนูประกันสุขภาพ',
+            status: 'on',
+        },
+        {
+            id: 'port-2',
+            roundId: 'round-1',
+            displayOrder: 2,
+            name: 'เมนูเงินฝาก',
+            status: 'on',
+        },
+        {
+            id: 'port-3',
+            roundId: 'round-2',
+            displayOrder: 1,
+            name: 'เมนูกองทุนตราสารหนี้',
+            status: 'off',
+        },
+    ];
+
+    const defaultSubPorts = [
+        {
+            id: 'subport-1',
+            roundId: 'round-1',
+            parentPortId: 'port-1',
+            type: 'ประกันสุขภาพแบบมาตรฐาน',
+            name: 'Health Basic',
+            displayOrder: 1,
+            status: 'on',
+        },
+        {
+            id: 'subport-2',
+            roundId: 'round-1',
+            parentPortId: 'port-1',
+            type: 'ประกันสุขภาพแบบพรีเมียม',
+            name: 'Health Plus',
+            displayOrder: 2,
+            status: 'on',
+        },
+        {
+            id: 'subport-3',
+            roundId: 'round-1',
+            parentPortId: 'port-2',
+            type: 'เงินฝากออมทรัพย์',
+            name: 'Savings Flex',
+            displayOrder: 1,
+            status: 'on',
+        },
+    ];
+
+    const defaultEmployees = [
+        {
+            id: 'employee-1',
+            subPortId: 'subport-1',
+            employeeName: 'กิตติพงษ์ แสนดี',
+            branch: 'สำนักงานใหญ่',
+            department: 'ประกันสุขภาพ',
+            status: 'on',
+        },
+        {
+            id: 'employee-2',
+            subPortId: 'subport-1',
+            employeeName: 'อรทัย ศรีสุข',
+            branch: 'กรุงเทพฯ',
+            department: 'ประกันสุขภาพ',
+            status: 'on',
+        },
+        {
+            id: 'employee-3',
+            subPortId: 'subport-2',
+            employeeName: 'สุชาติ พรหมมา',
+            branch: 'เชียงใหม่',
+            department: 'ประกันพรีเมียม',
+            status: 'off',
+        },
+        {
+            id: 'employee-4',
+            subPortId: 'subport-3',
+            employeeName: 'นฤมล พูลสวัสดิ์',
+            branch: 'ภูเก็ต',
+            department: 'เงินฝาก',
+            status: 'on',
+        },
+    ];
+
+    const defaultProducts = [
+        { id: 'product-deposit-1', group: 'Deposit', subGroup: 'Deposit Non_TXN', unit: 'บาท', order: 1 },
+        { id: 'product-deposit-2', group: 'Deposit', subGroup: 'FCD', unit: 'บาท', order: 2 },
+        { id: 'product-mf-1', group: 'MF', subGroup: 'Debenture', unit: 'บาท', order: 3 },
+        { id: 'product-mf-2', group: 'MF', subGroup: 'MF Type_B', unit: 'บาท', order: 4 },
+        { id: 'product-mf-3', group: 'MF', subGroup: 'Ultimate GA Series', unit: 'บาท', order: 5 },
+        { id: 'product-mf-4', group: 'MF', subGroup: 'MF Type_C', unit: 'บาท', order: 6 },
+        { id: 'product-mf-5', group: 'MF', subGroup: 'MF Type_A', unit: 'บาท', order: 7 },
+        { id: 'product-mf-6', group: 'MF', subGroup: 'MF Term Fund', unit: 'บาท', order: 8 },
+        { id: 'product-sn-1', group: 'SN', subGroup: 'Index Linked Note', unit: 'บาท', order: 9 },
+        { id: 'product-sn-2', group: 'SN', subGroup: 'FX Linked Note', unit: 'บาท', order: 10 },
+        { id: 'product-sn-3', group: 'SN', subGroup: 'Interest Linked Note', unit: 'บาท', order: 11 },
+        { id: 'product-sn-4', group: 'SN', subGroup: 'Equity Linked Note', unit: 'บาท', order: 12 },
+        { id: 'product-ba-1', group: 'BA', subGroup: 'BA Life_Saving', unit: 'บาท', order: 13 },
+        { id: 'product-ba-2', group: 'BA', subGroup: 'BA Life_Health', unit: 'บาท', order: 14 },
+        { id: 'product-ba-3', group: 'BA', subGroup: 'BA Life_Protection', unit: 'บาท', order: 15 },
+        { id: 'product-ba-4', group: 'BA', subGroup: 'BA Life_Unit linked', unit: 'บาท', order: 16 },
+        { id: 'product-ba-5', group: 'BA', subGroup: 'BA Life_Retirement', unit: 'บาท', order: 17 },
+        { id: 'product-cc-1', group: 'Credit card', subGroup: 'ttb reserve', unit: 'บัตร', order: 18 },
+        { id: 'product-pf-1', group: 'Portfolio', subGroup: 'Qualified Wealth', unit: 'ราย', order: 19 },
+        { id: 'product-pf-2', group: 'Portfolio', subGroup: 'New to Wealth', unit: 'ราย', order: 20 },
+        { id: 'product-rel-1', group: 'Relationship', subGroup: 'Customer Relation - Hot/ Super Hot', unit: 'ราย', order: 21 },
+    ];
+
+    const state = {
+        rounds: defaultRounds.map((round) => ({ ...round })),
+        ports: defaultPorts.map((port) => ({ ...port })),
+        subPorts: defaultSubPorts.map((subPort) => ({ ...subPort })),
+        employees: defaultEmployees.map((employee) => ({ ...employee })),
+        products: defaultProducts.map((product) => ({ ...product })),
+        selectedRoundId: 'all',
+        selectedPortId: '',
+        selectedSubPortId: '',
+        productsPageSize: 10,
+        productsPage: 1,
+        productsGroupFilter: 'all',
+        users: [],
+        portfolioSets: [],
+        customerDiagnosis: [],
+    };
+
+    const storageKeys = {
+        rounds: 'actionplan2026_rounds',
+        ports: 'actionplan2026_ports',
+        subPorts: 'actionplan2026_sub_ports',
+        employees: 'actionplan2026_employees',
+        products: 'actionplan2026_products',
+        users: 'actionplan2026_plan_user',
+        portfolioSets: 'actionplan2026_plan_portfolio',
+        customerDiagnosis: 'actionplan2026_plan_customer_diagnosis',
+    };
+
+    const firestoreCollections = {
+        rounds: 'plan_rounds',
+        ports: 'plan_activity_items',
+        subPorts: 'plan_activity_sub_items',
+        employees: 'plan_activity_sub_employees',
+        products: 'plan_products',
+        users: 'plan_user',
+        portfolioSets: 'plan_portfolio',
+        customerDiagnosis: 'plan_customer_diagnosis',
+    };
+
+    const firebaseState = {
+        db: null,
+        ready: false,
+    };
+
+    const roundSelectIds = [
+        'portsRoundSelect',
+        'competitorsRoundSelect',
+    ];
+
+    function cloneData(items) {
+        return items.map((item) => ({ ...item }));
+    }
+
+    function isFirebaseConfigured() {
+        return Boolean(window.firebase && window.firebaseConfig && window.firebaseConfig.apiKey);
+    }
+
+    function initFirebase() {
+        if (!isFirebaseConfigured()) {
+            firebaseState.ready = false;
+            firebaseState.db = null;
+            return;
+        }
+
+        try {
+            if (!window.firebase.apps.length) {
+                window.firebase.initializeApp(window.firebaseConfig);
+            }
+            firebaseState.db = window.firebase.firestore();
+            firebaseState.ready = true;
+        } catch (error) {
+            firebaseState.db = null;
+            firebaseState.ready = false;
+        }
+    }
+
+    function readCachedData(key, fallback) {
+        try {
+            const rawValue = window.localStorage.getItem(key);
+            if (!rawValue) {
+                return cloneData(fallback);
+            }
+
+            const parsedValue = JSON.parse(rawValue);
+            return Array.isArray(parsedValue) ? parsedValue : cloneData(fallback);
+        } catch (error) {
+            return cloneData(fallback);
+        }
+    }
+
+    function writeCachedData(key, value) {
+        try {
+            window.localStorage.setItem(key, JSON.stringify(value));
+        } catch (error) {
+        }
+    }
+
+    function hydrateLocalFallback() {
+        state.rounds = readCachedData(storageKeys.rounds, defaultRounds);
+        state.ports = readCachedData(storageKeys.ports, defaultPorts);
+        state.subPorts = readCachedData(storageKeys.subPorts, defaultSubPorts);
+        state.employees = readCachedData(storageKeys.employees, defaultEmployees);
+        state.products = readCachedData(storageKeys.products, defaultProducts);
+        state.users = readCachedData(storageKeys.users, []);
+        state.portfolioSets = readCachedData(storageKeys.portfolioSets, []);
+        state.customerDiagnosis = readCachedData(storageKeys.customerDiagnosis, []);
+    }
+
+    function persistLocalSnapshot() {
+        writeCachedData(storageKeys.rounds, state.rounds);
+        writeCachedData(storageKeys.ports, state.ports);
+        writeCachedData(storageKeys.subPorts, state.subPorts);
+        writeCachedData(storageKeys.employees, state.employees);
+        writeCachedData(storageKeys.products, state.products);
+        writeCachedData(storageKeys.users, state.users);
+        writeCachedData(storageKeys.portfolioSets, state.portfolioSets);
+        writeCachedData(storageKeys.customerDiagnosis, state.customerDiagnosis);
+    }
+
+    async function loadFirestoreCollection(collectionName) {
+        if (!firebaseState.ready || !firebaseState.db) {
+            return [];
+        }
+
+        const snapshot = await firebaseState.db.collection(collectionName).get();
+        return snapshot.docs.map((document) => ({ id: document.id, ...document.data() }));
+    }
+
+    async function loadCollectionSafe(collectionName, fallback = []) {
+        try {
+            return await loadFirestoreCollection(collectionName);
+        } catch (err) {
+            console.warn(`[admin] Failed to load collection ${collectionName}:`, err);
+            return readCachedData(collectionName.replace('plan_', 'actionplan2026_'), fallback);
+        }
+    }
+
+    async function upsertFirestoreDocument(collectionName, documentId, payload) {
+        if (!firebaseState.ready || !firebaseState.db) {
+            return;
+        }
+
+        await firebaseState.db.collection(collectionName).doc(documentId).set({
+            ...payload,
+            updatedAt: Date.now(),
+        }, { merge: true });
+    }
+
+    async function deleteFirestoreDocument(collectionName, documentId) {
+        if (!firebaseState.ready || !firebaseState.db) {
+            return;
+        }
+
+        await firebaseState.db.collection(collectionName).doc(documentId).delete();
+    }
+
+    async function loadAdminData() {
+        if (firebaseState.ready) {
+            try {
+                const [
+                    loadedRounds,
+                    loadedPorts,
+                    loadedSubPorts,
+                    loadedEmployees,
+                    loadedUsers,
+                    loadedPortfolioSets,
+                    loadedCustomerDiagnosis
+                ] = await Promise.all([
+                    loadCollectionSafe(firestoreCollections.rounds, defaultRounds),
+                    loadCollectionSafe(firestoreCollections.ports, defaultPorts),
+                    loadCollectionSafe(firestoreCollections.subPorts, defaultSubPorts),
+                    loadCollectionSafe(firestoreCollections.employees, defaultEmployees),
+                    loadCollectionSafe(firestoreCollections.users, []),
+                    loadCollectionSafe(firestoreCollections.portfolioSets, []),
+                    loadCollectionSafe(firestoreCollections.customerDiagnosis, []),
+                ]);
+
+                state.users = loadedUsers || [];
+                state.portfolioSets = loadedPortfolioSets || [];
+                state.customerDiagnosis = loadedCustomerDiagnosis || [];
+
+                if (loadedRounds.length || loadedPorts.length || loadedSubPorts.length || loadedEmployees.length) {
+                    state.rounds = loadedRounds.length ? loadedRounds : cloneData(defaultRounds);
+                    state.ports = loadedPorts.length ? loadedPorts : cloneData(defaultPorts);
+                    state.subPorts = loadedSubPorts.length ? loadedSubPorts : cloneData(defaultSubPorts);
+                    state.employees = loadedEmployees.length ? loadedEmployees : cloneData(defaultEmployees);
+                } else {
+                    state.rounds = cloneData(defaultRounds);
+                    state.ports = cloneData(defaultPorts);
+                    state.subPorts = cloneData(defaultSubPorts);
+                    state.employees = cloneData(defaultEmployees);
+
+                    await Promise.all([
+                        ...state.rounds.map((round) => upsertFirestoreDocument(firestoreCollections.rounds, round.id, round)),
+                        ...state.ports.map((port) => upsertFirestoreDocument(firestoreCollections.ports, port.id, port)),
+                        ...state.subPorts.map((subPort) => upsertFirestoreDocument(firestoreCollections.subPorts, subPort.id, subPort)),
+                        ...state.employees.map((employee) => upsertFirestoreDocument(firestoreCollections.employees, employee.id, employee)),
+                    ]);
+                }
+
+                persistLocalSnapshot();
+            } catch (error) {
+                console.error('[admin] โหลดข้อมูลหลักจาก Firestore ไม่สำเร็จ ใช้ข้อมูลในเครื่องแทน', error);
+                hydrateLocalFallback();
+            }
+
+            // Products handled in an isolated block so a failure here (e.g. Firestore
+            // Rules blocking plan_products) never aborts the collections above, and so
+            // the real error is surfaced in the console instead of being swallowed.
+            try {
+                const loadedProducts = await loadFirestoreCollection(firestoreCollections.products);
+                state.products = loadedProducts.length ? loadedProducts : cloneData(defaultProducts);
+                if (!loadedProducts.length) {
+                    await Promise.all(
+                        state.products.map((product) => upsertFirestoreDocument(firestoreCollections.products, product.id, product))
+                    );
+                }
+                writeCachedData(storageKeys.products, state.products);
+            } catch (error) {
+                console.error('[admin] โหลด/สร้าง plan_products บน Firestore ไม่สำเร็จ — ตรวจสอบ Firestore Security Rules ให้อนุญาตคอลเลกชันนี้ (ตอนนี้ใช้ข้อมูลในเครื่องแทน)', error);
+                state.products = readCachedData(storageKeys.products, defaultProducts);
+            }
+        } else {
+            hydrateLocalFallback();
+        }
+
+        populateRoundDropdowns();
+        const activeRound = state.rounds.find((round) => round.status === 'on') || state.rounds[0] || null;
+        syncSelectedRound(activeRound ? activeRound.id : 'all');
+        renderRoundsTable();
+        renderPortsTable();
+        populateProductGroupFilter();
+        renderProductsTable();
+        registerRealtimeListeners();
+    }
+
+    function registerRealtimeListeners() {
+        if (!firebaseState.ready || !firebaseState.db) return;
+
+        firebaseState.db.collection(firestoreCollections.users).onSnapshot(snapshot => {
+            state.users = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            renderCompetitorsTable();
+            if (!document.getElementById('competitorDetailsLightbox').classList.contains('hidden')) {
+                if (window.activePortfolioUserId) {
+                    renderActivePortfolioDetails(window.activePortfolioUserId, window.activePortfolioIndex);
+                } else if (window.activeBootcampUserId) {
+                    renderActiveBootcampDetails(window.activeBootcampUserId, window.activeBootcampIndex);
+                }
+            }
+        });
+
+        firebaseState.db.collection(firestoreCollections.portfolioSets).onSnapshot(snapshot => {
+            state.portfolioSets = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            renderCompetitorsTable();
+            if (!document.getElementById('competitorDetailsLightbox').classList.contains('hidden') && window.activePortfolioUserId) {
+                renderActivePortfolioDetails(window.activePortfolioUserId, window.activePortfolioIndex);
+            }
+        });
+
+        firebaseState.db.collection(firestoreCollections.customerDiagnosis).onSnapshot(snapshot => {
+            state.customerDiagnosis = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            renderCompetitorsTable();
+            if (!document.getElementById('competitorDetailsLightbox').classList.contains('hidden') && window.activeBootcampUserId) {
+                renderActiveBootcampDetails(window.activeBootcampUserId, window.activeBootcampIndex);
+            }
+        });
+    }
+
+    function escapeHtml(value) {
+        return String(value)
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;')
+            .replaceAll('"', '&quot;')
+            .replaceAll("'", '&#39;');
+    }
+
+    function getRoundById(roundId) {
+        return state.rounds.find((round) => round.id === roundId) || null;
+    }
+
+    function getRoundName(roundId) {
+        const round = getRoundById(roundId);
+        return round ? round.name : 'ไม่ระบุรอบ';
+    }
+
+    function statusBadge(status, onClickAttr = '') {
+        const isActive = status === 'on';
+        const className = isActive
+            ? 'bg-emerald-50 text-emerald-700 border-emerald-100' + (onClickAttr ? ' cursor-pointer hover:bg-emerald-100' : '')
+            : 'bg-slate-100 text-slate-500 border-slate-200' + (onClickAttr ? ' cursor-pointer hover:bg-slate-200' : '');
+        const clickHandler = onClickAttr ? `onclick="${onClickAttr}"` : '';
+        return `<span ${clickHandler} class="inline-flex items-center px-2.5 py-1 rounded-full border text-[11px] font-bold transition-colors ${className}">${isActive ? 'เปิดใช้งาน' : 'ปิดใช้งาน'}</span>`;
+    }
+
+    function rowActionButton(className, icon, label, onClick) {
+        return `<button type="button" onclick="${onClick}"
+            class="inline-flex items-center justify-center w-8 h-8 rounded-lg border border-slate-200 text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition ${className}"
+            title="${label}">
+            <i class="fa-solid ${icon}"></i>
+        </button>`;
+    }
+
+    function populateRoundSelect(selectId, includeAllLabel) {
+        const select = document.getElementById(selectId);
+        if (!select) {
+            return;
+        }
+
+        const currentValue = select.value || (includeAllLabel ? 'all' : '');
+        const placeholder = includeAllLabel
+            ? `<option value="all">${includeAllLabel}</option>`
+            : '<option value="">-- เลือกรอบกิจกรรม --</option>';
+
+        const options = state.rounds
+            .map((round) => `<option value="${round.id}">${escapeHtml(round.name)}</option>`)
+            .join('');
+
+        select.innerHTML = placeholder + options;
+
+        if (currentValue && [...select.options].some((option) => option.value === currentValue)) {
+            select.value = currentValue;
+        } else if (!includeAllLabel && state.rounds.length) {
+            select.value = state.rounds[0].id;
+        } else if (includeAllLabel) {
+            select.value = currentValue === 'all' ? 'all' : 'all';
+        }
+    }
+
+    function populateRoundDropdowns() {
+        roundSelectIds.forEach((selectId) => populateRoundSelect(selectId, selectId === 'controlRoundSelect' ? '-- โหลดข้อมูลรอบ --' : 'แสดงทุกรอบ'));
+
+        const portRoundOptions = state.rounds
+            .map((round) => `<option value="${round.id}">${escapeHtml(round.name)}</option>`)
+            .join('');
+
+        ['addPortRoundId', 'editPortRoundId'].forEach((selectId) => {
+            const select = document.getElementById(selectId);
+            if (select) {
+                select.innerHTML = '<option value="">-- เลือกรอบกิจกรรม --</option>' + portRoundOptions;
+                if (state.rounds.length) {
+                    select.value = select.dataset.defaultRound || state.rounds[0].id;
+                }
+            }
+        });
+    }
+
+    function renderRoundsTable() {
+        const tableBody = document.getElementById('roundsTableBody');
+        const totalCount = document.getElementById('roundsTotalCount');
+        if (!tableBody) {
+            return;
+        }
+
+        if (totalCount) {
+            totalCount.textContent = String(state.rounds.length);
+        }
+
+        if (!state.rounds.length) {
+            tableBody.innerHTML = '<tr><td colspan="5" class="py-6 text-center text-slate-400">-- ไม่พบข้อมูลรอบกิจกรรม --</td></tr>';
+            return;
+        }
+
+        const getUniqueRegistrationCount = (roundId) => {
+            if (!state.users || !state.users.length) return 0;
+            const names = state.users
+                .filter(u => u.roundId === roundId && u.name)
+                .map(u => u.name.trim().toLowerCase());
+            return new Set(names).size;
+        };
+
+        tableBody.innerHTML = state.rounds.map((round, index) => `
+            <tr class="hover:bg-slate-50 transition">
+                <td class="py-3 px-4 align-top">
+                    <div class="font-bold text-slate-900">${escapeHtml(round.name)}</div>
+                    <div class="text-[11px] text-slate-400 mt-0.5">ลำดับ ${index + 1}</div>
+                </td>
+                <td class="py-3 px-4 align-top text-slate-600 font-normal leading-relaxed max-w-[420px]">
+                    ${escapeHtml(round.details)}
+                </td>
+                <td class="py-3 px-4 text-center align-top">
+                    <span class="inline-flex items-center justify-center min-w-10 px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100 font-bold text-[11px]">
+                        ${getUniqueRegistrationCount(round.id)}
+                    </span>
+                </td>
+                <td class="py-3 px-4 text-center align-top">${statusBadge(round.status, `toggleRoundStatus('${round.id}')`)}</td>
+                <td class="py-3 px-4 text-center align-top">
+                    <div class="flex items-center justify-center gap-2">
+                        ${rowActionButton('text-indigo-600', 'fa-pen-to-square', 'แก้ไขรอบกิจกรรม', `openEditRoundLightbox('${round.id}')`)}
+                        ${rowActionButton('text-rose-600', 'fa-trash-can', 'ลบรอบกิจกรรม', `deleteRound('${round.id}')`)}
+                    </div>
+                </td>
+            </tr>
+        `).join('');
+    }
+
+    function renderPortsTable() {
+        const tableBody = document.getElementById('portsTableBody');
+        if (!tableBody) {
+            return;
+        }
+
+        const filteredPorts = state.selectedRoundId === 'all'
+            ? state.ports
+            : state.ports.filter((port) => port.roundId === state.selectedRoundId);
+
+        if (!filteredPorts.some((port) => port.id === state.selectedPortId)) {
+            state.selectedPortId = filteredPorts[0] ? filteredPorts[0].id : '';
+        }
+
+        if (!filteredPorts.length) {
+            tableBody.innerHTML = '<tr><td colspan="4" class="py-6 text-center text-slate-400">-- ไม่พบข้อมูลเมนูที่เปิดใช้งาน --</td></tr>';
+            updateSelectedPortContext();
+            renderSubPortsTable();
+            return;
+        }
+
+        tableBody.innerHTML = filteredPorts
+            .slice()
+            .sort((left, right) => Number(left.displayOrder) - Number(right.displayOrder))
+            .map((port, index) => `
+                <tr class="hover:bg-slate-50 transition cursor-pointer ${state.selectedPortId === port.id ? 'bg-orange-50 ring-1 ring-inset ring-orange-200' : ''}" onclick="selectMainPort('${port.id}')">
+                    <td class="py-3 px-4 text-center align-top">
+                        <span class="inline-flex items-center justify-center min-w-9 px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-bold text-[11px]">
+                            ${index + 1}
+                        </span>
+                    </td>
+                    <td class="py-3 px-4 text-left align-top">
+                        <div class="font-bold text-slate-900">${escapeHtml(port.name)}</div>
+                        <div class="text-[11px] text-slate-500 mt-0.5 font-normal flex flex-wrap gap-x-2 gap-y-0.5">
+                            <span>รอบกิจกรรม: ${escapeHtml(getRoundName(port.roundId))}</span>
+                            <span class="text-indigo-600 font-semibold">(Template: ${port.template === 'customerDiagnosis' ? 'Customer Diagnosis' : 'Portfolio Planning'})</span>
+                        </div>
+                    </td>
+                    <td class="py-3 px-4 text-center align-top">${statusBadge(port.status)}</td>
+                    <td class="py-3 px-4 text-center align-top">
+                        <div class="flex items-center justify-center gap-2">
+                            ${rowActionButton('text-indigo-600', 'fa-pen-to-square', 'แก้ไขเมนู', `openEditPortLightbox('${port.id}')`)}
+                            ${rowActionButton('text-rose-600', 'fa-trash-can', 'ลบเมนู', `deletePort('${port.id}')`)}
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+
+        updateSelectedPortContext();
+        renderSubPortsTable();
+    }
+
+    function getFilteredPortsForSelectedRound() {
+        return (state.selectedRoundId === 'all'
+            ? state.ports
+            : state.ports.filter((port) => port.roundId === state.selectedRoundId))
+            .slice()
+            .sort((left, right) => Number(left.displayOrder) - Number(right.displayOrder));
+    }
+
+    function getSelectedPort() {
+        return state.ports.find((port) => port.id === state.selectedPortId)
+            || getFilteredPortsForSelectedRound()[0]
+            || null;
+    }
+
+    function getSelectedSubPort() {
+        const selectedPort = getSelectedPort();
+        const subPorts = state.subPorts
+            .filter((subPort) => selectedPort && subPort.parentPortId === selectedPort.id)
+            .slice()
+            .sort((left, right) => Number(left.displayOrder) - Number(right.displayOrder));
+
+        return state.subPorts.find((subPort) => subPort.id === state.selectedSubPortId && selectedPort && subPort.parentPortId === selectedPort.id)
+            || subPorts[0]
+            || null;
+    }
+
+    function updateSelectedPortContext() {
+        const selectedPort = getSelectedPort();
+        const title = document.getElementById('selectedPortTitle');
+
+        if (selectedPort) {
+            state.selectedPortId = selectedPort.id;
+            if (title) {
+                title.textContent = `เมนูย่อยของ: ${selectedPort.name}`;
+            }
+        } else if (title) {
+            title.textContent = 'กรุณาเลือกพอร์ตหลักฝั่งซ้าย';
+        }
+    }
+
+    function renderSubPortsTable() {
+        const tableBody = document.getElementById('subPortsTableBody');
+        if (!tableBody) {
+            return;
+        }
+
+        const selectedPort = getSelectedPort();
+        const actionButtons = document.getElementById('subPortActionButtons');
+        const uploadArea = document.getElementById('subPortExcelUploadArea');
+
+        if (actionButtons) {
+            actionButtons.classList.toggle('hidden', !selectedPort);
+        }
+
+        if (uploadArea && !selectedPort) {
+            uploadArea.classList.add('hidden');
+        }
+
+        if (!selectedPort) {
+            tableBody.innerHTML = '<tr><td colspan="3" class="py-6 text-center text-slate-400">-- กรุณาเลือกพอร์ตหลัก --</td></tr>';
+            state.selectedSubPortId = '';
+            updateSelectedSubPortContext();
+            renderEmployeesTable();
+            return;
+        }
+
+        const filteredSubPorts = state.subPorts
+            .filter((subPort) => subPort.parentPortId === selectedPort.id)
+            .slice()
+            .sort((left, right) => Number(left.displayOrder) - Number(right.displayOrder));
+
+        if (!filteredSubPorts.some((subPort) => subPort.id === state.selectedSubPortId)) {
+            state.selectedSubPortId = filteredSubPorts[0] ? filteredSubPorts[0].id : '';
+        }
+
+        if (!filteredSubPorts.length) {
+            tableBody.innerHTML = '<tr><td colspan="3" class="py-6 text-center text-slate-400">-- ยังไม่มีพอร์ตย่อยในหมวดนี้ --</td></tr>';
+            updateSelectedSubPortContext();
+            renderEmployeesTable();
+            return;
+        }
+
+        tableBody.innerHTML = filteredSubPorts.map((subPort, index) => `
+            <tr class="hover:bg-slate-50 transition cursor-pointer ${state.selectedSubPortId === subPort.id ? 'bg-orange-50 ring-1 ring-inset ring-orange-200' : ''}" onclick="selectSubPort('${subPort.id}')">
+                <td class="py-2.5 px-4 align-top">
+                    <div class="font-bold text-slate-900">${escapeHtml(subPort.type)}</div>
+                    <div class="text-[11px] text-slate-400 mt-0.5">ลำดับ ${index + 1}</div>
+                </td>
+                <td class="py-2.5 px-4 align-top text-slate-700 font-normal">${escapeHtml(subPort.name)}</td>
+                <td class="py-2.5 px-4 text-center align-top">
+                    <div class="flex items-center justify-center gap-2">
+                        ${rowActionButton('text-indigo-600', 'fa-pen-to-square', 'แก้ไขพอร์ตย่อย', `openEditSubPortLightbox('${subPort.id}')`)}
+                        ${rowActionButton('text-rose-600', 'fa-trash-can', 'ลบพอร์ตย่อย', `deleteSubPort('${subPort.id}')`)}
+                    </div>
+                </td>
+            </tr>
+        `).join('');
+
+        updateSelectedSubPortContext();
+        renderEmployeesTable();
+    }
+
+    function updateSelectedSubPortContext() {
+        const selectedSubPort = getSelectedSubPort();
+        const selectedSubPortTitle = document.getElementById('selectedSubPortTitle');
+        const selectedEmployeeSubPortTitle = document.getElementById('selectedEmployeeSubPortTitle');
+
+        if (selectedSubPort) {
+            if (selectedSubPortTitle) {
+                selectedSubPortTitle.textContent = selectedSubPort.name;
+            }
+            if (selectedEmployeeSubPortTitle) {
+                selectedEmployeeSubPortTitle.textContent = selectedSubPort.type;
+            }
+        } else {
+            if (selectedSubPortTitle) {
+                selectedSubPortTitle.textContent = '--';
+            }
+            if (selectedEmployeeSubPortTitle) {
+                selectedEmployeeSubPortTitle.textContent = '--';
+            }
+        }
+    }
+
+    function renderEmployeesTable() {
+        const tableBody = document.getElementById('employeesTableBody');
+        if (!tableBody) {
+            return;
+        }
+
+        const selectedSubPort = getSelectedSubPort();
+        if (!selectedSubPort) {
+            tableBody.innerHTML = '<tr><td colspan="4" class="py-6 text-center text-slate-400">-- กรุณาเลือกพอร์ตย่อยเพื่อดูข้อมูลพนักงาน --</td></tr>';
+            return;
+        }
+
+        const employees = state.employees
+            .filter((employee) => employee.subPortId === selectedSubPort.id)
+            .slice()
+            .sort((left, right) => String(left.employeeName).localeCompare(String(right.employeeName), 'th'));
+
+        if (!employees.length) {
+            tableBody.innerHTML = '<tr><td colspan="4" class="py-6 text-center text-slate-400">-- ยังไม่มีข้อมูลพนักงานในพอร์ตย่อยนี้ --</td></tr>';
+            return;
+        }
+
+        tableBody.innerHTML = employees.map((employee, index) => `
+            <tr class="hover:bg-slate-50 transition">
+                <td class="py-2.5 px-4 text-center align-top">
+                    <span class="inline-flex items-center justify-center min-w-9 px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-bold text-[11px]">
+                        ${index + 1}
+                    </span>
+                </td>
+                <td class="py-2.5 px-4 align-top font-bold text-slate-900">${escapeHtml(employee.employeeName)}</td>
+                <td class="py-2.5 px-4 align-top text-slate-700 font-normal">${escapeHtml(employee.branch)}</td>
+                <td class="py-2.5 px-4 align-top text-center">${statusBadge(employee.status)}</td>
+            </tr>
+        `).join('');
+    }
+
+    function syncSelectedRound(value) {
+        state.selectedRoundId = value || 'all';
+        roundSelectIds.forEach((selectId) => {
+            const select = document.getElementById(selectId);
+            if (select) {
+                select.value = state.selectedRoundId;
+            }
+        });
+        renderPortsTable();
+        renderCompetitorsTable();
+    }
+
+    function selectMainPort(portId) {
+        state.selectedPortId = portId;
+        state.selectedSubPortId = '';
+        const selectedPort = state.ports.find((port) => port.id === portId) || null;
+        if (selectedPort) {
+            state.selectedRoundId = selectedPort.roundId;
+            const portsRoundSelect = document.getElementById('portsRoundSelect');
+            if (portsRoundSelect) {
+                portsRoundSelect.value = selectedPort.roundId;
+            }
+        }
+        renderPortsTable();
+    }
+
+    function selectSubPort(subPortId) {
+        state.selectedSubPortId = subPortId;
+        renderSubPortsTable();
+    }
+
+    function changePortsRound(value) {
+        syncSelectedRound(value);
+    }
+
+    function switchTab(tabName) {
+        const tabIds = ['rounds', 'ports', 'competitors'];
+        tabIds.forEach((tabId) => {
+            const content = document.getElementById(`tab-content-${tabId}`);
+            const button = document.getElementById(`tabBtn-${tabId}`);
+            const isActive = tabId === tabName;
+
+            if (content) {
+                content.classList.toggle('hidden', !isActive);
+            }
+
+            if (button) {
+                button.classList.toggle('border-indigo-600', isActive);
+                button.classList.toggle('text-indigo-600', isActive);
+                button.classList.toggle('border-transparent', !isActive);
+                button.classList.toggle('text-slate-500', !isActive);
+                button.classList.toggle('font-bold', isActive);
+                button.classList.toggle('font-semibold', !isActive);
+            }
+        });
+
+        if (tabName === 'ports') {
+            const activeRound = state.rounds.find((round) => round.status === 'on') || state.rounds[0] || null;
+            if (activeRound && (state.selectedRoundId === 'all' || !getRoundById(state.selectedRoundId))) {
+                state.selectedRoundId = activeRound.id;
+                const portsRoundSelect = document.getElementById('portsRoundSelect');
+                if (portsRoundSelect) {
+                    portsRoundSelect.value = activeRound.id;
+                }
+                renderPortsTable();
+            }
+        } else if (tabName === 'competitors') {
+            renderCompetitorsTable();
+        }
+    }
+
+    function openRoundLightboxForAdd() {
+        const lightbox = document.getElementById('roundLightbox');
+        const title = document.getElementById('roundLightboxTitle');
+        const icon = document.getElementById('roundLightboxIcon');
+
+        document.getElementById('roundEditId').value = '';
+        document.getElementById('roundName').value = '';
+        document.getElementById('roundDetails').value = '';
+        document.getElementById('roundRegistrationCount').value = '0';
+        document.getElementById('roundStatus').value = 'on';
+
+        if (title) {
+            title.textContent = 'เพิ่มรอบกิจกรรมใหม่';
+        }
+
+        if (icon) {
+            icon.className = 'fa-solid fa-calendar-plus';
+        }
+
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function openEditRoundLightbox(roundId) {
+        const round = getRoundById(roundId);
+        if (!round) {
+            return;
+        }
+
+        const lightbox = document.getElementById('roundLightbox');
+        const title = document.getElementById('roundLightboxTitle');
+        const icon = document.getElementById('roundLightboxIcon');
+
+        document.getElementById('roundEditId').value = round.id;
+        document.getElementById('roundName').value = round.name;
+        document.getElementById('roundDetails').value = round.details;
+        document.getElementById('roundRegistrationCount').value = round.registrationCount;
+        document.getElementById('roundStatus').value = round.status;
+
+        if (title) {
+            title.textContent = 'แก้ไขข้อมูลรอบกิจกรรม';
+        }
+
+        if (icon) {
+            icon.className = 'fa-solid fa-calendar-days';
+        }
+
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeRoundLightbox() {
+        const lightbox = document.getElementById('roundLightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    function saveRound() {
+        const roundId = document.getElementById('roundEditId').value;
+        const payload = {
+            name: document.getElementById('roundName').value.trim(),
+            details: document.getElementById('roundDetails').value.trim(),
+            registrationCount: Number(document.getElementById('roundRegistrationCount').value || 0),
+            status: document.getElementById('roundStatus').value,
+        };
+
+        if (!payload.name) {
+            return;
+        }
+
+        if (roundId) {
+            const roundIndex = state.rounds.findIndex((round) => round.id === roundId);
+            if (roundIndex > -1) {
+                state.rounds[roundIndex] = { ...state.rounds[roundIndex], ...payload };
+                void upsertFirestoreDocument(firestoreCollections.rounds, roundId, state.rounds[roundIndex]);
+            }
+        } else {
+            const newRound = {
+                id: `round-${Date.now()}`,
+                ...payload,
+            };
+            state.rounds.unshift({
+                ...newRound,
+            });
+            void upsertFirestoreDocument(firestoreCollections.rounds, newRound.id, newRound);
+        }
+
+        persistLocalSnapshot();
+        populateRoundDropdowns();
+        renderRoundsTable();
+        renderPortsTable();
+        closeRoundLightbox();
+    }
+
+    function deleteRound(roundId) {
+        const relatedPorts = state.ports.filter((port) => port.roundId === roundId);
+        const relatedSubPorts = state.subPorts.filter((subPort) => subPort.roundId === roundId);
+        state.rounds = state.rounds.filter((round) => round.id !== roundId);
+        state.ports = state.ports.filter((port) => port.roundId !== roundId);
+        state.subPorts = state.subPorts.filter((subPort) => subPort.roundId !== roundId);
+        void deleteFirestoreDocument(firestoreCollections.rounds, roundId);
+        relatedPorts.forEach((port) => void deleteFirestoreDocument(firestoreCollections.ports, port.id));
+        relatedSubPorts.forEach((subPort) => void deleteFirestoreDocument(firestoreCollections.subPorts, subPort.id));
+
+        if (!state.rounds.length) {
+            state.selectedRoundId = 'all';
+        } else if (!state.rounds.some((round) => round.id === state.selectedRoundId)) {
+            state.selectedRoundId = 'all';
+        }
+
+        persistLocalSnapshot();
+        populateRoundDropdowns();
+        syncSelectedRound(state.selectedRoundId);
+        renderRoundsTable();
+    }
+
+    async function toggleRoundStatus(roundId) {
+        const round = getRoundById(roundId);
+        if (!round) return;
+
+        const newStatus = round.status === 'on' ? 'off' : 'on';
+
+        if (newStatus === 'on') {
+            // Disable all other active rounds
+            for (let r of state.rounds) {
+                if (r.id !== roundId && r.status === 'on') {
+                    r.status = 'off';
+                    await upsertFirestoreDocument(firestoreCollections.rounds, r.id, r);
+                }
+            }
+        }
+
+        round.status = newStatus;
+        await upsertFirestoreDocument(firestoreCollections.rounds, roundId, round);
+
+        persistLocalSnapshot();
+        populateRoundDropdowns();
+        renderRoundsTable();
+        renderPortsTable();
+    }
+
+    function getDefaultPortRoundId() {
+        return state.selectedRoundId !== 'all' && getRoundById(state.selectedRoundId)
+            ? state.selectedRoundId
+            : (state.rounds[0] ? state.rounds[0].id : '');
+    }
+
+    function openAddPortLightbox() {
+        const lightbox = document.getElementById('addPortLightbox');
+        document.getElementById('addPortRoundId').value = getDefaultPortRoundId();
+        document.getElementById('addPortDisplayOrder').value = String((state.ports.length || 0) + 1);
+        document.getElementById('addPortName').value = '';
+        document.getElementById('addPortTemplate').value = 'portfolioPlanning';
+        document.getElementById('addPortStatus').value = 'on';
+
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeAddPortLightbox() {
+        const lightbox = document.getElementById('addPortLightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    function openEditPortLightbox(portId) {
+        const port = state.ports.find((item) => item.id === portId);
+        if (!port) {
+            return;
+        }
+
+        document.getElementById('editPortId').value = port.id;
+        document.getElementById('editPortRoundId').value = port.roundId;
+        document.getElementById('editPortDisplayOrder').value = port.displayOrder;
+        document.getElementById('editPortName').value = port.name;
+        document.getElementById('editPortTemplate').value = port.template || (
+            (port.name === 'Customer Diagnosis' || port.name === 'Account Planning Bootcamp') 
+            ? 'customerDiagnosis' 
+            : 'portfolioPlanning'
+        );
+        document.getElementById('editPortStatus').value = port.status;
+
+        const lightbox = document.getElementById('editPortLightbox');
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeEditPortLightbox() {
+        const lightbox = document.getElementById('editPortLightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    function savePort() {
+        const newPort = {
+            id: `port-${Date.now()}`,
+            roundId: document.getElementById('addPortRoundId').value || getDefaultPortRoundId(),
+            displayOrder: Number(document.getElementById('addPortDisplayOrder').value || 1),
+            name: document.getElementById('addPortName').value.trim(),
+            template: document.getElementById('addPortTemplate').value,
+            status: document.getElementById('addPortStatus').value,
+        };
+
+        if (!newPort.name) {
+            return;
+        }
+
+        state.ports.unshift({ ...newPort });
+        void upsertFirestoreDocument(firestoreCollections.ports, newPort.id, newPort);
+
+        persistLocalSnapshot();
+        renderPortsTable();
+        closeAddPortLightbox();
+    }
+
+    function savePortEdit() {
+        const portId = document.getElementById('editPortId').value;
+        const payload = {
+            roundId: document.getElementById('editPortRoundId').value || getDefaultPortRoundId(),
+            displayOrder: Number(document.getElementById('editPortDisplayOrder').value || 1),
+            name: document.getElementById('editPortName').value.trim(),
+            template: document.getElementById('editPortTemplate').value,
+            status: document.getElementById('editPortStatus').value,
+        };
+
+        if (!payload.name || !portId) {
+            return;
+        }
+
+        const portIndex = state.ports.findIndex((item) => item.id === portId);
+        if (portIndex > -1) {
+            state.ports[portIndex] = { ...state.ports[portIndex], ...payload };
+            void upsertFirestoreDocument(firestoreCollections.ports, portId, state.ports[portIndex]);
+        }
+
+        persistLocalSnapshot();
+        renderPortsTable();
+        closeEditPortLightbox();
+    }
+
+    function deletePort(portId) {
+        const relatedSubPorts = state.subPorts.filter((subPort) => subPort.parentPortId === portId);
+        state.ports = state.ports.filter((port) => port.id !== portId);
+        state.subPorts = state.subPorts.filter((subPort) => subPort.parentPortId !== portId);
+        void deleteFirestoreDocument(firestoreCollections.ports, portId);
+        relatedSubPorts.forEach((subPort) => void deleteFirestoreDocument(firestoreCollections.subPorts, subPort.id));
+        persistLocalSnapshot();
+        if (state.selectedPortId === portId) {
+            state.selectedPortId = '';
+            state.selectedSubPortId = '';
+        }
+        renderPortsTable();
+    }
+
+    function toggleExcelUploadArea() {
+        const uploadArea = document.getElementById('subPortExcelUploadArea');
+        if (uploadArea) {
+            uploadArea.classList.toggle('hidden');
+        }
+    }
+
+    function openAddSubPortLightbox() {
+        const selectedPort = getSelectedPort();
+        const lightbox = document.getElementById('addSubPortLightbox');
+
+        document.getElementById('addSubPortParentId').value = selectedPort ? selectedPort.id : '';
+        document.getElementById('addSubPortType').value = '';
+        document.getElementById('addSubPortName').value = '';
+
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeAddSubPortLightbox() {
+        const lightbox = document.getElementById('addSubPortLightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    function openEditSubPortLightbox(subPortId) {
+        const subPort = state.subPorts.find((item) => item.id === subPortId);
+        if (!subPort) {
+            return;
+        }
+
+        document.getElementById('editSubPortId').value = subPort.id;
+        document.getElementById('editSubPortType').value = subPort.type;
+        document.getElementById('editSubPortName').value = subPort.name;
+
+        const lightbox = document.getElementById('editSubPortLightbox');
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeEditSubPortLightbox() {
+        const lightbox = document.getElementById('editSubPortLightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    function saveSubPortManual() {
+        const parentPortId = document.getElementById('addSubPortParentId').value;
+        const parentPort = state.ports.find((port) => port.id === parentPortId) || null;
+        const payload = {
+            id: `subport-${Date.now()}`,
+            roundId: parentPort ? parentPort.roundId : state.selectedRoundId,
+            parentPortId,
+            type: document.getElementById('addSubPortType').value.trim(),
+            name: document.getElementById('addSubPortName').value.trim(),
+            displayOrder: Number(state.subPorts.filter((subPort) => subPort.parentPortId === parentPortId).length + 1),
+            status: 'on',
+        };
+
+        if (!payload.parentPortId || !payload.type || !payload.name) {
+            return;
+        }
+
+        state.subPorts.unshift({ ...payload });
+        void upsertFirestoreDocument(firestoreCollections.subPorts, payload.id, payload);
+        persistLocalSnapshot();
+        state.selectedSubPortId = payload.id;
+        renderSubPortsTable();
+        closeAddSubPortLightbox();
+    }
+
+    function saveSubPortEditManual() {
+        const subPortId = document.getElementById('editSubPortId').value;
+        const payload = {
+            type: document.getElementById('editSubPortType').value.trim(),
+            name: document.getElementById('editSubPortName').value.trim(),
+        };
+
+        if (!subPortId || !payload.type || !payload.name) {
+            return;
+        }
+
+        const subPortIndex = state.subPorts.findIndex((item) => item.id === subPortId);
+        if (subPortIndex > -1) {
+            state.subPorts[subPortIndex] = { ...state.subPorts[subPortIndex], ...payload };
+            void upsertFirestoreDocument(firestoreCollections.subPorts, subPortId, state.subPorts[subPortIndex]);
+        }
+
+        persistLocalSnapshot();
+        renderSubPortsTable();
+        closeEditSubPortLightbox();
+    }
+
+    function deleteSubPort(subPortId) {
+        const relatedEmployees = state.employees.filter((employee) => employee.subPortId === subPortId);
+        state.subPorts = state.subPorts.filter((subPort) => subPort.id !== subPortId);
+        state.employees = state.employees.filter((employee) => employee.subPortId !== subPortId);
+        void deleteFirestoreDocument(firestoreCollections.subPorts, subPortId);
+        relatedEmployees.forEach((employee) => void deleteFirestoreDocument(firestoreCollections.employees, employee.id));
+        persistLocalSnapshot();
+        if (state.selectedSubPortId === subPortId) {
+            state.selectedSubPortId = '';
+        }
+        renderSubPortsTable();
+    }
+
+    function openAddRoundLightbox() {
+        openRoundLightboxForAdd();
+    }
+
+    function closeAddRoundLightbox() {
+        closeRoundLightbox();
+    }
+
+    function changeRoundsPageSize() {
+        renderRoundsTable();
+    }
+
+    // ---------------------------------------------------------------------
+    // Product catalog (plan_products): master Group / SubGroup / Unit list
+    // ---------------------------------------------------------------------
+
+    function getProductGroups() {
+        const groups = [];
+        state.products.forEach((product) => {
+            if (product.group && !groups.includes(product.group)) {
+                groups.push(product.group);
+            }
+        });
+        return groups;
+    }
+
+    function getProductUnits() {
+        const units = [];
+        state.products.forEach((product) => {
+            if (product.unit && !units.includes(product.unit)) {
+                units.push(product.unit);
+            }
+        });
+        return units;
+    }
+
+    function populateProductGroupFilter() {
+        const select = document.getElementById('productsGroupFilter');
+        if (select) {
+            const currentValue = select.value || state.productsGroupFilter || 'all';
+            const options = getProductGroups()
+                .map((group) => `<option value="${escapeHtml(group)}">${escapeHtml(group)}</option>`)
+                .join('');
+            select.innerHTML = '<option value="all">ทุกหมวด Group</option>' + options;
+            select.value = [...select.options].some((option) => option.value === currentValue) ? currentValue : 'all';
+        }
+
+        const groupDatalist = document.getElementById('productGroupOptions');
+        if (groupDatalist) {
+            groupDatalist.innerHTML = getProductGroups()
+                .map((group) => `<option value="${escapeHtml(group)}"></option>`)
+                .join('');
+        }
+
+        const unitDatalist = document.getElementById('productUnitOptions');
+        if (unitDatalist) {
+            unitDatalist.innerHTML = getProductUnits()
+                .map((unit) => `<option value="${escapeHtml(unit)}"></option>`)
+                .join('');
+        }
+    }
+
+    function getGroupOrderIndex() {
+        const groupIndex = {};
+        state.products.forEach((product) => {
+            const key = product.group || '';
+            const order = Number(product.order || 0);
+            groupIndex[key] = key in groupIndex ? Math.min(groupIndex[key], order) : order;
+        });
+        return groupIndex;
+    }
+
+    function getSortedProducts() {
+        const groupIndex = getGroupOrderIndex();
+        return state.products.slice().sort((left, right) => {
+            const leftGroup = groupIndex[left.group || ''] || 0;
+            const rightGroup = groupIndex[right.group || ''] || 0;
+            if (leftGroup !== rightGroup) {
+                return leftGroup - rightGroup;
+            }
+            return Number(left.order || 0) - Number(right.order || 0);
+        });
+    }
+
+    function getFilteredProducts() {
+        const sorted = getSortedProducts();
+        return state.productsGroupFilter === 'all'
+            ? sorted
+            : sorted.filter((product) => product.group === state.productsGroupFilter);
+    }
+
+    function getNextProductOrder() {
+        return state.products.reduce((max, product) => Math.max(max, Number(product.order || 0)), 0) + 1;
+    }
+
+    function renderProductsPagination(totalPages) {
+        const container = document.getElementById('productsPaginationButtons');
+        if (!container) {
+            return;
+        }
+
+        if (totalPages <= 1) {
+            container.innerHTML = '';
+            return;
+        }
+
+        const currentPage = state.productsPage;
+        const pageButton = (label, targetPage, disabled, active) => `
+            <button ${disabled ? 'disabled' : `onclick="goToProductsPage(${targetPage})"`}
+                class="min-w-8 h-8 px-2 rounded-lg border text-[11px] font-bold transition ${active
+                    ? 'bg-indigo-600 text-white border-indigo-600'
+                    : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'} ${disabled ? 'opacity-40 cursor-not-allowed' : ''}">${label}</button>`;
+
+        let html = pageButton('<i class="fa-solid fa-chevron-left"></i>', currentPage - 1, currentPage <= 1, false);
+        for (let page = 1; page <= totalPages; page += 1) {
+            html += pageButton(String(page), page, false, page === currentPage);
+        }
+        html += pageButton('<i class="fa-solid fa-chevron-right"></i>', currentPage + 1, currentPage >= totalPages, false);
+
+        container.innerHTML = html;
+    }
+
+    function renderProductsTable() {
+        const tableBody = document.getElementById('productsTableBody');
+        const totalCount = document.getElementById('productsTotalCount');
+        if (!tableBody) {
+            return;
+        }
+
+        const filteredProducts = getFilteredProducts();
+        if (totalCount) {
+            totalCount.textContent = String(filteredProducts.length);
+        }
+
+        if (!filteredProducts.length) {
+            tableBody.innerHTML = '<tr><td colspan="3" class="py-6 text-center text-slate-400">-- ยังไม่มีข้อมูลผลิตภัณฑ์ --</td></tr>';
+            renderProductsPagination(0);
+            return;
+        }
+
+        const pageSize = state.productsPageSize;
+        const totalPages = Math.max(1, Math.ceil(filteredProducts.length / pageSize));
+        state.productsPage = Math.min(Math.max(state.productsPage, 1), totalPages);
+
+        const startIndex = (state.productsPage - 1) * pageSize;
+        const pageItems = filteredProducts.slice(startIndex, startIndex + pageSize);
+
+        let lastGroup = null;
+        tableBody.innerHTML = pageItems.map((product) => {
+            const showGroup = product.group !== lastGroup;
+            lastGroup = product.group;
+            return `
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="py-2.5 px-4 ${showGroup ? 'font-black text-slate-800' : 'text-transparent select-none'}">${escapeHtml(product.group || '-')}</td>
+                    <td class="py-2.5 px-4 font-semibold text-slate-700">
+                        ${escapeHtml(product.subGroup || '-')}
+                        ${product.unit ? `<span class="ml-1 text-[10px] text-slate-400 font-normal">(${escapeHtml(product.unit)})</span>` : ''}
+                    </td>
+                    <td class="py-2.5 px-4 text-center">
+                        <div class="flex items-center justify-center gap-2">
+                            ${rowActionButton('text-indigo-600', 'fa-pen-to-square', 'แก้ไขผลิตภัณฑ์', `openEditProductLightbox('${product.id}')`)}
+                            ${rowActionButton('text-rose-600', 'fa-trash-can', 'ลบผลิตภัณฑ์', `deleteProduct('${product.id}')`)}
+                        </div>
+                    </td>
+                </tr>`;
+        }).join('');
+
+        renderProductsPagination(totalPages);
+    }
+
+    function goToProductsPage(page) {
+        state.productsPage = Number(page) || 1;
+        renderProductsTable();
+    }
+
+    function changeProductsPageSize(value) {
+        state.productsPageSize = Number(value) || 10;
+        state.productsPage = 1;
+        renderProductsTable();
+    }
+
+    function changeProductsGroupFilter(value) {
+        state.productsGroupFilter = value || 'all';
+        state.productsPage = 1;
+        renderProductsTable();
+    }
+
+    function openAddProductLightbox() {
+        populateProductGroupFilter();
+        document.getElementById('addProductGroup').value = '';
+        document.getElementById('addProductSubGroup').value = '';
+        document.getElementById('addProductUnit').value = '';
+
+        const lightbox = document.getElementById('addProductLightbox');
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeAddProductLightbox() {
+        const lightbox = document.getElementById('addProductLightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    function saveProduct() {
+        const newProduct = {
+            id: `product-${Date.now()}`,
+            group: document.getElementById('addProductGroup').value.trim(),
+            subGroup: document.getElementById('addProductSubGroup').value.trim(),
+            unit: document.getElementById('addProductUnit').value.trim(),
+            order: getNextProductOrder(),
+        };
+
+        if (!newProduct.group || !newProduct.subGroup) {
+            return;
+        }
+
+        state.products.push({ ...newProduct });
+        void upsertFirestoreDocument(firestoreCollections.products, newProduct.id, newProduct);
+        persistLocalSnapshot();
+        populateProductGroupFilter();
+        renderProductsTable();
+        closeAddProductLightbox();
+    }
+
+    function openEditProductLightbox(productId) {
+        const product = state.products.find((item) => item.id === productId);
+        if (!product) {
+            return;
+        }
+
+        populateProductGroupFilter();
+        document.getElementById('editProductId').value = product.id;
+        document.getElementById('editProductGroup').value = product.group || '';
+        document.getElementById('editProductSubGroup').value = product.subGroup || '';
+        document.getElementById('editProductUnit').value = product.unit || '';
+
+        const lightbox = document.getElementById('editProductLightbox');
+        if (lightbox) {
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeEditProductLightbox() {
+        const lightbox = document.getElementById('editProductLightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    function saveProductEdit() {
+        const productId = document.getElementById('editProductId').value;
+        const payload = {
+            group: document.getElementById('editProductGroup').value.trim(),
+            subGroup: document.getElementById('editProductSubGroup').value.trim(),
+            unit: document.getElementById('editProductUnit').value.trim(),
+        };
+
+        if (!productId || !payload.group || !payload.subGroup) {
+            return;
+        }
+
+        const productIndex = state.products.findIndex((item) => item.id === productId);
+        if (productIndex > -1) {
+            state.products[productIndex] = { ...state.products[productIndex], ...payload };
+            void upsertFirestoreDocument(firestoreCollections.products, productId, state.products[productIndex]);
+        }
+
+        persistLocalSnapshot();
+        populateProductGroupFilter();
+        renderProductsTable();
+        closeEditProductLightbox();
+    }
+
+    function deleteProduct(productId) {
+        state.products = state.products.filter((product) => product.id !== productId);
+        void deleteFirestoreDocument(firestoreCollections.products, productId);
+        persistLocalSnapshot();
+        populateProductGroupFilter();
+        renderProductsTable();
+    }
+
+    function importProductsExcel(event) {
+        const input = event.target;
+        const file = input.files && input.files[0];
+        if (!file) {
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = (loadEvent) => {
+            try {
+                const data = new Uint8Array(loadEvent.target.result);
+                const workbook = window.XLSX.read(data, { type: 'array' });
+                const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+                const rows = window.XLSX.utils.sheet_to_json(firstSheet, { header: 1, defval: '' });
+
+                const existingKeys = new Set(state.products.map((product) => `${product.group}||${product.subGroup}`));
+                const imported = [];
+                let orderCursor = getNextProductOrder();
+
+                rows.forEach((row, rowIndex) => {
+                    const group = String(row[0] || '').trim();
+                    const subGroup = String(row[1] || '').trim();
+                    const unit = String(row[2] || '').trim();
+
+                    if (!group || !subGroup) {
+                        return;
+                    }
+                    // Skip the header row (Group / SubGroup / Unit)
+                    if (group.toLowerCase() === 'group' && subGroup.toLowerCase() === 'subgroup') {
+                        return;
+                    }
+
+                    const key = `${group}||${subGroup}`;
+                    if (existingKeys.has(key)) {
+                        return;
+                    }
+                    existingKeys.add(key);
+
+                    imported.push({
+                        id: `product-${Date.now()}-${rowIndex}`,
+                        group,
+                        subGroup,
+                        unit,
+                        order: orderCursor,
+                    });
+                    orderCursor += 1;
+                });
+
+                if (imported.length) {
+                    imported.forEach((product) => {
+                        state.products.push({ ...product });
+                        void upsertFirestoreDocument(firestoreCollections.products, product.id, product);
+                    });
+                    persistLocalSnapshot();
+                    populateProductGroupFilter();
+                    renderProductsTable();
+                }
+            } catch (error) {
+                // Silently ignore malformed spreadsheets, consistent with this file's error handling.
+            } finally {
+                input.value = '';
+            }
+        };
+        reader.readAsArrayBuffer(file);
+    }
+
+    function renderCompetitorsTable() {
+        const tableBody = document.getElementById('competitorsTableBody');
+        if (!tableBody) return;
+
+        // Filter users by selected round
+        const filteredUsers = state.selectedRoundId === 'all' 
+            ? state.users 
+            : state.users.filter(user => user.roundId === state.selectedRoundId);
+
+        if (!filteredUsers.length) {
+            tableBody.innerHTML = `<tr><td colspan="5" class="py-6 text-center text-slate-400">-- ไม่พบข้อมูลผู้สมัครแข่งขัน --</td></tr>`;
+            return;
+        }
+
+        tableBody.innerHTML = filteredUsers.map((user, index) => {
+            // Find Portfolio sets count for this user (each document is a set)
+            const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === user.id);
+            const portfolioSetsCount = portfolioDocs.length;
+
+            // Find Account Planning Bootcamp sets count for this user (grouped inside singleton doc with ID 'userId__activityItemId')
+            const cdDocs = state.customerDiagnosis.filter(doc => doc.id.startsWith(user.id + '__'));
+            const cdSetsCount = cdDocs.reduce((acc, doc) => acc + (doc.sets || []).length, 0);
+
+            return `
+                <tr class="hover:bg-slate-50 transition border-b border-slate-100">
+                    <td class="py-3 px-4 text-center align-middle">${index + 1}</td>
+                    <td class="py-3 px-4 text-left align-middle font-bold text-slate-900">${escapeHtml(user.name || '-')}</td>
+                    <td class="py-3 px-4 text-center align-middle">
+                        <button onclick="openCompetitorPortfolioSetsLightbox('${user.id}')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-100 text-blue-700 hover:bg-blue-250 transition shadow-sm">
+                            ${portfolioSetsCount} ชุดแผนงาน
+                        </button>
+                    </td>
+                    <td class="py-3 px-4 text-center align-middle">
+                        <button onclick="openCompetitorAccountSetsLightbox('${user.id}')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-100 text-orange-700 hover:bg-orange-250 transition shadow-sm">
+                            ${cdSetsCount} ชุดแผนงาน
+                        </button>
+                    </td>
+                    <td class="py-3 px-4 text-center align-middle">
+                        <button onclick="openConfirmDeletePlanLightbox('${user.id}')" class="w-8 h-8 rounded-lg hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center text-slate-400 transition mx-auto" title="ลบข้อมูลทีมนี้">
+                            <i class="fa-solid fa-trash-can text-base"></i>
+                        </button>
+                    </td>
+                </tr>
+            `;
+        }).join('');
+    }
+
+    function openCompetitorPortfolioSetsLightbox(userId) {
+        const user = state.users.find(u => u.id === userId);
+        if (!user) return;
+
+        const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId)
+            .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
+
+        if (!portfolioDocs.length) {
+            const bodyEl = document.getElementById('competitorDetailsBody');
+            const mailBtn = document.getElementById('adminPortfolioMailBtn');
+            const titleEl = document.getElementById('competitorDetailsTitle');
+            const subtitleEl = document.getElementById('competitorDetailsSubtitle');
+
+            if (titleEl) titleEl.textContent = `Portfolio Planning: ${user.name}`;
+            if (subtitleEl) subtitleEl.textContent = `แผนงานจัดพอร์ตทั้งหมดของทีม ${user.name}`;
+            if (mailBtn) mailBtn.classList.add('hidden');
+            if (bodyEl) bodyEl.innerHTML = `<div class="text-center py-12 text-slate-400">-- ไม่พบแผนงาน Portfolio Planning ของทีมนี้ --</div>`;
+            document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
+            return;
+        }
+
+        renderActivePortfolioDetails(userId, 0);
+        document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
+    }
+
+    function renderActivePortfolioDetails(userId, activeIndex) {
+        window.activePortfolioUserId = userId;
+        window.activePortfolioIndex = activeIndex;
+
+        const user = state.users.find(u => u.id === userId);
+        if (!user) return;
+
+        const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId)
+            .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
+
+        const titleEl = document.getElementById('competitorDetailsTitle');
+        const subtitleEl = document.getElementById('competitorDetailsSubtitle');
+        const bodyEl = document.getElementById('competitorDetailsBody');
+        const mailBtn = document.getElementById('adminPortfolioMailBtn');
+
+        if (titleEl) titleEl.textContent = `Portfolio Planning: ${user.name}`;
+        if (subtitleEl) subtitleEl.textContent = `แผนงานจัดพอร์ตทั้งหมดของทีม ${user.name}`;
+
+        if (!portfolioDocs.length) {
+            if (mailBtn) mailBtn.classList.add('hidden');
+            if (bodyEl) bodyEl.innerHTML = `<div class="text-center py-12 text-slate-400">-- ไม่พบแผนงาน Portfolio Planning ของทีมนี้ --</div>`;
+            return;
+        }
+
+        if (mailBtn) {
+            mailBtn.classList.remove('hidden');
+            mailBtn.onclick = () => sendAdminPortfolioMailAsEmail(userId, activeIndex);
+        }
+
+        const deleteBtn = document.getElementById('adminDeleteSetBtn');
+        if (deleteBtn) {
+            deleteBtn.onclick = () => openConfirmDeleteSetLightbox('portfolio');
+        }
+
+        const activeSet = portfolioDocs[activeIndex] || portfolioDocs[0];
+        const setIndex = portfolioDocs.indexOf(activeSet) + 1;
+
+        // Render Tabs
+        let tabsHtml = `<div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3 mb-4 shrink-0">`;
+        portfolioDocs.forEach((doc, idx) => {
+            const isActive = idx === activeIndex;
+            tabsHtml += `
+                <button onclick="renderActivePortfolioDetails('${userId}', ${idx})" class="px-4 py-2 rounded-lg text-xs font-bold transition ${isActive ? 'bg-blue-600 text-white shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-205'}">
+                    แผนงานที่ ${idx + 1}
+                </button>
+            `;
+        });
+        tabsHtml += `</div>`;
+
+        // Render Set Details similar to user.js openPresenterMailLightbox
+        const getUnitForSubGroup = (subGroup) => {
+            if (!subGroup) return '';
+            const match = state.products.find((p) => p.subGroup === subGroup);
+            if (!match) return '';
+            if (match.unit) return match.unit;
+            const group = match.group;
+            if (['Deposit', 'BA', 'MF', 'SN'].includes(group)) {
+                return 'บาท';
+            }
+            if (['Portfolio', 'Relationship', 'Relation', 'Qualified WB/PB'].includes(group)) {
+                return 'คน';
+            }
+            return '';
+        };
+
+        const formatNumberWithCommas = (val) => {
+            const num = Number(val);
+            return isNaN(num) ? '0' : num.toLocaleString('th-TH');
+        };
+
+        const renderCategoryOutcomeRows = (cat) => {
+            const rows = activeSet.rows[cat] || [];
+            const targetText = rows[0]?.target || '-';
+            const actionText = rows[0]?.actionPlan || '-';
+
+            const productList = rows.map((row) => {
+                if (!row.subGroup) return '';
+                const unit = getUnitForSubGroup(row.subGroup);
+                const amt = formatNumberWithCommas(row.amount || 0);
+                return `<li class="text-xs text-slate-700 list-disc list-inside">${escapeHtml(row.subGroup)}: <strong class="text-blue-800">${amt}</strong> ${unit}</li>`;
+            }).filter(Boolean).join('');
+
+            return `
+                <div class="border border-slate-200 rounded-xl p-4 bg-slate-50/50 space-y-2 text-left">
+                    <h5 class="text-sm font-bold text-slate-800 border-b border-slate-200 pb-1">${cat}</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+                        <div>
+                            <span class="block text-[12px] text-slate-400">Target</span>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(targetText)}</p>
+                        </div>
+                        <div>
+                            <span class="block text-[12px] text-slate-400">Action Plan</span>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(actionText)}</p>
+                        </div>
+                    </div>
+                    <div class="pt-1">
+                        <span class="block text-[12px] text-slate-400 mb-1">ผลิตภัณฑ์ปักหมุด</span>
+                        ${productList ? `<ul class="space-y-1">${productList}</ul>` : '<span class="text-xs text-slate-400 italic">ไม่มีข้อมูล</span>'}
+                    </div>
+                </div>
+            `;
+        };
+
+        const detailsHtml = `
+            <div class="space-y-4">
+                ${tabsHtml}
+                
+                <!-- Content Area (Target for html2canvas) -->
+                <div id="adminPortfolioMailContentArea" class="p-8 overflow-y-auto space-y-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                    <div class="text-center space-y-2 shrink-0">
+                        <h2 class="text-xl font-black text-slate-800">Portfolio Planning (แผนงานที่ ${setIndex})</h2>
+                        <p class="text-xs font-semibold text-blue-600">ผู้นำเสนอแผนงาน: ${escapeHtml(user.name)}</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 px-4 py-1.5 rounded-xl shadow-sm text-left">
+                        <span class="text-xs font-bold text-slate-400 mr-1">ชื่อเรื่อง:</span>
+                        <span class="text-sm font-normal text-slate-800">${escapeHtml(activeSet.topic || '-')}</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
+                            <h4 class="text-xs font-black text-slate-800">1. Portfolio Overview</h4>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(activeSet.overview || '-')}</p>
+                        </div>
+                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
+                            <h4 class="text-xs font-black text-slate-800">2. Gap</h4>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(activeSet.gap || '-')}</p>
+                        </div>
+                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
+                            <h4 class="text-xs font-black text-slate-800">3. Opportunity</h4>
+                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(activeSet.opportunity || '-')}</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-4 text-left">
+                        <h4 class="text-xs font-black text-slate-800">4. Outcome (Target, Action Plan & ผลิตภัณฑ์)</h4>
+                        <div class="flex flex-col gap-4">
+                            ${renderCategoryOutcomeRows('GRAB')}
+                            ${renderCategoryOutcomeRows('GROW')}
+                            ${renderCategoryOutcomeRows('GUARD')}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        if (bodyEl) bodyEl.innerHTML = detailsHtml;
+    }
+
+    function sendAdminPortfolioMailAsEmail(userId, activeIndex) {
+        const container = document.getElementById('adminPortfolioMailContentArea');
+        if (!container) return;
+
+        const user = state.users.find(u => u.id === userId);
+        if (!user) return;
+
+        const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId)
+            .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
+        const activeSet = portfolioDocs[activeIndex];
+        if (!activeSet) return;
+
+        const setIndex = activeIndex + 1;
+        const subjectText = `Account Planning Bootcamp (แผนงานที่ ${setIndex}) โดย ${user.name}`;
+
+        // Temporarily expand container height and remove scroll restrictions for a complete screen capture
+        const originalHeight = container.style.height;
+        const originalMaxHeight = container.style.maxHeight;
+        const originalOverflow = container.style.overflow;
+
+        container.style.height = 'auto';
+        container.style.maxHeight = 'none';
+        container.style.overflow = 'visible';
+
+        html2canvas(container, { scale: 2, useCORS: true }).then((canvas) => {
+            // Restore original styles
+            container.style.height = originalHeight;
+            container.style.maxHeight = originalMaxHeight;
+            container.style.overflow = originalOverflow;
+
+            const imgData = canvas.toDataURL('image/png');
+
+            // 1. Download screenshot locally
+            const link = document.createElement('a');
+            link.download = `bootcamp_plan_${setIndex}.png`;
+            link.href = imgData;
+            link.click();
+
+            // 2. Copy image to Clipboard as Blob
+            canvas.toBlob((blob) => {
+                if (blob) {
+                    try {
+                        navigator.clipboard.write([
+                            new ClipboardItem({ 'image/png': blob })
+                        ]).then(() => {
+                            console.log("คัดลอกรูปภาพแผนงานลง Clipboard เรียบร้อยแล้ว");
+                        }).catch(err => {
+                            console.error("ไม่สามารถเขียนลง Clipboard ได้", err);
+                        });
+                    } catch (e) {
+                        console.error("ไม่สามารถใช้งาน Clipboard Item ได้", e);
+                    }
+                }
+            }, 'image/png');
+
+            // 3. Open native email client using mailto link
+            const bodyInstruction = "กรุณากด Ctrl+V (หรือคลิกขวาแล้ววาง) เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\n\n";
+            const mailtoUrl = `mailto:?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyInstruction)}`;
+            window.location.href = mailtoUrl;
+        });
+    }
+
+    window.activeBootcampUserId = null;
+    window.activeBootcampIndex = 0;
+    window.currentAdminMailScale = 1.0;
+
+    window.adjustAdminMailFontSize = (factor) => {
+        window.currentAdminMailScale = Math.max(0.5, Math.min(2.0, window.currentAdminMailScale + factor));
+        const container = document.getElementById('adminPortfolioMailContentArea') || document.getElementById('adminBootcampMailContentArea');
+        if (!container) return;
+
+        const elements = container.querySelectorAll('p, span, h2, h3, h4, h5, th, td, li, strong');
+        elements.forEach((el) => {
+            if (!el.hasAttribute('data-orig-size')) {
+                const computed = window.getComputedStyle(el).fontSize;
+                el.setAttribute('data-orig-size', computed);
+            }
+            const origSize = parseFloat(el.getAttribute('data-orig-size'));
+            if (!isNaN(origSize)) {
+                el.style.fontSize = (origSize * window.currentAdminMailScale) + 'px';
+            }
+        });
+    };
+
+    window.openCompetitorAccountSetsLightbox = (userId) => {
+        window.activePortfolioUserId = null;
+        window.activePortfolioIndex = 0;
+        window.currentAdminMailScale = 1.0;
+        
+        renderActiveBootcampDetails(userId, 0);
+        document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
+    };
+
+    window.renderActiveBootcampDetails = (userId, activeIndex) => {
+        window.activeBootcampUserId = userId;
+        window.activeBootcampIndex = activeIndex;
+
+        const user = state.users.find(u => u.id === userId);
+        if (!user) return;
+
+        const cdDocs = state.customerDiagnosis.filter(doc => doc.id.startsWith(userId + '__'));
+        const allSets = [];
+        cdDocs.forEach(doc => {
+            const activityItemId = doc.id.split('__')[1] || '';
+            const activityItem = state.ports.find(p => p.id === activityItemId) || { name: 'ไม่ระบุกิจกรรม' };
+            (doc.sets || []).forEach((set) => {
+                allSets.push({
+                    activityItem,
+                    docId: doc.id,
+                    set
+                });
+            });
+        });
+
+        const titleEl = document.getElementById('competitorDetailsTitle');
+        const subtitleEl = document.getElementById('competitorDetailsSubtitle');
+        const bodyEl = document.getElementById('competitorDetailsBody');
+        const mailBtn = document.getElementById('adminPortfolioMailBtn');
+
+        if (titleEl) titleEl.textContent = `Account Planning Bootcamp: ${user.name}`;
+        if (subtitleEl) subtitleEl.textContent = `แผนงานบูทแคมป์ทั้งหมดของทีม ${user.name}`;
+
+        if (!allSets.length) {
+            if (mailBtn) mailBtn.classList.add('hidden');
+            if (bodyEl) bodyEl.innerHTML = `<div class="text-center py-12 text-slate-400">-- ไม่พบแผนงาน Account Planning ของทีมนี้ --</div>`;
+            return;
+        }
+
+        if (mailBtn) {
+            mailBtn.classList.remove('hidden');
+            mailBtn.onclick = () => sendAdminBootcampMailAsEmail(userId, activeIndex);
+        }
+
+        const deleteBtn = document.getElementById('adminDeleteSetBtn');
+        if (deleteBtn) {
+            deleteBtn.onclick = () => openConfirmDeleteSetLightbox('bootcamp');
+        }
+
+        const activeEntry = allSets[activeIndex] || allSets[0];
+        const activeSet = activeEntry.set;
+        const activityItem = activeEntry.activityItem;
+
+        const formatValueWithCommas = (val) => {
+            if (!val) return '-';
+            const clean = String(val).replace(/,/g, '');
+            const num = Number(clean);
+            return isNaN(num) ? val : num.toLocaleString('th-TH');
+        };
+
+        // Render Tabs
+        let tabsHtml = `<div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3 mb-4 shrink-0">`;
+        allSets.forEach((entry, idx) => {
+            const isActive = idx === activeIndex;
+            tabsHtml += `
+                <button onclick="renderActiveBootcampDetails('${userId}', ${idx})" class="px-4 py-2 rounded-lg text-xs font-bold transition ${isActive ? 'bg-orange-500 text-white shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-205'}">
+                    แผนงานที่ ${idx + 1}
+                </button>
+            `;
+        });
+        tabsHtml += `</div>`;
+
+        const act = activeSet.act || { aim: '', consult: '', track: '' };
+        const ion = activeSet.ion || { improve: '', operate: '', notice: '' };
+        const diag = activeSet.diagnosis || { goalAndLimit: '', idealPortfolio: '', currentPortfolio: '', portfolioSymptom: '', potentialImpact: '', adjustmentGuideline: '' };
+        const solutions = activeSet.financialSolutions || [];
+
+        const renderSolutionsTable = () => {
+            if (!solutions.length) {
+                return '<div class="text-xs text-slate-400 italic p-3 text-center border border-slate-200 rounded-xl">ไม่มีข้อมูล Financial Solutions</div>';
+            }
+            let rowsHtml = '';
+            solutions.forEach((sol, idx) => {
+                rowsHtml += `
+                    <tr class="border-t border-slate-200">
+                        <td class="p-3 align-top border-r border-slate-200 space-y-2 text-left bg-slate-50/50">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">เป้าหมายทางการเงิน</span>
+                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.goal || '-')}</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">จำนวนเงิน</span>
+                                <span class="text-xs font-normal text-slate-800">${escapeHtml(formatValueWithCommas(sol.amount))}</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">ระยะเวลา</span>
+                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.duration || '-')}</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">อัตราผลตอบแทนที่คาดหวัง</span>
+                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.expectedReturn || '-')}%</span>
+                            </div>
+                        </td>
+                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartSpend || '-')}</td>
+                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartSave || '-')}</td>
+                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartProtect || '-')}</td>
+                        <td class="p-3 align-top text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartBorrow || '-')}</td>
+                    </tr>
+                `;
+            });
+            return `
+                <div class="overflow-x-auto border border-slate-200 rounded-xl mt-1">
+                    <table class="w-full text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-[#f8fafc] text-slate-700 border-b border-slate-200">
+                                <th rowspan="2" class="py-2.5 px-3 text-center font-black border-r border-slate-200 w-[24%]">รายการ</th>
+                                <th colspan="4" class="py-2 px-3 text-center font-black border-b border-slate-200">โซลูชันที่จะแนะนำ</th>
+                            </tr>
+                            <tr class="bg-slate-100/80 text-slate-700 text-[12px] text-center border-b border-slate-200">
+                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">ฉลาดใช้</th>
+                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">ฉลาดออมและลงทุน</th>
+                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">คุ้มครองอุ่นใจ</th>
+                                <th class="py-2 px-2 w-[19%]">รอบรู้กู้ยืม</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${rowsHtml}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        };
+
+        const detailsHtml = `
+            <div class="space-y-4">
+                ${tabsHtml}
+                
+                <!-- Content Area (Target for html2canvas) -->
+                <div id="adminBootcampMailContentArea" class="p-8 overflow-y-auto space-y-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                    <div class="text-center space-y-2 shrink-0">
+                        <h2 class="text-xl font-black text-slate-800">${escapeHtml(activityItem.name)} (แผนงานที่ ${activeIndex + 1})</h2>
+                        <p class="text-xs font-semibold text-blue-600">ผู้นำเสนอแผนงาน: ${escapeHtml(user.name)}</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 px-4 py-1.5 rounded-xl shadow-sm text-left">
+                        <span class="text-xs font-bold text-slate-400 mr-1">ชื่อเรื่อง:</span>
+                        <span class="text-sm font-normal text-slate-800">${escapeHtml(activeSet.topic || '-')}</span>
+                    </div>
+
+                    <!-- ข้อมูลลูกค้า -->
+                    <div class="bgblue text-white rounded-2xl p-4 text-left space-y-1">
+                        <span class="block text-xs font-bold opacity-75">ข้อมูลลูกค้า</span>
+                        <p class="whitespace-pre-line font-normal text-xs">${escapeHtml(activeSet.customerInfo || '-')}</p>
+                    </div>
+
+                    <!-- A-C-T-I-O-N -->
+                    <div class="space-y-2 text-left">
+                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">1</span> Customer Profile & Action Plan</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">A - Aim</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.aim || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">C - Consult</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.consult || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">T - Track</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.track || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">I - Improve</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.improve || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">O - Operate</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.operate || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">N - Notice</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.notice || '-')}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diagnosis -->
+                    <div class="space-y-2 text-left">
+                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">2</span> Portfolio Diagnosis & Improvement</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">เป้าหมายและข้อจำกัด</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.goalAndLimit || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">พอร์ตที่ควรเป็นตามเป้าหมาย</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.idealPortfolio || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">พอร์ตปัจจุบันที่ลูกค้ามี</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.currentPortfolio || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">อาการของพอร์ต</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.portfolioSymptom || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">ผลกระทบที่อาจเกิดขึ้น</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.potentialImpact || '-')}</p>
+                            </div>
+                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">แนวทางปรับพอร์ต</div>
+                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.adjustmentAdjustment || diag.adjustmentGuideline || '-')}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Solutions -->
+                    <div class="space-y-2 text-left">
+                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">3</span> Financial Solution</h3>
+                        ${renderSolutionsTable()}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        if (bodyEl) bodyEl.innerHTML = detailsHtml;
+    };
+
+    function sendAdminBootcampMailAsEmail(userId, activeIndex) {
+        const container = document.getElementById('adminBootcampMailContentArea');
+        if (!container) return;
+
+        const user = state.users.find(u => u.id === userId);
+        if (!user) return;
+
+        const cdDocs = state.customerDiagnosis.filter(doc => doc.id.startsWith(userId + '__'));
+        const allSets = [];
+        cdDocs.forEach(doc => {
+            const activityItemId = doc.id.split('__')[1] || '';
+            const activityItem = state.ports.find(p => p.id === activityItemId) || { name: 'ไม่ระบุกิจกรรม' };
+            (doc.sets || []).forEach((set) => {
+                allSets.push({
+                    activityItem,
+                    set
+                });
+            });
+        });
+
+        const activeEntry = allSets[activeIndex];
+        if (!activeEntry) return;
+        const setIndex = activeIndex + 1;
+        const subjectText = `Account Planning Bootcamp (แผนงานที่ ${setIndex}) โดย ${user.name}`;
+
+        const originalHeight = container.style.height;
+        const originalMaxHeight = container.style.maxHeight;
+        const originalOverflow = container.style.overflow;
+
+        container.style.height = 'auto';
+        container.style.maxHeight = 'none';
+        container.style.overflow = 'visible';
+
+        html2canvas(container, { scale: 2, useCORS: true }).then((canvas) => {
+            container.style.height = originalHeight;
+            container.style.maxHeight = originalMaxHeight;
+            container.style.overflow = originalOverflow;
+
+            const imgData = canvas.toDataURL('image/png');
+
+            const link = document.createElement('a');
+            link.download = `bootcamp_plan_${setIndex}.png`;
+            link.href = imgData;
+            link.click();
+
+            canvas.toBlob((blob) => {
+                if (blob) {
+                    try {
+                        navigator.clipboard.write([
+                            new ClipboardItem({ 'image/png': blob })
+                        ]).then(() => {
+                            console.log("คัดลอกรูปภาพแผนงานลง Clipboard เรียบร้อยแล้ว");
+                        }).catch(err => {
+                            console.error("ไม่สามารถเขียนลง Clipboard ได้", err);
+                        });
+                    } catch (e) {
+                        console.error("ไม่สามารถใช้งาน Clipboard Item ได้", e);
+                    }
+                }
+            }, 'image/png');
+
+            const bodyInstruction = "กรุณากด Ctrl+V (หรือคลิกขวาแล้ววาง) เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\n\n";
+            const mailtoUrl = `mailto:?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyInstruction)}`;
+            window.location.href = mailtoUrl;
+        });
+    }
+
+    function closeCompetitorDetailsLightbox() {
+        document.getElementById('competitorDetailsLightbox').classList.add('hidden');
+        window.activePortfolioUserId = null;
+        window.activePortfolioIndex = 0;
+        window.activeBootcampUserId = null;
+        window.activeBootcampIndex = 0;
+        window.currentAdminMailScale = 1.0;
+    }
+
+    function openConfirmDeletePlanLightbox(userId) {
+        document.getElementById('deletePlanUserId').value = userId;
+        document.getElementById('confirmDeletePlanLightbox').classList.remove('hidden');
+    }
+
+    function closeConfirmDeletePlanLightbox() {
+        document.getElementById('confirmDeletePlanLightbox').classList.add('hidden');
+    }
+
+    window.openConfirmDeleteSetLightbox = (type) => {
+        window.deleteSetType = type;
+        const input = document.getElementById('confirmDeleteSetInput');
+        if (input) input.value = '';
+        const btn = document.getElementById('confirmDeleteSetBtn');
+        if (btn) {
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+            btn.classList.remove('opacity-100', 'cursor-pointer');
+        }
+        document.getElementById('confirmDeleteSetLightbox').classList.remove('hidden');
+    };
+
+    window.checkDeleteSetInput = () => {
+        const text = document.getElementById('confirmDeleteSetInput').value.trim();
+        const btn = document.getElementById('confirmDeleteSetBtn');
+        if (!btn) return;
+        
+        if (text === 'Delete Page') {
+            btn.disabled = false;
+            btn.classList.remove('opacity-50', 'cursor-not-allowed');
+            btn.classList.add('opacity-100', 'cursor-pointer');
+        } else {
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+            btn.classList.remove('opacity-100', 'cursor-pointer');
+        }
+    };
+
+    window.closeConfirmDeleteSetLightbox = () => {
+        document.getElementById('confirmDeleteSetLightbox').classList.add('hidden');
+    };
+
+    window.confirmDeleteActiveSet = async () => {
+        const text = document.getElementById('confirmDeleteSetInput').value.trim();
+        if (text !== 'Delete Page') {
+            alert('กรุณาพิมพ์ "Delete Page" ให้ถูกต้องเพื่อยืนยัน');
+            return;
+        }
+
+        try {
+            if (window.deleteSetType === 'portfolio') {
+                const userId = window.activePortfolioUserId;
+                const activeIndex = window.activePortfolioIndex;
+                const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId)
+                    .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
+                const activeSet = portfolioDocs[activeIndex];
+                if (activeSet) {
+                    await deleteFirestoreDocument(firestoreCollections.portfolioSets, activeSet.id);
+                    console.log('ลบแผนงาน Portfolio สำเร็จ');
+                }
+            } else if (window.deleteSetType === 'bootcamp') {
+                const userId = window.activeBootcampUserId;
+                const activeIndex = window.activeBootcampIndex;
+                const cdDocs = state.customerDiagnosis.filter(doc => doc.id.startsWith(userId + '__'));
+                const allSets = [];
+                cdDocs.forEach(doc => {
+                    (doc.sets || []).forEach((set) => {
+                        allSets.push({ docId: doc.id, set });
+                    });
+                });
+                const activeEntry = allSets[activeIndex];
+                if (activeEntry) {
+                    const doc = state.customerDiagnosis.find(d => d.id === activeEntry.docId);
+                    if (doc) {
+                        const setIdx = doc.sets.indexOf(activeEntry.set);
+                        if (setIdx > -1) {
+                            doc.sets.splice(setIdx, 1);
+                            await upsertFirestoreDocument(firestoreCollections.customerDiagnosis, doc.id, { sets: doc.sets });
+                            console.log('ลบแผนงาน Bootcamp สำเร็จ');
+                        }
+                    }
+                }
+            }
+            closeConfirmDeleteSetLightbox();
+            closeCompetitorDetailsLightbox();
+        } catch (error) {
+            console.error('ลบข้อมูลไม่สำเร็จ', error);
+            alert('ลบข้อมูลไม่สำเร็จ: ' + error.message);
+        }
+    };
+
+    async function deletePlanConfirm() {
+        const userId = document.getElementById('deletePlanUserId').value;
+        if (!userId) return;
+
+        try {
+            // Delete user from Firestore
+            await deleteFirestoreDocument(firestoreCollections.users, userId);
+
+            // Find related portfolio and customer diagnosis docs
+            const portDocs = state.portfolioSets.filter(doc => doc.userId === userId);
+            const cdDocs = state.customerDiagnosis.filter(doc => doc.id.startsWith(userId + '__'));
+
+            for (let doc of portDocs) {
+                await deleteFirestoreDocument(firestoreCollections.portfolioSets, doc.id);
+            }
+            for (let doc of cdDocs) {
+                await deleteFirestoreDocument(firestoreCollections.customerDiagnosis, doc.id);
+            }
+
+            // Update local state
+            state.users = state.users.filter(u => u.id !== userId);
+            state.portfolioSets = state.portfolioSets.filter(doc => doc.userId !== userId);
+            state.customerDiagnosis = state.customerDiagnosis.filter(doc => !doc.id.startsWith(userId + '__'));
+
+            closeConfirmDeletePlanLightbox();
+            renderCompetitorsTable();
+        } catch (error) {
+            console.error('Error deleting competitor data:', error);
+        }
+    }
+
+    window.switchTab = switchTab;
+    window.openAddRoundLightbox = openAddRoundLightbox;
+    window.closeRoundLightbox = closeRoundLightbox;
+    window.saveRound = saveRound;
+    window.openEditRoundLightbox = openEditRoundLightbox;
+    window.deleteRound = deleteRound;
+    window.toggleRoundStatus = toggleRoundStatus;
+    window.changeRoundsPageSize = changeRoundsPageSize;
+    window.changePortsRound = changePortsRound;
+    window.syncSelectedRound = syncSelectedRound;
+    window.selectMainPort = selectMainPort;
+    window.selectSubPort = selectSubPort;
+    window.openAddPortLightbox = openAddPortLightbox;
+    window.closeAddPortLightbox = closeAddPortLightbox;
+    window.savePort = savePort;
+    window.openEditPortLightbox = openEditPortLightbox;
+    window.closeEditPortLightbox = closeEditPortLightbox;
+    window.savePortEdit = savePortEdit;
+    window.deletePort = deletePort;
+    window.toggleExcelUploadArea = toggleExcelUploadArea;
+    window.openAddSubPortLightbox = openAddSubPortLightbox;
+    window.closeAddSubPortLightbox = closeAddSubPortLightbox;
+    window.saveSubPortManual = saveSubPortManual;
+    window.openEditSubPortLightbox = openEditSubPortLightbox;
+    window.closeEditSubPortLightbox = closeEditSubPortLightbox;
+    window.saveSubPortEditManual = saveSubPortEditManual;
+    window.deleteSubPort = deleteSubPort;
+    window.openAddProductLightbox = openAddProductLightbox;
+    window.closeAddProductLightbox = closeAddProductLightbox;
+    window.saveProduct = saveProduct;
+    window.openEditProductLightbox = openEditProductLightbox;
+    window.closeEditProductLightbox = closeEditProductLightbox;
+    window.saveProductEdit = saveProductEdit;
+    window.deleteProduct = deleteProduct;
+    window.importProductsExcel = importProductsExcel;
+    window.changeProductsPageSize = changeProductsPageSize;
+    window.changeProductsGroupFilter = changeProductsGroupFilter;
+    window.goToProductsPage = goToProductsPage;
+    window.renderCompetitorsTable = renderCompetitorsTable;
+    window.openCompetitorPortfolioSetsLightbox = openCompetitorPortfolioSetsLightbox;
+    window.openCompetitorAccountSetsLightbox = openCompetitorAccountSetsLightbox;
+    window.renderActivePortfolioDetails = renderActivePortfolioDetails;
+    window.sendAdminPortfolioMailAsEmail = sendAdminPortfolioMailAsEmail;
+    window.closeCompetitorDetailsLightbox = closeCompetitorDetailsLightbox;
+    window.openConfirmDeletePlanLightbox = openConfirmDeletePlanLightbox;
+    window.closeConfirmDeletePlanLightbox = closeConfirmDeletePlanLightbox;
+    window.deletePlanConfirm = deletePlanConfirm;
+
+    initFirebase();
+    loadAdminData();
+})();
