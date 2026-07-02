@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthSim Pro - RM Portfolio (User Portal)</title>
+    <!-- Tailwind CSS for premium responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Kanit', 'Inter', 'Prompt', 'sans-serif'],
+                    },
+                    fontSize: {
+                        xs: '13px',
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Prompt & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- html2canvas for capturing DOM as image -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <!-- Firebase Config -->
+    <script src="js/firebase-config.js"></script>
+
+    <link rel="stylesheet" href="css/user.css">
+</head>
+
+<body class="min-h-screen text-slate-800 antialiased flex flex-col bg-slate-50">
+
+    <!-- Fixed Top Menu Bar -->
+    <header class="w-full bg-blue-800 sticky top-0 z-40 shadow-sm shrink-0 text-white">
+        <div class="max-w-[1200px] mx-auto px-4 h-14 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-7 h-7 bg-blue-600 text-white rounded-lg flex items-center justify-center shadow-md shadow-blue-500/20">
+                    <i class="fa-solid fa-briefcase text-xs"></i>
+                </div>
+                <span class="font-bold text-white text-sm tracking-wide">Portfolio & Account Planning</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="logoutPlayer()" id="btnLogoutPlayer"
+                    class="hidden text-[12px] font-bold text-white hover:bg-blue-700 bg-blue-900 border border-blue-700/50 px-2.5 py-1 rounded-lg transition flex items-center gap-1">
+                    <i class="fa-solid fa-right-from-bracket"></i> ลงทะเบียนใหม่
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main
+        class="h-full w-full max-w-7xl mx-auto p-4 flex flex-col items-center justify-start pt-6 relative overflow-y-auto">
+
+        <!-- Toast Custom Notification System Container -->
+        <div id="toastContainer" class="w-full max-w-sm absolute top-5 z-[99999] space-y-2 pointer-events-none"></div>
+
+        <!-- Tabs Menu Bar (Moved outside the box, to the top of the box) -->
+        <div id="simulationTabsMenuBar"
+            class="hidden flex border border-slate-200 bg-slate-50 rounded-2xl p-1 shadow-sm gap-1 w-full max-w-[1200px] mb-4 shrink-0">
+            <!-- Populated dynamically via js/user.js from plan_activity_items -->
+        </div>
+
+        <!-- App Content Area (Responsive Container max-width 1200px) -->
+        <div class="bg-white w-full max-w-[1200px] rounded-2xl border border-slate-200/80 pt-6 pb-6 px-6 flex flex-col shadow-sm relative"
+            style="height: auto;">
+
+            <!-- ================= VIEW 0: REGISTER SCREEN ================= -->
+            <div id="viewRegister" class="flex flex-col max-w-[600px] mx-auto w-full space-y-5 py-4 text-center">
+                <!-- Header -->
+                <div class="flex flex-col items-center space-y-2 text-center pb-2 border-b border-slate-100">
+                    <div
+                        class="w-60 h-60 bg-brand-500 text-white rounded-full flex items-center justify-center shadow-lg shadow-brand-500/20">
+                        <i class="fa-solid fa-address-card text-9xl"></i>
+                    </div>
+                    <span class="text-slate-800 py-3 text-sm">ลงทะเบียนเข้าแข่งขัน</span>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-slate-150 shadow-inner space-y-4">
+                    <!-- Row 1: Round Selection (Static display) -->
+                    <div class="space-y-1">
+                        <label class="block text-xs font-bold text-slate-650">รอบกิจกรรม</label>
+                        <div id="displayActiveRoundName"
+                            class="w-[400px] mx-auto bg-slate-100 text-center border border-slate-200 rounded-xl py-2 px-3 text-xs font-black text-slate-800">
+                            -- ไม่มีรอบกิจกรรมที่เปิดลงทะเบียนในขณะนี้ --
+                        </div>
+                        <input type="hidden" id="selectRegRound">
+                    </div>
+
+                    <!-- Row 2: Competitor Team Info -->
+                    <div class="space-y-1 py-5" id="regNameContainer">
+                        <label class="block text-xs font-bold text-slate-650">ชื่อทีม หรือ
+                            ชื่อผู้แข่งขัน</label>
+                        <input type="text" id="inputRegName" placeholder="กรอกชื่อทีม หรือ ชื่อผู้แข่งขัน"
+                            class="w-[400px] text-center bg-slate-100 border border-slate-200 rounded-xl py-2 px-3 text-xs font-semibold focus:border-brand-500 focus:bg-white outline-none transition text-slate-800"
+                            oninput="validateRegForm()">
+                    </div>
+                </div>
+
+                <!-- Action Button to Start Game -->
+                <button id="btnSubmitRegister" onclick="submitRegister()"
+                    class="py-3 bg-brand-500 hover:bg-brand-600 text-white rounded-xl text-xs transition shadow-md shadow-brand-500/20 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i> ลงทะเบียนและเริ่มเขียนแผนงาน
+                </button>
+            </div>
+
+            <!-- ================= VIEW A: ONBOARDING SETUP SCREEN ================= -->
+            <div id="viewOnboarding" class="hidden flex flex-col flex-grow space-y-4">
+                <!-- Header -->
+                <div class="flex items-center justify-between border-b border-slate-100 pb-3 px-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-7 h-7 bg-indigo-500 text-white rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-chart-pie text-xs"></i>
+                        </div>
+                        <span class="font-bold text-slate-800 text-sm">สร้างพอร์ตลงทุนลูกค้า</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex-grow h-full">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+                        <!-- Column 1: Customer Details & Pie Chart Wrapper -->
+                        <div class="space-y-4 lg:col-span-1">
+                            <!-- Customer Details Box -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 flex flex-col gap-4 w-full">
+                                <!-- Horizontal Profile Section (Photo left, info right) -->
+                                <div class="flex items-center gap-4 w-full border-b border-slate-200/80 pb-4">
+                                    <div class="w-24 h-24 rounded-2xl bg-slate-200 border border-slate-300 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
+                                        <img id="onbDisplayCustomerPhoto" class="hidden w-full h-full object-cover">
+                                        <i id="onbDisplayCustomerIcon" class="fa-solid fa-user text-slate-400 text-3xl"></i>
+                                    </div>
+                                    <div class="flex-grow text-xs space-y-1.5">
+                                        <div>
+                                            <span class="text-slate-450 block text-[9px] uppercase font-bold">ชื่อ-นามสกุลลูกค้า</span>
+                                            <span id="onbDisplayCustomerName" class="text-slate-800 text-sm font-black">-</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-slate-450 block text-[9px] uppercase font-bold">เพศ / อายุ</span>
+                                            <span id="onbDisplayCustomerGenderAge" class="text-slate-800 font-bold">-</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-slate-450 block text-[9px] uppercase font-bold">อาชีพ / รายได้</span>
+                                            <span id="onbDisplayCustomerOccupationIncome" class="text-slate-800 font-bold">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Remaining Profile Fields -->
+                                <div class="w-full text-xs space-y-3.5">
+                                    <div>
+                                        <span class="text-slate-400 block text-[11px] uppercase">ระดับความเสี่ยง (Risk Profile)</span>
+                                        <span id="onbDisplayCustomerRisk" class="text-indigo-600 font-bold">-</span>
+                                    </div>
+                                    <!-- Dashed border frame for Customer Info/Goal -->
+                                    <div class="w-full border-2 border-dashed border-slate-300 rounded-2xl p-3 bg-white shadow-sm">
+                                        <span class="text-slate-500 font-bold block text-[11px] uppercase mb-1">ข้อมูลลูกค้า</span>
+                                        <span id="onbDisplayCustomerGoal" class="font-medium text-slate-700 text-xs block leading-relaxed">-</span>
+                                    </div>
+                                    <!-- Advisor taking care of customer -->
+                                    <div class="w-full pt-3 border-t border-slate-200/80 flex justify-between items-center text-xs">
+                                        <span class="text-slate-400 font-semibold text-[11px] uppercase">พนักงานที่ดูแลลูกค้า</span>
+                                        <span id="onbDisplayAdvisorName" class="font-bold text-slate-800">-</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Investment Port Box (Pie Chart) -->
+                            <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
+                                <h3 class="font-bold text-slate-800 text-sm flex items-center gap-1.5 border-b border-slate-100 pb-2">
+                                    <i class="fa-solid fa-chart-pie text-indigo-500"></i> Port การลงทุน
+                                </h3>
+                                <div class="w-full h-[220px] flex items-center justify-center relative">
+                                    <canvas id="userOnboardingPieChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 2 & 3: Allocations Card Table -->
+                        <div class="lg:col-span-2 space-y-3">
+                            <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                                <span class="text-xs font-bold text-slate-700 flex items-center gap-1">
+                                    <i class="fa-solid fa-chart-pie mr-1 text-indigo-500"></i> จัดสรรสัดส่วนตั้งต้น (%)
+                                </span>
+                                <div class="flex items-center gap-2">
+                                    <!-- วงเงินลงทุน Box -->
+                                    <div
+                                        class="bg-slate-100 border border-slate-200 px-3 py-1 rounded-xl text-center min-w-[112px]">
+                                        <span id="onbTotalBudget"
+                                            class="block font-black text-slate-800 text-xs">฿0</span>
+                                        <span
+                                            class="block text-[10px] text-slate-500 font-bold uppercase tracking-wider mt-0.5">วงเงินลงทุน</span>
+                                    </div>
+                                    <!-- เงินเพิ่มพิเศษ Box -->
+                                    <div
+                                        class="bg-emerald-50 text-emerald-800 border border-emerald-200 px-3 py-1 rounded-xl text-center min-w-[112px]">
+                                        <span id="onbSpecialBudget" class="block font-black text-xs">฿0</span>
+                                        <span
+                                            class="block text-[10px] font-bold uppercase tracking-wider mt-0.5">เงินเพิ่มพิเศษ</span>
+                                    </div>
+                                    <!-- เงินสดคงเหลือ Box -->
+                                    <div id="onbRemainingCashBox"
+                                        class="bg-amber-100 text-amber-800 border border-transparent px-3 py-1 rounded-xl text-center min-w-[112px] transition-all duration-300">
+                                        <span id="onbRemainingCash" class="block font-black text-xs">฿0 (0%)</span>
+                                        <span
+                                            class="block text-[10px] font-bold uppercase tracking-wider mt-0.5">เงินสดคงเหลือ</span>
+                                    </div>
+                                    <!-- มูลค่าพอร์ตล่าสุด Box -->
+                                    <div
+                                        class="bg-indigo-50 text-indigo-800 border border-indigo-200 px-3 py-1 rounded-xl text-center min-w-[112px]">
+                                        <span id="onbLatestPortfolioVal" class="block font-black text-xs">฿0</span>
+                                        <span
+                                            class="block text-[10px] font-bold uppercase tracking-wider mt-0.5">มูลค่าพอร์ตล่าสุด</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3" id="onboardingSlidersContainer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Button to Start Game -->
+                <button id="btnSubmitOnboarding" onclick="submitClientProfile()"
+                    class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl text-xs transition shadow-md shadow-brand-500/20 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-circle-check"></i> สร้างโปรไฟล์และเริ่มจำลองพอร์ต
+                </button>
+            </div>
+
+            <!-- ================= VIEW B: ACTIVE SIMULATION SCREEN (TABBED GRID) ================= -->
+            <div id="viewSimulation" class="hidden w-full relative flex flex-col gap-4">
+
+
+
+                <!-- TAB CONTENT 1: PORTFOLIO MAIN VIEW (superseded by dynamic tabs below, kept hidden for future reuse) -->
+                <div id="simTabContent-portfolio"
+                    class="hidden grid grid-cols-1 lg:grid-cols-[40%_60%] gap-6 w-full items-start">
+
+                    <!-- Column 1: Overview & Profile (40% width) -->
+                    <div class="space-y-6 flex flex-col">
+
+                        <!-- Active Situation Alert Box (Moved to top, styled red background and white text) -->
+                        <div id="activeSituationAlert"
+                            class="bg-rose-600 text-white p-3 rounded-2xl flex items-start gap-2.5 transition-all shadow-md">
+                            <div class="text-white mt-0.5 animate-pulse">
+                                <i class="fa-solid fa-circle-notch animate-spin"></i>
+                            </div>
+                            <div class="text-xs">
+                                <span class="font-bold block text-white" id="txtSituationStatus">รอวิกฤตหรือเหตุการณ์จาก
+                                    Admin</span>
+                                <p class="text-[11px] text-rose-100 leading-normal mt-0.5" id="txtSituationDetail">
+                                    พอร์ตลงทุนยังไม่ถูกทดสอบ สามารถสลับสัดส่วนเพื่อเตรียมแผนรับมือได้ตลอดเวลา</p>
+                            </div>
+                        </div>
+
+                        <!-- Competitor Profile Display under Situation Box -->
+                        <div
+                            class="bg-white border border-slate-200/80 rounded-2xl p-3 shadow-sm flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 overflow-hidden flex items-center justify-center"
+                                id="competitorAvatarContainer">
+                                <i class="fa-solid fa-user text-slate-400"></i>
+                            </div>
+                            <div>
+                                <span class="text-[12px] text-slate-400 block uppercase">ชื่อทีม /
+                                    ผู้เข้าแข่งขัน</span>
+                                <span id="competitorNameDisplay" class="text-xs text-slate-800">-</span>
+                            </div>
+                        </div>
+
+                        <!-- Combined Customer Profile & NAV Card -->
+                        <!-- Box 1: Customer Profile Card -->
+                        <div class="bg-white border border-slate-200/80 rounded-2xl p-4 shadow-sm flex items-center gap-4 w-full">
+                            <div class="w-20 h-20 rounded-xl bg-slate-200 border border-slate-300 flex items-center justify-center overflow-hidden shrink-0 shadow-sm">
+                                <img id="simDisplayCustomerPhoto" class="hidden w-full h-full object-cover">
+                                <i id="simDisplayCustomerIcon" class="fa-solid fa-user text-slate-400 text-3xl"></i>
+                            </div>
+                            <div class="flex-grow text-xs space-y-1.5">
+                                <div>
+                                    <span class="text-slate-455 block text-[9px] uppercase font-bold">ชื่อ-นามสกุลลูกค้า</span>
+                                    <span id="simDisplayCustomerName" class="text-slate-800 text-sm font-black">-</span>
+                                </div>
+                                <div>
+                                    <span class="text-slate-455 block text-[9px] uppercase font-bold">เพศ / อายุ</span>
+                                    <span id="simDisplayCustomerGenderAge" class="text-slate-800 font-bold">-</span>
+                                </div>
+                                <div>
+                                    <span class="text-slate-455 block text-[9px] uppercase font-bold">อาชีพ / รายได้</span>
+                                    <span id="simDisplayCustomerOccupationIncome" class="text-slate-800 font-bold">-</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box 2: NAV & Budget Stats Card -->
+                        <div class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm space-y-4">
+                            <!-- NAV & Budget Stats (Box 2) -->
+                            <div id="userTab-overview" class="flex flex-col space-y-4">
+                                <div
+                                    class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl p-3 text-white shadow-sm flex items-center justify-between">
+                                    <div>
+                                        <span class="text-[12px] text-emerald-100 block">มูลค่าพอร์ตสุทธิคงเหลือ</span>
+                                        <span id="rmNetPortfolioVal"
+                                            class="text-[13px] font-black tracking-wide">฿10,000,000</span>
+                                    </div>
+                                    <div class="text-right bg-white/20 px-2 py-1 rounded-lg">
+                                        <span class="text-[12px] text-emerald-100 block">ผลตอบแทนรวม</span>
+                                        <span id="rmReturnRate" class="text-[13px] font-black">0.00%</span>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 gap-3 pt-2 border-t border-slate-100 text-center">
+                                    <div>
+                                        <span class="text-[11px] text-slate-400 block">เงินลงทุนทั้งหมด</span>
+                                        <span id="rmTotalBudget" class="text-[12px] text-slate-900">฿10,000,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] text-slate-400 block">เงินเพิ่มพิเศษ</span>
+                                        <span id="rmSpecialBudget" class="text-[12px] text-emerald-600">฿0</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] text-slate-400 block">เงินสดคงเหลือ</span>
+                                        <div class="flex items-baseline justify-center gap-0.5">
+                                            <span id="rmCashValue"
+                                                class="text-[12px] text-emerald-600">฿2,500,000</span>
+                                            <span id="rmCashPercent"
+                                                class="text-[10px] text-slate-400 font-bold">(25%)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box 3: Port การลงทุน Card (Pie Chart) -->
+                        <div class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm space-y-3">
+                            <h3 class="font-bold text-slate-800 text-sm flex items-center gap-1.5 border-b border-slate-100 pb-2">
+                                <i class="fa-solid fa-chart-pie text-indigo-500"></i> Port การลงทุน
+                            </h3>
+                            <div class="w-full h-[220px] flex items-center justify-center relative">
+                                <canvas id="userSimulationPieChart"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Column 2: Allocate (60% width) -->
+                    <div class="space-y-6 flex flex-col">
+                        <div id="userTab-allocate" class="flex flex-col space-y-4">
+                            <div
+                                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-1 border-b border-slate-100 pb-2">
+                                <span class="text-xs font-bold text-slate-500 flex items-center"><i
+                                        class="fa-solid fa-sliders text-indigo-500 mr-1"></i>
+                                    เลื่อนสไลด์เพื่อจัดสัดส่วนพอร์ตผลิตภัณฑ์ (%)</span>
+                                <div class="flex items-center gap-2">
+                                    <button onclick="window.location.reload()"
+                                        class="w-7 h-7 rounded-lg bg-white hover:bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 hover:text-indigo-600 transition shadow-sm"
+                                        title="โหลดข้อมูลใหม่">
+                                        <i class="fa-solid fa-arrows-rotate text-xs"></i>
+                                    </button>
+                                    <div
+                                        class="bg-indigo-50 border border-indigo-100 rounded-lg px-2.5 py-1 text-center">
+                                        <span
+                                            class="text-[10px] text-slate-400 block font-bold uppercase leading-none mb-0.5">มูลค่าเงินคงเหลือ</span>
+                                        <strong id="allocateTotalVal"
+                                            class="text-[11px] text-indigo-600 font-extrabold">฿0</strong>
+                                    </div>
+                                    <div class="bg-emerald-50 border border-emerald-100 rounded-lg px-2.5 py-1 text-center"
+                                        id="allocateYieldBadge">
+                                        <span
+                                            class="text-[10px] text-slate-400 block font-bold uppercase leading-none mb-0.5">％เพิ่ม(ลด)</span>
+                                        <strong id="allocateYieldVal"
+                                            class="text-[11px] text-emerald-600 font-extrabold">0.00%</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Vertical Sliders Container -->
+                            <div class="flex flex-col gap-4" id="portfolioSlidersContainer">
+                            </div>
+
+                            <!-- Reset simulation button -->
+                            <button id="btnResetSimulation" onclick="resetSimulation()"
+                                class="hidden w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs rounded-xl transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-rotate-left"></i> รีเซ็ตพอร์ตเป็นสัดส่วน Onboarding
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB CONTENT 2: ALLOCATION HISTORY -->
+                <div id="simTabContent-history"
+                    class="hidden bg-white rounded-2xl p-6 border border-slate-200 shadow-sm w-full space-y-4 flex flex-col min-h-[400px]">
+                    <div id="userTab-history" class="flex flex-col space-y-3 flex-grow">
+                        <span class="text-xs font-bold text-slate-500 px-1 block"><i
+                                class="fa-solid fa-list-ul text-sky-500 mr-1"></i>
+                            ประวัติการจัดพอร์ตและคำสั่งตลาด</span>
+                        <!-- Custom logs container -->
+                        <div id="logsConsole"
+                            class="bg-slate-950 text-emerald-400 font-mono text-[12px] p-4 rounded-2xl border border-slate-800 space-y-1.5 overflow-y-auto flex-grow min-h-[350px]">
+                            <!-- Appended dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic tab content, generated per plan_activity_items entry (left blank for now) -->
+                <div id="dynamicTabContentContainer" class="w-full flex flex-col gap-4"></div>
+
+                <!-- Dark/Blur Overlay when Sliders are locked during Active Situations -->
+                <div id="slidersLockOverlay"
+                    class="hidden absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] rounded-[24px] z-30 flex flex-col items-center justify-center p-4">
+                    <div
+                        class="bg-white/95 p-5 rounded-3xl border border-rose-100 shadow-2xl max-w-[340px] text-center space-y-4">
+                        <div
+                            class="w-24 h-24 bg-rose-50 text-rose-500 rounded-full flex items-center justify-center mx-auto shadow-md">
+                            <i class="fa-solid fa-lock text-xl animate-pulse"></i>
+                        </div>
+                        <div>
+                            <span
+                                class="text-[12px] font-bold text-rose-600 uppercase tracking-widest bg-rose-50 px-2.5 py-1 rounded-full inline-block mb-1.5">พอร์ตถูกล็อกชั่วคราว</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm" id="lockOverlayTitle">
+                                พอร์ตถูกล็อกชั่วคราวขณะเกิดภัยพิบัติ</h4>
+                        </div>
+                        <div id="lockOverlaySituationDetails"
+                            class="bg-rose-50/50 p-3.5 rounded-2xl border border-rose-100 text-left space-y-1.5"></div>
+                        <p class="text-[12px] text-slate-400 font-semibold leading-normal">
+                            ตลาดการเงินมีความผันผวนสูงมาก กรุณารอแอดมินปิดสถานการณ์รอบนี้เพื่อทำการสับเปลี่ยนพอร์ต
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= IMMERSIVE ROUND SUMMARY LIGHTBOX ================= -->
+            <div id="summaryLightbox"
+                class="hidden fixed inset-0 bg-slate-900/90 z-[9999] flex items-center justify-center p-3 animate-fade-in">
+                <div
+                    class="bg-white w-full md:max-w-[70%] rounded-[32px] p-5 shadow-2xl border border-slate-100 space-y-4 max-h-[660px] overflow-y-auto">
+                    <div class="text-center">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-tr from-emerald-400 to-teal-500 rounded-full flex items-center justify-center text-white mx-auto text-2xl shadow-md mb-2 animate-bounce">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h3 class="font-black text-slate-900 text-lg">สรุปผลการประเมินรอบล่าสุด</h3>
+                        <p class="text-xs text-slate-400">สิ้นสุดสภาวะวิกฤต - ตลาดปรับตัวสู่สมดุล</p>
+                    </div>
+
+                    <!-- Financial Penalty Callout Box if protection failed -->
+                    <div id="lbPenaltyContainer" class="hidden"></div>
+
+                    <!-- Net Asset Value & Yield Breakdown -->
+                    <div
+                        class="bg-gradient-to-br from-blue-900 to-indigo-800 rounded-2xl p-4 text-white space-y-3 shadow-lg">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300 font-medium text-xs">มูลค่าพอร์ตสุทธิคงเหลือล่าสุด</span>
+                            <span id="lbNetValue" class="font-black text-white text-base">฿10,000,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300 font-medium text-xs">อัตราผลตอบแทนรวมสะสม</span>
+                            <span id="lbReturnRate" class="font-black text-emerald-400 text-base">0.00%</span>
+                        </div>
+                    </div>
+
+                    <!-- Comparison list comparing before vs after portfolio metrics -->
+                    <div class="space-y-2 pt-1 text-xs">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-1.5">
+                            <span class="text-slate-500 uppercase tracking-wider text-[12px] block">ผลลัพธ์รายผลิตภัณฑ์
+                                (ก่อน vs หลัง)</span>
+                            <span class="text-[12px] text-slate-400">฿ (ก่อน) → ฿ (หลัง)</span>
+                        </div>
+                        <div id="lbAssetsComparisonContainer" class="space-y-2.5 max-h-[400px] overflow-y-auto pr-1">
+                            <!-- Populated dynamically via javascript -->
+                        </div>
+                    </div>
+
+                    <button onclick="closeLightbox()"
+                        class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-extrabold rounded-2xl text-xs transition shadow-lg shadow-brand-500/25 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>ปิดหน้าต่างนี้</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ================= IMMERSIVE SITUATION TRIGGER LIGHTBOX ================= -->
+            <div id="situationTriggerLightbox"
+                class="hidden fixed inset-0 bg-slate-950/90 z-50 flex items-center justify-center p-3 animate-fade-in">
+                <div
+                    class="bg-white w-full md:max-w-[70%] rounded-[32px] p-5 shadow-2xl border border-slate-100 space-y-4 max-h-[660px] overflow-y-auto text-xs text-slate-700">
+                    <div class="text-center pb-2 border-b border-slate-100">
+                        <div id="sitIconContainer"
+                            class="w-14 h-14 rounded-full flex items-center justify-center text-white mx-auto text-2xl shadow-md mb-2">
+                        </div>
+                        <h3 id="sitTitle" class="font-black text-slate-900 text-sm"></h3>
+                        <span id="sitSub"
+                            class="text-[12px] font-semibold px-2 py-0.5 rounded-full inline-block mt-0.5"></span>
+                    </div>
+
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200/60 leading-relaxed"
+                        id="sitDescription"></div>
+
+                    <div class="space-y-2">
+                        <span
+                            class="font-extrabold text-slate-500 uppercase tracking-wider text-[12px] block">ผลกระทบวิกฤตสภาวะตลาด
+                            (Market Impact)</span>
+                        <div class="bg-rose-50/60 p-3 rounded-xl border border-rose-100/80 leading-relaxed text-slate-700 space-y-1.5"
+                            id="sitImpactDetails"></div>
+                    </div>
+
+                    <!-- Mini modifiers indicator in user overlay (Hidden as requested) -->
+                    <div class="hidden grid grid-cols-2 md:grid-cols-5 gap-1.5 text-center text-[12px] bg-slate-100/60 p-2.5 rounded-xl border border-slate-200/40"
+                        id="situationModifiersDisplayContainer">
+                    </div>
+
+                    <div class="space-y-2">
+                        <span
+                            class="font-extrabold text-slate-500 uppercase tracking-wider text-[12px] block flex items-center gap-1"><i
+                                class="fa-solid fa-graduation-cap text-indigo-500"></i>
+                            บทวิเคราะห์เศรษฐศาสตร์เชิงลึก</span>
+                        <div class="bg-indigo-50/40 p-3 rounded-xl border border-indigo-100/60 text-slate-600 leading-normal h-[90px] overflow-y-auto"
+                            id="sitBackgroundExplain"></div>
+                    </div>
+
+                    <button onclick="closeSituationTriggerLightbox()"
+                        class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white font-extrabold rounded-2xl transition shadow-lg text-xs flex items-center justify-center gap-2">
+                        <span>รับทราบสถานการณ์และเตรียมรับมือ</span> <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ================= SUB-PORT SELECTOR LIGHTBOX ================= -->
+            <div id="subPortSelectorLightbox"
+                class="hidden fixed inset-0 bg-slate-900/80 z-50 flex items-start justify-center p-3 overflow-y-auto animate-fade-in pt-10">
+                <div
+                    class="bg-white w-full md:max-w-[50%] md:w-[50%] max-w-[95%] rounded-[32px] p-6 shadow-2xl border border-slate-100 space-y-4 text-xs text-slate-700 my-auto">
+                    <div class="text-center pb-2 border-b border-slate-100">
+                        <div
+                            class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center mx-auto text-lg mb-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <h3 class="font-black text-slate-900 text-sm">เลือกพอร์ตย่อย / กองทุน</h3>
+                        <p class="text-[11px] text-slate-400">เลือกประเภทกองทุนและชื่อกองทุนย่อยในการจัดพอร์ต</p>
+                    </div>
+
+                    <input type="hidden" id="subPortSelectParentId">
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-[11px] font-bold text-slate-600 mb-1 uppercase">ประเภทกองทุน
+                                (FundType)</label>
+                            <select id="selSubPortType" onchange="onSubPortTypeChange()"
+                                class="w-full bg-slate-50 border border-slate-200 rounded-xl py-2 px-3 font-semibold focus:border-indigo-500 outline-none text-slate-800">
+                                <option value="">-- กรุณาเลือกประเภท --</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold text-slate-600 mb-1 uppercase">ชื่อกองทุน
+                                (FundName)</label>
+                            <select id="selSubPortName"
+                                class="w-full bg-slate-50 border border-slate-200 rounded-xl py-2 px-3 font-semibold focus:border-indigo-500 outline-none text-slate-800">
+                                <option value="">-- กรุณาเลือกกองทุน --</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 pt-2">
+                        <button onclick="closeSubPortSelector()"
+                            class="w-1/2 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl transition text-[12px]">ยกเลิก</button>
+                        <button onclick="addSubPortAllocation()"
+                            class="w-1/2 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl transition shadow-md shadow-indigo-600/10 text-[12px]">เพิ่มรายการลงทุน</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= SPECIAL MONEY LIGHTBOX ================= -->
+            <div id="specialMoneyLightbox"
+                class="hidden fixed inset-0 bg-slate-950/80 z-50 flex items-center justify-center p-3 animate-fade-in">
+                <div
+                    class="bg-white w-full max-w-[400px] rounded-[32px] p-6 shadow-2xl border border-slate-100 text-center space-y-4">
+                    <div
+                        class="w-16 h-16 bg-amber-50 text-amber-500 rounded-full flex items-center justify-center mx-auto shadow-md">
+                        <i class="fa-solid fa-coins text-2xl animate-bounce"></i>
+                    </div>
+                    <div>
+                        <span
+                            class="text-[12px] font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-2.5 py-1 rounded-full inline-block mb-1.5">คุณได้รับเงินพิเศษ</span>
+                        <h4 class="font-extrabold text-slate-900 text-sm" id="specialMoneyTitle"></h4>
+                    </div>
+                    <button onclick="acknowledgeSpecialMoney()"
+                        class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-extrabold rounded-2xl text-xs transition shadow-lg shadow-brand-500/25 flex items-center justify-center gap-2">
+                        <span>รับทราบ</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ================= RE-REGISTER LIGHTBOX ================= -->
+            <div id="reRegisterLightbox"
+                class="hidden fixed inset-0 bg-slate-900/80 z-50 flex items-center justify-center p-3 animate-fade-in">
+                <div
+                    class="bg-white w-full md:max-w-[40%] rounded-[32px] p-6 shadow-2xl border border-slate-100 text-center space-y-4">
+                    <div
+                        class="w-16 h-16 bg-amber-50 text-amber-500 rounded-full flex items-center justify-center mx-auto shadow-md">
+                        <i class="fa-solid fa-triangle-exclamation text-2xl text-amber-500"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-extrabold text-slate-900 text-sm">ยืนยันการลงทะเบียนใหม่</h4>
+                        <p class="text-[12px] text-slate-500 leading-normal mt-2">
+                            หากต้องการ ลงทะเบียนใหม่ คุณต้องกรอกชื่อทีม หรือชื่อผู้แข่งขันชื่อใหม่
+                        </p>
+                    </div>
+                    <div class="flex gap-2 pt-2">
+                        <button onclick="closeReRegisterLightbox()"
+                            class="w-1/2 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl transition text-[12px]">ยกเลิก</button>
+                        <button onclick="confirmReRegister()"
+                            class="w-1/2 py-2.5 bg-rose-600 hover:bg-rose-700 text-white font-bold rounded-xl transition shadow-md shadow-rose-600/10 text-[12px]">ยืนยัน</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- Core Interactive Logic Script & Synchronization -->
+    <script src="js/user.js?v=20260701b"></script>
+</body>
+
+</html>
