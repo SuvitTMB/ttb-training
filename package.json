@@ -1,0 +1,12 @@
+{
+  "name": "actionplan2026-simulation",
+  "version": "1.0.0",
+  "description": "Simulation platform for Portfolio & Account Planning",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
