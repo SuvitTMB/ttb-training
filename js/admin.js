@@ -369,39 +369,6 @@
         renderPortsTable();
         populateProductGroupFilter();
         renderProductsTable();
-        registerRealtimeListeners();
-    }
-
-    function registerRealtimeListeners() {
-        if (!firebaseState.ready || !firebaseState.db) return;
-
-        firebaseState.db.collection(firestoreCollections.users).onSnapshot(snapshot => {
-            state.users = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-            renderCompetitorsTable();
-            if (!document.getElementById('competitorDetailsLightbox').classList.contains('hidden')) {
-                if (window.activePortfolioUserId) {
-                    renderActivePortfolioDetails(window.activePortfolioUserId, window.activePortfolioIndex);
-                } else if (window.activeBootcampUserId) {
-                    renderActiveBootcampDetails(window.activeBootcampUserId, window.activeBootcampIndex);
-                }
-            }
-        });
-
-        firebaseState.db.collection(firestoreCollections.portfolioSets).onSnapshot(snapshot => {
-            state.portfolioSets = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-            renderCompetitorsTable();
-            if (!document.getElementById('competitorDetailsLightbox').classList.contains('hidden') && window.activePortfolioUserId) {
-                renderActivePortfolioDetails(window.activePortfolioUserId, window.activePortfolioIndex);
-            }
-        });
-
-        firebaseState.db.collection(firestoreCollections.customerDiagnosis).onSnapshot(snapshot => {
-            state.customerDiagnosis = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-            renderCompetitorsTable();
-            if (!document.getElementById('competitorDetailsLightbox').classList.contains('hidden') && window.activeBootcampUserId) {
-                renderActiveBootcampDetails(window.activeBootcampUserId, window.activeBootcampIndex);
-            }
-        });
     }
 
     function escapeHtml(value) {
@@ -499,14 +466,6 @@
             return;
         }
 
-        const getUniqueRegistrationCount = (roundId) => {
-            if (!state.users || !state.users.length) return 0;
-            const names = state.users
-                .filter(u => u.roundId === roundId && u.name)
-                .map(u => u.name.trim().toLowerCase());
-            return new Set(names).size;
-        };
-
         tableBody.innerHTML = state.rounds.map((round, index) => `
             <tr class="hover:bg-slate-50 transition">
                 <td class="py-3 px-4 align-top">
@@ -518,7 +477,7 @@
                 </td>
                 <td class="py-3 px-4 text-center align-top">
                     <span class="inline-flex items-center justify-center min-w-10 px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100 font-bold text-[11px]">
-                        ${getUniqueRegistrationCount(round.id)}
+                        ${Number(round.registrationCount || 0)}
                     </span>
                 </td>
                 <td class="py-3 px-4 text-center align-top">${statusBadge(round.status, `toggleRoundStatus('${round.id}')`)}</td>
@@ -565,10 +524,7 @@
                     </td>
                     <td class="py-3 px-4 text-left align-top">
                         <div class="font-bold text-slate-900">${escapeHtml(port.name)}</div>
-                        <div class="text-[11px] text-slate-500 mt-0.5 font-normal flex flex-wrap gap-x-2 gap-y-0.5">
-                            <span>รอบกิจกรรม: ${escapeHtml(getRoundName(port.roundId))}</span>
-                            <span class="text-indigo-600 font-semibold">(Template: ${port.template === 'customerDiagnosis' ? 'Customer Diagnosis' : 'Portfolio Planning'})</span>
-                        </div>
+                        <div class="text-[11px] text-slate-500 mt-0.5 font-normal">รอบกิจกรรม: ${escapeHtml(getRoundName(port.roundId))}</div>
                     </td>
                     <td class="py-3 px-4 text-center align-top">${statusBadge(port.status)}</td>
                     <td class="py-3 px-4 text-center align-top">
@@ -970,7 +926,6 @@
         document.getElementById('addPortRoundId').value = getDefaultPortRoundId();
         document.getElementById('addPortDisplayOrder').value = String((state.ports.length || 0) + 1);
         document.getElementById('addPortName').value = '';
-        document.getElementById('addPortTemplate').value = 'portfolioPlanning';
         document.getElementById('addPortStatus').value = 'on';
 
         if (lightbox) {
@@ -995,11 +950,6 @@
         document.getElementById('editPortRoundId').value = port.roundId;
         document.getElementById('editPortDisplayOrder').value = port.displayOrder;
         document.getElementById('editPortName').value = port.name;
-        document.getElementById('editPortTemplate').value = port.template || (
-            (port.name === 'Customer Diagnosis' || port.name === 'Account Planning Bootcamp') 
-            ? 'customerDiagnosis' 
-            : 'portfolioPlanning'
-        );
         document.getElementById('editPortStatus').value = port.status;
 
         const lightbox = document.getElementById('editPortLightbox');
@@ -1021,7 +971,6 @@
             roundId: document.getElementById('addPortRoundId').value || getDefaultPortRoundId(),
             displayOrder: Number(document.getElementById('addPortDisplayOrder').value || 1),
             name: document.getElementById('addPortName').value.trim(),
-            template: document.getElementById('addPortTemplate').value,
             status: document.getElementById('addPortStatus').value,
         };
 
@@ -1043,7 +992,6 @@
             roundId: document.getElementById('editPortRoundId').value || getDefaultPortRoundId(),
             displayOrder: Number(document.getElementById('editPortDisplayOrder').value || 1),
             name: document.getElementById('editPortName').value.trim(),
-            template: document.getElementById('editPortTemplate').value,
             status: document.getElementById('editPortStatus').value,
         };
 
@@ -1587,568 +1535,222 @@
         const user = state.users.find(u => u.id === userId);
         if (!user) return;
 
-        const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId)
-            .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
-
-        if (!portfolioDocs.length) {
-            const bodyEl = document.getElementById('competitorDetailsBody');
-            const mailBtn = document.getElementById('adminPortfolioMailBtn');
-            const titleEl = document.getElementById('competitorDetailsTitle');
-            const subtitleEl = document.getElementById('competitorDetailsSubtitle');
-
-            if (titleEl) titleEl.textContent = `Portfolio Planning: ${user.name}`;
-            if (subtitleEl) subtitleEl.textContent = `แผนงานจัดพอร์ตทั้งหมดของทีม ${user.name}`;
-            if (mailBtn) mailBtn.classList.add('hidden');
-            if (bodyEl) bodyEl.innerHTML = `<div class="text-center py-12 text-slate-400">-- ไม่พบแผนงาน Portfolio Planning ของทีมนี้ --</div>`;
-            document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
-            return;
-        }
-
-        renderActivePortfolioDetails(userId, 0);
-        document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
-    }
-
-    function renderActivePortfolioDetails(userId, activeIndex) {
-        window.activePortfolioUserId = userId;
-        window.activePortfolioIndex = activeIndex;
-
-        const user = state.users.find(u => u.id === userId);
-        if (!user) return;
-
-        const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId)
-            .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
-
+        const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId);
+        
         const titleEl = document.getElementById('competitorDetailsTitle');
         const subtitleEl = document.getElementById('competitorDetailsSubtitle');
         const bodyEl = document.getElementById('competitorDetailsBody');
-        const mailBtn = document.getElementById('adminPortfolioMailBtn');
 
         if (titleEl) titleEl.textContent = `Portfolio Planning: ${user.name}`;
         if (subtitleEl) subtitleEl.textContent = `แผนงานจัดพอร์ตทั้งหมดของทีม ${user.name}`;
 
         if (!portfolioDocs.length) {
-            if (mailBtn) mailBtn.classList.add('hidden');
             if (bodyEl) bodyEl.innerHTML = `<div class="text-center py-12 text-slate-400">-- ไม่พบแผนงาน Portfolio Planning ของทีมนี้ --</div>`;
+            document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
             return;
         }
 
-        if (mailBtn) {
-            mailBtn.classList.remove('hidden');
-            mailBtn.onclick = () => sendAdminPortfolioMailAsEmail(userId, activeIndex);
-        }
-
-        const deleteBtn = document.getElementById('adminDeleteSetBtn');
-        if (deleteBtn) {
-            deleteBtn.onclick = () => openConfirmDeleteSetLightbox('portfolio');
-        }
-
-        const activeSet = portfolioDocs[activeIndex] || portfolioDocs[0];
-        const setIndex = portfolioDocs.indexOf(activeSet) + 1;
-
-        // Render Tabs
-        let tabsHtml = `<div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3 mb-4 shrink-0">`;
-        portfolioDocs.forEach((doc, idx) => {
-            const isActive = idx === activeIndex;
-            tabsHtml += `
-                <button onclick="renderActivePortfolioDetails('${userId}', ${idx})" class="px-4 py-2 rounded-lg text-xs font-bold transition ${isActive ? 'bg-blue-600 text-white shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-205'}">
-                    แผนงานที่ ${idx + 1}
-                </button>
-            `;
+        // Group sets by activityItemId
+        const docsByPort = {};
+        portfolioDocs.forEach(doc => {
+            if (!docsByPort[doc.activityItemId]) {
+                docsByPort[doc.activityItemId] = [];
+            }
+            docsByPort[doc.activityItemId].push(doc);
         });
-        tabsHtml += `</div>`;
 
-        // Render Set Details similar to user.js openPresenterMailLightbox
-        const getUnitForSubGroup = (subGroup) => {
-            if (!subGroup) return '';
-            const match = state.products.find((p) => p.subGroup === subGroup);
-            if (!match) return '';
-            if (match.unit) return match.unit;
-            const group = match.group;
-            if (['Deposit', 'BA', 'MF', 'SN'].includes(group)) {
-                return 'บาท';
-            }
-            if (['Portfolio', 'Relationship', 'Relation', 'Qualified WB/PB'].includes(group)) {
-                return 'คน';
-            }
-            return '';
-        };
+        let html = `<div class="space-y-8">`;
+        Object.keys(docsByPort).forEach(portId => {
+            const activityItem = state.ports.find(p => p.id === portId) || { name: 'ไม่ระบุกิจกรรม' };
+            html += `<div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 space-y-4">
+                <h4 class="font-bold text-slate-800 text-sm flex items-center gap-2 border-b border-slate-200 pb-2">
+                    <i class="fa-solid fa-folder-open text-indigo-600"></i> ${escapeHtml(activityItem.name)}
+                </h4>`;
 
-        const formatNumberWithCommas = (val) => {
-            const num = Number(val);
-            return isNaN(num) ? '0' : num.toLocaleString('th-TH');
-        };
-
-        const renderCategoryOutcomeRows = (cat) => {
-            const rows = activeSet.rows[cat] || [];
-            const targetText = rows[0]?.target || '-';
-            const actionText = rows[0]?.actionPlan || '-';
-
-            const productList = rows.map((row) => {
-                if (!row.subGroup) return '';
-                const unit = getUnitForSubGroup(row.subGroup);
-                const amt = formatNumberWithCommas(row.amount || 0);
-                return `<li class="text-xs text-slate-700 list-disc list-inside">${escapeHtml(row.subGroup)}: <strong class="text-blue-800">${amt}</strong> ${unit}</li>`;
-            }).filter(Boolean).join('');
-
-            return `
-                <div class="border border-slate-200 rounded-xl p-4 bg-slate-50/50 space-y-2 text-left">
-                    <h5 class="text-sm font-bold text-slate-800 border-b border-slate-200 pb-1">${cat}</h5>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
-                        <div>
-                            <span class="block text-[12px] text-slate-400">Target</span>
-                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(targetText)}</p>
+            docsByPort[portId].forEach((set, setIndex) => {
+                html += `<div class="bg-white border border-slate-200 rounded-xl p-4 space-y-3 shadow-sm">
+                    <h5 class="font-black text-slate-900 text-xs">แผนงานที่ ${setIndex + 1}: ${escapeHtml(set.topic || 'ไม่มีชื่อเรื่อง')}</h5>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-100">
+                          <span class="block font-bold text-slate-500 mb-1 text-[10px]">1. Portfolio Overview</span>
+                          <p class="whitespace-pre-line text-slate-800 font-semibold">${escapeHtml(set.overview || '-')}</p>
                         </div>
-                        <div>
-                            <span class="block text-[12px] text-slate-400">Action Plan</span>
-                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(actionText)}</p>
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-100">
+                          <span class="block font-bold text-slate-500 mb-1 text-[10px]">2. Gap</span>
+                          <p class="whitespace-pre-line text-slate-800 font-semibold">${escapeHtml(set.gap || '-')}</p>
                         </div>
-                    </div>
-                    <div class="pt-1">
-                        <span class="block text-[12px] text-slate-400 mb-1">ผลิตภัณฑ์ปักหมุด</span>
-                        ${productList ? `<ul class="space-y-1">${productList}</ul>` : '<span class="text-xs text-slate-400 italic">ไม่มีข้อมูล</span>'}
-                    </div>
-                </div>
-            `;
-        };
-
-        const detailsHtml = `
-            <div class="space-y-4">
-                ${tabsHtml}
-                
-                <!-- Content Area (Target for html2canvas) -->
-                <div id="adminPortfolioMailContentArea" class="p-8 overflow-y-auto space-y-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
-                    <div class="text-center space-y-2 shrink-0">
-                        <h2 class="text-xl font-black text-slate-800">Portfolio Planning (แผนงานที่ ${setIndex})</h2>
-                        <p class="text-xs font-semibold text-blue-600">ผู้นำเสนอแผนงาน: ${escapeHtml(user.name)}</p>
-                    </div>
-
-                    <div class="bg-slate-50 border border-slate-200 px-4 py-1.5 rounded-xl shadow-sm text-left">
-                        <span class="text-xs font-bold text-slate-400 mr-1">ชื่อเรื่อง:</span>
-                        <span class="text-sm font-normal text-slate-800">${escapeHtml(activeSet.topic || '-')}</span>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
-                            <h4 class="text-xs font-black text-slate-800">1. Portfolio Overview</h4>
-                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(activeSet.overview || '-')}</p>
-                        </div>
-                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
-                            <h4 class="text-xs font-black text-slate-800">2. Gap</h4>
-                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(activeSet.gap || '-')}</p>
-                        </div>
-                        <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
-                            <h4 class="text-xs font-black text-slate-800">3. Opportunity</h4>
-                            <p class="text-xs text-slate-700 whitespace-pre-wrap">${escapeHtml(activeSet.opportunity || '-')}</p>
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-100">
+                          <span class="block font-bold text-slate-500 mb-1 text-[10px]">3. Opportunity</span>
+                          <p class="whitespace-pre-line text-slate-800 font-semibold">${escapeHtml(set.opportunity || '-')}</p>
                         </div>
                     </div>
 
-                    <div class="space-y-4 pt-4 text-left">
-                        <h4 class="text-xs font-black text-slate-800">4. Outcome (Target, Action Plan & ผลิตภัณฑ์)</h4>
-                        <div class="flex flex-col gap-4">
-                            ${renderCategoryOutcomeRows('GRAB')}
-                            ${renderCategoryOutcomeRows('GROW')}
-                            ${renderCategoryOutcomeRows('GUARD')}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `;
+                    <div class="overflow-x-auto border border-slate-200 rounded-lg mt-3">
+                        <table class="w-full text-left text-[11px] border-collapse">
+                            <thead>
+                                <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200 text-center">
+                                    <th class="p-2 border-r border-slate-200">หมวด Group</th>
+                                    <th class="p-2 border-r border-slate-200">SubGroup</th>
+                                    <th class="p-2 border-r border-slate-200">Target</th>
+                                    <th class="p-2 border-r border-slate-200">Action Plan</th>
+                                    <th class="p-2">จำนวนเงิน</th>
+                                </tr>
+                            </thead>
+                            <tbody>`;
 
-        if (bodyEl) bodyEl.innerHTML = detailsHtml;
-    }
-
-    function sendAdminPortfolioMailAsEmail(userId, activeIndex) {
-        const container = document.getElementById('adminPortfolioMailContentArea');
-        if (!container) return;
-
-        const user = state.users.find(u => u.id === userId);
-        if (!user) return;
-
-        const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId)
-            .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
-        const activeSet = portfolioDocs[activeIndex];
-        if (!activeSet) return;
-
-        const setIndex = activeIndex + 1;
-        const subjectText = `Account Planning Bootcamp (แผนงานที่ ${setIndex}) โดย ${user.name}`;
-
-        // Temporarily expand container height and remove scroll restrictions for a complete screen capture
-        const originalHeight = container.style.height;
-        const originalMaxHeight = container.style.maxHeight;
-        const originalOverflow = container.style.overflow;
-
-        container.style.height = 'auto';
-        container.style.maxHeight = 'none';
-        container.style.overflow = 'visible';
-
-        html2canvas(container, { scale: 2, useCORS: true }).then((canvas) => {
-            // Restore original styles
-            container.style.height = originalHeight;
-            container.style.maxHeight = originalMaxHeight;
-            container.style.overflow = originalOverflow;
-
-            const imgData = canvas.toDataURL('image/png');
-
-            // 1. Download screenshot locally
-            const link = document.createElement('a');
-            link.download = `bootcamp_plan_${setIndex}.png`;
-            link.href = imgData;
-            link.click();
-
-            // 2. Copy image to Clipboard as Blob
-            canvas.toBlob((blob) => {
-                if (blob) {
-                    try {
-                        navigator.clipboard.write([
-                            new ClipboardItem({ 'image/png': blob })
-                        ]).then(() => {
-                            console.log("คัดลอกรูปภาพแผนงานลง Clipboard เรียบร้อยแล้ว");
-                        }).catch(err => {
-                            console.error("ไม่สามารถเขียนลง Clipboard ได้", err);
+                const categories = Object.keys(set.rows || {});
+                if (!categories.length) {
+                    html += `<tr><td colspan="5" class="p-4 text-center text-slate-400">-- ไม่มีข้อมูลจัดสรรเงิน --</td></tr>`;
+                } else {
+                    categories.forEach(cat => {
+                        (set.rows[cat] || []).forEach(row => {
+                            html += `<tr class="border-b border-slate-150 hover:bg-slate-50/50">
+                                <td class="p-2 font-bold text-slate-800 border-r border-slate-200 text-center">${escapeHtml(cat)}</td>
+                                <td class="p-2 text-slate-700 border-r border-slate-200 text-center">${escapeHtml(row.subGroup || '-')}</td>
+                                <td class="p-2 text-slate-600 border-r border-slate-200 whitespace-pre-line font-semibold">${escapeHtml(row.target || '-')}</td>
+                                <td class="p-2 text-slate-600 border-r border-slate-200 whitespace-pre-line font-semibold">${escapeHtml(row.actionPlan || '-')}</td>
+                                <td class="p-2 text-slate-800 font-bold text-center">${escapeHtml(row.amount || '0')}</td>
+                            </tr>`;
                         });
-                    } catch (e) {
-                        console.error("ไม่สามารถใช้งาน Clipboard Item ได้", e);
-                    }
+                    });
                 }
-            }, 'image/png');
 
-            // 3. Open native email client using mailto link
-            const bodyInstruction = "กรุณากด Ctrl+V (หรือคลิกขวาแล้ววาง) เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\n\n";
-            const mailtoUrl = `mailto:?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyInstruction)}`;
-            window.location.href = mailtoUrl;
+                html += `</tbody>
+                        </table>
+                    </div>
+                </div>`;
+            });
+
+            html += `</div>`;
         });
+        html += `</div>`;
+
+        if (bodyEl) bodyEl.innerHTML = html;
+        document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
     }
 
-    window.activeBootcampUserId = null;
-    window.activeBootcampIndex = 0;
-    window.currentAdminMailScale = 1.0;
-
-    window.adjustAdminMailFontSize = (factor) => {
-        window.currentAdminMailScale = Math.max(0.5, Math.min(2.0, window.currentAdminMailScale + factor));
-        const container = document.getElementById('adminPortfolioMailContentArea') || document.getElementById('adminBootcampMailContentArea');
-        if (!container) return;
-
-        const elements = container.querySelectorAll('p, span, h2, h3, h4, h5, th, td, li, strong');
-        elements.forEach((el) => {
-            if (!el.hasAttribute('data-orig-size')) {
-                const computed = window.getComputedStyle(el).fontSize;
-                el.setAttribute('data-orig-size', computed);
-            }
-            const origSize = parseFloat(el.getAttribute('data-orig-size'));
-            if (!isNaN(origSize)) {
-                el.style.fontSize = (origSize * window.currentAdminMailScale) + 'px';
-            }
-        });
-    };
-
-    window.openCompetitorAccountSetsLightbox = (userId) => {
-        window.activePortfolioUserId = null;
-        window.activePortfolioIndex = 0;
-        window.currentAdminMailScale = 1.0;
-        
-        renderActiveBootcampDetails(userId, 0);
-        document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
-    };
-
-    window.renderActiveBootcampDetails = (userId, activeIndex) => {
-        window.activeBootcampUserId = userId;
-        window.activeBootcampIndex = activeIndex;
-
+    function openCompetitorAccountSetsLightbox(userId) {
         const user = state.users.find(u => u.id === userId);
         if (!user) return;
 
         const cdDocs = state.customerDiagnosis.filter(doc => doc.id.startsWith(userId + '__'));
-        const allSets = [];
-        cdDocs.forEach(doc => {
-            const activityItemId = doc.id.split('__')[1] || '';
-            const activityItem = state.ports.find(p => p.id === activityItemId) || { name: 'ไม่ระบุกิจกรรม' };
-            (doc.sets || []).forEach((set) => {
-                allSets.push({
-                    activityItem,
-                    docId: doc.id,
-                    set
-                });
-            });
-        });
-
+        
         const titleEl = document.getElementById('competitorDetailsTitle');
         const subtitleEl = document.getElementById('competitorDetailsSubtitle');
         const bodyEl = document.getElementById('competitorDetailsBody');
-        const mailBtn = document.getElementById('adminPortfolioMailBtn');
 
         if (titleEl) titleEl.textContent = `Account Planning Bootcamp: ${user.name}`;
         if (subtitleEl) subtitleEl.textContent = `แผนงานบูทแคมป์ทั้งหมดของทีม ${user.name}`;
 
-        if (!allSets.length) {
-            if (mailBtn) mailBtn.classList.add('hidden');
+        if (!cdDocs.length || cdDocs.reduce((acc, d) => acc + (d.sets || []).length, 0) === 0) {
             if (bodyEl) bodyEl.innerHTML = `<div class="text-center py-12 text-slate-400">-- ไม่พบแผนงาน Account Planning ของทีมนี้ --</div>`;
+            document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
             return;
         }
 
-        if (mailBtn) {
-            mailBtn.classList.remove('hidden');
-            mailBtn.onclick = () => sendAdminBootcampMailAsEmail(userId, activeIndex);
-        }
+        let html = `<div class="space-y-8">`;
+        cdDocs.forEach(doc => {
+            const activityItemId = doc.id.split('__')[1] || '';
+            const activityItem = state.ports.find(p => p.id === activityItemId) || { name: 'ไม่ระบุกิจกรรม' };
+            html += `<div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 space-y-4">
+                <h4 class="font-bold text-slate-800 text-sm flex items-center gap-2 border-b border-slate-200 pb-2">
+                    <i class="fa-solid fa-folder-open text-orange-600"></i> ${escapeHtml(activityItem.name)}
+                </h4>`;
 
-        const deleteBtn = document.getElementById('adminDeleteSetBtn');
-        if (deleteBtn) {
-            deleteBtn.onclick = () => openConfirmDeleteSetLightbox('bootcamp');
-        }
+            (doc.sets || []).forEach((set, setIndex) => {
+                const act = set.act || { aim: '', consult: '', track: '' };
+                const ion = set.ion || { improve: '', operate: '', notice: '' };
+                const diag = set.diagnosis || { goalAndLimit: '', idealPortfolio: '', currentPortfolio: '', portfolioSymptom: '', potentialImpact: '', adjustmentGuideline: '' };
+                const solutions = set.financialSolutions || [];
 
-        const activeEntry = allSets[activeIndex] || allSets[0];
-        const activeSet = activeEntry.set;
-        const activityItem = activeEntry.activityItem;
-
-        const formatValueWithCommas = (val) => {
-            if (!val) return '-';
-            const clean = String(val).replace(/,/g, '');
-            const num = Number(clean);
-            return isNaN(num) ? val : num.toLocaleString('th-TH');
-        };
-
-        // Render Tabs
-        let tabsHtml = `<div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3 mb-4 shrink-0">`;
-        allSets.forEach((entry, idx) => {
-            const isActive = idx === activeIndex;
-            tabsHtml += `
-                <button onclick="renderActiveBootcampDetails('${userId}', ${idx})" class="px-4 py-2 rounded-lg text-xs font-bold transition ${isActive ? 'bg-orange-500 text-white shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-205'}">
-                    แผนงานที่ ${idx + 1}
-                </button>
-            `;
-        });
-        tabsHtml += `</div>`;
-
-        const act = activeSet.act || { aim: '', consult: '', track: '' };
-        const ion = activeSet.ion || { improve: '', operate: '', notice: '' };
-        const diag = activeSet.diagnosis || { goalAndLimit: '', idealPortfolio: '', currentPortfolio: '', portfolioSymptom: '', potentialImpact: '', adjustmentGuideline: '' };
-        const solutions = activeSet.financialSolutions || [];
-
-        const renderSolutionsTable = () => {
-            if (!solutions.length) {
-                return '<div class="text-xs text-slate-400 italic p-3 text-center border border-slate-200 rounded-xl">ไม่มีข้อมูล Financial Solutions</div>';
-            }
-            let rowsHtml = '';
-            solutions.forEach((sol, idx) => {
-                rowsHtml += `
-                    <tr class="border-t border-slate-200">
-                        <td class="p-3 align-top border-r border-slate-200 space-y-2 text-left bg-slate-50/50">
-                            <div>
-                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">เป้าหมายทางการเงิน</span>
-                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.goal || '-')}</span>
-                            </div>
-                            <div>
-                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">จำนวนเงิน</span>
-                                <span class="text-xs font-normal text-slate-800">${escapeHtml(formatValueWithCommas(sol.amount))}</span>
-                            </div>
-                            <div>
-                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">ระยะเวลา</span>
-                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.duration || '-')}</span>
-                            </div>
-                            <div>
-                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">อัตราผลตอบแทนที่คาดหวัง</span>
-                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.expectedReturn || '-')}%</span>
-                            </div>
-                        </td>
-                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartSpend || '-')}</td>
-                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartSave || '-')}</td>
-                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartProtect || '-')}</td>
-                        <td class="p-3 align-top text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartBorrow || '-')}</td>
-                    </tr>
-                `;
-            });
-            return `
-                <div class="overflow-x-auto border border-slate-200 rounded-xl mt-1">
-                    <table class="w-full text-xs border-collapse">
-                        <thead>
-                            <tr class="bg-[#f8fafc] text-slate-700 border-b border-slate-200">
-                                <th rowspan="2" class="py-2.5 px-3 text-center font-black border-r border-slate-200 w-[24%]">รายการ</th>
-                                <th colspan="4" class="py-2 px-3 text-center font-black border-b border-slate-200">โซลูชันที่จะแนะนำ</th>
-                            </tr>
-                            <tr class="bg-slate-100/80 text-slate-700 text-[12px] text-center border-b border-slate-200">
-                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">ฉลาดใช้</th>
-                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">ฉลาดออมและลงทุน</th>
-                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">คุ้มครองอุ่นใจ</th>
-                                <th class="py-2 px-2 w-[19%]">รอบรู้กู้ยืม</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${rowsHtml}
-                        </tbody>
-                    </table>
-                </div>
-            `;
-        };
-
-        const detailsHtml = `
-            <div class="space-y-4">
-                ${tabsHtml}
-                
-                <!-- Content Area (Target for html2canvas) -->
-                <div id="adminBootcampMailContentArea" class="p-8 overflow-y-auto space-y-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
-                    <div class="text-center space-y-2 shrink-0">
-                        <h2 class="text-xl font-black text-slate-800">${escapeHtml(activityItem.name)} (แผนงานที่ ${activeIndex + 1})</h2>
-                        <p class="text-xs font-semibold text-blue-600">ผู้นำเสนอแผนงาน: ${escapeHtml(user.name)}</p>
-                    </div>
-
-                    <div class="bg-slate-50 border border-slate-200 px-4 py-1.5 rounded-xl shadow-sm text-left">
-                        <span class="text-xs font-bold text-slate-400 mr-1">ชื่อเรื่อง:</span>
-                        <span class="text-sm font-normal text-slate-800">${escapeHtml(activeSet.topic || '-')}</span>
-                    </div>
-
+                html += `<div class="bg-white border border-slate-200 rounded-xl p-4 space-y-4 shadow-sm">
+                    <h5 class="font-black text-slate-900 text-xs">แผนงานที่ ${setIndex + 1}: ${escapeHtml(set.topic || 'ไม่มีชื่อเรื่อง')}</h5>
+                    
                     <!-- ข้อมูลลูกค้า -->
-                    <div class="bgblue text-white rounded-2xl p-4 text-left space-y-1">
-                        <span class="block text-xs font-bold opacity-75">ข้อมูลลูกค้า</span>
-                        <p class="whitespace-pre-line font-normal text-xs">${escapeHtml(activeSet.customerInfo || '-')}</p>
+                    <div class="bg-[#eaf0f7] rounded-xl p-3 border border-slate-100">
+                        <span class="block font-bold text-slate-500 mb-1 text-[10px]">ข้อมูลลูกค้า</span>
+                        <p class="whitespace-pre-line text-slate-800 font-semibold">${escapeHtml(set.customerInfo || '-')}</p>
                     </div>
 
                     <!-- A-C-T-I-O-N -->
-                    <div class="space-y-2 text-left">
-                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">1</span> Customer Profile & Action Plan</h3>
+                    <div class="space-y-1">
+                        <span class="block font-bold text-slate-500 text-[10px]">1. Customer Profile & Action Plan</span>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">A - Aim</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.aim || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">C - Consult</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.consult || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">T - Track</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.track || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">I - Improve</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.improve || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">O - Operate</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.operate || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">N - Notice</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.notice || '-')}</p>
-                            </div>
+                            <div class="border rounded-lg p-2"><strong class="block text-blue-700 text-[10px]">A - Aim</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(act.aim || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-blue-700 text-[10px]">C - Consult</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(act.consult || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-blue-700 text-[10px]">T - Track</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(act.track || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-orange-600 text-[10px]">I - Improve</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(ion.improve || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-orange-600 text-[10px]">O - Operate</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(ion.operate || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-orange-600 text-[10px]">N - Notice</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(ion.notice || '-')}</p></div>
                         </div>
                     </div>
 
                     <!-- Diagnosis -->
-                    <div class="space-y-2 text-left">
-                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">2</span> Portfolio Diagnosis & Improvement</h3>
+                    <div class="space-y-1">
+                        <span class="block font-bold text-slate-500 text-[10px]">2. Portfolio Diagnosis & Improvement</span>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">เป้าหมายและข้อจำกัด</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.goalAndLimit || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">พอร์ตที่ควรเป็นตามเป้าหมาย</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.idealPortfolio || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">พอร์ตปัจจุบันที่ลูกค้ามี</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.currentPortfolio || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">อาการของพอร์ต</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.portfolioSymptom || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">ผลกระทบที่อาจเกิดขึ้น</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.potentialImpact || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">แนวทางปรับพอร์ต</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.adjustmentAdjustment || diag.adjustmentGuideline || '-')}</p>
-                            </div>
+                            <div class="border rounded-lg p-2"><strong class="block text-blue-700 text-[10px]">เป้าหมายและข้อจำกัด</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(diag.goalAndLimit || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-blue-700 text-[10px]">พอร์ตที่ควรเป็น</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(diag.idealPortfolio || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-blue-700 text-[10px]">พอร์ตปัจจุบัน</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(diag.currentPortfolio || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-orange-600 text-[10px]">อาการของพอร์ต</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(diag.portfolioSymptom || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-orange-600 text-[10px]">ผลกระทบ</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(diag.potentialImpact || '-')}</p></div>
+                            <div class="border rounded-lg p-2"><strong class="block text-orange-600 text-[10px]">แนวทางปรับพอร์ต</strong><p class="whitespace-pre-line text-slate-700 font-semibold">${escapeHtml(diag.adjustmentAdjustment || diag.adjustmentGuideline || '-')}</p></div>
                         </div>
                     </div>
 
                     <!-- Financial Solutions -->
-                    <div class="space-y-2 text-left">
-                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">3</span> Financial Solution</h3>
-                        ${renderSolutionsTable()}
-                    </div>
-                </div>
-            </div>
-        `;
+                    <div class="space-y-1">
+                        <span class="block font-bold text-slate-500 text-[10px]">3. Financial Solution</span>
+                        <div class="overflow-x-auto border border-slate-200 rounded-lg">
+                            <table class="w-full text-left text-[11px] border-collapse">
+                                <thead>
+                                    <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+                                        <th class="p-2 border-r border-slate-200 w-[24%]">รายการ</th>
+                                        <th class="p-2 border-r border-slate-200 w-[19%]">ฉลาดใช้</th>
+                                        <th class="p-2 border-r border-slate-200 w-[19%]">ฉลาดออมและลงทุน</th>
+                                        <th class="p-2 border-r border-slate-200 w-[19%]">คุ้มครองอุ่นใจ</th>
+                                        <th class="p-2 w-[19%]">รอบรู้กู้ยืม</th>
+                                    </tr>
+                                </thead>
+                                <tbody>`;
 
-        if (bodyEl) bodyEl.innerHTML = detailsHtml;
-    };
-
-    function sendAdminBootcampMailAsEmail(userId, activeIndex) {
-        const container = document.getElementById('adminBootcampMailContentArea');
-        if (!container) return;
-
-        const user = state.users.find(u => u.id === userId);
-        if (!user) return;
-
-        const cdDocs = state.customerDiagnosis.filter(doc => doc.id.startsWith(userId + '__'));
-        const allSets = [];
-        cdDocs.forEach(doc => {
-            const activityItemId = doc.id.split('__')[1] || '';
-            const activityItem = state.ports.find(p => p.id === activityItemId) || { name: 'ไม่ระบุกิจกรรม' };
-            (doc.sets || []).forEach((set) => {
-                allSets.push({
-                    activityItem,
-                    set
-                });
-            });
-        });
-
-        const activeEntry = allSets[activeIndex];
-        if (!activeEntry) return;
-        const setIndex = activeIndex + 1;
-        const subjectText = `Account Planning Bootcamp (แผนงานที่ ${setIndex}) โดย ${user.name}`;
-
-        const originalHeight = container.style.height;
-        const originalMaxHeight = container.style.maxHeight;
-        const originalOverflow = container.style.overflow;
-
-        container.style.height = 'auto';
-        container.style.maxHeight = 'none';
-        container.style.overflow = 'visible';
-
-        html2canvas(container, { scale: 2, useCORS: true }).then((canvas) => {
-            container.style.height = originalHeight;
-            container.style.maxHeight = originalMaxHeight;
-            container.style.overflow = originalOverflow;
-
-            const imgData = canvas.toDataURL('image/png');
-
-            const link = document.createElement('a');
-            link.download = `bootcamp_plan_${setIndex}.png`;
-            link.href = imgData;
-            link.click();
-
-            canvas.toBlob((blob) => {
-                if (blob) {
-                    try {
-                        navigator.clipboard.write([
-                            new ClipboardItem({ 'image/png': blob })
-                        ]).then(() => {
-                            console.log("คัดลอกรูปภาพแผนงานลง Clipboard เรียบร้อยแล้ว");
-                        }).catch(err => {
-                            console.error("ไม่สามารถเขียนลง Clipboard ได้", err);
-                        });
-                    } catch (e) {
-                        console.error("ไม่สามารถใช้งาน Clipboard Item ได้", e);
+                for (let i = 0; i < 3; i++) {
+                    const sol = solutions[i] || {};
+                    if (!sol.goal && !sol.amount && !sol.duration && !sol.expectedReturn && !sol.smartSpend && !sol.smartSave && !sol.smartProtect && !sol.smartBorrow) {
+                        continue;
                     }
+                    html += `<tr class="border-b border-slate-150 hover:bg-slate-50/50">
+                        <td class="p-2 border-r border-slate-200 align-top space-y-1 bg-slate-50">
+                            <div><strong class="text-[9px] text-slate-400 uppercase">เป้าหมาย:</strong> <span class="font-bold text-slate-800 block">${escapeHtml(sol.goal || '-')}</span></div>
+                            <div><strong class="text-[9px] text-slate-400 uppercase">จำนวนเงิน:</strong> <span class="font-bold text-slate-800 block">${escapeHtml(sol.amount || '-')}</span></div>
+                            <div><strong class="text-[9px] text-slate-400 uppercase">ระยะเวลา:</strong> <span class="font-bold text-slate-800 block">${escapeHtml(sol.duration || '-')}</span></div>
+                            <div><strong class="text-[9px] text-slate-400 uppercase">ผลตอบแทน:</strong> <span class="font-bold text-slate-800 block">${escapeHtml(sol.expectedReturn || '-')}</span></div>
+                        </td>
+                        <td class="p-2 border-r border-slate-200 align-top whitespace-pre-line font-semibold text-slate-700">${escapeHtml(sol.smartSpend || '-')}</td>
+                        <td class="p-2 border-r border-slate-200 align-top whitespace-pre-line font-semibold text-slate-700">${escapeHtml(sol.smartSave || '-')}</td>
+                        <td class="p-2 border-r border-slate-200 align-top whitespace-pre-line font-semibold text-slate-700">${escapeHtml(sol.smartProtect || '-')}</td>
+                        <td class="p-2 align-top whitespace-pre-line font-semibold text-slate-700">${escapeHtml(sol.smartBorrow || '-')}</td>
+                    </tr>`;
                 }
-            }, 'image/png');
 
-            const bodyInstruction = "กรุณากด Ctrl+V (หรือคลิกขวาแล้ววาง) เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\n\n";
-            const mailtoUrl = `mailto:?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyInstruction)}`;
-            window.location.href = mailtoUrl;
+                html += `</tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>`;
+            });
+
+            html += `</div>`;
         });
+        html += `</div>`;
+
+        if (bodyEl) bodyEl.innerHTML = html;
+        document.getElementById('competitorDetailsLightbox').classList.remove('hidden');
     }
 
     function closeCompetitorDetailsLightbox() {
         document.getElementById('competitorDetailsLightbox').classList.add('hidden');
-        window.activePortfolioUserId = null;
-        window.activePortfolioIndex = 0;
-        window.activeBootcampUserId = null;
-        window.activeBootcampIndex = 0;
-        window.currentAdminMailScale = 1.0;
     }
 
     function openConfirmDeletePlanLightbox(userId) {
@@ -2159,88 +1761,6 @@
     function closeConfirmDeletePlanLightbox() {
         document.getElementById('confirmDeletePlanLightbox').classList.add('hidden');
     }
-
-    window.openConfirmDeleteSetLightbox = (type) => {
-        window.deleteSetType = type;
-        const input = document.getElementById('confirmDeleteSetInput');
-        if (input) input.value = '';
-        const btn = document.getElementById('confirmDeleteSetBtn');
-        if (btn) {
-            btn.disabled = true;
-            btn.classList.add('opacity-50', 'cursor-not-allowed');
-            btn.classList.remove('opacity-100', 'cursor-pointer');
-        }
-        document.getElementById('confirmDeleteSetLightbox').classList.remove('hidden');
-    };
-
-    window.checkDeleteSetInput = () => {
-        const text = document.getElementById('confirmDeleteSetInput').value.trim();
-        const btn = document.getElementById('confirmDeleteSetBtn');
-        if (!btn) return;
-        
-        if (text === 'Delete Page') {
-            btn.disabled = false;
-            btn.classList.remove('opacity-50', 'cursor-not-allowed');
-            btn.classList.add('opacity-100', 'cursor-pointer');
-        } else {
-            btn.disabled = true;
-            btn.classList.add('opacity-50', 'cursor-not-allowed');
-            btn.classList.remove('opacity-100', 'cursor-pointer');
-        }
-    };
-
-    window.closeConfirmDeleteSetLightbox = () => {
-        document.getElementById('confirmDeleteSetLightbox').classList.add('hidden');
-    };
-
-    window.confirmDeleteActiveSet = async () => {
-        const text = document.getElementById('confirmDeleteSetInput').value.trim();
-        if (text !== 'Delete Page') {
-            alert('กรุณาพิมพ์ "Delete Page" ให้ถูกต้องเพื่อยืนยัน');
-            return;
-        }
-
-        try {
-            if (window.deleteSetType === 'portfolio') {
-                const userId = window.activePortfolioUserId;
-                const activeIndex = window.activePortfolioIndex;
-                const portfolioDocs = state.portfolioSets.filter(doc => doc.userId === userId)
-                    .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
-                const activeSet = portfolioDocs[activeIndex];
-                if (activeSet) {
-                    await deleteFirestoreDocument(firestoreCollections.portfolioSets, activeSet.id);
-                    console.log('ลบแผนงาน Portfolio สำเร็จ');
-                }
-            } else if (window.deleteSetType === 'bootcamp') {
-                const userId = window.activeBootcampUserId;
-                const activeIndex = window.activeBootcampIndex;
-                const cdDocs = state.customerDiagnosis.filter(doc => doc.id.startsWith(userId + '__'));
-                const allSets = [];
-                cdDocs.forEach(doc => {
-                    (doc.sets || []).forEach((set) => {
-                        allSets.push({ docId: doc.id, set });
-                    });
-                });
-                const activeEntry = allSets[activeIndex];
-                if (activeEntry) {
-                    const doc = state.customerDiagnosis.find(d => d.id === activeEntry.docId);
-                    if (doc) {
-                        const setIdx = doc.sets.indexOf(activeEntry.set);
-                        if (setIdx > -1) {
-                            doc.sets.splice(setIdx, 1);
-                            await upsertFirestoreDocument(firestoreCollections.customerDiagnosis, doc.id, { sets: doc.sets });
-                            console.log('ลบแผนงาน Bootcamp สำเร็จ');
-                        }
-                    }
-                }
-            }
-            closeConfirmDeleteSetLightbox();
-            closeCompetitorDetailsLightbox();
-        } catch (error) {
-            console.error('ลบข้อมูลไม่สำเร็จ', error);
-            alert('ลบข้อมูลไม่สำเร็จ: ' + error.message);
-        }
-    };
 
     async function deletePlanConfirm() {
         const userId = document.getElementById('deletePlanUserId').value;
@@ -2314,8 +1834,6 @@
     window.renderCompetitorsTable = renderCompetitorsTable;
     window.openCompetitorPortfolioSetsLightbox = openCompetitorPortfolioSetsLightbox;
     window.openCompetitorAccountSetsLightbox = openCompetitorAccountSetsLightbox;
-    window.renderActivePortfolioDetails = renderActivePortfolioDetails;
-    window.sendAdminPortfolioMailAsEmail = sendAdminPortfolioMailAsEmail;
     window.closeCompetitorDetailsLightbox = closeCompetitorDetailsLightbox;
     window.openConfirmDeletePlanLightbox = openConfirmDeletePlanLightbox;
     window.closeConfirmDeletePlanLightbox = closeConfirmDeletePlanLightbox;

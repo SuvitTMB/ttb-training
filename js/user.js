@@ -338,7 +338,6 @@
 
         await loadProducts();
         subscribeActivityItems(user.roundId);
-        registerUserRealtimeListeners(user.id);
     }
 
     // ---------------------------------------------------------------------
@@ -382,88 +381,9 @@
         return match ? match.unit : '';
     }
 
-    window.unsubscribeUserPortfolio = null;
-    window.unsubscribeUserBootcamp = null;
-
-    function registerUserRealtimeListeners(userId) {
-        if (window.unsubscribeUserPortfolio) window.unsubscribeUserPortfolio();
-        if (window.unsubscribeUserBootcamp) window.unsubscribeUserBootcamp();
-
-        if (!firebaseState.ready || !firebaseState.db) return;
-
-        // 1. Listen to Portfolio Planning sets
-        window.unsubscribeUserPortfolio = firebaseState.db.collection(firestoreCollections.portfolioSets)
-            .where('userId', '==', userId)
-            .onSnapshot((snapshot) => {
-                const docs = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
-                    .sort((left, right) => Number(left.setIndex || 0) - Number(right.setIndex || 0));
-
-                const grouped = {};
-                docs.forEach(doc => {
-                    const activityItemId = doc.activityItemId;
-                    if (!grouped[activityItemId]) grouped[activityItemId] = [];
-                    grouped[activityItemId].push(doc);
-                });
-
-                for (const itemId in state.portfolioTabState) {
-                    const tabState = state.portfolioTabState[itemId];
-                    const updatedSets = (grouped[itemId] || []).map(normalizeSet);
-
-                    const oldIds = tabState.sets.map(s => s.id).join(',');
-                    const newIds = updatedSets.map(s => s.id).join(',');
-
-                    if (oldIds !== newIds) {
-                        tabState.sets = updatedSets;
-                        if (!tabState.sets.some(s => s.id === tabState.activeSetId)) {
-                            tabState.activeSetId = tabState.sets[0] ? tabState.sets[0].id : '';
-                        }
-                        renderPortfolioSetsBar(itemId);
-                        renderPortfolioSetBody(itemId);
-                    } else {
-                        updatedSets.forEach(newSet => {
-                            const existing = tabState.sets.find(s => s.id === newSet.id);
-                            if (existing) {
-                                Object.keys(newSet).forEach(key => {
-                                    existing[key] = newSet[key];
-                                });
-                            }
-                        });
-                        if (tabState.activeSetId) {
-                            refreshTotalsBar(itemId, tabState.activeSetId);
-                        }
-                    }
-                }
-            });
-
-        // 2. Listen to Bootcamp (Customer Diagnosis) sets
-        window.unsubscribeUserBootcamp = firebaseState.db.collection(firestoreCollections.customerDiagnosis)
-            .onSnapshot((snapshot) => {
-                snapshot.docs.forEach(doc => {
-                    if (doc.id.startsWith(userId + '__')) {
-                        const activityItemId = doc.id.split('__')[1];
-                        const data = doc.data();
-                        const sets = data.sets || [];
-
-                        const tabState = state.bootcampTabState[activityItemId];
-                        if (tabState) {
-                            const oldIds = tabState.sets.map(s => s.id).join(',');
-                            const newIds = sets.map(s => s.id).join(',');
-
-                            if (oldIds !== newIds) {
-                                tabState.sets = sets;
-                                if (!sets.some(s => s.id === tabState.activeSetId)) {
-                                    tabState.activeSetId = sets[0] ? sets[0].id : '';
-                                }
-                                renderBootcampSetsBar(activityItemId);
-                                renderBootcampSetBody(activityItemId);
-                            } else {
-                                tabState.sets = sets;
-                            }
-                        }
-                    }
-                });
-            });
-    }
+    // ---------------------------------------------------------------------
+    // Activity tabs: real-time sync + per-tab template routing
+    // ---------------------------------------------------------------------
 
     function subscribeActivityItems(roundId) {
         if (state.unsubscribeActivityItems) {
@@ -525,11 +445,10 @@
         tabsBar.innerHTML = state.activityItems.map((item) => {
             const isEnabled = item.status === 'on';
             const isActive = isEnabled && item.id === state.activeTabId;
-            const template = resolveTemplate(item);
             const stateClass = !isEnabled
                 ? 'text-slate-300 cursor-not-allowed bg-slate-50'
                 : isActive
-                    ? (template === 'customerDiagnosis' ? 'bg-orange-600 text-white shadow-md' : 'bg-blue-800 text-white shadow-md')
+                    ? (item.name === 'Account Planning Bootcamp' ? 'bg-orange-500 text-white shadow-md' : 'bg-blue-800 text-white shadow-md')
                     : 'text-slate-600 hover:bg-slate-100';
 
             return `<button id="tabButton-${item.id}" ${isEnabled ? `onclick="switchActiveTab('${item.id}')"` : 'disabled'}
@@ -586,10 +505,6 @@
     }
 
     function resolveTemplate(item) {
-        if (item.template) {
-            return item.template;
-        }
-
         const name = (item.name || '').trim();
         if (name === TEMPLATE_NAMES.PORTFOLIO_PLANNING) {
             return 'portfolioPlanning';
@@ -865,24 +780,6 @@
         return '';
     }
 
-    window.currentMailScale = 1.0;
-    
-    window.adjustMailFontSize = (amount) => {
-        window.currentMailScale = Math.max(0.7, Math.min(2.0, window.currentMailScale + amount));
-        const container = document.getElementById('presenterMailContentArea') || document.getElementById('bootcampPresenterMailContentArea');
-        if (container) {
-            container.querySelectorAll('.text-xs, .text-sm, .text-xl, .text-lg, .text-2xl, p, span, h2, h4, h5, li, strong, th, td').forEach(el => {
-                if (!el.dataset.origSize) {
-                    const computed = window.getComputedStyle(el).fontSize;
-                    el.dataset.origSize = parseFloat(computed);
-                }
-                const orig = parseFloat(el.dataset.origSize);
-                el.style.fontSize = `${orig * window.currentMailScale}px`;
-                el.style.lineHeight = 'normal';
-            });
-        }
-    };
-
     window.openPresenterMailLightbox = (setId) => {
         let set = null;
         let setIndex = 1;
@@ -899,7 +796,6 @@
         }
         if (!set) return;
 
-        window.currentMailScale = 1.0; // Reset scale on open
         const presenterName = state.currentUser ? state.currentUser.name : 'ไม่ระบุ';
 
         let modal = document.getElementById('presenterMailLightboxModal');
@@ -946,26 +842,15 @@
         };
 
         modal.innerHTML = `
-            <div class="bg-white w-[95vw] h-[95vh] rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-slate-200">
+            <div class="bg-white w-[90vw] h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-slate-200">
                 <!-- Header -->
-                <div class="px-6 py-4 border-b border-slate-200 flex items-center justify-between shrink-0">
-                    <div class="flex items-center gap-2">
-                        <span class="font-extrabold text-slate-800 text-sm">ข้อมูลสรุปแผนงาน (Portfolio Planning)</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <button onclick="adjustMailFontSize(0.1)" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center transition" title="ขยายตัวอักษร">
-                            <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
-                        </button>
-                        <button onclick="adjustMailFontSize(-0.1)" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center transition" title="ลดตัวอักษร">
-                            <i class="fa-solid fa-magnifying-glass-minus text-base"></i>
-                        </button>
-                        <button onclick="sendPresenterMailAsEmail('${set.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition" title="ส่งจดหมาย (ดาวน์โหลดภาพแผนงาน)">
-                            <i class="fa-solid fa-envelope text-lg"></i>
-                        </button>
-                        <button onclick="closePresenterMailLightbox()" class="w-8 h-8 rounded-lg hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center text-slate-400 transition" title="ปิด">
-                            <i class="fa-solid fa-xmark text-lg"></i>
-                        </button>
-                    </div>
+                <div class="px-6 py-4 border-b border-slate-200 flex items-center justify-end shrink-0 gap-2">
+                    <button onclick="sendPresenterMailAsEmail('${set.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition" title="ส่งจดหมาย (ดาวน์โหลดภาพแผนงาน)">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                    </button>
+                    <button onclick="closePresenterMailLightbox()" class="w-8 h-8 rounded-lg hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center text-slate-400 transition" title="ปิด">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
                 </div>
                 <!-- Content Body Wrapper (Target for html2canvas) -->
                 <div id="presenterMailContentArea" class="flex-grow p-8 overflow-y-auto space-y-6 bg-white">
@@ -976,7 +861,7 @@
 
                     <div class="bg-slate-50 border border-slate-200 px-4 py-1.5 rounded-xl shadow-sm">
                         <span class="text-xs font-bold text-slate-400 mr-1">ชื่อเรื่อง:</span>
-                        <span class="text-sm font-normal text-slate-800">${escapeHtml(set.topic || '-')}</span>
+                        <span class="text-sm font-bold text-slate-800">${escapeHtml(set.topic || '-')}</span>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="bg-[#e9f0f8] border border-slate-200 rounded-2xl p-5 space-y-2 text-left">
@@ -1000,206 +885,6 @@
                             ${renderCategoryOutcomeRows('GROW')}
                             ${renderCategoryOutcomeRows('GUARD')}
                         </div>
-                    </div>
-                </div>
-            </div>
-        `;
-    };
-
-    window.openBootcampPresenterMailLightbox = (itemId, setId) => {
-        const tabState = state.bootcampTabState[itemId];
-        if (!tabState) return;
-        const set = tabState.sets.find(s => s.id === setId);
-        if (!set) return;
-
-        window.currentMailScale = 1.0; // Reset scale on open
-        const setIndex = tabState.sets.indexOf(set) + 1;
-        const presenterName = state.currentUser ? state.currentUser.name : 'ไม่ระบุ';
-
-        let modal = document.getElementById('presenterMailLightboxModal');
-        if (!modal) {
-            modal = document.createElement('div');
-            modal.id = 'presenterMailLightboxModal';
-            modal.className = 'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[9999] flex items-center justify-center p-4';
-            document.body.appendChild(modal);
-        }
-
-        modal.classList.remove('hidden');
-
-        const act = set.act || { aim: '', consult: '', track: '' };
-        const ion = set.ion || { improve: '', operate: '', notice: '' };
-        const diag = set.diagnosis || { goalAndLimit: '', idealPortfolio: '', currentPortfolio: '', portfolioSymptom: '', potentialImpact: '', adjustmentGuideline: '' };
-        const solutions = set.financialSolutions || [];
-
-        const formatValueWithCommas = (val) => {
-            if (!val) return '-';
-            const clean = String(val).replace(/,/g, '');
-            const num = Number(clean);
-            return isNaN(num) ? val : num.toLocaleString('th-TH');
-        };
-
-        const renderSolutionsTable = () => {
-            if (!solutions.length) {
-                return '<div class="text-xs text-slate-400 italic p-3 text-center border border-slate-200 rounded-xl">ไม่มีข้อมูล Financial Solutions</div>';
-            }
-            let rowsHtml = '';
-            solutions.forEach((sol, idx) => {
-                rowsHtml += `
-                    <tr class="border-t border-slate-200">
-                        <td class="p-3 align-top border-r border-slate-200 space-y-2 text-left bg-slate-50/50">
-                            <div>
-                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">เป้าหมายทางการเงิน</span>
-                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.goal || '-')}</span>
-                            </div>
-                            <div>
-                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">จำนวนเงิน</span>
-                                <span class="text-xs font-normal text-slate-800">${escapeHtml(formatValueWithCommas(sol.amount))}</span>
-                            </div>
-                            <div>
-                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">ระยะเวลา</span>
-                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.duration || '-')}</span>
-                            </div>
-                            <div>
-                                <span class="block text-[10px] font-bold text-slate-500 mb-0.5">อัตราผลตอบแทนที่คาดหวัง</span>
-                                <span class="text-xs font-normal text-slate-800">${escapeHtml(sol.expectedReturn || '-')}%</span>
-                            </div>
-                        </td>
-                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartSpend || '-')}</td>
-                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartSave || '-')}</td>
-                        <td class="p-3 align-top border-r border-slate-200 text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartProtect || '-')}</td>
-                        <td class="p-3 align-top text-left whitespace-pre-wrap font-normal text-slate-705">${escapeHtml(sol.smartBorrow || '-')}</td>
-                    </tr>
-                `;
-            });
-            return `
-                <div class="overflow-x-auto border border-slate-200 rounded-xl mt-1">
-                    <table class="w-full text-xs border-collapse">
-                        <thead>
-                            <tr class="bg-[#f8fafc] text-slate-700 border-b border-slate-200">
-                                <th rowspan="2" class="py-2.5 px-3 text-center font-black border-r border-slate-200 w-[24%]">รายการ</th>
-                                <th colspan="4" class="py-2 px-3 text-center font-black border-b border-slate-200">โซลูชันที่จะแนะนำ</th>
-                            </tr>
-                            <tr class="bg-slate-100/80 text-slate-700 text-[12px] text-center border-b border-slate-200">
-                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">ฉลาดใช้</th>
-                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">ฉลาดออมและลงทุน</th>
-                                <th class="py-2 px-2 border-r border-slate-200 w-[19%]">คุ้มครองอุ่นใจ</th>
-                                <th class="py-2 px-2 w-[19%]">รอบรู้กู้ยืม</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${rowsHtml}
-                        </tbody>
-                    </table>
-                </div>
-            `;
-        };
-
-        modal.innerHTML = `
-            <div class="bg-white w-[95vw] h-[95vh] rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-slate-200">
-                <!-- Header -->
-                <div class="px-6 py-4 border-b border-slate-200 flex items-center justify-between shrink-0">
-                    <div class="flex items-center gap-2">
-                        <span class="font-extrabold text-slate-800 text-sm">ข้อมูลสรุปแผนงาน (Account Planning Bootcamp)</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <button onclick="adjustMailFontSize(0.1)" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center transition" title="ขยายตัวอักษร">
-                            <i class="fa-solid fa-magnifying-glass-plus text-base"></i>
-                        </button>
-                        <button onclick="adjustMailFontSize(-0.1)" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-600 flex items-center justify-center transition" title="ลดตัวอักษร">
-                            <i class="fa-solid fa-magnifying-glass-minus text-base"></i>
-                        </button>
-                        <button onclick="sendBootcampPresenterMailAsEmail('${itemId}', '${set.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition" title="ส่งจดหมาย (ดาวน์โหลดภาพแผนงาน)">
-                            <i class="fa-solid fa-envelope text-lg"></i>
-                        </button>
-                        <button onclick="closePresenterMailLightbox()" class="w-8 h-8 rounded-lg hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center text-slate-400 transition" title="ปิด">
-                            <i class="fa-solid fa-xmark text-lg"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- Content Body Wrapper (Target for html2canvas) -->
-                <div id="bootcampPresenterMailContentArea" class="flex-grow p-8 overflow-y-auto space-y-6 bg-white">
-                    <div class="text-center space-y-2 shrink-0">
-                        <h2 class="text-xl font-black text-slate-800">Account Planning Bootcamp (แผนงานที่ ${setIndex})</h2>
-                        <p class="text-xs font-semibold text-blue-600">ผู้นำเสนอแผนงาน: ${escapeHtml(presenterName)}</p>
-                    </div>
-
-                    <div class="bg-slate-50 border border-slate-200 px-4 py-1.5 rounded-xl shadow-sm text-left">
-                        <span class="text-xs font-bold text-slate-400 mr-1">ชื่อเรื่อง:</span>
-                        <span class="text-sm font-normal text-slate-800">${escapeHtml(set.topic || '-')}</span>
-                    </div>
-
-                    <!-- ข้อมูลลูกค้า -->
-                    <div class="bgblue text-white rounded-2xl p-4 text-left space-y-1">
-                        <span class="block text-xs font-bold opacity-75">ข้อมูลลูกค้า</span>
-                        <p class="whitespace-pre-line font-normal text-xs">${escapeHtml(set.customerInfo || '-')}</p>
-                    </div>
-
-                    <!-- A-C-T-I-O-N -->
-                    <div class="space-y-2 text-left">
-                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">1</span> Customer Profile & Action Plan</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">A - Aim</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.aim || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">C - Consult</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.consult || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">T - Track</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(act.track || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">I - Improve</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.improve || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">O - Operate</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.operate || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">N - Notice</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(ion.notice || '-')}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Diagnosis -->
-                    <div class="space-y-2 text-left">
-                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">2</span> Portfolio Diagnosis & Improvement</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">เป้าหมายและข้อจำกัด</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.goalAndLimit || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">พอร์ตที่ควรเป็นตามเป้าหมาย</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.idealPortfolio || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgblue text-white text-center text-[12px] font-bold py-2 px-2">พอร์ตปัจจุบันที่ลูกค้ามี</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.currentPortfolio || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">อาการของพอร์ต</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.portfolioSymptom || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">ผลกระทบที่อาจเกิดขึ้น</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.potentialImpact || '-')}</p>
-                            </div>
-                            <div class="border border-slate-200 rounded-xl overflow-hidden flex flex-col">
-                                <div class="bgorange text-white text-center text-[12px] font-bold py-2 px-2">แนวทางปรับพอร์ต</div>
-                                <p class="p-3 text-xs text-slate-700 whitespace-pre-wrap font-normal">${escapeHtml(diag.adjustmentAdjustment || diag.adjustmentGuideline || '-')}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Financial Solutions -->
-                    <div class="space-y-2 text-left">
-                        <h3 class="text-xs font-black text-slate-700 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-[10px]">3</span> Financial Solution</h3>
-                        ${renderSolutionsTable()}
                     </div>
                 </div>
             </div>
@@ -1230,66 +915,6 @@
         }
         if (!set) return;
 
-        const presenterName = state.currentUser ? state.currentUser.name : 'ไม่ระบุ';
-        const subjectText = `Account Planning Bootcamp (แผนงานที่ ${setIndex}) โดย ${presenterName}`;
-
-        // Temporarily expand container height and remove scroll restrictions for a complete screen capture
-        const originalHeight = container.style.height;
-        const originalMaxHeight = container.style.maxHeight;
-        const originalOverflow = container.style.overflow;
-
-        container.style.height = 'auto';
-        container.style.maxHeight = 'none';
-        container.style.overflow = 'visible';
-
-        html2canvas(container, { scale: 2, useCORS: true }).then((canvas) => {
-            // Restore original styles
-            container.style.height = originalHeight;
-            container.style.maxHeight = originalMaxHeight;
-            container.style.overflow = originalOverflow;
-
-            const imgData = canvas.toDataURL('image/png');
-
-            // 1. Download screenshot locally
-            const link = document.createElement('a');
-            link.download = `bootcamp_plan_${setIndex}.png`;
-            link.href = imgData;
-            link.click();
-
-            // 2. Copy image to Clipboard as Blob
-            canvas.toBlob((blob) => {
-                if (blob) {
-                    try {
-                        navigator.clipboard.write([
-                            new ClipboardItem({ 'image/png': blob })
-                        ]).then(() => {
-                            console.log("คัดลอกรูปภาพแผนงานลง Clipboard เรียบร้อยแล้ว");
-                        }).catch(err => {
-                            console.error("ไม่สามารถเขียนลง Clipboard ได้", err);
-                        });
-                    } catch (e) {
-                        console.error("ไม่สามารถใช้งาน Clipboard Item ได้", e);
-                    }
-                }
-            }, 'image/png');
-
-            // 3. Open native email client using mailto link
-            const bodyInstruction = "กรุณากด Ctrl+V (หรือคลิกขวาแล้ววาง) เพื่อวางรูปภาพแผนงานสรุปที่คัดลอกไว้ในคลิปบอร์ดที่นี่\n\n";
-            const mailtoUrl = `mailto:?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyInstruction)}`;
-            window.location.href = mailtoUrl;
-        });
-    };
-
-    window.sendBootcampPresenterMailAsEmail = (itemId, setId) => {
-        const container = document.getElementById('bootcampPresenterMailContentArea');
-        if (!container) return;
-
-        const tabState = state.bootcampTabState[itemId];
-        if (!tabState) return;
-        const set = tabState.sets.find(s => s.id === setId);
-        if (!set) return;
-
-        const setIndex = tabState.sets.indexOf(set) + 1;
         const presenterName = state.currentUser ? state.currentUser.name : 'ไม่ระบุ';
         const subjectText = `Account Planning Bootcamp (แผนงานที่ ${setIndex}) โดย ${presenterName}`;
 
@@ -2116,14 +1741,7 @@
             <div class="bg-white border border-slate-200 rounded-2xl p-5 space-y-4 shadow-sm">
                 <!-- ชื่อเรื่อง input field -->
                 <div class="mb-2">
-                    <div class="flex items-center justify-between mb-1">
-                        <label class="block text-[11px] font-black text-slate-700">ชื่อเรื่อง</label>
-                        <div class="flex items-center gap-1.5">
-                            <button onclick="openBootcampPresenterMailLightbox('${itemId}', '${activeSet.id}')" class="w-8 h-8 rounded-lg hover:bg-blue-50 hover:text-blue-600 flex items-center justify-center text-slate-400 transition shrink-0" title="ข้อมูลสรุปการนำเสนอ">
-                                <i class="fa-solid fa-envelope text-lg"></i>
-                            </button>
-                        </div>
-                    </div>
+                    <label class="block text-[11px] font-black text-slate-700 mb-1">ชื่อเรื่อง</label>
                     <input type="text" id="bootcampSetTopic-${itemId}" value="${escapeHtml(activeSet.topic || '')}" placeholder="กรอกชื่อเรื่องของชุดนี้" class="w-full border border-slate-200 rounded-lg py-2 px-3 text-xs font-semibold text-slate-800 outline-none focus:border-blue-500 shadow-inner" style="background-color: #eaf0f7;">
                 </div>
 
@@ -2489,14 +2107,6 @@
         if (state.unsubscribeActivityItems) {
             state.unsubscribeActivityItems();
             state.unsubscribeActivityItems = null;
-        }
-        if (window.unsubscribeUserPortfolio) {
-            window.unsubscribeUserPortfolio();
-            window.unsubscribeUserPortfolio = null;
-        }
-        if (window.unsubscribeUserBootcamp) {
-            window.unsubscribeUserBootcamp();
-            window.unsubscribeUserBootcamp = null;
         }
 
         clearSession();
